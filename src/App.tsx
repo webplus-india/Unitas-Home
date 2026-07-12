@@ -66,7 +66,7 @@ export default function App() {
   useEffect(() => {
     let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
     let description = 'Experience premium student & working professional PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
-    let imageUrl = 'https://unitashome.in/og-image.jpg?v=1.0.0';
+    let imageUrl = 'https://unitashome.in/og-image.jpg?v=3';
     const baseUrl = 'https://unitashome.in';
     let urlPath = currentPath;
 
@@ -127,7 +127,7 @@ export default function App() {
     canonical.setAttribute('href', `${baseUrl}${urlPath === '/' ? '' : urlPath}`);
 
     // Determine custom image alt text (blog posts use their own alt, default uses building description)
-    let imageAlt = 'Night view of Unitas Home – Premium PG for Students & Working Professionals in Dehradun';
+    let imageAlt = 'Unitas Home – Premium PG for Students & Working Professionals in Dehradun';
     if (currentPath.startsWith('/blog/')) {
       const slug = currentPath.substring('/blog/'.length);
       const post = BLOG_POSTS.find(p => p.slug === slug);
