@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F8B8D;
+  --color-primary-dark: #0B6E70;
+  --color-accent: #F4B400;
+  --color-accent-hover: #D99A00;
+  --color-bg-warm: #FCFCF8;
+  --color-surface-white: #FFFFFF;
+  --color-charcoal: #1F2937;
+  --color-slate-gray: #6B7280;
+  --color-border-light: #E5E7EB;
+  --color-success: #22C55E;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-warm);
+    color: var(--color-slate-gray);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-charcoal);
+  }
+}
+
+/* Custom styles for luxury look */
+.luxury-shadow {
+  box-shadow: 0 4px 30px rgba(15, 139, 141, 0.03);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 10px 40px -10px rgba(15, 139, 141, 0.08);
+}
+
+.luxury-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -5px rgba(15, 139, 141, 0.12);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFCF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0F8B8D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0B6E70;
+}
+
+/* For glassmorphism effects */
+.glass-nav {
+  background: rgba(252, 252, 248, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Staggered premium star shimmer animations */
+@keyframes star-shimmer {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1) drop-shadow(0 0 0px rgba(244, 180, 0, 0));
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+    filter: brightness(1.2) drop-shadow(0 0 3px rgba(244, 180, 0, 0.4));
+  }
+}
+
+.star-shimmer-1 { animation: star-shimmer 2.5s infinite ease-in-out 0.1s; }
+.star-shimmer-2 { animation: star-shimmer 2.5s infinite ease-in-out 0.3s; }
+.star-shimmer-3 { animation: star-shimmer 2.5s infinite ease-in-out 0.5s; }
+.star-shimmer-4 { animation: star-shimmer 2.5s infinite ease-in-out 0.7s; }
+.star-shimmer-5 { animation: star-shimmer 2.5s infinite ease-in-out 0.9s; }
+
+/* Subtle left-to-right shine animation on hover */
+@keyframes hover-shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.hover-shine-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  pointer-events: none;
+}
+
+.hover-shine-btn:hover::before {
+  animation: hover-shine 1s ease-in-out;
+}
+
+
