@@ -28,6 +28,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import { Inquiry, Room } from './types';
 import { BLOG_POSTS } from './blogData';
+import { FAQS_DATA } from './data';
 import { BookVisitModal, ReserveRoomModal } from './components/BookingModals';
 
 export default function App() {
@@ -63,9 +64,9 @@ export default function App() {
 
   // Dynamic SEO Page Title, Meta Description, Canonical, OG and Twitter Tag Updates
   useEffect(() => {
-    let title = 'Premium PG for Students & Working Professionals in Dehradun | Unitas Home';
-    let description = 'Stay at Unitas Home, a premium PG in Dehradun offering fully furnished rooms, Wi-Fi, nutritious meals, housekeeping, and secure student living near UPES, Graphic Era & major colleges.';
-    let imageUrl = 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHxUY2Lbp9XgqBBgiTsNvXh0g3DwvyJ2CY4GLdyRI_fkUtdFTYJlin5DE_aliFl0gcUS4FNfpDIE4MYe0GOnKF8HsYSHgIRIG_bOlp1Ybz8O1Jo2HvovAQAM4eiqzh6NDmVFJrnDQ=w1200-h630-rw';
+    let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
+    let description = 'Experience premium student & working professional PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
+    let imageUrl = 'https://unitashome.in/og-image.jpg?v=1.0.0';
     const baseUrl = 'https://unitashome.in';
     let urlPath = currentPath;
 
@@ -126,7 +127,7 @@ export default function App() {
     canonical.setAttribute('href', `${baseUrl}${urlPath === '/' ? '' : urlPath}`);
 
     // Determine custom image alt text (blog posts use their own alt, default uses building description)
-    let imageAlt = 'Evening view of Unitas Home – Premium PG for Students & Working Professionals in Patel Nagar, Dehradun.';
+    let imageAlt = 'Night view of Unitas Home – Premium PG for Students & Working Professionals in Dehradun';
     if (currentPath.startsWith('/blog/')) {
       const slug = currentPath.substring('/blog/'.length);
       const post = BLOG_POSTS.find(p => p.slug === slug);
@@ -140,15 +141,191 @@ export default function App() {
     updateMeta('og:description', description, true);
     updateMeta('og:url', `${baseUrl}${urlPath === '/' ? '' : urlPath}`, true);
     updateMeta('og:image', imageUrl, true);
+    updateMeta('og:image:secure_url', imageUrl, true);
     updateMeta('og:image:width', '1200', true);
     updateMeta('og:image:height', '630', true);
-    updateMeta('og:image:type', 'image/webp', true);
+    updateMeta('og:image:type', (imageUrl.includes('.webp') || imageUrl.split('?')[0].endsWith('.webp')) ? 'image/webp' : 'image/jpeg', true);
     updateMeta('og:image:alt', imageAlt, true);
 
     // Update Twitter Card tags
     updateMeta('twitter:title', title);
     updateMeta('twitter:description', description);
     updateMeta('twitter:image', imageUrl);
+
+    // ==========================================
+    // Dynamic Structured Data (JSON-LD)
+    // ==========================================
+    const updateJsonLd = (id: string, data: any) => {
+      let script = document.getElementById(id);
+      if (!script) {
+        script = document.createElement('script');
+        script.setAttribute('id', id);
+        script.setAttribute('type', 'application/ld+json');
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(data);
+    };
+
+    const removeJsonLd = (id: string) => {
+      const script = document.getElementById(id);
+      if (script) {
+        script.remove();
+      }
+    };
+
+    // 1. Dynamic Breadcrumb Schema
+    let activePostTitle = '';
+    if (currentPath.startsWith('/blog/')) {
+      const slug = currentPath.substring('/blog/'.length);
+      const post = BLOG_POSTS.find(p => p.slug === slug);
+      if (post) activePostTitle = post.title;
+    }
+
+    const breadcrumbList = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://unitashome.in"
+      }
+    ];
+    
+    if (currentPath === '/blog') {
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Student Living Blog",
+        "item": "https://unitashome.in/blog"
+      });
+    } else if (currentPath.startsWith('/blog/')) {
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Student Living Blog",
+        "item": "https://unitashome.in/blog"
+      });
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 3,
+        "name": activePostTitle || "Blog Article",
+        "item": `https://unitashome.in${currentPath}`
+      });
+    } else if (currentPath === '/privacy-policy') {
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://unitashome.in/privacy-policy"
+      });
+    } else if (currentPath === '/terms-of-service') {
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Terms of Service",
+        "item": "https://unitashome.in/terms-of-service"
+      });
+    } else if (currentPath === '/rules-regulations') {
+      breadcrumbList.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Rules & Regulations",
+        "item": "https://unitashome.in/rules-regulations"
+      });
+    }
+
+    updateJsonLd('breadcrumb-schema', {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbList
+    });
+
+    // 2. FAQ Schema (where applicable)
+    if (currentPath === '/' && !showDashboard) {
+      updateJsonLd('faq-schema', {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": FAQS_DATA.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      });
+      removeJsonLd('blog-faq-schema');
+    } else if (currentPath.startsWith('/blog/')) {
+      const slug = currentPath.substring('/blog/'.length);
+      const post = BLOG_POSTS.find(p => p.slug === slug);
+      if (post && post.faqs && post.faqs.length > 0) {
+        updateJsonLd('blog-faq-schema', {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": post.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
+        });
+      } else {
+        removeJsonLd('blog-faq-schema');
+      }
+      removeJsonLd('faq-schema');
+    } else {
+      removeJsonLd('faq-schema');
+      removeJsonLd('blog-faq-schema');
+    }
+
+    // 3. BlogPosting Schema (for blog articles)
+    if (currentPath.startsWith('/blog/')) {
+      const slug = currentPath.substring('/blog/'.length);
+      const post = BLOG_POSTS.find(p => p.slug === slug);
+      if (post) {
+        const parseBlogDate = (dateStr: string) => {
+          try {
+            const date = new Date(dateStr);
+            if (!isNaN(date.getTime())) {
+              return date.toISOString().split('T')[0];
+            }
+          } catch (e) {}
+          return "2026-07-12";
+        };
+
+        updateJsonLd('blog-posting-schema', {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.metaDescription,
+          "image": post.image,
+          "datePublished": parseBlogDate(post.date),
+          "dateModified": parseBlogDate(post.lastUpdated || post.date),
+          "author": {
+            "@type": "Organization",
+            "name": post.author || "Unitas Home Editorial Team",
+            "url": "https://unitashome.in"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Unitas Home",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://unitashome.in/apple-touch-icon.png"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://unitashome.in/blog/${post.slug}`
+          }
+        });
+      } else {
+        removeJsonLd('blog-posting-schema');
+      }
+    } else {
+      removeJsonLd('blog-posting-schema');
+    }
 
   }, [currentPath, showDashboard]);
 
