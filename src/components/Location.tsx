@@ -227,12 +227,12 @@ export default function Location() {
                 return (
                   <div
                     key={place.id}
-                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs hover:border-primary/30 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full min-h-[250px]"
+                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs hover:border-primary/30 hover:shadow-lg md:hover:-translate-y-1.5 transition-[border-color,box-shadow,transform] duration-300 flex flex-col justify-between h-full min-h-[250px]"
                   >
                     <div className="space-y-4">
                       {/* Header with Icon and Name */}
                       <div className="flex items-start space-x-3.5">
-                        <div className="w-14 h-14 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center group-hover/card:bg-primary/10 group-hover/card:scale-105 group-hover/card:rotate-2 transition-all duration-300 flex-shrink-0 mt-0.5">
+                        <div className="w-14 h-14 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center md:group-hover/card:bg-primary/10 md:group-hover/card:scale-105 md:group-hover/card:rotate-2 transition-[background-color,border-color,transform] duration-300 flex-shrink-0 mt-0.5">
                           {place.category === 'Colleges' && <GraduationCap size={22} strokeWidth={2} className="text-primary" />}
                           {place.category === 'Hospitals' && <HeartPulse size={22} strokeWidth={2} className="text-primary" />}
                           {place.category === 'Shopping' && <ShoppingBag size={22} strokeWidth={2} className="text-primary" />}
@@ -280,7 +280,7 @@ export default function Location() {
                           className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark transition-colors duration-300 mt-1 cursor-pointer group/link w-fit"
                         >
                           <span>View Directions</span>
-                          <ArrowUpRight size={16} strokeWidth={2} className="ml-1 text-primary transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300" />
+                          <ArrowUpRight size={16} strokeWidth={2} className="ml-1 text-primary transform md:group-hover/link:translate-x-0.5 md:group-hover/link:-translate-y-0.5 transition-transform duration-300" />
                         </a>
                       </div>
                     </div>
@@ -290,7 +290,7 @@ export default function Location() {
             </div>
 
             {/* MOBILE ONLY: Horizontal swipeable card slider with snap-mandatory and 1 card visible at a time */}
-            <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 gap-4 pb-4">
+            <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 gap-4 pb-4 will-change-scroll transform-gpu isolate">
               {filteredPlaces.map((place) => {
                 const mapQuery = `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
                 

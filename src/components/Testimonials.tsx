@@ -324,7 +324,7 @@ export default function Testimonials() {
                     style={{ width: `${100 / itemsInView}%` }}
                   >
                     {/* Testimonial Card - perfectly equal height using flex column */}
-                    <div className="group/card bg-white rounded-[24px] border border-neutral-100 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.012)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.035)] hover:border-primary/15 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full min-h-[440px] relative overflow-hidden">
+                    <div className="group/card bg-white rounded-[24px] border border-neutral-100 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.012)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.035)] hover:border-primary/15 md:hover:-translate-y-1 transition-[border-color,box-shadow,transform] duration-300 flex flex-col justify-between h-full min-h-[440px] relative overflow-hidden">
                       
                       {/* Big decorative back quote inside card */}
                       <div className="absolute top-4 right-4 text-primary/[0.012] group-hover/card:text-primary/[0.025] transition-colors duration-300 pointer-events-none select-none">
@@ -383,7 +383,7 @@ export default function Testimonials() {
                         <div className="flex items-center space-x-3">
                           {/* Authentic Default Google Profile Initial Avatar */}
                           <div className="relative flex-shrink-0">
-                            <div className={`w-11 h-11 rounded-full ${colorClass} flex items-center justify-center border border-neutral-100 shadow-2xs group-hover/card:scale-105 transition-transform duration-300 font-display font-bold text-[15px] text-white`}>
+                            <div className={`w-11 h-11 rounded-full ${colorClass} flex items-center justify-center border border-neutral-100 shadow-2xs md:group-hover/card:scale-105 transition-transform duration-300 font-display font-bold text-[15px] text-white`}>
                               {initial}
                             </div>
                             <div className="absolute -bottom-0.5 -right-0.5 bg-emerald-500 p-0.5 rounded-full border border-white shadow-xs flex items-center justify-center">
@@ -423,7 +423,7 @@ export default function Testimonials() {
                           >
                             <GoogleIcon size={12} />
                             <span>Read on Google</span>
-                            <ArrowUpRight className="w-3.5 h-3.5 text-primary group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300" />
+                            <ArrowUpRight className="w-3.5 h-3.5 text-primary md:group-hover/link:translate-x-0.5 md:group-hover/link:-translate-y-0.5 transition-transform duration-300" />
                           </a>
                         </div>
 

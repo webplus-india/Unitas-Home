@@ -163,9 +163,9 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                 {benefits.map((benefit, idx) => {
                   const Icon = benefit.icon;
                   return (
-                    <div key={idx} className="flex items-start space-x-3.5 group hover:-translate-y-0.5 transition-all duration-300">
+                    <div key={idx} className="flex items-start space-x-3.5 group md:hover:-translate-y-0.5 transition-[transform,color] duration-300">
                       <div className="flex-shrink-0 mt-0.5">
-                        <div className="w-11 h-11 rounded-[22px] bg-[#0F8B8D]/5 flex items-center justify-center text-[#0F8B8D] border border-[#0F8B8D]/10 transition-all duration-300 group-hover:bg-[#0F8B8D] group-hover:text-white group-hover:border-[#F4B400] group-hover:shadow-[0_0_12px_rgba(244,180,0,0.15)] shadow-xs">
+                        <div className="w-11 h-11 rounded-[22px] bg-[#0F8B8D]/5 flex items-center justify-center text-[#0F8B8D] border border-[#0F8B8D]/10 transition-[background-color,color,border-color,box-shadow] duration-300 group-hover:bg-[#0F8B8D] group-hover:text-white group-hover:border-[#F4B400] group-hover:shadow-[0_0_12px_rgba(244,180,0,0.15)] shadow-xs">
                           <Icon className="w-[22px] h-[22px] stroke-[1.8] transition-colors duration-300 group-hover:text-white" />
                         </div>
                       </div>

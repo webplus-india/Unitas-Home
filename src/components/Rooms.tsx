@@ -163,7 +163,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.6 }}
-                className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full group transition-all duration-300 ease-out relative hover:border-[#F4B400]/75 ${
+                className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 ease-out relative hover:border-[#F4B400]/75 ${
                   isMostPopular
                     ? 'border-[#0F8B8D]/40 lg:scale-[1.02] shadow-[0_12px_32px_rgba(15,139,141,0.04)] md:hover:-translate-y-1.5 md:hover:shadow-[0_24px_48px_rgba(15,139,141,0.12),_0_0_25px_rgba(244,180,0,0.08)]'
                     : 'border-slate-200/60 shadow-[0_8px_24px_rgba(0,0,0,0.015)] md:hover:-translate-y-1.5 md:hover:shadow-[0_24px_48px_rgba(15,139,141,0.08),_0_0_25px_rgba(244,180,0,0.08)]'
@@ -200,14 +200,14 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                     <>
                       <button
                         onClick={(e) => prevImage(room.id, room.images.length, e)}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/40 backdrop-blur-md text-charcoal border border-white/30 flex items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100 cursor-pointer z-20 shadow-md hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] hover:scale-105"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-[opacity,background-color,border-color,transform] duration-300 opacity-0 group-hover:opacity-100 cursor-pointer z-20 shadow-md hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] md:hover:scale-105"
                         aria-label="Previous image"
                       >
                         <ChevronLeft className="w-5 h-5" />
                       </button>
                       <button
                         onClick={(e) => nextImage(room.id, room.images.length, e)}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/40 backdrop-blur-md text-charcoal border border-white/30 flex items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100 cursor-pointer z-20 shadow-md hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] hover:scale-105"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-[opacity,background-color,border-color,transform] duration-300 opacity-0 group-hover:opacity-100 cursor-pointer z-20 shadow-md hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] md:hover:scale-105"
                         aria-label="Next image"
                       >
                         <ChevronRight className="w-5 h-5" />
@@ -299,10 +299,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                     <div className="mt-4 flex justify-center">
                       <button
                         onClick={() => setSelectedComparison(room.id)}
-                        className="group font-sans text-[11px] font-extrabold text-[#0F8B8D] hover:text-[#0c7274] transition-all cursor-pointer flex items-center gap-1 bg-[#0F8B8D]/5 hover:bg-[#0F8B8D]/10 border border-[#0F8B8D]/10 px-4 py-1.5 rounded-full shadow-3xs hover:scale-[1.02] active:scale-95"
+                        className="group font-sans text-[11px] font-extrabold text-[#0F8B8D] hover:text-[#0c7274] transition-[background-color,border-color,color,box-shadow,transform] duration-200 cursor-pointer flex items-center gap-1 bg-[#0F8B8D]/5 hover:bg-[#0F8B8D]/10 border border-[#0F8B8D]/10 px-4 py-1.5 rounded-full shadow-3xs md:hover:scale-[1.02] active:scale-95"
                       >
                         <span>Explore All Amenities</span>
-                        <span className="text-[11.5px] transition-transform duration-200 group-hover:translate-x-0.5">→</span>
+                        <span className="text-[11.5px] transition-transform duration-200 md:group-hover:translate-x-0.5">→</span>
                       </button>
                     </div>
                   </div>
@@ -318,16 +318,16 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                   <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100/30 mt-auto">
                     <button
                       onClick={() => setSelectedComparison(room.id)}
-                      className="group bg-white border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] hover:bg-[#0F8B8D] hover:text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] hover:-translate-y-0.5 active:translate-y-0 shadow-2xs hover:shadow-sm"
+                      className="group bg-white border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] hover:bg-[#0F8B8D] hover:text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-[background-color,border-color,color,box-shadow,transform] md:transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] md:hover:-translate-y-0.5 active:translate-y-0 shadow-2xs hover:shadow-sm"
                     >
-                      <Info className="w-4 h-4 transition-transform duration-300 group-hover:scale-110 text-current" />
+                      <Info className="w-4 h-4 transition-transform duration-300 md:group-hover:scale-110 text-current" />
                       <span>View Details</span>
                     </button>
                     <button
                       onClick={() => onSelectRoom(room)}
-                      className="group bg-[#0F8B8D] hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] hover:-translate-y-0.5 active:translate-y-0 shadow-[0_2px_8px_rgba(15,139,141,0.12)] hover:shadow-[0_12px_24px_rgba(15,139,141,0.22)]"
+                      className="group bg-[#0F8B8D] hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-[background-color,border-color,color,box-shadow,transform] md:transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] md:hover:-translate-y-0.5 active:translate-y-0 shadow-[0_2px_8px_rgba(15,139,141,0.12)] hover:shadow-[0_12px_24px_rgba(15,139,141,0.22)]"
                     >
-                      <CalendarCheck className="w-4 h-4 text-white transition-transform duration-300 group-hover:rotate-6" />
+                      <CalendarCheck className="w-4 h-4 text-white transition-transform duration-300 md:group-hover:rotate-6" />
                       <span>Book a Visit</span>
                     </button>
                   </div>

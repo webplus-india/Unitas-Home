@@ -87,7 +87,7 @@ async function startServer() {
   const getMetaForPath = (pathname: string, origin: string) => {
     // Default Home Page Metadata
     let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
-    let description = 'Experience premium student & working professional PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
+    let description = 'Experience premium PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
     let image = `${origin}/og-image.jpg?v=3`;
     let imageAlt = 'Unitas Home – Premium PG for Students & Working Professionals in Dehradun';
     const canonical = `${origin}${pathname === '/' ? '' : pathname}`;

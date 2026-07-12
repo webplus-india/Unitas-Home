@@ -82,10 +82,10 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.4 }}
-                className="bg-surface-white p-8 rounded-[24px] border border-border-light/70 shadow-2xs luxury-card-shadow flex flex-col items-center text-center min-h-[250px] group transition-all duration-300 hover:translate-y-[-5px] hover:shadow-[0_16px_32px_rgba(15,139,141,0.08)] hover:border-primary/30 cursor-pointer"
+                className="bg-surface-white p-8 rounded-[24px] border border-border-light/70 shadow-2xs luxury-card-shadow flex flex-col items-center text-center min-h-[250px] group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 md:hover:translate-y-[-5px] hover:shadow-[0_16px_32px_rgba(15,139,141,0.08)] hover:border-primary/30 cursor-pointer"
               >
                 {/* Icon Container with Subtle inner highlight and hover effects */}
-                <div className="w-14 h-14 rounded-[22px] bg-[#ECF9F8] border border-[rgba(0,145,140,0.15)] shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.8),_inset_0_-1px_1px_rgba(0,0,0,0.02)] flex items-center justify-center text-primary mb-6 transition-all duration-[250ms] ease-in-out group-hover:bg-[#D5F2F0] group-hover:border-primary/20 flex-shrink-0 animate-none">
+                <div className="w-14 h-14 rounded-[22px] bg-[#ECF9F8] border border-[rgba(0,145,140,0.15)] shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.8),_inset_0_-1px_1px_rgba(0,0,0,0.02)] flex items-center justify-center text-primary mb-6 transition-[background-color,border-color] duration-[250ms] ease-in-out group-hover:bg-[#D5F2F0] group-hover:border-primary/20 flex-shrink-0 animate-none">
                   <IconComponent className="w-7 h-7 text-primary transition-colors duration-[250ms] ease-in-out" strokeWidth={2.2} />
                 </div>
 
