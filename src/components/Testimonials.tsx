@@ -324,7 +324,8 @@ export default function Testimonials() {
                     style={{ width: `${100 / itemsInView}%` }}
                   >
                     {/* Testimonial Card - perfectly equal height using flex column */}
-                    <div className="group/card bg-white rounded-[24px] border border-neutral-100 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.012)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.035)] hover:border-primary/15 md:hover:-translate-y-1 transition-[border-color,box-shadow,transform] duration-300 flex flex-col justify-between h-full min-h-[440px] relative overflow-hidden">
+                    <div className="group/card bg-white rounded-[24px] border border-neutral-100 p-6 sm:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.012)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.035)] hover:border-primary/15 md:hover:-translate-y-1 transition-[border-color,box-shadow,transform] duration-300 flex flex-col justify-between h-full min-h-[440px] relative overflow-hidden"
+                    >
                       
                       {/* Big decorative back quote inside card */}
                       <div className="absolute top-4 right-4 text-primary/[0.012] group-hover/card:text-primary/[0.025] transition-colors duration-300 pointer-events-none select-none">

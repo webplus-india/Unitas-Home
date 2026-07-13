@@ -290,7 +290,7 @@ export default function Location() {
             </div>
 
             {/* MOBILE ONLY: Horizontal swipeable card slider with snap-mandatory and 1 card visible at a time */}
-            <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 gap-4 pb-4 will-change-scroll transform-gpu isolate">
+            <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 gap-4 pb-4">
               {filteredPlaces.map((place) => {
                 const mapQuery = `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
                 
