@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+
 import { Compass, ShoppingBag, Bus, GraduationCap, HeartPulse, ArrowUpRight, ArrowRight, MapPin, Car } from 'lucide-react';
 
 interface Landmark {
@@ -135,11 +135,8 @@ export default function Location() {
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[40px] text-charcoal tracking-tight leading-tight max-w-[750px] mx-auto">
             Prime Location for Student Living
           </h2>
-          <motion.div 
-            initial={{ width: 0, opacity: 0 }}
-            whileInView={{ width: 64, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+          <div 
+            style={{ width: '64px' }}
             className="h-[2.5px] bg-[#F4B400] mx-auto rounded-full mt-4 mb-2" 
           />
           

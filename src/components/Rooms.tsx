@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+
 import { Users, Shield, CalendarCheck, Check, Info, ArrowRight, Eye, User, Wifi, Bath, Bed, BookOpen, Sparkles, CheckCircle, ChevronLeft, ChevronRight, Lock, Package, Home, Grid2x2, Laptop, ShowerHead, AirVent, DoorClosed, BedDouble, ShieldCheck, ConciergeBell } from 'lucide-react';
 import { ROOMS_DATA } from '../data';
 import { Room } from '../types';
@@ -134,11 +134,8 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-4 mb-6 max-w-lg mx-auto leading-tight">
             Choose Your Ideal<br className="hidden sm:inline" /> PG Room in Dehradun
           </h2>
-          <motion.div 
-            initial={{ width: 0, opacity: 0 }} 
-            whileInView={{ width: 64, opacity: 1 }} 
-            transition={{ duration: 0.6, ease: "easeOut" }} 
-            viewport={{ once: true }} 
+          <div 
+            style={{ width: '64px' }}
             className="h-[2.5px] bg-[#F4B400] mx-auto rounded-full mb-6" 
           />
           <p className="font-sans text-base text-slate-gray leading-relaxed max-w-[760px] mx-auto">
@@ -157,12 +154,8 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
             };
 
             return (
-              <motion.div
+              <div
                 key={room.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.6 }}
                 className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 ease-out relative hover:border-[#F4B400]/75 ${
                   isMostPopular
                     ? 'border-[#0F8B8D]/40 lg:scale-[1.02] shadow-[0_12px_32px_rgba(15,139,141,0.04)] md:hover:-translate-y-1.5 md:hover:shadow-[0_24px_48px_rgba(15,139,141,0.12),_0_0_25px_rgba(244,180,0,0.08)]'
@@ -171,19 +164,17 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
               >
                 {/* Room Image Carousel Container with Zoom Hover and Smooth Transitions */}
                 <div className="relative h-[250px] sm:h-[350px] w-full overflow-hidden bg-charcoal rounded-t-[28px]">
-                  <AnimatePresence initial={false}>
-                    <motion.img
-                      key={currentImgIdx}
-                      src={room.images[currentImgIdx]}
+                  {room.images.map((img, idx) => (
+                    <img
+                      key={idx}
+                      src={img}
                       alt={room.name}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.35 }}
-                      className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 ease-out md:group-hover:scale-[1.03]"
+                      className={`absolute inset-0 w-full h-full object-cover object-center transition-[opacity,transform] duration-500 ease-out md:group-hover:scale-[1.03] ${
+                        currentImgIdx === idx ? 'opacity-100' : 'opacity-0'
+                      }`}
                       referrerPolicy="no-referrer"
                     />
-                  </AnimatePresence>
+                  ))}
                   
                   {/* Subtle dark overlay for badge and control readability */}
                   <div className="absolute inset-0 bg-black/12 pointer-events-none z-10" />
@@ -255,13 +246,11 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                       <span className="font-sans text-xs line-through text-slate-400/50">
                         ₹{room.originalPrice.toLocaleString('en-IN')}
                       </span>
-                      <motion.span 
-                        whileHover={{ scale: 1.06 }} 
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="text-[9.5px] tracking-wider uppercase font-black text-charcoal bg-[#F4B400] px-2.5 py-0.5 rounded-md select-none shadow-3xs cursor-pointer"
+                      <span 
+                        className="text-[9.5px] tracking-wider uppercase font-black text-charcoal bg-[#F4B400] px-2.5 py-0.5 rounded-md select-none shadow-3xs cursor-pointer transition-transform duration-200 hover:scale-105"
                       >
                         SAVE ₹{(room.originalPrice - room.price).toLocaleString('en-IN')}
-                      </motion.span>
+                      </span>
                     </div>
                   </div>
  
@@ -332,7 +321,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                     </button>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
@@ -340,14 +329,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
       </div>
 
       {/* Detail Inclusions Lightbox/Modal */}
-      <AnimatePresence>
         {selectedComparison && (
           <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
             {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+            <div
               onClick={() => setSelectedComparison(null)}
               className="absolute inset-0 bg-charcoal/70 backdrop-blur-xs"
             />
@@ -371,11 +356,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
               };
 
               return (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95, y: 15 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.95, y: 15 }}
-                  transition={{ duration: 0.3 }}
+                <div
                   className="relative bg-white rounded-[24px] overflow-hidden shadow-2xl max-w-xl w-full z-10 border border-slate-100 max-h-[90vh] flex flex-col"
                 >
                   {/* Modal Header */}
@@ -497,12 +478,11 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                       )}
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })()}
           </div>
         )}
-      </AnimatePresence>
     </section>
   );
 }

@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+
 import * as LucideIcons from 'lucide-react';
 import { AMENITIES_DATA } from '../data';
 import { Amenity } from '../types';
@@ -36,11 +36,8 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-6 mb-4">
             Everything Feels Like Home
           </h2>
-          <motion.div 
-            initial={{ width: 0, opacity: 0 }}
-            whileInView={{ width: 48, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+          <div 
+            style={{ width: '48px' }}
             className="h-[2px] bg-[#F4B400] mx-auto rounded-full mb-5" 
           />
           <p className="font-sans text-base text-slate-gray leading-relaxed">
@@ -66,8 +63,7 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
         </div>
 
         {/* Grid List with Standardized heights and perfect alignment */}
-        <motion.div
-          layout
+        <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
           {filteredAmenities.map((amenity) => {
@@ -75,13 +71,8 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
             const IconComponent = (LucideIcons as any)[amenity.iconName] || LucideIcons.HelpCircle;
 
             return (
-              <motion.div
-                layout
+              <div
                 key={amenity.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.4 }}
                 className="bg-surface-white p-8 rounded-[24px] border border-border-light/70 shadow-2xs luxury-card-shadow flex flex-col items-center text-center min-h-[250px] group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 md:hover:translate-y-[-5px] hover:shadow-[0_16px_32px_rgba(15,139,141,0.08)] hover:border-primary/30 cursor-pointer"
               >
                 {/* Icon Container with Subtle inner highlight and hover effects */}
@@ -102,10 +93,10 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
                     {amenity.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
-        </motion.div>
+        </div>
 
 
 
