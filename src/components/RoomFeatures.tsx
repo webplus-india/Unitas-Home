@@ -4,22 +4,14 @@
  */
 
 import React from 'react';
-import { 
-  BedDouble, 
-  Laptop, 
-  ShowerHead, 
-  Wifi, 
-  AirVent, 
-  DoorClosed 
-} from 'lucide-react';
 
 const roomHighlights = [
-  { icon: BedDouble, label: 'Premium Bed & Mattress' },
-  { icon: Laptop, label: 'Study Desk & Chair' },
-  { icon: ShowerHead, label: 'Attached Bathroom' },
-  { icon: Wifi, label: 'High-Speed Wi-Fi' },
-  { icon: AirVent, label: 'Well-Ventilated Room' },
-  { icon: DoorClosed, label: 'Spacious Wardrobe' },
+  'Premium Bed & Mattress',
+  'Study Desk & Chair',
+  'Attached Bathroom',
+  'High-Speed Wi-Fi',
+  'Well-Ventilated Room',
+  'Spacious Wardrobe',
 ];
 
 interface RoomFeaturesProps {
@@ -39,17 +31,15 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
       </div>
 
       {/* Grid of highlights - clean semantic layout */}
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2.5">
-        {roomHighlights.map((highlight, index) => {
-          const HighlightIcon = highlight.icon;
+      <div className="grid grid-cols-2 gap-x-3 gap-y-2.5">
+        {roomHighlights.map((label, index) => {
           return (
             <div 
               key={`${roomId}-feat-${index}`} 
-              className="flex items-center gap-2 px-3 py-1.5 bg-slate-50/40 border border-slate-100/50 rounded-lg select-none"
+              className="flex items-center justify-center text-center px-2.5 py-2 bg-slate-50/40 border border-slate-100/50 rounded-lg select-none"
             >
-              <HighlightIcon className="w-4 h-4 text-[#0F8B8D]/90 shrink-0 stroke-[2]" />
-              <span className="font-sans text-[12px] text-charcoal/80 font-medium tracking-tight truncate leading-none">
-                {highlight.label}
+              <span className="font-sans text-[11.5px] text-charcoal/80 font-semibold tracking-tight leading-snug">
+                {label}
               </span>
             </div>
           );
