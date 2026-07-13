@@ -157,160 +157,160 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
       </div>
 
       {/* Detail Inclusions Lightbox/Modal */}
-        {selectedComparison && (
-          <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
-            {/* Backdrop */}
-            <div
-              onClick={() => setSelectedComparison(null)}
-              className="absolute inset-0 bg-charcoal/70 backdrop-blur-xs"
-            />
+      {selectedComparison && (
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
+          {/* Backdrop - Opaque with no backdrop-blur to avoid GPU issues on mobile */}
+          <div
+            onClick={() => setSelectedComparison(null)}
+            className="absolute inset-0 bg-charcoal/80"
+          />
 
-            {/* Modal Body */}
-            {(() => {
-              const r = ROOMS_DATA.find((x) => x.id === selectedComparison);
-              if (!r) return null;
-              const groups = groupedAmenitiesData[r.id] || {
-                features: r.features,
-                services: [
-                  'Delicious Homestyle Food (4 Meals/Day)',
-                  'Daily Dedicated Housekeeping & Cleaning',
-                  'High-Speed Fiber Wi-Fi',
-                ],
-                security: [
-                  'Personal Locker & Secure Storage',
-                  '24/7 CCTV Security Surveillance',
-                  'Biometric Main Entrance Access'
-                ]
-              };
+          {/* Modal Body */}
+          {(() => {
+            const r = ROOMS_DATA.find((x) => x.id === selectedComparison);
+            if (!r) return null;
+            const groups = groupedAmenitiesData[r.id] || {
+              features: r.features,
+              services: [
+                'Delicious Homestyle Food (4 Meals/Day)',
+                'Daily Dedicated Housekeeping & Cleaning',
+                'High-Speed Fiber Wi-Fi',
+              ],
+              security: [
+                'Personal Locker & Secure Storage',
+                '24/7 CCTV Security Surveillance',
+                'Biometric Main Entrance Access'
+              ]
+            };
 
-              return (
-                <div
-                  className="relative bg-white rounded-[24px] overflow-hidden shadow-2xl max-w-xl w-full z-10 border border-slate-100 max-h-[90vh] flex flex-col"
-                >
-                  {/* Modal Header */}
-                  <div className="px-6 pt-6 pb-4 border-b border-slate-100 flex items-center justify-between">
-                    <div>
-                      <div className="flex items-center space-x-2.5">
-                        <span className="text-[10px] uppercase font-extrabold text-[#0F8B8D] bg-[#0F8B8D]/10 px-2.5 py-1 rounded-md">
-                          {r.occupancy}
-                        </span>
-                        <span className={`text-[10px] uppercase font-black px-2.5 py-1 rounded-md border select-none ${
-                          r.badge.toLowerCase().includes('preferred') || r.badge.toLowerCase().includes('popular')
-                            ? 'bg-[#F4B400] text-charcoal border-transparent'
-                            : r.badge.toLowerCase().includes('privacy')
-                            ? 'bg-[#0B1E36] text-white border-transparent'
-                            : 'bg-emerald-600 text-white border-transparent'
-                        }`}>
-                          {r.badge}
-                        </span>
-                      </div>
-                      <h3 className="font-display font-extrabold text-2xl text-charcoal mt-2">
-                        {r.name} Details
-                      </h3>
+            return (
+              <div
+                className="relative bg-white rounded-[24px] overflow-hidden shadow-2xl max-w-xl w-full z-10 border border-slate-100 max-h-[90vh] flex flex-col"
+              >
+                {/* Modal Header */}
+                <div className="px-6 pt-6 pb-4 border-b border-slate-100 flex items-center justify-between">
+                  <div>
+                    <div className="flex items-center space-x-2.5">
+                      <span className="text-[10px] uppercase font-extrabold text-[#0F8B8D] bg-[#0F8B8D]/10 px-2.5 py-1 rounded-md">
+                        {r.occupancy}
+                      </span>
+                      <span className={`text-[10px] uppercase font-black px-2.5 py-1 rounded-md border select-none ${
+                        r.badge.toLowerCase().includes('preferred') || r.badge.toLowerCase().includes('popular')
+                          ? 'bg-[#F4B400] text-charcoal border-transparent'
+                          : r.badge.toLowerCase().includes('privacy')
+                          ? 'bg-[#0B1E36] text-white border-transparent'
+                          : 'bg-emerald-600 text-white border-transparent'
+                      }`}>
+                        {r.badge}
+                      </span>
                     </div>
-                    <button
-                      onClick={() => setSelectedComparison(null)}
-                      className="w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-500 hover:text-charcoal flex items-center justify-center text-xl font-bold transition-all cursor-pointer"
-                    >
-                      ×
-                    </button>
+                    <h3 className="font-display font-extrabold text-2xl text-charcoal mt-2">
+                      {r.name} Details
+                    </h3>
                   </div>
+                  <button
+                    onClick={() => setSelectedComparison(null)}
+                    className="w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-500 hover:text-charcoal flex items-center justify-center text-xl font-bold transition-all cursor-pointer"
+                  >
+                    ×
+                  </button>
+                </div>
 
-                  {/* Modal Content */}
-                  <div className="p-6 overflow-y-auto space-y-6 flex-grow">
-                    <p className="font-sans text-sm text-slate-gray leading-relaxed">
-                      Every detail of the {r.name} co-living space is optimized for students and working professionals in Dehradun. Here is exactly what is included with your room:
-                    </p>
+                {/* Modal Content */}
+                <div className="p-6 overflow-y-auto space-y-6 flex-grow">
+                  <p className="font-sans text-sm text-slate-gray leading-relaxed">
+                    Every detail of the {r.name} co-living space is optimized for students and working professionals in Dehradun. Here is exactly what is included with your room:
+                  </p>
 
-                    {/* Section 1: Room Features */}
-                    <div>
-                      <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                        <BedDouble className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
-                        <span>Room Essentials</span>
-                      </h4>
-                      <div className="space-y-2">
-                        {groups.features.map((feature, idx) => (
-                          <div key={idx} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                            <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
-                            <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
-                              {feature}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Section 2: Services Included */}
-                    <div>
-                      <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                        <ConciergeBell className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
-                        <span>Services Included</span>
-                      </h4>
-                      <div className="space-y-2">
-                        {groups.services.map((service, idx) => (
-                          <div key={idx} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                            <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
-                            <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
-                              {service}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Section 3: Safety & Security */}
-                    <div>
-                      <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                        <ShieldCheck className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
-                        <span>Safety & Security</span>
-                      </h4>
-                      <div className="space-y-2">
-                        {groups.security.map((sec, idx) => (
-                          <div key={idx} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                            <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
-                            <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
-                              {sec}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
+                  {/* Section 1: Room Features */}
+                  <div>
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
+                      <BedDouble className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                      <span>Room Essentials</span>
+                    </h4>
+                    <div className="space-y-2">
+                      {groups.features.map((feature, idx) => (
+                        <div key={`modal-feature-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
+                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
-                  {/* Modal Footer */}
-                  <div className="p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div>
-                      <span className="block text-[10px] uppercase text-slate-gray/70 font-bold tracking-wider">Monthly Rate</span>
-                      <span className="font-display font-black text-xl text-[#0F8B8D]">₹{r.price.toLocaleString('en-IN')}<span className="text-xs font-semibold text-slate-500">/month</span></span>
+                  {/* Section 2: Services Included */}
+                  <div>
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
+                      <ConciergeBell className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                      <span>Services Included</span>
+                    </h4>
+                    <div className="space-y-2">
+                      {groups.services.map((service, idx) => (
+                        <div key={`modal-service-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
+                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
+                            {service}
+                          </span>
+                        </div>
+                      ))}
                     </div>
-                    <div className="flex flex-wrap gap-2.5">
-                      <button
-                        onClick={() => {
-                          onSelectRoom(r);
-                          setSelectedComparison(null);
-                        }}
-                        className="bg-[#0F8B8D] hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(15,139,141,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                      >
-                        Book a Visit
-                      </button>
-                      {onReserveRoom && (
-                        <button
-                          onClick={() => {
-                            onReserveRoom(r);
-                            setSelectedComparison(null);
-                          }}
-                          className="bg-[#F4B400] hover:bg-[#D99A00] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(244,180,0,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                        >
-                          Reserve Room
-                        </button>
-                      )}
+                  </div>
+
+                  {/* Section 3: Safety & Security */}
+                  <div>
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
+                      <ShieldCheck className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                      <span>Safety & Security</span>
+                    </h4>
+                    <div className="space-y-2">
+                      {groups.security.map((sec, idx) => (
+                        <div key={`modal-security-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
+                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
+                            {sec}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
-              );
-            })()}
-          </div>
-        )}
+
+                {/* Modal Footer */}
+                <div className="p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <span className="block text-[10px] uppercase text-slate-gray/70 font-bold tracking-wider">Monthly Rate</span>
+                    <span className="font-display font-black text-xl text-[#0F8B8D]">₹{r.price.toLocaleString('en-IN')}<span className="text-xs font-semibold text-slate-500">/month</span></span>
+                  </div>
+                  <div className="flex flex-wrap gap-2.5">
+                    <button
+                      onClick={() => {
+                        onSelectRoom(r);
+                        setSelectedComparison(null);
+                      }}
+                      className="bg-[#0F8B8D] hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(15,139,141,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                    >
+                      Book a Visit
+                    </button>
+                    {onReserveRoom && (
+                      <button
+                        onClick={() => {
+                          onReserveRoom(r);
+                          setSelectedComparison(null);
+                        }}
+                        className="bg-[#F4B400] hover:bg-[#D99A00] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(244,180,0,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                      >
+                        Reserve Room
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+      )}
     </section>
   );
 }
