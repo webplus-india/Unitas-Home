@@ -67,10 +67,11 @@ export default function Header({
     <>
       {/* Thin Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-[2.5px] bg-primary z-[60] origin-left"
-        style={{ scaleX }}
+        className="fixed top-0 left-0 right-0 h-[2.5px] bg-primary z-[60] origin-left pointer-events-none"
+        style={{ scaleX, willChange: 'transform', transform: 'translateZ(0)' }}
       />
       <header
+        style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled || showDashboard
             ? 'bg-bg-warm/98 md:bg-bg-warm/95 md:backdrop-blur-md border-b border-border-light shadow-xs py-3'

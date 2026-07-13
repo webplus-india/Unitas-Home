@@ -147,7 +147,6 @@ export default function MobileBottomBar({ onBookVisit }: MobileBottomBarProps) {
       <AnimatePresence>
         {finalIsVisible && (
           <motion.div
-            layout
             initial={isDocked ? { y: 0, opacity: 1 } : { y: '100%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '100%', opacity: 0 }}
@@ -156,6 +155,7 @@ export default function MobileBottomBar({ onBookVisit }: MobileBottomBarProps) {
               ease: 'easeOut',
               duration: 0.2,
             }}
+            style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
             className={isDocked 
               ? "w-full pointer-events-auto bg-transparent border-t-0 shadow-none px-3 pt-2 pb-[calc(8px+env(safe-area-inset-bottom))] select-none"
               : "w-full pointer-events-auto bg-white border-t border-black/[0.06] shadow-[0_-3px_12px_rgba(0,0,0,0.08)] rounded-t-[16px] px-3 pt-2 pb-[calc(8px+env(safe-area-inset-bottom))] select-none"

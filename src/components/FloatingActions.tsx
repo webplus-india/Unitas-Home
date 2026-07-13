@@ -90,6 +90,7 @@ export default function FloatingActions() {
             initial="initial"
             animate="animate"
             exit="exit"
+            style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
             className="w-[60px] h-[60px] md:w-[64px] md:h-[64px] rounded-full bg-[#25D366] hover:bg-[#20C45A] text-white flex items-center justify-center cursor-pointer shadow-[0_10px_25px_-5px_rgba(37,211,102,0.25)] transition-colors duration-200"
             title="Chat on WhatsApp"
             aria-label="Chat with us on WhatsApp"
