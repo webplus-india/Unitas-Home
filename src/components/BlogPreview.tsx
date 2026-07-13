@@ -70,7 +70,7 @@ export default function BlogPreview({
                     referrerPolicy="no-referrer"
                   />
                   {/* Category Tag */}
-                  <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-xs text-charcoal font-display font-bold text-[9px] tracking-widest uppercase px-3 py-1.5 rounded-full shadow-2xs border border-gray-100">
+                  <span className="absolute top-4 left-4 bg-white text-charcoal font-display font-bold text-[9px] tracking-widest uppercase px-3 py-1.5 rounded-full shadow-2xs border border-gray-100">
                     {post.category}
                   </span>
                 </div>

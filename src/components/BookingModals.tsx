@@ -132,12 +132,12 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
       className="fixed inset-0 z-100 flex items-end lg:items-center justify-center p-0 lg:p-4 select-none"
       onClick={handleBackdropClick}
     >
-      {/* Backdrop with Blur */}
+      {/* Backdrop with Blur - Optimized with bg-black/65 on mobile to avoid compositor layer trees and rendering bugs on mobile browsers */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="absolute inset-0 bg-black/55 backdrop-blur-[6px]"
+        className="absolute inset-0 bg-black/65 lg:bg-black/55 lg:backdrop-blur-[6px]"
       />
 
       {/* Reusable Popup Box */}
@@ -510,12 +510,12 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
       className="fixed inset-0 z-100 flex items-end lg:items-center justify-center p-0 lg:p-4 select-none"
       onClick={handleBackdropClick}
     >
-      {/* Backdrop with Blur */}
+      {/* Backdrop with Blur - Optimized with bg-black/65 on mobile to avoid compositor layer trees and rendering bugs on mobile browsers */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="absolute inset-0 bg-black/55 backdrop-blur-[6px]"
+        className="absolute inset-0 bg-black/65 lg:bg-black/55 lg:backdrop-blur-[6px]"
       />
 
       {/* Reusable Popup Box */}

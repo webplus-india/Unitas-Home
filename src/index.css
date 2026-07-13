@@ -81,17 +81,15 @@
   scrollbar-width: none;
 }
 
-/* Staggered premium star shimmer animations */
+/* Staggered premium star shimmer animations - Optimized to avoid CSS filter paint storms */
 @keyframes star-shimmer {
   0%, 100% {
     opacity: 1;
     transform: scale(1);
-    filter: brightness(1) drop-shadow(0 0 0px rgba(244, 180, 0, 0));
   }
   50% {
-    opacity: 0.9;
-    transform: scale(1.05);
-    filter: brightness(1.2) drop-shadow(0 0 3px rgba(244, 180, 0, 0.4));
+    opacity: 0.85;
+    transform: scale(1.08);
   }
 }
 

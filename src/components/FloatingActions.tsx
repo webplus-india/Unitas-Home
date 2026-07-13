@@ -53,25 +53,13 @@ export default function FloatingActions() {
     initial: {
       opacity: 0,
       scale: 0.8,
-      boxShadow: '0 8px 20px rgba(37, 211, 102, 0.15)',
     },
     animate: {
       opacity: 1,
       scale: [1, 1.045, 1],
-      boxShadow: [
-        '0 10px 25px -5px rgba(37, 211, 102, 0.25), 0 8px 10px -6px rgba(37, 211, 102, 0.15), 0 0 0px rgba(37, 211, 102, 0)',
-        '0 14px 35px -5px rgba(37, 211, 102, 0.35), 0 10px 15px -6px rgba(37, 211, 102, 0.22), 0 0 15px rgba(37, 211, 102, 0.2)',
-        '0 10px 25px -5px rgba(37, 211, 102, 0.25), 0 8px 10px -6px rgba(37, 211, 102, 0.15), 0 0 0px rgba(37, 211, 102, 0)',
-      ],
       transition: {
         opacity: { duration: 0.3, ease: 'easeOut' },
         scale: {
-          duration: 2.9,
-          ease: 'easeInOut',
-          repeat: Infinity,
-          repeatType: 'loop',
-        },
-        boxShadow: {
           duration: 2.9,
           ease: 'easeInOut',
           repeat: Infinity,

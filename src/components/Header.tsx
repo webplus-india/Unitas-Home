@@ -73,8 +73,8 @@ export default function Header({
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled || showDashboard
-            ? 'bg-bg-warm/95 backdrop-blur-md border-b border-border-light shadow-xs py-3'
-            : 'bg-bg-warm/40 backdrop-blur-sm py-4'
+            ? 'bg-bg-warm/98 md:bg-bg-warm/95 md:backdrop-blur-md border-b border-border-light shadow-xs py-3'
+            : 'bg-bg-warm/95 md:bg-bg-warm/40 md:backdrop-blur-sm py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto pl-6 pr-6 sm:px-6 lg:px-8">

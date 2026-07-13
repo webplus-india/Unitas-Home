@@ -121,8 +121,8 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                 <div className="absolute inset-0 bg-[#F4B400]/6 pointer-events-none z-10" />
               </div>
 
-              {/* Glassmorphism Floating Trust Badge - Premium Golden Yellow & Teal Accents */}
-              <div className="absolute top-[4%] right-[2%] bg-white/90 backdrop-blur-md border border-white/60 px-4 py-2.5 rounded-[24px] shadow-[0_4px_16px_rgba(0,0,0,0.04)] flex items-center gap-2.5 z-20 animate-soft-float select-none">
+              {/* Floating Trust Badge - Premium Golden Yellow & Teal Accents - Optimized with plain solid white background to avoid rendering bugs under CSS float translation */}
+              <div className="absolute top-[4%] right-[2%] bg-white border border-neutral-100/80 px-4 py-2.5 rounded-[24px] shadow-[0_6px_20px_rgba(0,0,0,0.06)] flex items-center gap-2.5 z-20 animate-soft-float select-none">
                 <span className="text-[#F4B400] text-sm font-bold">★</span>
                 <div className="text-left">
                   <p className="font-sans font-bold text-[13px] text-charcoal leading-none tracking-tight">

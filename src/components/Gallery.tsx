@@ -88,14 +88,10 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
           ))}
         </div>
 
-        {/* Masonry Layout */}
-        <motion.div 
-          layout
-          className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6"
-        >
+        {/* Masonry Layout - Optimized with static wrappers to avoid multi-column layout thrashing on Android Chrome */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
           {filteredData.map((item) => (
             <motion.div
-              layout
               key={item.id}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +127,7 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Gallery End CTA */}
         <div className="mt-20 text-center max-w-3xl mx-auto bg-[#FFFDF6] rounded-[24px] py-14 px-8 sm:py-16 sm:px-16 border border-[#F4B400]/20 shadow-md shadow-[#F4B400]/5 transition-all duration-300 hover:bg-[#FFF9E8]">

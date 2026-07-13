@@ -139,7 +139,7 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
                 href="https://www.google.com/maps/place/Unitas+Home/@30.3129849,78.0315366,17z/data=!4m8!3m7!1s0x390929bf5402ef79:0xfa6ffc5c9478a1a3!8m2!3d30.3129849!4d78.0315366!9m1!1b1!16s%2Fg%2F11wsp0vmdm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex flex-col items-start bg-white/[0.04] border border-white/8 rounded-2xl p-3.5 mb-6 select-none backdrop-blur-xs transition-all duration-250 ease-out hover:bg-white/[0.08] hover:border-white/12 hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:brightness-110 cursor-pointer text-left group"
+                className="inline-flex flex-col items-start bg-white/[0.06] border border-white/8 rounded-2xl p-3.5 mb-6 select-none transition-all duration-250 ease-out hover:bg-white/[0.09] hover:border-white/12 hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:brightness-110 cursor-pointer text-left group"
               >
                 <div className="flex items-center space-x-0.5 mb-1.5">
                   {[1, 2, 3, 4, 5].map((s) => (
@@ -338,7 +338,7 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
               href="https://www.google.com/maps/place/Unitas-Home/@30.3129849,78.0315366,17z/data=!4m8!3m7!1s0x390929bf5402ef79:0xfa6ffc5c9478a1a3!8m2!3d30.3129849!4d78.0315366!9m1!1b1!16s%2Fg%2F11wsp0vmdm"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-col items-center bg-white/[0.04] border border-white/8 rounded-2xl p-3.5 mt-5 mb-1 select-none backdrop-blur-xs mx-auto transition-all duration-250 ease-out hover:bg-white/[0.08] hover:border-white/12 hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:brightness-110 cursor-pointer text-center group"
+              className="inline-flex flex-col items-center bg-white/[0.06] border border-white/8 rounded-2xl p-3.5 mt-5 mb-1 select-none mx-auto transition-all duration-250 ease-out hover:bg-white/[0.09] hover:border-white/12 hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:brightness-110 cursor-pointer text-center group"
             >
               <div className="flex items-center space-x-0.5 mb-1.5">
                 {[1, 2, 3, 4, 5].map((s) => (
