@@ -6,12 +6,12 @@
 import React from 'react';
 
 const roomHighlights = [
-  'Premium Bed & Mattress',
-  'Study Desk & Chair',
-  'Attached Bathroom',
-  'High-Speed Wi-Fi',
-  'Well-Ventilated Room',
-  'Spacious Wardrobe',
+  { icon: '/icons/bed.svg', label: 'Premium Bed & Mattress' },
+  { icon: '/icons/desk.svg', label: 'Study Desk & Chair' },
+  { icon: '/icons/bathroom.svg', label: 'Attached Bathroom' },
+  { icon: '/icons/wifi.svg', label: 'High-Speed Wi-Fi' },
+  { icon: '/icons/window.svg', label: 'Well-Ventilated Room' },
+  { icon: '/icons/wardrobe.svg', label: 'Spacious Wardrobe' },
 ];
 
 interface RoomFeaturesProps {
@@ -31,15 +31,24 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
       </div>
 
       {/* Grid of highlights - clean semantic layout */}
-      <div className="grid grid-cols-2 gap-x-3 gap-y-2.5">
-        {roomHighlights.map((label, index) => {
+      <div className="grid grid-cols-2 gap-3">
+        {roomHighlights.map((item, index) => {
           return (
             <div 
               key={`${roomId}-feat-${index}`} 
-              className="flex items-center justify-center text-center px-2.5 py-2 bg-slate-50/40 border border-slate-100/50 rounded-lg select-none"
+              className="flex items-center gap-[10px] flex-nowrap px-3.5 py-3 bg-white border border-slate-100 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.015)] select-none h-full transition-[border-color,box-shadow] duration-200 md:hover:border-[#0F8B8D]/25 md:hover:shadow-[0_4px_12px_rgba(15,139,141,0.03)]"
             >
-              <span className="font-sans text-[11.5px] text-charcoal/80 font-semibold tracking-tight leading-snug">
-                {label}
+              <img 
+                src={item.icon} 
+                alt="" 
+                width="20" 
+                height="20" 
+                loading="lazy" 
+                decoding="async"
+                className="w-5 h-5 shrink-0"
+              />
+              <span className="font-sans text-[11.5px] sm:text-[12px] text-charcoal/80 font-semibold tracking-tight leading-snug flex-1">
+                {item.label}
               </span>
             </div>
           );
