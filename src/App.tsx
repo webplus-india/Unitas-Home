@@ -568,11 +568,11 @@ export default function App() {
               onBookVisit={() => setIsBookVisitOpen(true)}
             />
 
-            {/* Premium Room Showcase */}
-            <Rooms 
+            {/* Premium Room Showcase - Temporarily disabled for debugging */}
+            {/* <Rooms 
               onSelectRoom={handleSelectRoomForBooking} 
               onReserveRoom={handleSelectRoomForReserve}
-            />
+            /> */}
 
             {/* Categorized Amenities */}
             <Amenities
