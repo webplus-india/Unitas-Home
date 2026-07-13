@@ -52,14 +52,14 @@ export default function RoomCard({
 
   return (
     <div
-      className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full relative transition-all duration-300 ease-out group ${
+      className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full relative transition-[border-color,box-shadow] duration-200 ease-out group ${
         isMostPopular
-          ? 'border-[#0F8B8D]/40 lg:scale-[1.01] shadow-sm md:hover:-translate-y-1 md:hover:border-[#F4B400]/75 md:hover:shadow-md'
-          : 'border-slate-200/60 shadow-sm md:hover:-translate-y-1 md:hover:border-[#F4B400]/75 md:hover:shadow-md'
+          ? 'border-[#0F8B8D]/40 shadow-sm md:hover:border-[#F4B400]/75 md:hover:shadow-md'
+          : 'border-slate-200/60 shadow-sm md:hover:border-[#F4B400]/75 md:hover:shadow-md'
       }`}
     >
       {/* Room Image Carousel Container */}
-      <div className="relative h-[250px] sm:h-[350px] w-full overflow-hidden bg-charcoal rounded-t-[28px] select-none">
+      <div className="relative h-[250px] sm:h-[350px] w-full overflow-hidden bg-charcoal rounded-t-[24px] select-none">
         {room.images.map((img, idx) => (
           <img
             key={`${room.id}-image-${idx}`}
@@ -69,7 +69,7 @@ export default function RoomCard({
             decoding="async"
             width={600}
             height={350}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ease-out md:group-hover:scale-[1.02] md:transition-[opacity,transform] ${
+            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ease-in-out ${
               currentImgIdx === idx ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
             referrerPolicy="no-referrer"
@@ -91,14 +91,14 @@ export default function RoomCard({
           <>
             <button
               onClick={onPrevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-all duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] md:hover:scale-105"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-colors duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D]"
               aria-label="Previous image"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={onNextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-all duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D] md:hover:scale-105"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-colors duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D]"
               aria-label="Next image"
             >
               <ChevronRight className="w-5 h-5" />
@@ -115,8 +115,8 @@ export default function RoomCard({
                 e.stopPropagation();
                 onSetImageIdx(i);
               }}
-              className={`w-1.5 h-1.5 rounded-full transition-all duration-200 cursor-pointer ${
-                currentImgIdx === i ? 'bg-[#F4B400] w-4' : 'bg-white/50 hover:bg-white/80'
+              className={`w-1.5 h-1.5 rounded-full transition-[background-color,width] duration-200 cursor-pointer ${
+                currentImgIdx === i ? 'bg-[#F4B400] w-4' : 'bg-white/50 hover:bg-white/85'
               }`}
               aria-label={`Go to slide ${i + 1}`}
             />
@@ -145,7 +145,7 @@ export default function RoomCard({
               ₹{room.originalPrice.toLocaleString('en-IN')}
             </span>
             <span 
-              className="text-[9.5px] tracking-wider uppercase font-black text-charcoal bg-[#F4B400] px-2.5 py-0.5 rounded-md select-none transition-all duration-200 md:hover:scale-105"
+              className="text-[9.5px] tracking-wider uppercase font-black text-charcoal bg-[#F4B400] px-2.5 py-0.5 rounded-md select-none"
             >
               SAVE ₹{(room.originalPrice - room.price).toLocaleString('en-IN')}
             </span>
@@ -186,7 +186,7 @@ export default function RoomCard({
           <div className="mt-4 flex justify-center">
             <button
               onClick={() => onExploreAmenities(room.id)}
-              className="group font-sans text-[11px] font-extrabold text-[#0F8B8D] md:hover:text-[#0c7274] transition-all duration-200 cursor-pointer flex items-center gap-1 bg-[#0F8B8D]/5 hover:bg-[#0F8B8D]/10 border border-[#0F8B8D]/10 px-4 py-1.5 rounded-full shadow-sm md:hover:scale-[1.02] active:scale-95"
+              className="group font-sans text-[11px] font-extrabold text-[#0F8B8D] md:hover:text-[#0c7274] transition-colors duration-200 cursor-pointer flex items-center gap-1 bg-[#0F8B8D]/5 hover:bg-[#0F8B8D]/10 border border-[#0F8B8D]/10 px-4 py-1.5 rounded-full shadow-sm"
             >
               <span>Explore All Amenities</span>
               <span className="text-[11.5px] transition-transform duration-200 md:group-hover:translate-x-0.5">→</span>
@@ -205,16 +205,16 @@ export default function RoomCard({
         <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100/30 mt-auto">
           <button
             onClick={() => onExploreAmenities(room.id)}
-            className="group bg-white border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] md:hover:bg-[#0F8B8D] md:hover:text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] md:hover:-translate-y-0.5 active:translate-y-0 shadow-sm"
+            className="group bg-white border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] md:hover:bg-[#0F8B8D] md:hover:text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] shadow-sm"
           >
-            <Info className="w-4 h-4 transition-transform duration-200 md:group-hover:scale-110 text-current" />
+            <Info className="w-4 h-4 text-current" />
             <span>View Details</span>
           </button>
           <button
             onClick={() => onSelectRoom(room)}
-            className="group bg-[#0F8B8D] md:hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] md:hover:-translate-y-0.5 active:translate-y-0 shadow-sm"
+            className="group bg-[#0F8B8D] md:hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] shadow-sm"
           >
-            <CalendarCheck className="w-4 h-4 text-white transition-transform duration-200 md:group-hover:rotate-6" />
+            <CalendarCheck className="w-4 h-4 text-white" />
             <span>Book a Visit</span>
           </button>
         </div>

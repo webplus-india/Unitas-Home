@@ -224,18 +224,18 @@ export default function Location() {
                 return (
                   <div
                     key={place.id}
-                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs hover:border-primary/30 hover:shadow-lg md:hover:-translate-y-1.5 transition-[border-color,box-shadow,transform] duration-300 flex flex-col justify-between h-full min-h-[250px]"
+                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs hover:border-primary/30 hover:shadow-lg transition-[border-color,box-shadow] duration-200 flex flex-col justify-between h-full min-h-[250px]"
                   >
                     <div className="space-y-4">
                       {/* Header with Icon and Name */}
                       <div className="flex items-start space-x-3.5">
-                        <div className="w-14 h-14 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center md:group-hover/card:bg-primary/10 md:group-hover/card:scale-105 md:group-hover/card:rotate-2 transition-[background-color,border-color,transform] duration-300 flex-shrink-0 mt-0.5">
+                        <div className="w-14 h-14 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center md:group-hover/card:bg-primary/10 transition-[background-color,border-color] duration-200 flex-shrink-0 mt-0.5">
                           {place.category === 'Colleges' && <GraduationCap size={22} strokeWidth={2} className="text-primary" />}
                           {place.category === 'Hospitals' && <HeartPulse size={22} strokeWidth={2} className="text-primary" />}
                           {place.category === 'Shopping' && <ShoppingBag size={22} strokeWidth={2} className="text-primary" />}
                           {place.category === 'Transport' && <Bus size={22} strokeWidth={2} className="text-amber-500" />}
                         </div>
-                        <h4 className="font-display font-extrabold text-base text-charcoal leading-snug group-hover/card:text-primary transition-colors duration-300 pt-1">
+                        <h4 className="font-display font-extrabold text-base text-charcoal leading-snug group-hover/card:text-primary transition-colors duration-200 pt-1">
                           {place.name}
                         </h4>
                       </div>
@@ -274,10 +274,10 @@ export default function Location() {
                           href={mapQuery}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark transition-colors duration-300 mt-1 cursor-pointer group/link w-fit"
+                          className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark transition-colors duration-200 mt-1 cursor-pointer group/link w-fit"
                         >
                           <span>View Directions</span>
-                          <ArrowUpRight size={16} strokeWidth={2} className="ml-1 text-primary transform md:group-hover/link:translate-x-0.5 md:group-hover/link:-translate-y-0.5 transition-transform duration-300" />
+                          <ArrowUpRight size={16} strokeWidth={2} className="ml-1 text-primary transition-transform duration-200 md:group-hover/link:translate-x-0.5 md:group-hover/link:-translate-y-0.5" />
                         </a>
                       </div>
                     </div>
@@ -286,68 +286,61 @@ export default function Location() {
               })}
             </div>
 
-            {/* MOBILE ONLY: Horizontal swipeable card slider with snap-mandatory and 1 card visible at a time */}
-            <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-none -mx-4 px-4 gap-4 pb-4">
+            {/* MOBILE ONLY: Vertical grid layout instead of horizontal swipeable slider */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">
               {filteredPlaces.map((place) => {
                 const mapQuery = `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
                 
                 return (
                   <div
                     key={place.id}
-                    className="snap-center shrink-0 w-[calc(100vw-32px)] bg-white p-6 rounded-[24px] border border-border-light/40 shadow-xs flex flex-col justify-between min-h-[240px]"
+                    className="bg-white p-5 rounded-[20px] border border-border-light/40 shadow-xs flex flex-col justify-between h-full min-h-[160px]"
                   >
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                       {/* Header with Icon and Name */}
-                      <div className="flex items-start space-x-3.5">
-                        <div className="w-12 h-12 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                          {place.category === 'Colleges' && <GraduationCap size={20} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Hospitals' && <HeartPulse size={20} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Shopping' && <ShoppingBag size={20} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Transport' && <Bus size={20} strokeWidth={2} className="text-amber-500" />}
+                      <div className="flex items-start space-x-3">
+                        <div className="w-10 h-10 rounded-[14px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_1px_4px_rgba(0,0,0,0.01)] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          {place.category === 'Colleges' && <GraduationCap size={18} strokeWidth={2.2} className="text-primary" />}
+                          {place.category === 'Hospitals' && <HeartPulse size={18} strokeWidth={2.2} className="text-primary" />}
+                          {place.category === 'Shopping' && <ShoppingBag size={18} strokeWidth={2.2} className="text-primary" />}
+                          {place.category === 'Transport' && <Bus size={18} strokeWidth={2.2} className="text-amber-500" />}
                         </div>
-                        <h4 className="font-display font-extrabold text-base text-charcoal leading-snug pt-0.5">
+                        <h4 className="font-display font-extrabold text-[14.5px] text-charcoal leading-snug pt-0.5">
                           {place.name}
                         </h4>
                       </div>
 
                       {/* Description */}
-                      <p className="font-sans text-xs text-slate-gray leading-relaxed line-clamp-2">
+                      <p className="font-sans text-[11.5px] text-slate-gray leading-relaxed line-clamp-2">
                         {place.description}
                       </p>
                     </div>
 
                     <div>
                       {/* Subtle Divider */}
-                      <div className="my-4 border-t border-border-light/30" />
+                      <div className="my-3.5 border-t border-border-light/30" />
 
-                      {/* Distance + Travel Time in Elegant Badges & Directions Link */}
-                      <div className="flex flex-col space-y-3">
-                        <div className="flex flex-wrap gap-2">
-                          {/* Distance Chip */}
-                          <span className="inline-flex items-center space-x-1.5 bg-primary/[0.03] border border-primary/5 px-2.5 py-1 rounded-full text-[10px] text-slate-gray font-bold">
-                            <MapPin size={14} strokeWidth={2} className="text-primary" />
-                            <span>{place.distance}</span>
-                          </span>
-                          {/* Travel Time Chip */}
-                          <span className="inline-flex items-center space-x-1.5 bg-[#FAFBFC] border border-border-light/60 px-2.5 py-1 rounded-full text-[10px] text-slate-gray font-bold">
-                            {place.time.toLowerCase().includes('walk') ? (
-                              <PersonWalking size={14} strokeWidth={2} className="text-primary" />
-                            ) : (
-                              <Car size={14} strokeWidth={2} className="text-primary" />
-                            )}
-                            <span>{place.time}</span>
-                          </span>
-                        </div>
+                      {/* Distance + Travel Time Highlight Pill & Directions Link */}
+                      <div className="flex items-center justify-between">
+                        {/* Distance & Time Highlight Pill */}
+                        <span className="inline-flex items-center space-x-1.5 bg-primary px-3 py-1.5 rounded-full text-[10px] text-white font-black shadow-xs select-none">
+                          {place.time.toLowerCase().includes('walk') ? (
+                            <PersonWalking size={12} strokeWidth={2.5} className="text-white" />
+                          ) : (
+                            <Car size={12} strokeWidth={2.5} className="text-white" />
+                          )}
+                          <span>{place.distance.replace('meters', 'm')} • {place.time}</span>
+                        </span>
 
-                        {/* Small Text Link to Google Maps with sliding arrow */}
+                        {/* Directions text link */}
                         <a
                           href={mapQuery}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark transition-colors duration-300 mt-1 cursor-pointer group/link w-fit"
+                          className="inline-flex items-center text-xs font-black text-primary hover:text-primary-dark transition-colors duration-200 cursor-pointer h-8 px-2 rounded-lg hover:bg-primary/5"
                         >
-                          <span>View Directions</span>
-                          <ArrowUpRight size={16} strokeWidth={2} className="ml-1 text-primary transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-300" />
+                          <span>Directions</span>
+                          <ArrowUpRight size={14} strokeWidth={2.5} className="ml-0.5 text-primary" />
                         </a>
                       </div>
                     </div>
