@@ -160,11 +160,9 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
       {selectedComparison && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
           {/* Backdrop - Opaque with no backdrop-blur to avoid GPU issues on mobile */}
-          <button
-            type="button"
+          <div
             onClick={() => setSelectedComparison(null)}
-            className="absolute inset-0 bg-charcoal/80 w-full h-full border-0 p-0 m-0 cursor-default"
-            aria-label="Close modal background"
+            className="absolute inset-0 bg-charcoal/80"
           />
 
           {/* Modal Body */}
@@ -212,9 +210,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                   </div>
                   <button
                     onClick={() => setSelectedComparison(null)}
-                    type="button"
                     className="w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-100 text-slate-500 hover:text-charcoal flex items-center justify-center text-xl font-bold transition-all cursor-pointer"
-                    aria-label="Close modal"
                   >
                     ×
                   </button>
@@ -293,8 +289,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                         onSelectRoom(r);
                         setSelectedComparison(null);
                       }}
-                      type="button"
-                      className="bg-[#0F8B8D] md:hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                      className="bg-[#0F8B8D] hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(15,139,141,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
                     >
                       Book a Visit
                     </button>
@@ -304,8 +299,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                           onReserveRoom(r);
                           setSelectedComparison(null);
                         }}
-                        type="button"
-                        className="bg-[#F4B400] md:hover:bg-[#D99A00] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                        className="bg-[#F4B400] hover:bg-[#D99A00] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(244,180,0,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
                       >
                         Reserve Room
                       </button>

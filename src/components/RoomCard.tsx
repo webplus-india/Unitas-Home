@@ -18,6 +18,7 @@ import {
   AirVent, 
   DoorClosed 
 } from 'lucide-react';
+import ExploreAmenitiesButton from './ExploreAmenitiesButton';
 
 const roomHighlights = [
   { icon: BedDouble, label: 'Premium Bed & Mattress' },
@@ -91,6 +92,7 @@ export default function RoomCard({
           <>
             <button
               onClick={onPrevImage}
+              type="button"
               className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-colors duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D]"
               aria-label="Previous image"
             >
@@ -98,6 +100,7 @@ export default function RoomCard({
             </button>
             <button
               onClick={onNextImage}
+              type="button"
               className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white text-charcoal border border-slate-200/80 flex items-center justify-center transition-colors duration-200 opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer z-20 shadow-sm hover:bg-[#0F8B8D] hover:text-white hover:border-[#0F8B8D]"
               aria-label="Next image"
             >
@@ -111,6 +114,7 @@ export default function RoomCard({
           {room.images.map((_, i) => (
             <button
               key={`${room.id}-dot-${i}`}
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 onSetImageIdx(i);
@@ -184,13 +188,7 @@ export default function RoomCard({
           </div>
 
           <div className="mt-4 flex justify-center">
-            <button
-              onClick={() => onExploreAmenities(room.id)}
-              className="group font-sans text-[11px] font-extrabold text-[#0F8B8D] md:hover:text-[#0c7274] transition-colors duration-200 cursor-pointer flex items-center gap-1 bg-[#0F8B8D]/5 hover:bg-[#0F8B8D]/10 border border-[#0F8B8D]/10 px-4 py-1.5 rounded-full shadow-sm"
-            >
-              <span>Explore All Amenities</span>
-              <span className="text-[11.5px] transition-transform duration-200 md:group-hover:translate-x-0.5">→</span>
-            </button>
+            <ExploreAmenitiesButton onClick={() => onExploreAmenities(room.id)} />
           </div>
         </div>
 
@@ -205,6 +203,7 @@ export default function RoomCard({
         <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-100/30 mt-auto">
           <button
             onClick={() => onExploreAmenities(room.id)}
+            type="button"
             className="group bg-white border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] md:hover:bg-[#0F8B8D] md:hover:text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] shadow-sm"
           >
             <Info className="w-4 h-4 text-current" />
@@ -212,6 +211,7 @@ export default function RoomCard({
           </button>
           <button
             onClick={() => onSelectRoom(room)}
+            type="button"
             className="group bg-[#0F8B8D] md:hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider py-3 rounded-[18px] transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer h-[44px] shadow-sm"
           >
             <CalendarCheck className="w-4 h-4 text-white" />
