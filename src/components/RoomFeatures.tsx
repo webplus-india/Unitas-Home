@@ -7,8 +7,8 @@ import React from 'react';
 
 const roomHighlights = [
   { icon: '/icons/bed.svg', label: 'Premium Bed & Mattress' },
-  { icon: '/icons/desk.svg', label: 'Study Desk & Chair' },
-  { icon: '/icons/bathroom.svg', label: 'Attached Bathroom' },
+  { icon: '/icons/desk-chair.svg', label: 'Study Desk & Chair' },
+  { icon: '/icons/shower.svg', label: 'Attached Bathroom' },
   { icon: '/icons/wifi.svg', label: 'High-Speed Wi-Fi' },
   { icon: '/icons/window.svg', label: 'Well-Ventilated Room' },
   { icon: '/icons/wardrobe.svg', label: 'Spacious Wardrobe' },

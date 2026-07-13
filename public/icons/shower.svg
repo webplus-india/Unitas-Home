@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F8B8D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Shower pipe -->
+  <path d="M4 22V7a4 4 0 0 1 4-4h8" />
+  <path d="M16 3v4" />
+  <!-- Sprinkle head -->
+  <path d="M13 7h6a1 1 0 0 1 1 1v1H12V8a1 1 0 0 1 1-1z" />
+  <!-- Droplets/sprays -->
+  <path d="M14 12v3" />
+  <path d="M16 12v4" />
+  <path d="M18 12v3" />
+</svg>

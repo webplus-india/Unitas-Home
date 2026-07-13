@@ -110,7 +110,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
     {
       icon: CheckCircle2,
       title: 'Acceptance of Terms',
-      description: 'By browsing and using this website, you explicitly agree to follow our defined Terms of Service.',
+      description: 'By browsing and using this website, you explicitly agree to follow our defined Terms & Conditions.',
       color: 'text-[#0F8B8D] bg-[#ECF9F8]'
     },
     {
@@ -171,7 +171,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
   const faqs = [
     {
       question: 'Can these Terms change?',
-      answer: 'Yes, we periodically update these Terms of Service to reflect shifts in regional legislation, operational practices, or website tools. We indicate the latest revision date clearly at the top of this page.'
+      answer: 'Yes, we periodically update these Terms & Conditions to reflect shifts in regional legislation, operational practices, or website tools. We indicate the latest revision date clearly at the top of this page.'
     },
     {
       question: 'Is submitting a booking request a confirmed reservation?',
@@ -228,7 +228,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               Home
             </button>
             <span className="text-white/40">/</span>
-            <span className="text-white/90">Terms of Service</span>
+            <span className="text-white/90">Terms & Conditions</span>
           </nav>
 
           <span className="font-sans text-xs font-bold text-[#F4B400] tracking-widest uppercase mb-3 block">
@@ -236,11 +236,11 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
           </span>
 
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-white leading-tight tracking-tight mb-8">
-            Terms of Service
+            Terms & Conditions
           </h1>
 
           <p className="font-sans text-sm sm:text-base md:text-lg text-white/80 leading-relaxed max-w-2xl mx-auto font-medium mb-6">
-            Please read these Terms of Service carefully before using the Unitas Home website or submitting any booking, inquiry, or reservation request.
+            Please read these Terms & Conditions carefully before using the Unitas Home website or submitting any booking, inquiry, or reservation request.
           </p>
 
           <div className="flex flex-col items-center">
@@ -338,7 +338,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
         </h2>
         <div className="w-12 h-1 bg-[#0F8B8D] mx-auto mb-6 rounded-full"></div>
         <p className="font-sans text-sm sm:text-base md:text-lg text-[#6B7280] leading-relaxed max-w-2xl mx-auto font-medium">
-          Welcome to Unitas Home. These Terms of Service ("Terms") govern your use of our official website, online scheduling mechanisms, reservation inquiries, and digital walkthrough requests. By accessing or interacting with our online resources, you confirm your acceptance of these Terms. Our central aim is to provide a highly respectful, secure, and transparent digital journey for both prospective students and on-property professionals.
+          Welcome to Unitas Home. These Terms & Conditions ("Terms") govern your use of our official website, online scheduling mechanisms, reservation inquiries, and digital walkthrough requests. By accessing or interacting with our online resources, you confirm your acceptance of these Terms. Our central aim is to provide a highly respectful, secure, and transparent digital journey for both prospective students and on-property professionals.
         </p>
       </section>
 
@@ -368,7 +368,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               </div>
               <div className="w-full h-[1px] bg-[#E5E7EB] my-5" />
               <p className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed font-medium">
-                By entering, browsing, or submitting details on our digital portal (https://unitashome.in), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms of Service, along with our active Privacy Policy and the Resident House Rules. If you disagree with any portion of these provisions, you should immediately halt your browsing session and avoid submitting any form inputs.
+                By entering, browsing, or submitting details on our digital portal (https://unitashome.in), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms & Conditions, along with our active Privacy Policy and the Resident House Rules. If you disagree with any portion of these provisions, you should immediately halt your browsing session and avoid submitting any form inputs.
               </p>
             </motion.div>
 
@@ -608,7 +608,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               </div>
               <div className="w-full h-[1px] bg-[#E5E7EB] my-5" />
               <p className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed font-medium">
-                We reserve the exclusive privilege to update, edit, or adjust these Terms of Service without separate prior notification to web visitors. Active adjustments will carry the revised "Last Updated" timestamp prominently displayed on this legal portal. Continued interaction with our tour scheduling or website resources represents your agreement to the updated layout.
+                We reserve the exclusive privilege to update, edit, or adjust these Terms & Conditions without separate prior notification to web visitors. Active adjustments will carry the revised "Last Updated" timestamp prominently displayed on this legal portal. Continued interaction with our tour scheduling or website resources represents your agreement to the updated layout.
               </p>
             </motion.div>
 
@@ -631,7 +631,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               </div>
               <div className="w-full h-[1px] bg-[#E5E7EB] my-5" />
               <p className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed font-medium">
-                These digital Terms of Service, along with our physical lease contracts and on-property resident codes, are governed by the regional laws of Uttarakhand, India. Any official legal claims or judicial proceedings relating to web inquiries or room bookings shall fall exclusively under the jurisdiction of the competent courts in Dehradun, India.
+                These digital Terms & Conditions, along with our physical lease contracts and on-property resident codes, are governed by the regional laws of Uttarakhand, India. Any official legal claims or judicial proceedings relating to web inquiries or room bookings shall fall exclusively under the jurisdiction of the competent courts in Dehradun, India.
               </p>
             </motion.div>
 
@@ -728,7 +728,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               Important Notice
             </h4>
             <p className="font-sans text-xs sm:text-sm text-[#6B7280] leading-relaxed font-semibold">
-              These Terms of Service may be updated periodically to reflect changes in our services, operational practices, or legal requirements. Continued use of our website indicates acceptance of the latest version.
+              These Terms & Conditions may be updated periodically to reflect changes in our services, operational practices, or legal requirements. Continued use of our website indicates acceptance of the latest version.
             </p>
           </div>
         </div>
@@ -815,7 +815,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
           </button>
 
           <a
-            href="https://wa.me/919456385202?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20terms%20of%20service."
+            href="https://wa.me/919456385202?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20terms%20and%20conditions."
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"

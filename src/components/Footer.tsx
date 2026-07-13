@@ -485,42 +485,49 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
           </div>
 
           {/* 5. Footer Bottom (Center Align) */}
-          <div className="mt-[38px] pt-6 border-t border-white/10 flex flex-col items-center justify-center font-sans text-xs text-white/50 gap-3.5 text-center">
+          <div className="mt-[38px] pt-6 border-t border-white/10 flex flex-col items-center justify-center font-sans text-xs text-white/50 text-center space-y-[18px]">
+            {/* Rules & Regulations */}
             <div>
-              <span>© 2026 Unitas Home. All Rights Reserved.</span>
-            </div>
-            
-            <div className="flex flex-col items-center justify-center gap-2">
               <button 
                 onClick={() => handleLinkClick('rules-regulations')} 
                 className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-center text-xs"
               >
-                Rules & Regulations
+                House Rules →
               </button>
-              <div className="flex items-center justify-center space-x-4">
-                <button 
-                  onClick={() => handleLinkClick('terms-of-service')}
-                  className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-center text-xs"
-                >
-                  Terms of Service
-                </button>
-                <span className="text-white/20">•</span>
-                <button 
-                  onClick={() => handleLinkClick('privacy-policy')}
-                  className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-center text-xs"
-                >
-                  Privacy Policy
-                </button>
-              </div>
             </div>
             
-            <button
-              onClick={handleScrollToTop}
-              className="mt-1 w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/15 text-white transition-all cursor-pointer"
-              aria-label="Back to Top"
-            >
-              <ArrowUp className="w-4 h-4" />
-            </button>
+            {/* Terms & Conditions • Privacy Policy */}
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4">
+              <button 
+                onClick={() => handleLinkClick('terms-of-service')}
+                className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-center text-xs font-semibold"
+              >
+                Terms & Conditions
+              </button>
+              <span className="text-white/20">•</span>
+              <button 
+                onClick={() => handleLinkClick('privacy-policy')}
+                className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-center text-xs"
+              >
+                Privacy Policy
+              </button>
+            </div>
+
+            {/* Copyright */}
+            <div>
+              <span>© 2026 Unitas Home. All Rights Reserved.</span>
+            </div>
+            
+            {/* Back to Top */}
+            <div>
+              <button
+                onClick={handleScrollToTop}
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/15 text-white transition-all cursor-pointer mx-auto"
+                aria-label="Back to Top"
+              >
+                <ArrowUp className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           {/* Dock target placeholder for Mobile Bottom Bar */}

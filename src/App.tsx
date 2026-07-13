@@ -80,8 +80,8 @@ export default function App() {
       title = 'Privacy Policy | Unitas Home';
       description = 'Learn how Unitas Home collects, stores, protects, and uses your personal information when you browse our website, book a visit, reserve a room, or contact our team.';
     } else if (currentPath === '/terms-of-service') {
-      title = 'Terms of Service | Unitas Home';
-      description = 'Read the official Terms of Service governing the use of the Unitas Home website, booking requests, and related services.';
+      title = 'Terms & Conditions | Unitas Home';
+      description = 'Read the official Terms & Conditions governing the use of the Unitas Home website, booking requests, and related services.';
     } else if (currentPath === '/rules-regulations') {
       title = 'Rules & Regulations | Resident Handbook - Unitas Home';
       description = 'Read our Resident Handbook containing co-living guidelines, house rules, and community guidelines for Unitas Home residents in Dehradun.';
@@ -221,7 +221,7 @@ export default function App() {
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 2,
-        "name": "Terms of Service",
+        "name": "Terms & Conditions",
         "item": "https://unitashome.in/terms-of-service"
       });
     } else if (currentPath === '/rules-regulations') {
