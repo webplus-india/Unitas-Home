@@ -64,10 +64,10 @@ export default function App() {
 
   // Dynamic SEO Page Title, Meta Description, Canonical, OG and Twitter Tag Updates
   useEffect(() => {
+    const baseUrl = window.location.origin;
     let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
     let description = 'Experience premium PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
-    let imageUrl = 'https://unitashome.in/og-image.jpg?v=3';
-    const baseUrl = 'https://unitashome.in';
+    let imageUrl = `${baseUrl}/og-image.jpg?v=3`;
     let urlPath = currentPath;
 
     if (showDashboard) {
@@ -83,8 +83,8 @@ export default function App() {
       title = 'Terms & Conditions | Unitas Home';
       description = 'Read the official Terms & Conditions governing the use of the Unitas Home website, booking requests, and related services.';
     } else if (currentPath === '/rules-regulations') {
-      title = 'Rules & Regulations | Resident Handbook - Unitas Home';
-      description = 'Read our Resident Handbook containing co-living guidelines, house rules, and community guidelines for Unitas Home residents in Dehradun.';
+      title = 'House Rules | Unitas Home';
+      description = 'Read the House Rules for staying at Unitas Home, including visitor policy, safety guidelines, payments, facilities, and resident responsibilities.';
     } else if (currentPath.startsWith('/blog/')) {
       const slug = currentPath.substring('/blog/'.length);
       const post = BLOG_POSTS.find(p => p.slug === slug);
@@ -186,7 +186,7 @@ export default function App() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://unitashome.in"
+        "item": baseUrl
       }
     ];
     
@@ -195,41 +195,41 @@ export default function App() {
         "@type": "ListItem",
         "position": 2,
         "name": "Student Living Blog",
-        "item": "https://unitashome.in/blog"
+        "item": `${baseUrl}/blog`
       });
     } else if (currentPath.startsWith('/blog/')) {
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 2,
         "name": "Student Living Blog",
-        "item": "https://unitashome.in/blog"
+        "item": `${baseUrl}/blog`
       });
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 3,
         "name": activePostTitle || "Blog Article",
-        "item": `https://unitashome.in${currentPath}`
+        "item": `${baseUrl}${currentPath}`
       });
     } else if (currentPath === '/privacy-policy') {
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 2,
         "name": "Privacy Policy",
-        "item": "https://unitashome.in/privacy-policy"
+        "item": `${baseUrl}/privacy-policy`
       });
     } else if (currentPath === '/terms-of-service') {
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 2,
         "name": "Terms & Conditions",
-        "item": "https://unitashome.in/terms-of-service"
+        "item": `${baseUrl}/terms-of-service`
       });
     } else if (currentPath === '/rules-regulations') {
       breadcrumbList.push({
         "@type": "ListItem",
         "position": 2,
-        "name": "Rules & Regulations",
-        "item": "https://unitashome.in/rules-regulations"
+        "name": "House Rules",
+        "item": `${baseUrl}/rules-regulations`
       });
     }
 
@@ -305,19 +305,19 @@ export default function App() {
           "author": {
             "@type": "Organization",
             "name": post.author || "Unitas Home Editorial Team",
-            "url": "https://unitashome.in"
+            "url": baseUrl
           },
           "publisher": {
             "@type": "Organization",
             "name": "Unitas Home",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://unitashome.in/apple-touch-icon.png"
+              "url": `${baseUrl}/apple-touch-icon.png`
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://unitashome.in/blog/${post.slug}`
+            "@id": `${baseUrl}/blog/${post.slug}`
           }
         });
       } else {

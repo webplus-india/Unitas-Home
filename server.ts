@@ -70,6 +70,45 @@ async function startServer() {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
   });
 
+  // Serve dynamic robots.txt
+  app.get('/robots.txt', (req, res) => {
+    try {
+      const robotsPath = path.resolve(__dirname, 'public', 'robots.txt');
+      if (fs.existsSync(robotsPath)) {
+        let content = fs.readFileSync(robotsPath, 'utf-8');
+        const appUrl = process.env.APP_URL || '';
+        const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
+        const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
+        content = content.replace(/https:\/\/unitashome\.in/g, origin);
+        return res.type('text/plain').send(content);
+      }
+    } catch (e) {
+      console.error('Error serving robots.txt:', e);
+    }
+    const appUrl = process.env.APP_URL || '';
+    const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
+    const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
+    res.type('text/plain').send(`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml`);
+  });
+
+  // Serve dynamic sitemap.xml
+  app.get('/sitemap.xml', (req, res) => {
+    try {
+      const sitemapPath = path.resolve(__dirname, 'public', 'sitemap.xml');
+      if (fs.existsSync(sitemapPath)) {
+        let content = fs.readFileSync(sitemapPath, 'utf-8');
+        const appUrl = process.env.APP_URL || '';
+        const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
+        const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
+        content = content.replace(/https:\/\/unitashome\.in/g, origin);
+        return res.type('application/xml').send(content);
+      }
+    } catch (e) {
+      console.error('Error serving sitemap.xml:', e);
+    }
+    res.status(404).end();
+  });
+
   // Setup Vite dev server or static middleware
   let vite: any;
   if (process.env.NODE_ENV !== 'production') {
@@ -157,6 +196,7 @@ async function startServer() {
     replaced = replaced.replace(/<link rel="canonical" href=".*?"\s*\/?>/gi, `<link rel="canonical" href="${meta.url}" />`);
 
     // Rewrite base domain occurrences inside json-ld structures as well
+    replaced = replaced.replace(/__APP_URL__/g, meta.origin);
     replaced = replaced.replace(/https:\/\/unitashome\.in/g, meta.origin);
 
     return replaced;
@@ -171,10 +211,10 @@ async function startServer() {
 
     try {
       const pathname = req.path;
-      // Resolve dynamic hostname (respects custom domain or live preview URLs)
-      const isCustomDomain = req.get('host')?.includes('unitashome.in');
+      // Resolve dynamic hostname (respects custom domain, APP_URL env variable, or live preview URLs)
+      const appUrl = process.env.APP_URL || '';
       const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
-      const origin = isCustomDomain ? 'https://unitashome.in' : `${protocol}://${req.get('host')}`;
+      const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
 
       // 1. Get correct metadata values for the active request path
       const meta = getMetaForPath(pathname, origin);

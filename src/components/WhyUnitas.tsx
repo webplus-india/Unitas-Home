@@ -80,8 +80,8 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               <div className="absolute top-0 left-0 w-[96%] h-[74%] rounded-[24px] overflow-hidden shadow-[0_6px_16px_rgba(0,0,0,0.02)] border border-white/60 transition-transform duration-500 hover:scale-[1.01] z-10">
                 <img 
                   src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcKZGrMWPbN6t6Ie_6urZQrTlk8D8WjNEYoFi_16E1od4eB9TUqZ2S9qAh_13FoQ959GFM2QGaYH2vNWMHiikcSi4M2j0zTYN1nLS_UX_cLEzJHEMxOLVpjWlLVXRfVOLCG1445w=s1360-w1360-h1020-rw" 
-                  alt="Unitas Home Boutique Building Exterior" 
-                  title="Unitas Home Boutique Building Exterior" 
+                  alt="Unitas Home Night View" 
+                  title="Unitas Home Night View" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -95,8 +95,8 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               <div className="absolute bottom-[8%] right-0 w-[50%] h-[38%] rounded-[24px] overflow-hidden shadow-[0_8px_18px_rgba(0,0,0,0.03)] border-[4px] border-white transition-transform duration-500 hover:scale-[1.02] hover:z-30 z-25">
                 <img 
                   src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGH6FaaAP-3MVgMoOq2Tx5zOczynEde7pYyW8k995gUW4IV2tKt7RD-n8NGZqAEwmTzPs0SvM2o0jKkFoeUcx8AR5P1sQjMGHmtEqkU_c2yyiRkQI2p6mt9hh9ZvLAqieVcPWJ-wg=s1360-w1360-h1020-rw" 
-                  alt="Unitas Boutique Furnished Room" 
-                  title="Unitas Boutique Furnished Room" 
+                  alt="Unitas Reception" 
+                  title="Unitas Reception" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -110,8 +110,8 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               <div className="absolute bottom-0 left-[4%] w-[38%] h-[28%] rounded-[24px] overflow-hidden shadow-[0_5px_12px_rgba(0,0,0,0.02)] border-[4px] border-white transition-transform duration-500 hover:scale-[1.02] hover:z-30 z-20">
                 <img 
                   src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHLJz2YenINiIYW-tjSuOuJDPVHxNaGScfkgaCNyGsegpQPqzrFebIrXon1VZG4QAWG-gkk70OhiBdvOVRaHxBtPgR4iCX0RQDPwf4Wyh3SlDeX9-aoZMI6540ek1ZHej1f3QB8=s1360-w1360-h1020-rw" 
-                  alt="Unitas Home Fresh Dining Area" 
-                  title="Unitas Home Fresh Dining Area" 
+                  alt="Unitas Boutique Furnished Room" 
+                  title="Unitas Boutique Furnished Room" 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"

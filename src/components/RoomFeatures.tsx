@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { BedDouble } from 'lucide-react';
 
 const roomHighlights = [
   { icon: '/icons/bed.svg', label: 'Premium Bed & Mattress' },
@@ -38,15 +39,19 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
               key={`${roomId}-feat-${index}`} 
               className="flex items-center gap-[10px] flex-nowrap px-3.5 py-3 bg-white border border-slate-100 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.015)] select-none h-full transition-[border-color,box-shadow] duration-200 md:hover:border-[#0F8B8D]/25 md:hover:shadow-[0_4px_12px_rgba(15,139,141,0.03)]"
             >
-              <img 
-                src={item.icon} 
-                alt="" 
-                width="20" 
-                height="20" 
-                loading="lazy" 
-                decoding="async"
-                className="w-5 h-5 shrink-0"
-              />
+              {index === 0 ? (
+                <BedDouble className="w-5 h-5 shrink-0 text-[#0F8B8D]" strokeWidth={1.8} />
+              ) : (
+                <img 
+                  src={item.icon} 
+                  alt="" 
+                  width="20" 
+                  height="20" 
+                  loading="lazy" 
+                  decoding="async"
+                  className="w-5 h-5 shrink-0"
+                />
+              )}
               <span className="font-sans text-[11.5px] sm:text-[12px] text-charcoal/80 font-semibold tracking-tight leading-snug flex-1">
                 {item.label}
               </span>

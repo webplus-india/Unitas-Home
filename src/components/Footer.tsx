@@ -295,14 +295,14 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
                   onClick={() => handleLinkClick('rules-regulations')} 
                   className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-left"
                 >
-                  Rules & Regulations
+                  House Rules →
                 </button>
                 <span className="text-white/20">•</span>
                 <button 
                   onClick={() => handleLinkClick('terms-of-service')}
                   className="hover:text-accent transition-colors duration-[250ms] cursor-pointer font-medium bg-transparent border-0 py-0 px-0 outline-none text-left font-semibold"
                 >
-                  Terms of Service
+                  Terms & Conditions
                 </button>
                 <span className="text-white/20">•</span>
                 <button 

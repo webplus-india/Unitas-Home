@@ -77,7 +77,16 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
               >
                 {/* Icon Container with Subtle inner highlight and hover effects */}
                 <div className="w-14 h-14 rounded-[22px] bg-[#ECF9F8] border border-[rgba(0,145,140,0.15)] shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.8),_inset_0_-1px_1px_rgba(0,0,0,0.02)] flex items-center justify-center text-primary mb-6 transition-[background-color,border-color] duration-[250ms] ease-in-out group-hover:bg-[#D5F2F0] group-hover:border-primary/20 flex-shrink-0 animate-none">
-                  <IconComponent className="w-7 h-7 text-primary transition-colors duration-[250ms] ease-in-out" strokeWidth={2.2} />
+                  {amenity.id === 'wardrobe' ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 text-primary transition-colors duration-[250ms] ease-in-out">
+                      <rect x="4" y="2" width="16" height="20" rx="2" />
+                      <line x1="12" y1="2" x2="12" y2="22" />
+                      <circle cx="9" cy="12" r="1" fill="currentColor" />
+                      <circle cx="15" cy="12" r="1" fill="currentColor" />
+                    </svg>
+                  ) : (
+                    <IconComponent className="w-7 h-7 text-primary transition-colors duration-[250ms] ease-in-out" strokeWidth={2.2} />
+                  )}
                 </div>
 
                 {/* Text Content Area styled for Perfect alignment */}
