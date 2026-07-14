@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence, MotionConfig } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
@@ -494,8 +494,7 @@ export default function App() {
   };
 
   return (
-    <MotionConfig transition={{ duration: 0.5, ease: 'easeOut' }}>
-      <div className="min-h-screen bg-bg-warm flex flex-col justify-between relative selection:bg-primary/20 selection:text-primary-dark">
+    <div className="min-h-screen bg-bg-warm flex flex-col justify-between relative selection:bg-primary/20 selection:text-primary-dark">
       
       {/* Header component */}
       <Header
@@ -648,6 +647,5 @@ export default function App() {
         )}
       </AnimatePresence>
     </div>
-    </MotionConfig>
   );
 }
