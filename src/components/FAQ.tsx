@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { 
   HelpCircle, 
   Utensils, 
@@ -240,7 +240,14 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-[120px] bg-white relative scroll-mt-12 select-none overflow-hidden">
+    <motion.section
+      id="faq"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="py-[120px] bg-white relative scroll-mt-12 select-none overflow-hidden"
+    >
       
       {/* FAQ Schema JSON-LD for SEO */}
       <script
@@ -302,29 +309,24 @@ export default function FAQ() {
                 </button>
 
                 {/* Animated Body */}
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.25, ease: 'easeInOut' }}
-                    >
-                      <div className="p-5 sm:p-6 pt-0 border-t-2 border-[#F4B400]/40 font-sans text-xs sm:text-sm text-slate-gray leading-relaxed bg-white/70">
-                        <div className="pt-4">
-                          {faq.answerElement}
-                        </div>
-                        
-                        {/* Custom subtext context tag */}
-                        <div className="mt-4 flex items-center space-x-2 text-[10px] text-primary-dark font-extrabold uppercase tracking-wider">
-                          <span>Verified Policy</span>
-                          <span>•</span>
-                          <span>Unitas Management team</span>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                    isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="p-5 sm:p-6 pt-0 border-t-2 border-[#F4B400]/40 font-sans text-xs sm:text-sm text-slate-gray leading-relaxed bg-white/70">
+                    <div className="pt-4">
+                      {faq.answerElement}
+                    </div>
+                    
+                    {/* Custom subtext context tag */}
+                    <div className="mt-4 flex items-center space-x-2 text-[10px] text-primary-dark font-extrabold uppercase tracking-wider">
+                      <span>Verified Policy</span>
+                      <span>•</span>
+                      <span>Unitas Management team</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
@@ -354,6 +356,6 @@ export default function FAQ() {
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 }
