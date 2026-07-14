@@ -2,98 +2,157 @@ import React from 'react';
 
 export const article3Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
+    {/* Executive Summary */}
     <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-bold text-[#0F8B8D] text-base mb-2">🎓 Decision Guide</h3>
+      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        As an incoming student in Dehradun, one of your biggest decisions is deciding where to live. Should you choose a traditional university-owned hostel on campus, a local off-campus paying guest (PG) room, or opt for a premium modern co-living space? This guide runs a rigorous comparison across dining quality, study environments, privacy, and community to help you choose the best space.
+        Choosing where to live is one of the most critical decisions a university student makes. Should you choose a traditional on-campus college hostel or an off-campus premium Paying Guest (PG) co-living facility? This comprehensive guide compares the two across privacy, meal standards, academic study infrastructure, curfews, and daily chores to help you make an informed decision in Dehradun.
       </p>
     </div>
 
     {/* Section 1 */}
     <div>
       <h2 id="privacy-space" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        1. Privacy, Comfort, and Personal Spaces
+        1. Privacy & Personal Space: Hostels vs. Modern Premium Co-Living
       </h2>
       <p className="mb-4">
-        Traditional college hostels are infamous for overcrowding. They routinely force three, four, or even six students into small rooms equipped with creaking metal bunker beds and shared common hallway bathrooms. This lack of personal space can lead to sleep deprivation, roommate friction, and a complete lack of focused study time.
+        Traditional college hostels are infamous for crowded conditions. Many dormitories pack 3 to 4 students into a single room with shared common bathrooms down the hall. This layout leads to minimal personal privacy, constant noise distractions, and frequent restroom queues during early morning lecture hours.
       </p>
+
+      {/* Supporting Image 1 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=800&auto=format&fit=crop" 
+          alt="Modern hostel twin room with comfortable layout" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          Modern co-living suites strike the perfect balance between community interactions and personal privacy.
+        </span>
+      </div>
+
       <p className="mb-4">
-        On the other hand, a premium co-living property like Unitas Home offers spacious, high-end <a href="#rooms" className="text-[#0F8B8D] font-bold hover:underline">single or double-sharing rooms</a>. Every room is designed with premium wooden single beds, orthopedic comfortable mattresses, personal wardrobes, attached modern washrooms with private hot-water geysers, and dedicated study workstations. This offers you the comfort of a hotel with the quiet study sanctuary of a library.
+        At Unitas Home, we believe personal space is essential for academic focus. Our premium suites offer single or double sharing options, featuring modern attached bathrooms with private geysers. Every resident receives a dedicated study desk, personal wooden closets, and ergonomic seating, ensuring a quiet study zone.
+      </p>
+
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">🚨 Common Mistakes: Sacrificing Privacy for Cheap Rent</h3>
+      <p className="mb-4 text-slate-gray text-xs sm:text-sm font-medium">
+        Many students prioritize the lowest possible rent and choose highly crowded hostels. After a few weeks, the constant noise, lack of private restrooms, and zero control over sleep schedules can lead to academic fatigue and emotional burnout.
       </p>
     </div>
 
     {/* Section 2 */}
     <div>
       <h2 id="mess-vs-kitchen" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        2. Mass-Cooked Mess Food vs. Fresh, In-House Kitchens
+        2. Nutritional Standards: Bulk College Mess Food vs. Fresh In-House Dining
       </h2>
       <p className="mb-4">
-        University messes are built to feed hundreds of students at once. As a result, menus are highly repetitive, bland, and often deficient in vital nutrients. It is very common for hostel students to order spicy fast food daily, which causes stomach issues, weight fluctuations, and excessive expenses.
+        Nutrition is the physical foundation of your learning journey. On-campus college messes are managed under bulk catering contracts, cooking for hundreds of students at once. This volume often results in repetitive menus, high reliance on low-grade oils, and mediocre hygiene.
       </p>
 
-      {/* Pro Tip Callout */}
-      <div className="bg-[#FAF9F6] border border-border-light p-6 rounded-2xl my-6">
-        <h4 className="font-display font-bold text-charcoal text-sm mb-1">🍽️ Unitas Dining Excellence</h4>
-        <p className="text-slate-gray text-xs sm:text-sm font-semibold leading-relaxed">
-          At Unitas Home, our meals are cooked on-site in small batches inside a spotless, modern kitchen. We serve four daily vegetarian meals—including paneer, seasonal green vegetables, fresh curd, warm chapatis, evening snacks with tea, and hot milk. It is nutrition that feels like home.
-        </p>
+      {/* Supporting Image 2 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" 
+          alt="Freshly prepared healthy meals representing premium dining" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          In-house, hygienic kitchens focus on organic ingredients and balanced student nutrition.
+        </span>
       </div>
+
+      {/* Info Card Component */}
+      <div className="bg-amber-50/60 border border-amber-200 p-5 rounded-2xl my-6 flex items-start space-x-3">
+        <span className="text-xl">⚠️</span>
+        <div>
+          <h4 className="font-display font-bold text-amber-900 text-sm mb-1">Nutrition Warning</h4>
+          <p className="text-amber-800 text-xs font-medium leading-relaxed">
+            Consuming low-quality meals over a 9-month academic term frequently causes vitamin deficiencies, gut issues, and forces students to spend heavily on fast-food deliveries.
+          </p>
+        </div>
+      </div>
+
+      <p className="mb-4">
+        Our premium kitchen at Unitas Home serves four freshly prepared, highly nutritious, home-style vegetarian meals every single day (Breakfast, Lunch, Evening Snacks with Tea, and Dinner). We focus on high-protein menu components like fresh paneer, curd, fresh lentils, and organic vegetables cooked with healthy oils to ensure you stay energized for studies.
+      </p>
     </div>
 
     {/* Section 3 */}
     <div>
       <h2 id="rules-flexibility" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        3. Rigid Curfews vs. Responsible Autonomy
+        3. Rules & Curfews: Hostels Lockdowns vs. Biometric Flexibility
       </h2>
       <p className="mb-4">
-        Many campus hostels lock their gates as early as 7:00 PM, preventing students from taking part in evening university workshops, studying in off-site libraries, attending rotating clinical postings at <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a>, or enjoying a casual evening dinner with friends.
+        College hostels are notorious for imposing archaic, rigid curfews, such as locking main gates at 7:00 PM. This model doesn't support modern academic requirements, medical rotations at local hospitals like Mahant Indresh, or remote internships.
       </p>
-      <p className="mb-4">
-        Premium co-living systems offer the perfect balance: a responsible, safe gate timing of 10:30 PM, backed by modern biometric access controls. Verified clinical rosters or evening classes are safely whitelisted, offering you the autonomy to manage your professional responsibilities.
-      </p>
-    </div>
 
-    {/* Comprehensive Table */}
-    <div>
-      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-4">PG vs. Hostel vs. Unitas Home Co-Living</h3>
-      <div className="overflow-x-auto border border-border-light rounded-2xl shadow-3xs bg-white">
+      {/* Supporting Image 3 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" 
+          alt="Secure biometric entrance and lobby setup" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          Biometric security systems provide secure, roster-linked gate access for student safety.
+        </span>
+      </div>
+
+      <p className="mb-4">
+        Unitas Home uses modern, secure biometric fingerprint keyless entry systems. The property is managed by an experienced resident warden who supports students on late-night academic rosters or medical shifts, ensuring absolute safety with practical flexibility.
+      </p>
+
+      {/* Comparison Matrix */}
+      <div className="overflow-x-auto my-6 border border-border-light rounded-2xl shadow-3xs bg-white">
         <table className="w-full text-left border-collapse text-xs sm:text-sm">
           <thead>
             <tr className="bg-neutral-50 border-b border-border-light font-display">
-              <th className="p-4 font-bold text-charcoal">Feature</th>
-              <th className="p-4 font-bold text-slate-gray">Campus Hostel</th>
-              <th className="p-4 font-bold text-slate-gray">Standard Local PG</th>
+              <th className="p-4 font-bold text-charcoal">Category</th>
+              <th className="p-4 font-bold text-slate-gray">Standard College Hostel</th>
               <th className="p-4 font-bold text-[#0F8B8D]">Unitas Home Co-Living</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-neutral-50">
+              <td className="p-4 font-bold text-charcoal">Curfew & Gate Access</td>
+              <td className="p-4 text-slate-gray">Strict 7:00 PM lockouts, no entry</td>
+              <td className="p-4 text-charcoal font-semibold">10:30 PM gate with biometric exception whitelisting for late shifts</td>
+            </tr>
+            <tr className="border-b border-neutral-50">
               <td className="p-4 font-bold text-charcoal">Restrooms</td>
-              <td className="p-4 text-slate-gray">Common hallway (shared by 20+)</td>
-              <td className="p-4 text-slate-gray">Sometimes shared</td>
-              <td className="p-4 text-charcoal font-semibold">Attached private washroom in every room</td>
+              <td className="p-4 text-slate-gray">Common corridor toilets</td>
+              <td className="p-4 text-charcoal font-semibold">Private, attached modern washroom with dedicated geyser</td>
             </tr>
             <tr className="border-b border-neutral-50">
-              <td className="p-4 font-bold text-charcoal">Food Quality</td>
-              <td className="p-4 text-slate-gray">Mass-cooked mess</td>
-              <td className="p-4 text-slate-gray">Outsourced tiffins</td>
-              <td className="p-4 text-charcoal font-semibold">4 Fresh, in-house vegetarian meals daily</td>
-            </tr>
-            <tr className="border-b border-neutral-50">
-              <td className="p-4 font-bold text-charcoal">Security</td>
-              <td className="p-4 text-slate-gray">Basic warden logbook</td>
-              <td className="p-4 text-slate-gray">Manual padlock gate</td>
-              <td className="p-4 text-charcoal font-semibold">24/7 Guards, biometric gates & corridor CCTV</td>
+              <td className="p-4 font-bold text-charcoal">Laundry & Ironing</td>
+              <td className="p-4 text-slate-gray">Self-wash or paid dhobi</td>
+              <td className="p-4 text-charcoal font-semibold">Full-service washing, drying & steam ironing included</td>
             </tr>
             <tr>
-              <td className="p-4 font-bold text-charcoal">Housekeeping</td>
-              <td className="p-4 text-slate-gray">Self-cleaning</td>
-              <td className="p-4 text-slate-gray">Weekly or none</td>
-              <td className="p-4 text-charcoal font-semibold">Daily in-room sweeping & washroom disinfection</td>
+              <td className="p-4 font-bold text-charcoal">Internet Speed</td>
+              <td className="p-4 text-slate-gray">Weak or blocked shared Wi-Fi</td>
+              <td className="p-4 text-charcoal font-semibold">High-speed dual-band fiber routers on every floor</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">💡 Expert Recommendations & Local Dehradun Insights</h3>
+      <p className="mb-4">
+        "Many off-campus hostels in Dehradun located in remote lanes lack cell reception and basic security. When deciding between on-campus housing and a premium off-campus PG, evaluate the main road access. Unitas Home is centrally located directly on Patel Nagar main road, making public transport instantly accessible."
+      </p>
+    </div>
+
+    {/* Summary and Checklist */}
+    <div className="pt-6 border-t border-gray-100">
+      <h3 className="font-display font-bold text-lg text-charcoal mb-2">Summary & Final Recommendation</h3>
+      <p className="text-slate-gray font-semibold text-xs sm:text-sm mb-4">
+        While college hostels offer proximity, they often compromise heavily on nutrition, comfort, study desks, and basic privacy. Reclaiming your chore-time and enjoying balanced nutrition allows you to perform far better academically. Unitas Home provides a premium co-living space designed specifically to eliminate daily friction, allowing you to prioritize your career goals.
+      </p>
     </div>
   </div>
 );

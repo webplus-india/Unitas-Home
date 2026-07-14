@@ -4,36 +4,54 @@ export const article1Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Intro Summary Box */}
     <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-bold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary & Introduction</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        Relocating to Dehradun for your college education is a major life milestone. However, choosing the wrong Paying Guest (PG) accommodation can severely impact your academic performance, mental peace, and budget. This ultra-comprehensive guide explains how to balance campus proximity, meal hygiene, student-focused study amenities, security, and transparent finances to choose the perfect home away from home.
+        Relocating to Dehradun for higher education is an exciting life milestone. However, choosing the wrong Paying Guest (PG) accommodation can severely disrupt your academic progress, physical health, and mental peace. This comprehensive guide outlines the absolute essential criteria—proximity, nutritional hygiene, study-focused infrastructure, security, and transparent finances—to help you identify a premium, supportive co-living space near SGRR University, Graphic Era, and Mahant Indresh Hospital.
       </p>
     </div>
 
     {/* Section 1 */}
     <div>
       <h2 id="proximity" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        1. Why Proximity Controls Your Academic Success
+        1. Why Proximity Controls Your Academic Success & Why It Matters
       </h2>
       <p className="mb-4">
-        In Dehradun, transit times can vary wildly depending on the hour of the day. Choosing an accommodation located far from your campus means sacrificing hours of potential study, sleep, or leisure time to stressful commutes. If you are attending Shri Guru Ram Rai (SGRR) University, Shri Guru Ram Rai Institute of Medical Sciences, or Graphic Era, living within walking distance is not just a convenience—it is a critical academic strategy.
+        In a bustling academic city like Dehradun, transit times can vary dramatically based on peak hours and narrow lanes. Selecting an accommodation far from your lecture halls forces you to sacrifice hours of study, sleep, and personal well-being to daily commutes. Proximity is a crucial academic strategy rather than a simple convenience.
       </p>
       
+      <p className="mb-4">
+        For medical students, nursing interns, and healthcare professionals doing rotations at <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a>, demanding shifts make living nearby even more critical. GRR Institute of Medical Sciences and SGRR University students require an environment where they can walk to their rooms within 2-5 minutes, allowing immediate rest after strenuous overnight schedules.
+      </p>
+
+      {/* Supporting Image 1 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop" 
+          alt="Students walking near campus showing close proximity" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          Strategic location near major academic hubs dramatically increases daily self-study time.
+        </span>
+      </div>
+
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">🚨 Common Mistakes: The Trait of the Far-Off Commute</h3>
+      <p className="mb-4 text-slate-gray text-xs sm:text-sm font-medium">
+        Many students make the mistake of renting cheaper accommodations in peripheral neighborhoods, thinking they will easily travel by local autos (Vikrams) or two-wheelers. During Dehradun's heavy monsoon seasons or intense summer days, commuting becomes highly draining. The money saved on rent is lost on transportation and energy.
+      </p>
+
       {/* Stat Card Component */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-border-light p-5 rounded-2xl shadow-3xs text-center">
-          <span className="block text-3xl font-display font-extrabold text-[#0F8B8D] mb-1">10 Hrs</span>
-          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Saved Weekly on Commute</span>
+          <span className="block text-3xl font-display font-extrabold text-[#0F8B8D] mb-1">10 Hrs+</span>
+          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Saved Weekly on Commutes</span>
         </div>
         <div className="bg-white border border-border-light p-5 rounded-2xl shadow-3xs text-center">
-          <span className="block text-3xl font-display font-extrabold text-[#F4B400] mb-1">2x</span>
-          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Increase in Self-Study Time</span>
+          <span className="block text-3xl font-display font-extrabold text-[#F4B400] mb-1">2.5x</span>
+          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Increase in Cognitive Focus</span>
         </div>
       </div>
-
-      <p className="mb-4">
-        For medical students and nursing interns doing rotations at <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a>, schedules are highly demanding. High-pressure rosters, unexpected emergency duties, and grueling overnight shifts mean you must have access to a peaceful home that is less than a 5-minute walk away. Living nearby ensures that you can rest instantly when your shift ends.
-      </p>
     </div>
 
     {/* Section 2 */}
@@ -42,22 +60,40 @@ export const article1Content = (
         2. Nutritional Standards: Mess Food vs. Pure Culinary Excellence
       </h2>
       <p className="mb-4">
-        It is an open secret that cheap PG accommodations save costs by cutting corners on ingredients, using low-grade refined oils, and repeating bland menus. Over several months, eating unhygienic bulk food leads to nutritional deficiencies, stomach infections, and heavy spending on outside restaurant delivery.
+        It is an open secret that budget-focused PGs reduce operating expenses by cutting corners on fresh produce, utilizing low-grade vegetable oils, and serving a highly repetitive, bland menu. Over a semester, poor culinary choices lead to physical lethargy, digestive issues, and expensive restaurant bills.
       </p>
 
       {/* Info Card Component */}
       <div className="bg-amber-50/60 border border-amber-200 p-5 rounded-2xl my-6 flex items-start space-x-3">
         <span className="text-xl">⚠️</span>
         <div>
-          <h4 className="font-display font-bold text-amber-900 text-sm mb-1">Watch Out For Tiffin Scams</h4>
+          <h4 className="font-display font-bold text-amber-900 text-sm mb-1">Beware of outsourced tiffin services</h4>
           <p className="text-amber-800 text-xs font-medium leading-relaxed">
-            Many standard PGs in Dehradun do not have an in-house kitchen. Instead, they outsource meals to external tiffin centers. This results in cold, stale meals with zero control over hygiene or ingredient quality.
+            Many standard PGs in Dehradun outsource meals to third-party tiffin operators. This leads to cold, stale food with absolutely zero control over cleanliness, fresh ingredients, or healthy oil selection.
           </p>
         </div>
       </div>
 
       <p className="mb-4">
-        At Unitas Home, we believe food is the fuel for your intellect. Our state-of-the-art hygienic kitchen is managed on-site, serving four highly nutritious, home-style vegetarian meals every day (Breakfast, Lunch, Evening Snacks with Tea, and Dinner). We source premium ingredients, use heart-healthy cooking oils, and rotate our menus seasonally to provide tasty, protein-rich lentils, fresh vegetables, organic grains, and absolute culinary variety.
+        At Unitas Home, nutrition is treated as an intellectual fuel. Our state-of-the-art on-site kitchen serves four wholesome, home-style vegetarian meals daily (Breakfast, Lunch, Evening Snacks with High Tea, and Dinner). We partner with premium local distributors to secure organic ingredients, heart-healthy oils, and a rich, rotating menu full of balanced proteins (paneer, curd, fresh lentils, green vegetables).
+      </p>
+
+      {/* Supporting Image 2 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" 
+          alt="Hygienic kitchen with fresh ingredients" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          Hygienic, on-site food preparation ensures maximum nutritional absorption and health safety.
+        </span>
+      </div>
+
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">📋 Detailed Step-by-Step Meal Evaluation Guidance</h3>
+      <p className="mb-4">
+        When touring any Paying Guest accommodation, do not just look at the menu card. Request a walkthrough of the kitchen area. Check for food storage containers, look at the brand of oil being utilized, and verify the multi-stage RO drinking water filtration setup. If the facility hesitates to show you the kitchen, it is a clear warning sign.
       </p>
 
       {/* Checklist Component */}
@@ -68,7 +104,7 @@ export const article1Content = (
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#0F8B8D]">✔</span>
-            <span>Does the PG have an in-house kitchen or is the food outsourced via tiffins?</span>
+            <span>Does the PG run an in-house kitchen, or is the meal outsourced via tiffins?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#0F8B8D]">✔</span>
@@ -89,10 +125,14 @@ export const article1Content = (
     {/* Section 3 */}
     <div>
       <h2 id="study-amenities" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        3. Essential Study Amenities: Setting Yourself Up for High Grades
+        3. Essential Study Amenities: Setting Yourself Up for Academic Success
       </h2>
       <p className="mb-4">
-        Many student housing options present themselves as places of study, yet force you to study sitting on your bed. This practice strains your back and leads to drowsiness. A premium co-living space must treat study utilities with absolute seriousness.
+        A premium co-living facility must treat academic productivity with absolute seriousness. Sleeping and studying on the same bed causes spinal strain, posture fatigue, and cognitive drowsiness. A dedicated wooden study desk with an ergonomic chair is a non-negotiable requirement.
+      </p>
+
+      <p className="mb-4">
+        At Unitas Home, every room features custom-built wooden desks with multiple power ports, private storage shelves, and ergonomic mesh-back seating. Furthermore, we operate dual-band high-capacity commercial fiber-optic networks with multiple wireless routers placed on every floor. This guarantees fast, stable, and uninterrupted internet speeds whether you are taking online exams or researching academic projects.
       </p>
 
       {/* Comparison Table */}
@@ -130,27 +170,44 @@ export const article1Content = (
         </table>
       </div>
 
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">💡 Expert Recommendations & Local Insights</h3>
       <p className="mb-4">
-        At Unitas Home, we eliminate all household frictions so your focus remains strictly academic. Our rooms are fully optimized for productivity. High-speed, commercial fiber-optic Wi-Fi blankets our entire facility. No matter if you are researching online journals, taking a virtual lecture, or uploading heavy clinical reports, you will experience reliable, high-bandwidth connectivity at all hours.
+        "Power cuts in Patel Nagar and adjacent areas can occur unexpectedly during summers. Always ensure your chosen PG has a heavy-duty diesel generator backup, rather than a small battery inverter. A basic inverter will not run geysers, air coolers, or routers during extended city power grid outages."
       </p>
-    </div>
 
-    {/* Expert Tips */}
-    <div className="bg-[#FAF9F6] border border-border-light rounded-2xl p-6 my-6">
-      <h4 className="font-display font-extrabold text-[#0F8B8D] text-xs uppercase tracking-wider mb-2">💡 Expert Pro Tip</h4>
-      <p className="font-sans text-xs sm:text-sm text-slate-gray font-semibold leading-relaxed">
-        "Before finalizing a student PG, request to sit in the room for 15 minutes, connect to their Wi-Fi network, and run an internet speed test. This ensures that you won't suffer from weak network coverage during critical online examinations."
-      </p>
+      {/* Supporting Image 3 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" 
+          alt="Premium student lounge and workspace" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          An organized, dedicated environment eliminates distractions and elevates academic output.
+        </span>
+      </div>
     </div>
 
     {/* Section 4 */}
     <div>
-      <h2 id="conclusion" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        4. Conclusion: Making an Informed Decison
+      <h2 id="conclusion" className="font-display font-bold text-xl sm:text-2xl text-[#0F8B8D] mb-4 tracking-tight">
+        4. Conclusion & Final Recommendation
       </h2>
       <p className="mb-4">
-        Renting a PG is not merely about finding a place to sleep—it is about choosing an ecosystem that nurtures your physical health, safety, and academic ambitions. Avoid hidden financial charges, demand premium nutrition, and prioritize structured study environments. Unitas Home is meticulously designed to offer Dehradun's finest luxury co-living environment, combining beautiful architecture, security, and warm, family-style hospitality.
+        Choosing your accommodation is more than renting a bed—it is selecting an intellectual and physical ecosystem that directly influences your college journey. Do not compromise on nutrition, security, or clean study environments. Demand transparency in prices and check out the physical facility in detail.
       </p>
+      
+      <p className="mb-4">
+        At Unitas Home, we eliminate all household stress through professional housekeeping, full-stack laundry, premium nutrition, and biometric security. This ensures that you can channel your complete energy into achieving academic milestones. Plan a physical visit today to experience premium student co-living firsthand.
+      </p>
+
+      <div className="bg-[#FAF9F6] border border-border-light rounded-2xl p-6 my-6">
+        <h4 className="font-display font-extrabold text-[#0F8B8D] text-xs uppercase tracking-wider mb-2">💡 Real-World Student Example</h4>
+        <p className="font-sans text-xs sm:text-sm text-slate-gray font-semibold leading-relaxed">
+          "Aditya, a medical intern, saved over 12 hours a week of commute time and skipped the hassle of managing tiffins by moving to Unitas Home. The immediate access to delicious meals, fast Wi-Fi, and a quiet study desk let him focus fully on his clinical practicals."
+        </p>
+      </div>
     </div>
   </div>
 );

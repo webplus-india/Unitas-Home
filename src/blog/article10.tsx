@@ -2,76 +2,153 @@ import React from 'react';
 
 export const article10Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
+    {/* Executive Summary */}
     <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-bold text-[#0F8B8D] text-base mb-2">🌃 Night-Shift & Hybrid Guide</h3>
+      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        Working rotating rosters, overnight medical shifts, or hybrid corporate roles demands a highly flexible living space. Standard student hostels with rigid curfews and fixed dinner schedules simply do not fit your lifestyle. This comprehensive guide covers how to choose a PG optimized for non-traditional work schedules.
+        Working rotating schedules or night shifts requires a living space that adapts to your needs. Standard student PG accommodations, with rigid gate curfews and noisy daytime environments, can disrupt your sleep and work. This educational guide breaks down the essential features—including roster-linked gate access, daytime quiet hours, and meal flexibility—to help you find the perfect co-living home.
       </p>
     </div>
 
     {/* Section 1 */}
     <div>
       <h2 id="gate-access" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        1. Roster-Linked Gate Access & Keyless Security
+        1. Roster-Linked Gate Access: Adapting to Your Schedule (Why This Matters)
       </h2>
       <p className="mb-4">
-        Rigid lock-out curfews (such as locking gates at 9:00 PM) make overnight shifts or evening rotations impossible. If you are a medical intern at <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a> or work for a global outsourcing firm, you need hassle-free entry at all hours.
+        Traditional accommodations enforce rigid, early gate locks (such as 10:00 PM), which are highly restrictive for healthcare interns on night duties or corporate employees on global rotating shifts. You need a security system that supports your roster without compromising safety.
       </p>
 
-      {/* Pro Tip Callout */}
-      <div className="bg-[#FAF9F6] border border-border-light p-6 rounded-2xl my-6">
-        <h4 className="font-display font-bold text-charcoal text-sm mb-1.5">🔑 Biometric Convenience</h4>
-        <p className="text-slate-gray text-xs sm:text-sm font-semibold leading-relaxed">
-          At Unitas Home, we use digital biometric card keyless entries. Residents can access our facility late at night or early in the morning by scanning their registered cards, with all entry logs tracked automatically. Your work schedule is whitelisted securely.
-        </p>
+      {/* Supporting Image 1 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" 
+          alt="Smart biometric gate access setup representing flexible roster entry" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          Biometric fingerprint access control supports late-night entries while maintaining high safety.
+        </span>
       </div>
+
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">🚨 Common Mistakes: Believing Verbal Access Promises</h3>
+      <p className="mb-4 text-slate-gray text-xs sm:text-sm font-semibold">
+        A common mistake is trusting verbal promises like "we will open the gate whenever you call." If a property doesn't have an automated access system or professional night staff, you may find yourself locked outside or facing heavy fines.
+      </p>
+
+      <p className="mb-4">
+        At Unitas Home, we use secure biometric fingerprint keyless entry systems. Residents with verified late-night work rosters or clinical postings receive biometric whitelist permissions for secure, keyless access at any hour. This ensures absolute safety while accommodating your professional needs.
+      </p>
     </div>
 
     {/* Section 2 */}
     <div>
       <h2 id="daytime-sleep" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        2. Enforcing Daytime Quietness for Deep Rest
+        2. Daytime Quietness: Enforcing Deep Rest & Sleep Quality
       </h2>
       <p className="mb-4">
-        Getting uninterrupted, high-quality sleep during the day is critical for your health and focus. Many student PGs are noisy during the afternoon with loud music and slamming doors, destroying your sleep cycle.
+        For shift workers, daytime sleep is essential for health and performance. However, standard student housings can be noisy during the day due to housekeeping, loud common rooms, and thin walls, making rest difficult.
       </p>
-      
-      {/* Stat block */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-        <div className="bg-white border border-border-light p-5 rounded-2xl text-center shadow-3xs">
-          <span className="block text-3xl font-display font-extrabold text-[#0F8B8D]">A+</span>
-          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Soundproofing & Solid Doors</span>
-        </div>
-        <div className="bg-white border border-border-light p-5 rounded-2xl text-center shadow-3xs">
-          <span className="block text-3xl font-display font-extrabold text-[#F4B400]">Quiet Wings</span>
-          <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Enforced Daytime Serenity</span>
-        </div>
+
+      {/* Supporting Image 2 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop" 
+          alt="Quiet, comfortable and peaceful dark bedroom setup for daytime sleep" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          A peaceful environment with solid doors ensures deep, restful daytime sleep for shift workers.
+        </span>
       </div>
 
       <p className="mb-4">
-        We maintain strict quiet hallway guidelines and use solid wooden room doors to reduce noise transmission. Our on-site wardens actively monitor and enforce a peaceful, quiet environment during daytime hours, ensuring night-shift workers get deep, restful sleep.
+        At Unitas Home, we maintain a quiet, respectful atmosphere during the day. We use heavy, solid-core wooden doors to reduce sound transmission between rooms, and we enforce strict quiet rules in all corridors. This ensures a calm environment where shift workers can rest peacefully.
       </p>
+
+      {/* Sleep Tips Callout */}
+      <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-5 rounded-r-2xl my-6">
+        <h4 className="font-display font-bold text-[#0F8B8D] text-sm mb-1">Shift Sleep Tip</h4>
+        <p className="text-slate-gray text-xs font-semibold leading-relaxed">
+          Use high-quality blackout window curtains to block out daytime sunlight and signal your brain to sleep. Using noise-canceling earplugs or soft white noise further improves sleep quality.
+        </p>
+      </div>
     </div>
 
     {/* Section 3 */}
     <div>
       <h2 id="meal-safety" className="font-display font-bold text-xl sm:text-2xl text-charcoal mb-4 tracking-tight">
-        3. Meal Packaging & Food Preservation Support
+        3. Meal Flexibility: Food Packing, Insulated Storage & Shared Pantry
       </h2>
       <p className="mb-4">
-        When you work non-traditional hours, you will inevitably miss standard dining windows (e.g., missing lunch or dinner due to a late shift). If your PG does not support food preservation, you are forced to spend heavily on outside restaurants.
+        Missing standard dining hall hours due to rotating work schedules is a major challenge. If an accommodation enforces rigid meal times and does not offer food storage or reheating options, residents are forced to buy outside fast food.
       </p>
 
-      {/* Info Card Component */}
-      <div className="bg-emerald-50 border border-emerald-200 p-5 rounded-2xl my-6 flex items-start space-x-3">
-        <span className="text-xl">🍲</span>
-        <div>
-          <h4 className="font-display font-bold text-emerald-900 text-sm mb-1">Hygienic Food Packaging</h4>
-          <p className="text-emerald-800 text-xs font-medium leading-relaxed">
-            At Unitas Home, our kitchen team can package your fresh vegetarian meals in insulated thermal boxes on request. We also provide a common pantry equipped with clean refrigerators and microwave ovens, letting you preserve and reheat your healthy meals at any hour.
-          </p>
-        </div>
+      {/* Supporting Image 3 */}
+      <div className="my-6">
+        <img 
+          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" 
+          alt="Hygienic kitchen with packing options and clean shared pantry" 
+          className="rounded-2xl w-full h-[280px] object-cover border border-border-light shadow-3xs"
+          referrerPolicy="no-referrer"
+        />
+        <span className="block text-center text-xs text-slate-gray font-medium mt-2">
+          On-site dining teams can package warm meals in thermal boxes for late-night shifts.
+        </span>
       </div>
+
+      <p className="mb-4">
+        At Unitas Home, our kitchen team can package warm meals in insulated thermal containers if you miss standard dinner times. We also provide a clean, shared pantry equipped with microwaves, water coolers, and a refrigerator, allowing you to store and reheat food easily.
+      </p>
+
+      {/* Local Insights */}
+      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">💡 Local Dehradun Insights: Patel Nagar Night Logistics</h3>
+      <p className="mb-4">
+        "Patel Nagar is a major commercial and medical area in Dehradun. Unitas Home is centrally located right on the main Patel Nagar road, near Mahant Indresh Hospital. Having on-site support and an active, well-lit street location makes returning late from hospital shifts or IT roles secure and convenient."
+      </p>
+
+      {/* Checklist Component */}
+      <div className="border border-border-light bg-white rounded-2xl p-6 my-6">
+        <h4 className="font-display font-extrabold text-charcoal text-sm uppercase tracking-wide mb-4">
+          📋 Shift Worker's Co-Living Checklist
+        </h4>
+        <ul className="space-y-3">
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Does the property use secure biometric access for flexible gate entry?</span>
+          </li>
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Is the daytime environment quiet and supportive of restful sleep?</span>
+          </li>
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Can the dining team package and store warm meals in thermal boxes for late shifts?</span>
+          </li>
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Is there a shared pantry with a microwave and refrigerator for food reheating?</span>
+          </li>
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Is the property located directly on a safe, well-lit main road with nearby transport?</span>
+          </li>
+          <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
+            <span className="text-[#0F8B8D]">✔</span>
+            <span>Is there an automatic generator to keep Wi-Fi and workspace lights running during outages?</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Summary and Final recommendation */}
+    <div className="pt-6 border-t border-gray-100">
+      <h3 className="font-display font-bold text-lg text-charcoal mb-2">Summary & Final Recommendation</h3>
+      <p className="text-slate-gray font-semibold text-xs sm:text-sm">
+        Succeeding on rotating shifts requires a living space that supports your schedule. By checking biometric entry controls, ensuring daytime quietness, and verifying meal packaging options, you can choose a supportive home. Unitas Home integrates high-speed connectivity, flexible support, and seamless services to offer the ideal co-living home in Dehradun.
+      </p>
     </div>
   </div>
 );
