@@ -4,8 +4,8 @@
  */
 
 import React, { useState } from 'react';
+
 import { Compass, ShoppingBag, Bus, GraduationCap, HeartPulse, ArrowUpRight, ArrowRight, MapPin, Car } from 'lucide-react';
-import { motion } from 'motion/react';
 
 interface Landmark {
   id: string;
@@ -127,14 +127,7 @@ export default function Location() {
     : VERIFIED_LANDMARKS.filter((p) => p.category === selectedType);
 
   return (
-    <motion.section
-      id="nearby"
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="py-[120px] bg-[#FAFBFC] relative scroll-mt-12 overflow-hidden"
-    >
+    <section id="nearby" className="py-[120px] bg-[#FAFBFC] relative scroll-mt-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* IMPROVED HIERARCHY: SECTION HEADER (COMPACT & BALANCED) */}
@@ -231,7 +224,7 @@ export default function Location() {
                 return (
                   <div
                     key={place.id}
-                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs md:hover:-translate-y-[3px] md:hover:shadow-md md:hover:border-primary/30 transition-all duration-300 ease-out flex flex-col justify-between h-full min-h-[250px]"
+                    className="group/card bg-white p-8 rounded-[24px] border border-border-light/40 shadow-xs hover:border-primary/30 hover:shadow-lg transition-[border-color,box-shadow] duration-200 flex flex-col justify-between h-full min-h-[250px]"
                   >
                     <div className="space-y-4">
                       {/* Header with Icon and Name */}
@@ -360,6 +353,6 @@ export default function Location() {
         </div>
 
       </div>
-    </motion.section>
+    </section>
   );
 }

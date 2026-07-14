@@ -47,14 +47,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
   ];
 
   return (
-    <motion.section
-      id="why-unitas"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="py-[120px] bg-bg-warm relative overflow-hidden scroll-mt-12"
-    >
+    <section id="why-unitas" className="py-[120px] bg-bg-warm relative overflow-hidden scroll-mt-12">
       {/* Premium custom floating animation stylesheet */}
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes soft-float {
@@ -211,6 +204,6 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
 
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

@@ -5,7 +5,6 @@
 
 import React from 'react';
 import { BedDouble } from 'lucide-react';
-import { motion } from 'motion/react';
 
 const roomHighlights = [
   { icon: '/icons/bed.svg', label: 'Premium Bed & Mattress' },
@@ -22,13 +21,7 @@ interface RoomFeaturesProps {
 
 export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.4, ease: 'easeOut' }}
-      className="border-t border-slate-100/35 pt-4 mb-4.5 flex-grow"
-    >
+    <div className="border-t border-slate-100/35 pt-4 mb-4.5 flex-grow">
       {/* Header Badge style label */}
       <div className="flex items-center justify-center gap-1.5 mb-3">
         <div className="h-[1.5px] w-3 bg-[#F4B400] rounded-full" />
@@ -66,6 +59,6 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 }

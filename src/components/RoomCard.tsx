@@ -39,7 +39,7 @@ export default function RoomCard({
 
   return (
     <div
-      className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full relative transition-all duration-300 ease-out md:hover:-translate-y-1 group ${
+      className={`bg-bg-warm rounded-[24px] overflow-hidden border flex flex-col h-auto md:h-full relative transition-[border-color,box-shadow] duration-200 ease-out group ${
         isMostPopular
           ? 'border-[#0F8B8D]/40 shadow-sm md:hover:border-[#F4B400]/75 md:hover:shadow-md'
           : 'border-slate-200/60 shadow-sm md:hover:border-[#F4B400]/75 md:hover:shadow-md'
