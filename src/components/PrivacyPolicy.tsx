@@ -611,8 +611,8 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Call Our Coordinator</h4>
-                      <a href="tel:+919456385202" className="text-xs sm:text-sm text-[#F4B400] hover:underline transition-colors">
-                        +91 94563 85202
+                      <a href="tel:+919675591951" className="text-xs sm:text-sm text-[#F4B400] hover:underline transition-colors">
+                        +91 96755 91951
                       </a>
                     </div>
                   </div>
@@ -704,7 +704,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/919456385202?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20privacy%20policy."
+            href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20privacy%20policy."
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"

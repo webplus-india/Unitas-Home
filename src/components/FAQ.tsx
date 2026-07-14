@@ -340,7 +340,7 @@ export default function FAQ() {
             Our team is happy to answer your questions.
           </p>
           <a
-            href="https://wa.me/919456385202?text=Hi%20Unitas%20Home%2C%20I%20have%20some%20questions%20regarding%20the%20co-living%20rules..."
+            href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20some%20questions%20regarding%20the%20co-living%20rules..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2.5 bg-[#25D366] hover:bg-[#20C45A] text-white px-8 py-3.5 rounded-full font-bold text-sm shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"

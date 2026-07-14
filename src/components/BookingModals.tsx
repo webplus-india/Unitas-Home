@@ -585,15 +585,15 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
             </span>
             <div className="mt-2.5 space-y-2">
               <a 
-                href="tel:+919456385202"
+                href="tel:+919675591951"
                 className="flex items-center gap-2 text-xs font-semibold hover:text-[#0F8B8D] transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#0F8B8D] shrink-0" />
-                <span>Call Now: <strong className="font-bold">+91 94563 85202</strong></span>
+                <span>Call Now: <strong className="font-bold">+91 96755 91951</strong></span>
               </a>
               <div className="text-[9px] uppercase font-bold tracking-wider text-slate-300 pl-5.5">or</div>
               <a 
-                href="https://wa.me/919456385202?text=Hi%20Unitas%20Home%2C%20I%20need%20assistance%20with%20booking%20a%20room."
+                href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20need%20assistance%20with%20booking%20a%20room."
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 text-xs font-semibold hover:text-[#20C65A] transition-colors"
