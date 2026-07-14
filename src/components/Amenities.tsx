@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 
 import * as LucideIcons from 'lucide-react';
 import { AMENITIES_DATA } from '../data';
@@ -25,7 +26,14 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
   });
 
   return (
-    <section id="amenities" className="py-[120px] bg-bg-warm relative scroll-mt-12">
+    <motion.section
+      id="amenities"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="py-[120px] bg-bg-warm relative scroll-mt-12"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
@@ -110,6 +118,6 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
 
 
       </div>
-    </section>
+    </motion.section>
   );
 }
