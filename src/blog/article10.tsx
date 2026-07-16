@@ -3,8 +3,8 @@ import React from 'react';
 export const article10Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Working rotating schedules or night shifts requires a living space that adapts to your needs. Standard student PG accommodations, with rigid gate curfews and noisy daytime environments, can disrupt your sleep and work. This educational guide breaks down the essential features—including roster-linked gate access, daytime quiet hours, and meal flexibility—to help you find the perfect co-living home.
       </p>
@@ -69,8 +69,8 @@ export const article10Content = (
       </p>
 
       {/* Sleep Tips Callout */}
-      <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-5 rounded-r-2xl my-6">
-        <h4 className="font-display font-bold text-[#0F8B8D] text-sm mb-1">Shift Sleep Tip</h4>
+      <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-5 rounded-r-2xl my-6">
+        <h4 className="font-display font-bold text-[#2D6A4F] text-sm mb-1">Shift Sleep Tip</h4>
         <p className="text-slate-gray text-xs font-semibold leading-relaxed">
           Use high-quality blackout window curtains to block out daytime sunlight and signal your brain to sleep. Using noise-canceling earplugs or soft white noise further improves sleep quality.
         </p>
@@ -116,27 +116,27 @@ export const article10Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Does the property use secure biometric access for flexible gate entry?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the daytime environment quiet and supportive of restful sleep?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Can the dining team package and store warm meals in thermal boxes for late shifts?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is there a shared pantry with a microwave and refrigerator for food reheating?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the property located directly on a safe, well-lit main road with nearby transport?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is there an automatic generator to keep Wi-Fi and workspace lights running during outages?</span>
           </li>
         </ul>

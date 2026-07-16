@@ -23,13 +23,13 @@ export default function BlogPreview({
     <section id="blog" className="py-24 bg-[#FAF9F6] relative scroll-mt-12 overflow-hidden">
       {/* Background Visual Accent */}
       <div className="absolute top-1/3 left-0 w-96 h-96 rounded-full bg-primary/2 opacity-20 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-80 h-80 rounded-full bg-[#0F8B8D]/2 opacity-20 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-80 h-80 rounded-full bg-[#2D6A4F]/2 opacity-20 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl text-left">
-            <span className="inline-block text-[10px] uppercase tracking-widest text-[#0F8B8D] font-extrabold bg-[#0F8B8D]/5 px-3.5 py-1.5 rounded-full border border-[#0F8B8D]/15 font-sans">
+            <span className="inline-block text-[10px] uppercase tracking-widest text-[#2D6A4F] font-extrabold bg-[#2D6A4F]/5 px-3.5 py-1.5 rounded-full border border-[#2D6A4F]/15 font-sans">
               Student Living Blog
             </span>
             <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-charcoal mt-4 mb-3 tracking-tight">
@@ -42,9 +42,9 @@ export default function BlogPreview({
 
           <button
             onClick={onNavigateToResources}
-            className="shrink-0 flex items-center space-x-2 text-[10px] font-extrabold text-[#0F8B8D] tracking-wide uppercase border border-[#0F8B8D]/15 bg-white hover:bg-neutral-50 px-5.5 py-3.5 rounded-[18px] cursor-pointer transition-colors shadow-3xs"
+            className="shrink-0 flex items-center space-x-2 text-[10px] font-extrabold text-[#2D6A4F] tracking-wide uppercase border border-[#2D6A4F]/15 bg-white hover:bg-neutral-50 px-5.5 py-3.5 rounded-[18px] cursor-pointer transition-colors shadow-3xs"
           >
-            <BookOpen className="w-4 h-4 text-[#0F8B8D]" />
+            <BookOpen className="w-4 h-4 text-[#2D6A4F]" />
             <span>Browse All Articles</span>
           </button>
         </div>
@@ -89,7 +89,7 @@ export default function BlogPreview({
                     </span>
                   </div>
 
-                  <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2.5 leading-snug group-hover:text-[#0F8B8D] transition-colors duration-250 tracking-tight line-clamp-2 min-h-[2.75rem] sm:min-h-[3.25rem]">
+                  <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2.5 leading-snug group-hover:text-[#2D6A4F] transition-colors duration-250 tracking-tight line-clamp-2 min-h-[2.75rem] sm:min-h-[3.25rem]">
                     {post.title}
                   </h3>
 
@@ -103,10 +103,10 @@ export default function BlogPreview({
               <div className="flex flex-col">
                 {/* Bottom Action Row */}
                 <div className="mx-6 pb-6 pt-5 border-t border-gray-50 flex items-center justify-between">
-                  <span className="font-sans font-extrabold text-[10px] tracking-wider text-[#0F8B8D] uppercase group-hover:translate-x-0.5 transition-transform">
+                  <span className="font-sans font-extrabold text-[10px] tracking-wider text-[#2D6A4F] uppercase group-hover:translate-x-0.5 transition-transform">
                     Read Article
                   </span>
-                  <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-charcoal group-hover:bg-[#0F8B8D] group-hover:text-white transition-colors duration-300">
+                  <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-charcoal group-hover:bg-[#2D6A4F] group-hover:text-white transition-colors duration-300">
                     <ArrowUpRight className="w-4 h-4" />
                   </div>
                 </div>

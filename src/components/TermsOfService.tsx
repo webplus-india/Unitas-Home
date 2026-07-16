@@ -111,37 +111,37 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
       icon: CheckCircle2,
       title: 'Acceptance of Terms',
       description: 'By browsing and using this website, you explicitly agree to follow our defined Terms & Conditions.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: Calendar,
       title: 'Booking Requests',
       description: 'Form submission logs scheduled walkthroughs, verified and confirmed only upon manager authorization.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     },
     {
       icon: DollarSign,
       title: 'Payments & Booking',
       description: 'All rent and security deposit amounts are discussed and formalized transparently during onboarding.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: UserCheck,
       title: 'User Responsibilities',
       description: 'Visitors are required to supply genuine, accurate details and browse our modules respectfully.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     },
     {
       icon: Globe,
       title: 'Website Usage',
       description: 'You are permitted to browse and leverage this website exclusively for lawful and genuine inquiries.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: HelpCircle,
       title: 'Need Help?',
       description: 'Our digital support team is always available to clear any queries regarding house rules or guidelines.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     }
   ];
 
@@ -199,7 +199,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
     <div className="w-full bg-[#FCFCF8] py-2 pt-[80px] pb-10">
       {/* Reading Progress Bar */}
       <div 
-        className="fixed top-0 left-0 h-1 bg-[#0F8B8D] z-50 transition-all duration-100 ease-out" 
+        className="fixed top-0 left-0 h-1 bg-[#2D6A4F] z-50 transition-all duration-100 ease-out" 
         style={{ width: `${scrollProgress}%` }}
         aria-hidden="true"
       />
@@ -220,7 +220,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-          <nav className="flex items-center justify-center space-x-2 text-xs md:text-sm font-sans font-semibold tracking-wide text-[#F4B400] mb-8 select-none uppercase">
+          <nav className="flex items-center justify-center space-x-2 text-xs md:text-sm font-sans font-semibold tracking-wide text-[#D4AF37] mb-8 select-none uppercase">
             <button 
               onClick={onNavigateToHome}
               className="hover:text-white transition-colors duration-200 cursor-pointer"
@@ -231,7 +231,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
             <span className="text-white/90">Terms & Conditions</span>
           </nav>
 
-          <span className="font-sans text-xs font-bold text-[#F4B400] tracking-widest uppercase mb-3 block">
+          <span className="font-sans text-xs font-bold text-[#D4AF37] tracking-widest uppercase mb-3 block">
             LEGAL INFORMATION
           </span>
 
@@ -255,7 +255,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
 
       {/* 2. QUICK TERMS SNAPSHOT */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <span className="font-sans text-xs font-bold text-[#0F8B8D] tracking-wider uppercase mb-2 block">
+        <span className="font-sans text-xs font-bold text-[#2D6A4F] tracking-wider uppercase mb-2 block">
           Overview
         </span>
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-3">
@@ -271,7 +271,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
             return (
               <div 
                 key={idx}
-                className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left hover:border-[#0F8B8D]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
+                className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left hover:border-[#2D6A4F]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
               >
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${card.color} transition-transform duration-300 group-hover:scale-105`}>
                   <IconComponent className="w-5 h-5 shrink-0" />
@@ -289,16 +289,16 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
       </section>
 
       {/* 3. OUR COMMITMENT TO FAIR SERVICE */}
-      <section className="bg-[#ECF9F8]/20 border-y border-[#E5E7EB]/30 py-16 md:py-24">
+      <section className="bg-[#F0F5F2]/20 border-y border-[#E5E7EB]/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto mb-16">
-            <span className="font-sans text-xs font-bold text-[#0F8B8D] tracking-wider uppercase mb-2 block">
+            <span className="font-sans text-xs font-bold text-[#2D6A4F] tracking-wider uppercase mb-2 block">
               Core Principles
             </span>
             <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-4">
               Our Commitment to Fair Service
             </h2>
-            <div className="w-12 h-1 bg-[#F4B400] mx-auto mb-6 rounded-full"></div>
+            <div className="w-12 h-1 bg-[#D4AF37] mx-auto mb-6 rounded-full"></div>
             <p className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed max-w-2xl mx-auto font-medium">
               We believe legal policies should be transparent, fair, and easy to understand. We reject confusing visual clutter and small-print loopholes.
             </p>
@@ -310,9 +310,9 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               return (
                 <div 
                   key={idx}
-                  className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-center text-center hover:border-[#0F8B8D]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
+                  className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-center text-center hover:border-[#2D6A4F]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center mb-4 shrink-0 transition-transform duration-300 group-hover:scale-105">
+                  <div className="w-12 h-12 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center mb-4 shrink-0 transition-transform duration-300 group-hover:scale-105">
                     <IconComponent className="w-5 h-5" />
                   </div>
                   <h3 className="font-display font-bold text-[#1F2937] text-sm sm:text-base mb-2">
@@ -330,13 +330,13 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
 
       {/* 4. PAGE INTRODUCTION */}
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <div className="w-12 h-12 rounded-2xl bg-[#FFFBEB] text-[#F4B400] flex items-center justify-center mx-auto mb-6">
+        <div className="w-12 h-12 rounded-2xl bg-[#FFFBEB] text-[#D4AF37] flex items-center justify-center mx-auto mb-6">
           <BookOpen className="w-6 h-6" />
         </div>
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-4">
           Understanding These Terms
         </h2>
-        <div className="w-12 h-1 bg-[#0F8B8D] mx-auto mb-6 rounded-full"></div>
+        <div className="w-12 h-1 bg-[#2D6A4F] mx-auto mb-6 rounded-full"></div>
         <p className="font-sans text-sm sm:text-base md:text-lg text-[#6B7280] leading-relaxed max-w-2xl mx-auto font-medium">
           Welcome to Unitas Home. These Terms & Conditions ("Terms") govern your use of our official website, online scheduling mechanisms, reservation inquiries, and digital walkthrough requests. By accessing or interacting with our online resources, you confirm your acceptance of these Terms. Our central aim is to provide a highly respectful, secure, and transparent digital journey for both prospective students and on-property professionals.
         </p>
@@ -359,7 +359,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <CheckCircle2 className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -382,7 +382,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Globe className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -396,15 +396,15 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Leveraging website elements for fraudulent activities, fake reservation bookings, or marketing inquiries.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Using digital scrapers, automated spiders, bots, or unauthorized code to aggregate media or student data.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Uploading corrupted media, malicious scripts, or files designed to degrade website loading speeds.</span>
                   </li>
                 </ul>
@@ -421,7 +421,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Calendar className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -435,15 +435,15 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Walkthrough pass requests:</strong> Digital scheduling logs block coordinate slots but do not represent confirmed room assignments.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Manager Validation:</strong> A physical room lease is only locked and finalized after a thorough in-person identity verification process.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Capacity Caps:</strong> Room categories remain subject to immediate localized occupancy levels. Walkthrough passes do not protect vacant slots dynamically.</span>
                   </li>
                 </ul>
@@ -460,7 +460,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <DollarSign className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -491,7 +491,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <UserCheck className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -505,15 +505,15 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Submit authentic, completely accurate, and updated contact numbers, and legal identification details.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Avoid attempting to breach or scan the security networks surrounding our servers or form data stores.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span>Acknowledge that any disruptive online activity or falsified bookings will yield immediate cancellation of scheduled site visits.</span>
                   </li>
                 </ul>
@@ -530,7 +530,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <FileText className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -553,7 +553,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <ExternalLink className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -576,7 +576,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <ShieldAlert className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -599,7 +599,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <AlertTriangle className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -622,7 +622,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Scale className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -645,7 +645,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-xl sm:text-2xl text-[#1F2937]">
@@ -660,24 +660,24 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                   <div className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white flex items-start space-x-3.5 luxury-card-shadow">
-                    <div className="w-9 h-9 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Email Our Desk</h4>
-                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#0F8B8D] hover:underline transition-colors break-all">
+                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
                         unitashomeuk@gmail.com
                       </a>
                     </div>
                   </div>
 
                   <div className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white flex items-start space-x-3.5 luxury-card-shadow">
-                    <div className="w-9 h-9 rounded-xl bg-[#FFFBEB] text-[#F4B400] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#FFFBEB] text-[#D4AF37] flex items-center justify-center shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Call Our Coordinator</h4>
-                      <a href="tel:+919675591951" className="text-xs sm:text-sm text-[#F4B400] hover:underline transition-colors">
+                      <a href="tel:+919675591951" className="text-xs sm:text-sm text-[#D4AF37] hover:underline transition-colors">
                         +91 96755 91951
                       </a>
                     </div>
@@ -690,7 +690,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
 
           {/* Sticky ToC Sidebar (Desktop Only) */}
           <div className="hidden lg:block lg:col-span-1 sticky top-32 self-start pl-4 border-l border-[#E5E7EB]">
-            <h3 className="font-display font-extrabold text-xs text-[#0B6E70] uppercase tracking-wider mb-6 select-none">
+            <h3 className="font-display font-extrabold text-xs text-[#1B4332] uppercase tracking-wider mb-6 select-none">
               On This Page
             </h3>
             <ul className="space-y-4 font-sans text-sm font-semibold select-none">
@@ -700,13 +700,13 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                     onClick={() => scrollToSection(sec.id)}
                     className={`flex items-center space-x-2.5 text-left w-full group transition-all duration-200 cursor-pointer ${
                       activeSection === sec.id 
-                        ? 'text-[#0F8B8D] translate-x-1.5' 
+                        ? 'text-[#2D6A4F] translate-x-1.5' 
                         : 'text-[#6B7280] hover:text-[#1F2937] hover:translate-x-1'
                     }`}
                   >
                     <span className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
                       activeSection === sec.id 
-                        ? 'bg-[#0F8B8D] scale-125' 
+                        ? 'bg-[#2D6A4F] scale-125' 
                         : 'bg-transparent group-hover:bg-[#6B7280]/30'
                     }`} />
                     <span>{sec.label}</span>
@@ -721,8 +721,8 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
 
       {/* 8. IMPORTANT NOTICE BOX */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-        <div className="bg-[#FFFDF0] border-l-[5px] border-[#F4B400] rounded-r-[20px] p-8 sm:p-10 text-left luxury-card-shadow flex items-start space-x-4">
-          <AlertTriangle className="w-7 h-7 sm:w-8 sm:h-8 text-[#F4B400] shrink-0 mt-0.5" />
+        <div className="bg-[#FFFDF0] border-l-[5px] border-[#D4AF37] rounded-r-[20px] p-8 sm:p-10 text-left luxury-card-shadow flex items-start space-x-4">
+          <AlertTriangle className="w-7 h-7 sm:w-8 sm:h-8 text-[#D4AF37] shrink-0 mt-0.5" />
           <div className="flex-1">
             <h4 className="font-display font-extrabold text-sm sm:text-base text-[#1F2937] mb-2 leading-tight">
               Important Notice
@@ -737,8 +737,8 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
       {/* 9. FREQUENTLY ASKED QUESTIONS */}
       <section className="max-w-4xl mx-auto px-6 py-16 md:py-20 text-center">
         <div className="flex items-center justify-center space-x-2.5 mb-3.5">
-          <HelpCircle className="w-5 h-5 text-[#0F8B8D]" />
-          <span className="font-sans text-xs font-bold text-[#0F8B8D] tracking-wider uppercase">
+          <HelpCircle className="w-5 h-5 text-[#2D6A4F]" />
+          <span className="font-sans text-xs font-bold text-[#2D6A4F] tracking-wider uppercase">
             FAQS
           </span>
         </div>
@@ -752,7 +752,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
             return (
               <div 
                 key={idx}
-                className={`rounded-[20px] border border-[#E5E7EB]/60 luxury-card-shadow overflow-hidden transition-all duration-300 ${isOpen ? 'bg-[#FFFDF6] border-l-4 border-l-[#F4B400]' : 'bg-white border-l-0'}`}
+                className={`rounded-[20px] border border-[#E5E7EB]/60 luxury-card-shadow overflow-hidden transition-all duration-300 ${isOpen ? 'bg-[#FFFDF6] border-l-4 border-l-[#D4AF37]' : 'bg-white border-l-0'}`}
               >
                 <button
                   onClick={() => setOpenFaq(isOpen ? null : idx)}
@@ -765,7 +765,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                   <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.2 }}
-                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${isOpen ? 'bg-[#FFFBEB] text-[#F4B400]' : 'bg-[#FCFCF8] text-[#6B7280]'}`}
+                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${isOpen ? 'bg-[#FFFBEB] text-[#D4AF37]' : 'bg-[#FCFCF8] text-[#6B7280]'}`}
                   >
                     <ChevronDown className="w-4 h-4" />
                   </motion.div>
@@ -798,7 +798,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-4">
           Need Assistance?
         </h2>
-        <h3 className="font-display font-black text-xs text-[#0F8B8D] uppercase tracking-[1.5px] mb-4">
+        <h3 className="font-display font-black text-xs text-[#2D6A4F] uppercase tracking-[1.5px] mb-4">
           Questions About Our Terms?
         </h3>
         <p className="font-sans text-sm sm:text-base text-[#6B7280] max-w-xl mx-auto mb-8 font-medium">
@@ -808,7 +808,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
           <button
             onClick={onBookVisit}
-            className="w-full sm:w-auto bg-[#F4B400] hover:bg-[#E0A300] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(244,180,0,0.25)] hover:shadow-[0_8px_20px_rgba(244,180,0,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_20px_rgba(212,175,55,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <Calendar className="w-5 h-5 text-[#1F2937]" />
             <span>Book a Visit</span>
@@ -818,7 +818,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
             href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20terms%20and%20conditions."
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(45, 106, 79,0.25)] hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <svg 
               className="w-5 h-5 text-white fill-current shrink-0" 

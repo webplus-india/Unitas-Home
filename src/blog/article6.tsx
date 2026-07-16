@@ -3,8 +3,8 @@ import React from 'react';
 export const article6Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary for Parents</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary for Parents</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Sending your child to pursue an education in Dehradun is a proud and emotional moment for parents. Ensuring they live in a safe, healthy, and supportive environment is your top priority. This parent's guide outlines how to evaluate security controls, kitchen hygiene, warden care, and medical emergency preparedness to help you choose a premium co-living space.
       </p>
@@ -65,7 +65,7 @@ export const article6Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, our kitchen team prepares four nutritious, home-style vegetarian meals every single day (Breakfast, Lunch, Evening Snacks with Tea, and Dinner). We partner with premium local distributors to secure organic ingredients, heart-healthy oils, and a rich, rotating menu full of balanced proteins (paneer, curd, fresh lentils, green vegetables).
+        At Unitas Home, our kitchen team prepares three nutritious, home-style vegetarian meals every single day (Breakfast, Lunch, and Dinner). We partner with premium local distributors to secure organic ingredients, heart-healthy oils, and a rich, rotating menu full of balanced proteins (paneer, curd, fresh lentils, green vegetables).
       </p>
 
       {/* Warning Box */}
@@ -103,7 +103,7 @@ export const article6Content = (
       </div>
 
       <p className="mb-4">
-        Unitas Home is strategically located in Patel Nagar, just a 2-minute walk from the renowned <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a>. If a resident falls ill, our warden assists them immediately, coordinates professional treatment, and informs parents, ensuring timely care.
+        Unitas Home is strategically located in Patel Nagar, just a 2-minute walk from the renowned <a href="#location" className="text-[#2D6A4F] font-bold hover:underline">Mahant Indresh Hospital</a>. If a resident falls ill, our warden assists them immediately, coordinates professional treatment, and informs parents, ensuring timely care.
       </p>
 
       <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2">💡 Local Insights: The Value of Location Safety</h3>
@@ -118,27 +118,27 @@ export const article6Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are security cameras actively monitoring corridors, staircases, and exits?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Does the property use secure biometric access, or basic manual locks?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is there an experienced resident warden living on the property full-time?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the kitchen on-site and managed with professional cleanliness standards?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are there clean, multi-stage RO water purification systems installed?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the property located on a safe, well-lit main road with nearby medical access?</span>
           </li>
         </ul>

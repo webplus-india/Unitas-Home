@@ -4,13 +4,13 @@
  */
 
 import React from 'react';
-import { BedDouble } from 'lucide-react';
+import { BedDouble, DoorOpen } from 'lucide-react';
 
 const roomHighlights = [
-  { icon: '/icons/bed.svg', label: 'Premium Bed & Mattress' },
+  { icon: 'BedDouble', label: 'Premium Bed & Mattress' },
   { icon: '/icons/desk-chair.svg', label: 'Study Desk & Chair' },
   { icon: '/icons/shower.svg', label: 'Attached Bathroom' },
-  { icon: '/icons/wifi.svg', label: 'High-Speed Wi-Fi' },
+  { icon: 'DoorOpen', label: 'Attached Balcony' },
   { icon: '/icons/window.svg', label: 'Well-Ventilated Room' },
   { icon: '/icons/wardrobe.svg', label: 'Spacious Wardrobe' },
 ];
@@ -24,11 +24,11 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
     <div className="border-t border-slate-100/35 pt-4 mb-4.5 flex-grow">
       {/* Header Badge style label */}
       <div className="flex items-center justify-center gap-1.5 mb-3">
-        <div className="h-[1.5px] w-3 bg-[#F4B400] rounded-full" />
-        <span className="text-[10px] font-bold uppercase tracking-normal text-[#0F8B8D]/90 block">
+        <div className="h-[1.5px] w-3 bg-[#D4AF37] rounded-full" />
+        <span className="text-[10px] font-bold uppercase tracking-normal text-[#2D6A4F]/90 block">
           ROOM FEATURES
         </span>
-        <div className="h-[1.5px] w-3 bg-[#F4B400] rounded-full" />
+        <div className="h-[1.5px] w-3 bg-[#D4AF37] rounded-full" />
       </div>
 
       {/* Grid of highlights - clean semantic layout */}
@@ -37,10 +37,12 @@ export default function RoomFeatures({ roomId }: RoomFeaturesProps) {
           return (
             <div 
               key={`${roomId}-feat-${index}`} 
-              className="flex items-center gap-[10px] flex-nowrap px-3.5 py-3 bg-white border border-slate-100 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.015)] select-none h-full transition-[border-color,box-shadow] duration-200 md:hover:border-[#0F8B8D]/25 md:hover:shadow-[0_4px_12px_rgba(15,139,141,0.03)]"
+              className="flex items-center gap-[10px] flex-nowrap px-3.5 py-3 bg-white border border-slate-100 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.015)] select-none h-full transition-[border-color,box-shadow] duration-200 md:hover:border-[#2D6A4F]/25 md:hover:shadow-[0_4px_12px_rgba(45, 106, 79,0.03)]"
             >
-              {index === 0 ? (
-                <BedDouble className="w-5 h-5 shrink-0 text-[#0F8B8D]" strokeWidth={1.8} />
+              {item.icon === 'BedDouble' ? (
+                <BedDouble className="w-5 h-5 shrink-0 text-[#2D6A4F]" strokeWidth={1.8} />
+              ) : item.icon === 'DoorOpen' ? (
+                <DoorOpen className="w-5 h-5 shrink-0 text-[#2D6A4F]" strokeWidth={1.8} />
               ) : (
                 <img 
                   src={item.icon} 

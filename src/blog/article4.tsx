@@ -3,8 +3,8 @@ import React from 'react';
 export const article4Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Relocating to college for your freshman year is an incredible milestone, but adjusting to a shared room, managing your laundry, adapting to mess meals, and structuring study blocks can be overwhelming. This guide compiles expert, practical tips to help you adapt seamlessly, establish roommate harmony, organize your study desk, and conquer homesickness in Dehradun.
       </p>
@@ -114,19 +114,19 @@ export const article4Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Study Supplies: Heavy-duty extension cord, warm desk lamp, damage-free wall sticky notes.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Waterproof Gear: Windbreaker jacket, high-end umbrella, waterproof laptop backpack sleeve.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Room Hygiene: Quick-dry microfiber towels, multi-compartment laundry hamper bag.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Digital Setup: High-end noise-canceling headphones for quiet study in shared environments.</span>
           </li>
         </ul>

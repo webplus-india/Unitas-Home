@@ -165,16 +165,16 @@ export default function MobileBottomBar({ onBookVisit }: MobileBottomBarProps) {
               {/* Left Button - Call Now */}
               <a
                 href="tel:+919675591951"
-                className="flex-1 h-[44px] rounded-[22px] border border-[rgba(15,143,148,0.18)] bg-[#ECF9F8] hover:bg-[#D9F3F1] active:scale-98 text-[#0F8B8D] font-sans font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center space-x-2 transition-all duration-200 ease-out cursor-pointer"
+                className="flex-1 h-[44px] rounded-[22px] border border-[#2D6A4F]/30 bg-white hover:bg-[#2D6A4F]/8 active:scale-98 text-[#2D6A4F] font-sans font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center space-x-2 transition-all duration-200 ease-out cursor-pointer"
               >
-                <Phone className="w-[20px] h-[20px] text-[#0F8B8D] shrink-0" />
+                <Phone className="w-[20px] h-[20px] text-[#2D6A4F] shrink-0" />
                 <span>Call Now</span>
               </a>
 
               {/* Right Button - Book Visit */}
               <button
                 onClick={onBookVisit}
-                className="flex-1 h-[44px] rounded-[22px] bg-[#0F8B8D] hover:bg-[#0B6E70] active:scale-98 text-white font-sans font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center space-x-2 transition-all duration-200 ease-out cursor-pointer shadow-[0_6px_16px_rgba(15,143,148,0.12)]"
+                className="flex-1 h-[44px] rounded-[22px] bg-[#2D6A4F] hover:bg-[#1B4332] active:scale-98 text-white font-sans font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center space-x-2 transition-all duration-200 ease-out cursor-pointer shadow-[0_6px_16px_rgba(45,106,79,0.15)]"
               >
                 <Calendar className="w-[20px] h-[20px] text-white shrink-0" />
                 <span>Book Visit</span>

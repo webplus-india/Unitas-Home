@@ -156,7 +156,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
         {/* Close Button - Premium refinement */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-30 w-9 h-9 flex items-center justify-center rounded-full bg-white border border-slate-200/80 shadow-md text-slate-600 hover:text-[#0F8B8D] hover:border-[#F4B400] hover:shadow-[0_0_15px_rgba(244,180,0,0.4)] transition-all duration-300 hover:rotate-90 cursor-pointer"
+          className="absolute top-4 right-4 z-30 w-9 h-9 flex items-center justify-center rounded-full bg-white border border-slate-200/80 shadow-md text-slate-600 hover:text-[#2D6A4F] hover:border-[#D4AF37] hover:shadow-[0_0_15px_rgba(244,180,0,0.4)] transition-all duration-300 hover:rotate-90 cursor-pointer"
           aria-label="Close booking popup"
         >
           <X className="w-4.5 h-4.5" />
@@ -215,7 +215,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                         className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                           errors.name 
                             ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                            : 'border-slate-200 focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10'
+                            : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                         }`}
                         placeholder="e.g. Ayush Dobhal"
                       />
@@ -236,7 +236,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                             errors.phone 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                           placeholder="e.g. +91 98765 43210"
                         />
@@ -255,7 +255,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                             errors.email 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                           placeholder="e.g. ayush@gmail.com"
                         />
@@ -279,7 +279,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                             className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
                               errors.visitDate 
                                 ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                                : 'border-slate-200 focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10'
+                                : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                             }`}
                             placeholder="Select your visit date"
                           />
@@ -298,7 +298,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
                             errors.timeSlot 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                         >
                           <option value="">Choose a preferred time</option>
@@ -319,7 +319,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                       <select
                         value={formData.visitorsCount}
                         onChange={(e) => setFormData({ ...formData, visitorsCount: e.target.value })}
-                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10"
+                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10"
                       >
                         <option value="1">1 Person</option>
                         <option value="2">2 People</option>
@@ -336,7 +336,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                       <textarea
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#0F8B8D] focus:ring-4 focus:ring-[#0F8B8D]/10 resize-none"
+                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10 resize-none"
                         placeholder="Tell us if you have any room preference, college, budget or special requirements..."
                       />
                     </div>
@@ -347,9 +347,9 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                 <div className="bg-white border-t border-slate-100 p-4 sm:px-8 flex items-center justify-center z-20 shrink-0">
                   <button
                     type="submit"
-                    className="w-full h-12 bg-primary hover:bg-[#0B6E70] text-white font-sans font-bold text-xs uppercase tracking-wider rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.35)] transition-all duration-250 flex items-center justify-center space-x-2 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
+                    className="w-full h-12 bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-xs uppercase tracking-wider rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_20px_rgba(212,175,55,0.4)] transition-all duration-250 flex items-center justify-center space-x-2 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
                   >
-                    <Calendar className="w-4 h-4 text-white" />
+                    <Calendar className="w-4 h-4 text-[#1F2937]" />
                     <span>Book My Visit</span>
                   </button>
                 </div>
@@ -362,7 +362,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                 exit={{ opacity: 0 }}
                 className="flex-grow overflow-y-auto px-6 sm:px-8 py-8 flex flex-col items-center justify-center text-center space-y-5 h-full"
               >
-                <div className="w-16 h-16 rounded-full bg-[#0F8B8D]/10 flex items-center justify-center text-[#0F8B8D]">
+                <div className="w-16 h-16 rounded-full bg-[#2D6A4F]/10 flex items-center justify-center text-[#2D6A4F]">
                   <Check className="w-8 h-8 stroke-[3]" />
                 </div>
                 <div className="space-y-2">
@@ -376,7 +376,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                 <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-xs pt-4">
                   <button
                     onClick={onClose}
-                    className="w-full h-11 bg-primary hover:bg-[#0B6E70] text-white font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer"
+                    className="w-full h-11 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer shadow-xs"
                   >
                     Close
                   </button>
@@ -386,7 +386,7 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                         onExploreRooms();
                         onClose();
                       }}
-                      className="w-full h-11 bg-white border border-[#0F8B8D]/20 text-[#0F8B8D] hover:bg-[#0F8B8D]/5 font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer flex items-center justify-center gap-1.5"
+                      className="w-full h-11 bg-white border border-[#2D6A4F]/20 text-[#2D6A4F] hover:bg-[#2D6A4F]/5 font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer flex items-center justify-center gap-1.5"
                     >
                       Explore Rooms
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -532,23 +532,23 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
         {/* Close Button - Premium refinement */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-30 w-9 h-9 flex items-center justify-center rounded-full bg-white border border-slate-200/80 shadow-md text-slate-600 hover:text-[#0F8B8D] hover:border-[#F4B400] hover:shadow-[0_0_15px_rgba(244,180,0,0.4)] transition-all duration-300 hover:rotate-90 cursor-pointer"
+          className="absolute top-4 right-4 z-30 w-9 h-9 flex items-center justify-center rounded-full bg-white border border-slate-200/80 shadow-md text-slate-600 hover:text-[#2D6A4F] hover:border-[#D4AF37] hover:shadow-[0_0_15px_rgba(244,180,0,0.4)] transition-all duration-300 hover:rotate-90 cursor-pointer"
           aria-label="Close reservation popup"
         >
           <X className="w-4.5 h-4.5" />
         </button>
 
         {/* Left Side: Premium Trust Panel (Desktop Only) - Soft yellow accent background */}
-        <div className="hidden lg:flex w-[35%] bg-[#F4B400]/5 p-8 flex-col justify-between border-r border-slate-100 text-left shrink-0">
+        <div className="hidden lg:flex w-[35%] bg-[#D4AF37]/5 p-8 flex-col justify-between border-r border-slate-100 text-left shrink-0">
           <div>
-            <div className="flex items-center gap-0.5 text-[#F4B400] mb-2.5">
-              <Star className="w-4.5 h-4.5 fill-[#F4B400] stroke-[#F4B400]" />
-              <Star className="w-4.5 h-4.5 fill-[#F4B400] stroke-[#F4B400]" />
-              <Star className="w-4.5 h-4.5 fill-[#F4B400] stroke-[#F4B400]" />
-              <Star className="w-4.5 h-4.5 fill-[#F4B400] stroke-[#F4B400]" />
-              <Star className="w-4.5 h-4.5 fill-[#F4B400] stroke-[#F4B400]" />
+            <div className="flex items-center gap-0.5 text-[#D4AF37] mb-2.5">
+              <Star className="w-4.5 h-4.5 fill-[#D4AF37] stroke-[#D4AF37]" />
+              <Star className="w-4.5 h-4.5 fill-[#D4AF37] stroke-[#D4AF37]" />
+              <Star className="w-4.5 h-4.5 fill-[#D4AF37] stroke-[#D4AF37]" />
+              <Star className="w-4.5 h-4.5 fill-[#D4AF37] stroke-[#D4AF37]" />
+              <Star className="w-4.5 h-4.5 fill-[#D4AF37] stroke-[#D4AF37]" />
             </div>
-            <p className="font-display font-extrabold text-[28px] text-[#0F8B8D] tracking-tight leading-none">
+            <p className="font-display font-extrabold text-[28px] text-[#2D6A4F] tracking-tight leading-none">
               4.6 <span className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Google Rating</span>
             </p>
             <p className="font-sans text-xs text-slate-gray font-semibold mt-1">
@@ -558,37 +558,37 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
 
           <div className="space-y-4 py-6">
             <div className="flex items-center gap-2.5">
-              <Check className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 stroke-[2.5]" />
+              <Check className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 stroke-[2.5]" />
               <span className="font-sans text-xs font-bold text-charcoal/85">Secure Your Preferred Room</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <Check className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 stroke-[2.5]" />
+              <Check className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 stroke-[2.5]" />
               <span className="font-sans text-xs font-bold text-charcoal/85">Zero Brokerage</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <Check className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 stroke-[2.5]" />
+              <Check className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 stroke-[2.5]" />
               <span className="font-sans text-xs font-bold text-charcoal/85">Flexible Move-in</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <Check className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 stroke-[2.5]" />
+              <Check className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 stroke-[2.5]" />
               <span className="font-sans text-xs font-bold text-charcoal/85">Premium Student Living</span>
             </div>
             <div className="flex items-center gap-2.5">
-              <Check className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 stroke-[2.5]" />
+              <Check className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 stroke-[2.5]" />
               <span className="font-sans text-xs font-bold text-charcoal/85">Reservation Confirmed by Our Team</span>
             </div>
           </div>
 
-          <div className="pt-4 border-t border-[#F4B400]/25 text-slate-700">
+          <div className="pt-4 border-t border-[#D4AF37]/25 text-slate-700">
             <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400">
               Need Assistance?
             </span>
             <div className="mt-2.5 space-y-2">
               <a 
                 href="tel:+919675591951"
-                className="flex items-center gap-2 text-xs font-semibold hover:text-[#0F8B8D] transition-colors"
+                className="flex items-center gap-2 text-xs font-semibold hover:text-[#2D6A4F] transition-colors"
               >
-                <Phone className="w-3.5 h-3.5 text-[#0F8B8D] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#2D6A4F] shrink-0" />
                 <span>Call Now: <strong className="font-bold">+91 96755 91951</strong></span>
               </a>
               <div className="text-[9px] uppercase font-bold tracking-wider text-slate-300 pl-5.5">or</div>
@@ -645,7 +645,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                         className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                           errors.name 
                             ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                            : 'border-slate-200 focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10'
+                            : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                         }`}
                         placeholder="e.g. Ayush Dobhal"
                       />
@@ -666,7 +666,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                             errors.phone 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                           placeholder="e.g. +91 98765 43210"
                         />
@@ -685,7 +685,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
                             errors.email 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                           placeholder="e.g. ayush@gmail.com"
                         />
@@ -706,7 +706,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
                             errors.roomType 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                         >
                           <option value="" disabled hidden>Select your preferred room</option>
@@ -735,7 +735,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                           className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
                             errors.moveInDate 
                               ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10'
+                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
                           }`}
                         />
                         {errors.moveInDate && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.moveInDate}</span>}
@@ -750,7 +750,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                       <select
                         value={formData.duration}
                         onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
-                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10"
+                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10"
                       >
                         <option value="" disabled hidden>Select duration of stay</option>
                         <option value="1">1 Month</option>
@@ -768,7 +768,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                       <textarea
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#F4B400] focus:ring-4 focus:ring-[#F4B400]/10 resize-none"
+                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10 resize-none"
                         placeholder="Tell us your preferred move-in date, college/company, or any special requirements..."
                       />
                     </div>
@@ -779,9 +779,9 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                 <div className="bg-white border-t border-slate-100 p-4 sm:px-8 flex items-center justify-center z-20 shrink-0">
                   <button
                     type="submit"
-                    className="w-full h-12 bg-[#F4B400] hover:bg-[#E0A300] text-[#0F2C59] font-sans font-bold text-xs uppercase tracking-wider rounded-full shadow-[0_4px_14px_rgba(244,180,0,0.25)] hover:shadow-[0_8px_20px_rgba(244,180,0,0.35)] hover:shadow-[#F4B400]/30 transition-all duration-250 ease-out flex items-center justify-center space-x-2 cursor-pointer hover:-translate-y-[2px] active:translate-y-0"
+                    className="w-full h-12 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-xs uppercase tracking-wider rounded-full shadow-[0_4px_14px_rgba(45,106,79,0.25)] hover:shadow-[0_8px_20px_rgba(45,106,79,0.35)] transition-all duration-250 ease-out flex items-center justify-center space-x-2 cursor-pointer hover:-translate-y-[2px] active:translate-y-0"
                   >
-                    <Check className="w-4 h-4 text-[#0F2C59] stroke-[3]" />
+                    <Check className="w-4 h-4 text-white stroke-[3]" />
                     <span>Reserve My Room</span>
                   </button>
                 </div>
@@ -794,14 +794,14 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                 exit={{ opacity: 0 }}
                 className="flex-grow overflow-y-auto px-6 sm:px-8 py-8 flex flex-col items-center justify-center text-center space-y-5 h-full"
               >
-                <div className="w-16 h-16 rounded-full bg-[#F4B400]/15 flex items-center justify-center text-[#E0A300]">
+                <div className="w-16 h-16 rounded-full bg-[#D4AF37]/15 flex items-center justify-center text-[#C59B27]">
                   <Check className="w-8 h-8 stroke-[3]" />
                 </div>
                 <div className="space-y-2">
                   <h3 className="font-display font-extrabold text-2xl text-charcoal">
                     Reservation Request Received!
                   </h3>
-                  <p className="font-sans text-sm font-bold text-[#E0A300] max-w-sm mx-auto leading-relaxed">
+                  <p className="font-sans text-sm font-bold text-[#C59B27] max-w-sm mx-auto leading-relaxed">
                     Your room has not been booked yet.
                   </p>
                   <p className="font-sans text-xs sm:text-sm text-slate-gray max-w-sm mx-auto leading-relaxed">
@@ -818,7 +818,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                   {onBookVisit && (
                     <button
                       onClick={onBookVisit}
-                      className="w-full h-11 bg-[#F4B400] hover:bg-[#E0A300] text-[#0F2C59] font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer shadow-[0_4px_14px_rgba(244,180,0,0.25)] flex items-center justify-center gap-1.5"
+                      className="w-full h-11 bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-xs uppercase tracking-wider rounded-full transition-all cursor-pointer shadow-[0_4px_14px_rgba(212,175,55,0.25)] flex items-center justify-center gap-1.5"
                     >
                       Book a Visit
                       <ArrowRight className="w-3.5 h-3.5" />

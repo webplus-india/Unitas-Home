@@ -279,7 +279,7 @@ export default function BlogDetail({
     <section className="pt-28 pb-24 bg-[#FAF9F6] relative min-h-screen overflow-hidden">
       {/* Background Visual Ambient Blur */}
       <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full bg-primary/2 opacity-25 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/3 right-0 w-80 h-80 rounded-full bg-[#0F8B8D]/2 opacity-25 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/3 right-0 w-80 h-80 rounded-full bg-[#2D6A4F]/2 opacity-25 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
@@ -296,7 +296,7 @@ export default function BlogDetail({
           {/* Back Navigation Button */}
           <button
             onClick={onBackToListing}
-            className="inline-flex items-center space-x-1.5 text-xs font-extrabold text-slate-gray hover:text-[#0F8B8D] mb-8 cursor-pointer group transition-colors focus:outline-hidden"
+            className="inline-flex items-center space-x-1.5 text-xs font-extrabold text-slate-gray hover:text-[#2D6A4F] mb-8 cursor-pointer group transition-colors focus:outline-hidden"
           >
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
             <span>Back to All Articles</span>
@@ -304,7 +304,7 @@ export default function BlogDetail({
 
           {/* Title and Top E-E-A-T Author Card Grid (Desktop focused & clean) */}
           <div className="mb-8">
-            <span className="inline-block text-[10px] font-extrabold text-[#0F8B8D] tracking-widest uppercase bg-[#0F8B8D]/5 px-3.5 py-1.5 rounded-full border border-[#0F8B8D]/15 mb-4">
+            <span className="inline-block text-[10px] font-extrabold text-[#2D6A4F] tracking-widest uppercase bg-[#2D6A4F]/5 px-3.5 py-1.5 rounded-full border border-[#2D6A4F]/15 mb-4">
               {post.category}
             </span>
             <h1 className="font-display font-black text-2xl sm:text-3xl md:text-4xl text-charcoal leading-tight tracking-tight mb-6">
@@ -315,7 +315,7 @@ export default function BlogDetail({
             <div className="bg-white border border-border-light rounded-2xl p-5 shadow-3xs flex flex-col md:flex-row md:items-center justify-between gap-4 font-sans text-xs">
               <div className="flex flex-wrap items-center gap-4">
                 <div className="flex items-center space-x-2.5">
-                  <div className="w-9 h-9 rounded-full bg-[#0F8B8D]/10 flex items-center justify-center text-[#0F8B8D] font-bold border border-[#0F8B8D]/20">
+                  <div className="w-9 h-9 rounded-full bg-[#2D6A4F]/10 flex items-center justify-center text-[#2D6A4F] font-bold border border-[#2D6A4F]/20">
                     <User className="w-4 h-4" />
                   </div>
                   <div>
@@ -376,7 +376,7 @@ export default function BlogDetail({
               {post.tableOfContents && post.tableOfContents.length > 0 && (
                 <div className="lg:hidden bg-[#FAF9F6] border border-border-light rounded-[24px] p-5 mb-8">
                   <h4 className="font-display font-extrabold text-xs sm:text-sm text-charcoal tracking-wide uppercase mb-3 flex items-center space-x-1.5">
-                    <BookOpen className="w-4 h-4 text-[#0F8B8D]" />
+                    <BookOpen className="w-4 h-4 text-[#2D6A4F]" />
                     <span>Table of Contents</span>
                   </h4>
                   <ul className="space-y-2 text-xs sm:text-sm font-semibold">
@@ -401,7 +401,7 @@ export default function BlogDetail({
 
               {/* Mobile CTA (shown on mobile, hidden on desktop) */}
               <div className="lg:hidden mt-8 bg-neutral-50 border border-border-light rounded-[24px] p-6 shadow-3xs">
-                <span className="text-[10px] font-extrabold text-[#0F8B8D] tracking-widest uppercase bg-[#0F8B8D]/5 px-2.5 py-1 rounded-md border border-[#0F8B8D]/10">
+                <span className="text-[10px] font-extrabold text-[#2D6A4F] tracking-widest uppercase bg-[#2D6A4F]/5 px-2.5 py-1 rounded-md border border-[#2D6A4F]/10">
                   Secure Booking
                 </span>
                 <h3 className="font-display font-extrabold text-base text-charcoal mt-3 mb-2.5 leading-snug tracking-tight">
@@ -413,7 +413,7 @@ export default function BlogDetail({
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button 
                     onClick={() => onNavigateToHomeSection('contact')}
-                    className="flex-1 bg-[#0F8B8D] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs py-3.5 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer text-center block"
+                    className="flex-1 bg-[#2D6A4F] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs py-3.5 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer text-center block"
                   >
                     Schedule Room Tour
                   </button>
@@ -436,7 +436,7 @@ export default function BlogDetail({
               {post.faqs && post.faqs.length > 0 && (
                 <div className="mt-14 pt-10 border-t border-gray-100">
                   <div className="flex items-center space-x-2.5 mb-6">
-                    <BookmarkCheck className="w-5 h-5 text-[#0F8B8D]" />
+                    <BookmarkCheck className="w-5 h-5 text-[#2D6A4F]" />
                     <h3 className="font-display font-extrabold text-lg sm:text-xl text-charcoal tracking-tight">
                       Guides & FAQ Registry
                     </h3>
@@ -449,7 +449,7 @@ export default function BlogDetail({
                           key={idx} 
                           className={`border rounded-[24px] transition-all duration-300 ${
                             isOpen 
-                              ? 'border-[#0F8B8D] bg-[#0F8B8D]/2 shadow-3xs' 
+                              ? 'border-[#2D6A4F] bg-[#2D6A4F]/2 shadow-3xs' 
                               : 'border-border-light bg-[#FAF9F6] hover:bg-white'
                           }`}
                         >
@@ -458,7 +458,7 @@ export default function BlogDetail({
                             className="w-full text-left p-4.5 flex items-center justify-between font-display font-bold text-xs sm:text-sm text-charcoal cursor-pointer"
                           >
                             <span>{faq.question}</span>
-                            <span className={`text-[#0F8B8D] transition-transform duration-300 text-base font-extrabold ${isOpen ? 'rotate-180' : ''}`}>
+                            <span className={`text-[#2D6A4F] transition-transform duration-300 text-base font-extrabold ${isOpen ? 'rotate-180' : ''}`}>
                               ▾
                             </span>
                           </button>
@@ -557,7 +557,7 @@ export default function BlogDetail({
                     className="text-left group flex flex-col max-w-xs focus:outline-hidden cursor-pointer"
                   >
                     <span className="text-[10px] font-extrabold text-slate-gray tracking-widest uppercase mb-1">← Previous Article</span>
-                    <span className="text-xs sm:text-sm font-display font-extrabold text-charcoal group-hover:text-[#0F8B8D] transition-colors line-clamp-1">{prevArticle.title}</span>
+                    <span className="text-xs sm:text-sm font-display font-extrabold text-charcoal group-hover:text-[#2D6A4F] transition-colors line-clamp-1">{prevArticle.title}</span>
                   </button>
                 ) : <div className="hidden sm:block" />}
 
@@ -567,14 +567,14 @@ export default function BlogDetail({
                     className="text-right group flex flex-col items-end max-w-xs focus:outline-hidden cursor-pointer"
                   >
                     <span className="text-[10px] font-extrabold text-slate-gray tracking-widest uppercase mb-1">Next Article →</span>
-                    <span className="text-xs sm:text-sm font-display font-extrabold text-charcoal group-hover:text-[#0F8B8D] transition-colors line-clamp-1">{nextArticle.title}</span>
+                    <span className="text-xs sm:text-sm font-display font-extrabold text-charcoal group-hover:text-[#2D6A4F] transition-colors line-clamp-1">{nextArticle.title}</span>
                   </button>
                 ) : <div className="hidden sm:block" />}
               </div>
 
               {/* Bottom Brand Conversion Footer */}
               <div className="mt-12 pt-8 border-t border-border-light text-center max-w-2xl mx-auto">
-                <span className="text-[10px] font-extrabold text-[#0F8B8D] tracking-widest uppercase">
+                <span className="text-[10px] font-extrabold text-[#2D6A4F] tracking-widest uppercase">
                   Co-Living Reservation Desk
                 </span>
                 <h3 className="font-display font-extrabold text-lg sm:text-xl text-charcoal mt-2 mb-3 tracking-tight">
@@ -587,7 +587,7 @@ export default function BlogDetail({
                   {/* Primary CTA */}
                   <button
                     onClick={() => onNavigateToHomeSection('contact')}
-                    className="bg-[#0F8B8D] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs px-6 py-3.5 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer"
+                    className="bg-[#2D6A4F] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs px-6 py-3.5 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer"
                   >
                     Schedule a Visit
                   </button>
@@ -626,7 +626,7 @@ export default function BlogDetail({
               {post.tableOfContents && post.tableOfContents.length > 0 && (
                 <div className="hidden lg:block bg-white border border-border-light rounded-[24px] p-6 shadow-3xs">
                   <h4 className="font-display font-extrabold text-xs text-charcoal tracking-wider uppercase mb-4 flex items-center space-x-1.5 border-b border-gray-100 pb-3">
-                    <BookOpenText className="w-4 h-4 text-[#0F8B8D]" />
+                    <BookOpenText className="w-4 h-4 text-[#2D6A4F]" />
                     <span>In This Article</span>
                   </h4>
                   <ul className="space-y-3 text-xs font-semibold">
@@ -637,7 +637,7 @@ export default function BlogDetail({
                           key={item.id} 
                           className={`transition-all duration-300 pl-3.5 border-l-2 ${
                             isActive 
-                              ? 'border-[#0F8B8D] text-[#0F8B8D] translate-x-1 font-bold' 
+                              ? 'border-[#2D6A4F] text-[#2D6A4F] translate-x-1 font-bold' 
                               : 'border-transparent text-slate-gray hover:text-charcoal'
                           }`}
                         >
@@ -657,7 +657,7 @@ export default function BlogDetail({
 
               {/* 2. Sticky Reservation CTA Box */}
               <div className="hidden lg:block bg-white border border-border-light rounded-[24px] p-6 shadow-3xs">
-                <span className="text-[10px] font-extrabold text-[#0F8B8D] tracking-widest uppercase bg-[#0F8B8D]/5 px-2.5 py-1 rounded-md border border-[#0F8B8D]/10">
+                <span className="text-[10px] font-extrabold text-[#2D6A4F] tracking-widest uppercase bg-[#2D6A4F]/5 px-2.5 py-1 rounded-md border border-[#2D6A4F]/10">
                   Secure Booking
                 </span>
                 <h3 className="font-display font-extrabold text-base text-charcoal mt-3 mb-2.5 leading-snug tracking-tight">
@@ -669,7 +669,7 @@ export default function BlogDetail({
                 <div className="space-y-3">
                   <button 
                     onClick={() => onNavigateToHomeSection('contact')}
-                    className="w-full bg-[#0F8B8D] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs py-3 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer text-center block"
+                    className="w-full bg-[#2D6A4F] hover:bg-[#0D7A7C] text-white font-sans font-extrabold text-xs py-3 rounded-[18px] shadow-2xs hover:shadow-xs transition-all duration-300 cursor-pointer text-center block"
                   >
                     Schedule Room Tour
                   </button>
@@ -707,7 +707,7 @@ export default function BlogDetail({
               {/* 3. Related Articles Section (Strictly 4 as requested) */}
               <div className="bg-white border border-border-light rounded-[24px] p-6 shadow-3xs">
                 <h4 className="font-display font-extrabold text-xs text-charcoal tracking-wider uppercase mb-4 border-b border-gray-100 pb-3 flex items-center space-x-1.5">
-                  <Tag className="w-4 h-4 text-[#0F8B8D]" />
+                  <Tag className="w-4 h-4 text-[#2D6A4F]" />
                   <span>Popular Articles</span>
                 </h4>
                 <div className="space-y-4">
@@ -729,10 +729,10 @@ export default function BlogDetail({
                         />
                       </div>
                       <div className="min-w-0 flex-grow">
-                        <span className="text-[9px] font-extrabold text-[#0F8B8D] uppercase tracking-wide block">
+                        <span className="text-[9px] font-extrabold text-[#2D6A4F] uppercase tracking-wide block">
                           {relatedPost.category}
                         </span>
-                        <h5 className="font-display font-bold text-xs text-charcoal group-hover:text-[#0F8B8D] transition-colors leading-snug line-clamp-2">
+                        <h5 className="font-display font-bold text-xs text-charcoal group-hover:text-[#2D6A4F] transition-colors leading-snug line-clamp-2">
                           {relatedPost.title}
                         </h5>
                       </div>

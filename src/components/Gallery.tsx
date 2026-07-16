@@ -51,7 +51,7 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase tracking-widest text-[#F4B400] font-bold bg-[#F4B400]/5 px-3.5 py-1.5 rounded-full border border-[#F4B400]/15">
+          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold bg-[#D4AF37]/5 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/15">
             Property Gallery
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-4 mb-5">
@@ -62,7 +62,7 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
             whileInView={{ width: 48, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="h-[2px] bg-[#F4B400] mx-auto rounded-full mb-5" 
+            className="h-[2px] bg-[#D4AF37] mx-auto rounded-full mb-5" 
           />
           <p className="font-sans text-base text-slate-gray leading-relaxed">
             Browse real photos of our rooms, study spaces, dining area, common lounge, and shared facilities to experience everyday life at Unitas Home before your visit.
@@ -80,7 +80,7 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
               className={`px-5 py-2 rounded-full font-sans text-xs font-bold transition-all duration-300 cursor-pointer ${
                 filter === cat
                   ? 'bg-primary text-white border border-primary shadow-sm'
-                  : 'bg-bg-warm text-slate-gray border border-border-light hover:border-[#F4B400] hover:text-[#0F8B8D]'
+                  : 'bg-bg-warm text-slate-gray border border-border-light hover:border-[#D4AF37] hover:text-[#2D6A4F]'
               }`}
             >
               {cat}
@@ -130,7 +130,7 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
         </div>
 
         {/* Gallery End CTA */}
-        <div className="mt-20 text-center max-w-3xl mx-auto bg-[#FFFDF6] rounded-[24px] py-14 px-8 sm:py-16 sm:px-16 border border-[#F4B400]/20 shadow-md shadow-[#F4B400]/5 transition-all duration-300 hover:bg-[#FFF9E8]">
+        <div className="mt-20 text-center max-w-3xl mx-auto bg-[#FFFDF6] rounded-[24px] py-14 px-8 sm:py-16 sm:px-16 border border-[#D4AF37]/20 shadow-md shadow-[#D4AF37]/5 transition-all duration-300 hover:bg-[#FFF9E8]">
           <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-charcoal mb-4">
             Like What You See?
           </h3>
@@ -143,10 +143,10 @@ export default function Gallery({ onBookVisit }: GalleryProps) {
               whileHover={{ 
                 scale: 1.03, 
                 y: -2,
-                boxShadow: "0 10px 25px -5px rgba(244, 180, 0, 0.4), 0 8px 10px -6px rgba(244, 180, 0, 0.4)"
+                boxShadow: "0 10px 25px -5px rgba(212, 175, 55, 0.4), 0 8px 10px -6px rgba(212, 175, 55, 0.4)"
               }}
               whileTap={{ scale: 0.98 }}
-              className="px-10 py-3.5 bg-[#F4B400] hover:bg-[#D99A00] text-[#1F2937] rounded-[18px] font-sans font-bold text-sm shadow-[0_4px_14px_rgba(244,180,0,0.25)] transition-all duration-300 cursor-pointer"
+              className="px-10 py-3.5 bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] rounded-[18px] font-sans font-bold text-sm shadow-[0_4px_14px_rgba(212,175,55,0.25)] transition-all duration-300 cursor-pointer"
             >
               Book a Visit
             </motion.button>

@@ -15,7 +15,7 @@ import {
   Heart, 
   Lock, 
   Utensils, 
-  Brush, 
+  BrushCleaning, 
   Key, 
   CheckCircle2, 
   AlertTriangle,
@@ -59,7 +59,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Check-in & Check-out',
       icon: Key,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Submit a valid Aadhaar card, Passport, or Government ID along with proof of study/employment.',
         'Complete verified contact details for both parents or local guardians for safety reference.',
@@ -70,7 +70,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Visitor Policy',
       icon: Shield,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Visiting hours are daily from 9:00 AM to 7:00 PM in designated reception or common areas.',
         'All visitors must register at the reception desk with a valid government photo identity card.',
@@ -81,7 +81,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Quiet Hours',
       icon: Clock,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Daily quiet hours are observed from 10:30 PM to 7:00 AM to ensure restful sleep and focused study.',
         'Avoid playing loud music on speakers or holding noisy calls in shared rooms and corridors.',
@@ -90,8 +90,8 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     },
     {
       title: 'Cleanliness & Hygiene',
-      icon: Brush,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      icon: BrushCleaning,
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Keep your individual room neat, dust-free, and well-ventilated for a healthy living environment.',
         'Cooperate with our housekeeping team during daily sweeps and scheduled bathroom deep-cleanings.',
@@ -102,7 +102,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Safety & Security',
       icon: Lock,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Always lock your room door when stepping out, even for a brief moment.',
         'Sharing of biometric details, entry cards, or physical keys with others is strictly prohibited.',
@@ -113,7 +113,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Food & Dining',
       icon: Utensils,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Freshly cooked hot meals are served daily in the common dining hall during designated hours.',
         'Maintain table etiquette and clear your plate/bowls after finishing your meals.',
@@ -124,7 +124,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Damage & Maintenance',
       icon: Wrench,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Report any leakage, plumbing faults, or electrical issues immediately to the warden.',
         'Drilling holes, pasting heavy adhesive tape, or drawing on the walls is prohibited.',
@@ -135,7 +135,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Electricity & Appliances',
       icon: Zap,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Turn off all lights, fans, air conditioners, and geysers whenever you leave your room.',
         'High-wattage personal appliances (room heaters, induction plates, irons, boilers) are prohibited.',
@@ -145,7 +145,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Common Area Usage',
       icon: Home,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Shared zones like study lounges, common kitchen, and lobbies are meant for all residents.',
         'Keep common tables and chairs clean and free of personal books or cups after usage.',
@@ -155,7 +155,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Prohibited Activities',
       icon: Ban,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Smoking, alcohol, or possession of any banned substances is strictly prohibited on the premises.',
         'Bullying, harassment, verbal abuse, or physical altercations lead to immediate eviction.',
@@ -166,7 +166,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Payments & Deposits',
       icon: CreditCard,
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]',
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]',
       bullets: [
         'Monthly rent must be paid on or before the 5th of every month via digital UPI or bank transfer.',
         'A standard daily late fee applies for rent payments cleared after the 5th of the month.',
@@ -177,7 +177,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
     {
       title: 'Emergency Contact',
       icon: Phone,
-      color: 'text-[#F4B400] bg-[#FFF9E6]',
+      color: 'text-[#D4AF37] bg-[#FFF9E6]',
       bullets: [
         'Our on-site warden and security team are available 24/7 for any urgent assistance or emergency.',
         'A fully-equipped first-aid kit and emergency protocols are active at the front reception desk.',
@@ -279,7 +279,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
                   <ul className="space-y-3 font-sans text-sm text-slate-gray leading-[1.65] font-medium">
                     {rule.bullets.map((bullet, bIdx) => (
                       <li key={bIdx} className="flex items-start space-x-2.5">
-                        <span className="text-[#0F8B8D] font-bold text-base leading-none mt-0.5">•</span>
+                        <span className="text-[#2D6A4F] font-bold text-base leading-none mt-0.5">•</span>
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -304,11 +304,11 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
         <div className="bg-white rounded-[24px] border border-[#EBEBE5] shadow-xs overflow-hidden text-left w-full">
           <table className="w-full border-collapse table-fixed md:table-auto">
             <thead>
-              <tr className="bg-[#ECF9F8] border-b border-[#EBEBE5]">
-                <th className="px-3.5 py-3 md:px-6 md:py-4.5 font-display font-extrabold text-[#0B6E70] text-[16px] md:text-xs lg:text-sm uppercase tracking-wider text-left w-[65%] md:w-2/3">
+              <tr className="bg-[#F0F5F2] border-b border-[#EBEBE5]">
+                <th className="px-3.5 py-3 md:px-6 md:py-4.5 font-display font-extrabold text-[#1B4332] text-[16px] md:text-xs lg:text-sm uppercase tracking-wider text-left w-[65%] md:w-2/3">
                   Situation
                 </th>
-                <th className="px-3.5 py-3 md:px-6 md:py-4.5 font-display font-extrabold text-[#0B6E70] text-[16px] md:text-xs lg:text-sm uppercase tracking-wider text-left w-[35%] md:w-1/3">
+                <th className="px-3.5 py-3 md:px-6 md:py-4.5 font-display font-extrabold text-[#1B4332] text-[16px] md:text-xs lg:text-sm uppercase tracking-wider text-left w-[35%] md:w-1/3">
                   Charge
                 </th>
               </tr>
@@ -317,12 +317,12 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
               {penalties.map((penalty, idx) => (
                 <tr 
                   key={idx}
-                  className="odd:bg-white even:bg-[#FAFAF7] hover:bg-[#EFF9F8] transition-colors duration-200"
+                  className="odd:bg-white even:bg-[#FAFAF7] hover:bg-[#F3F8F4] transition-colors duration-200"
                 >
                   <td className="px-3.5 py-3.5 md:px-6 md:py-4 text-charcoal font-semibold leading-snug text-[16px] md:text-sm break-words whitespace-normal">
                     {penalty.situation}
                   </td>
-                  <td className="px-3.5 py-3.5 md:px-6 md:py-4 text-[#0F8B8D] font-bold leading-snug text-[16px] md:text-sm break-words whitespace-normal">
+                  <td className="px-3.5 py-3.5 md:px-6 md:py-4 text-[#2D6A4F] font-bold leading-snug text-[16px] md:text-sm break-words whitespace-normal">
                     {penalty.charge}
                   </td>
                 </tr>
@@ -334,8 +334,8 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
 
       {/* 4. IMPORTANT NOTICE */}
       <section className="max-w-4xl mx-auto px-6 py-8">
-        <div className="bg-[#FFFDF0] border-l-[5px] border-[#F4B400] rounded-r-[20px] p-6 sm:p-8 text-left shadow-xs flex items-start space-x-4">
-          <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 text-[#F4B400] shrink-0 mt-0.5" />
+        <div className="bg-[#FFFDF0] border-l-[5px] border-[#D4AF37] rounded-r-[20px] p-6 sm:p-8 text-left shadow-xs flex items-start space-x-4">
+          <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 text-[#D4AF37] shrink-0 mt-0.5" />
           <div className="flex-1">
             <h4 className="font-display font-extrabold text-sm sm:text-base text-charcoal mb-2 leading-tight">
               A Warm Reminder
@@ -349,7 +349,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
 
       {/* 5. FINAL HELP SECTION */}
       <section className="max-w-4xl mx-auto px-6 py-16 md:py-20 text-center">
-        <div className="w-12 h-12 rounded-2xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center mx-auto mb-6">
+        <div className="w-12 h-12 rounded-2xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center mx-auto mb-6">
           <Heart className="w-6 h-6 stroke-[2]" />
         </div>
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-charcoal mb-4">
@@ -363,7 +363,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
           {/* Book Visit Button */}
           <button
             onClick={onBookVisit}
-            className="w-full sm:w-auto bg-[#F4B400] hover:bg-[#E0A300] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(244,180,0,0.25)] hover:shadow-[0_8px_20px_rgba(244,180,0,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_20px_rgba(212,175,55,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <Calendar className="w-5 h-5 text-[#1F2937]" />
             <span>Book a Visit</span>
@@ -374,7 +374,7 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
             href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20house%20rules."
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(45, 106, 79,0.25)] hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <svg 
               className="w-5 h-5 text-white fill-current shrink-0" 

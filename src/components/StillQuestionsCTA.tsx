@@ -18,7 +18,7 @@ export default function StillQuestionsCTA({ onBookVisit, onViewAllAmenities }: S
         {onBookVisit && (
           <button
             onClick={onBookVisit}
-            className="w-full sm:w-auto px-8 py-3.5 bg-primary hover:bg-primary-dark text-white rounded-[18px] font-sans font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] rounded-[18px] font-sans font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
           >
             Book a Visit
           </button>
@@ -26,7 +26,7 @@ export default function StillQuestionsCTA({ onBookVisit, onViewAllAmenities }: S
         {onViewAllAmenities && (
           <button
             onClick={onViewAllAmenities}
-            className="w-full sm:w-auto px-8 py-3.5 bg-white border border-primary/20 hover:border-primary text-charcoal hover:text-primary rounded-[18px] font-sans font-bold text-sm shadow-xs hover:bg-primary/5 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+            className="w-full sm:w-auto px-8 py-3.5 bg-white border border-[#2D6A4F]/20 hover:border-[#2D6A4F] text-charcoal hover:text-[#2D6A4F] rounded-[18px] font-sans font-bold text-sm shadow-xs hover:bg-[#2D6A4F]/5 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
           >
             View All Amenities
           </button>

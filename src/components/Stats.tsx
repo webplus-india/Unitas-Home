@@ -150,19 +150,19 @@ export default function Stats() {
               <motion.div
                 key={idx}
                 variants={cardVariants}
-                className="group flex flex-col items-center text-center p-8 bg-white border border-[#E5E7EB] rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.015)] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(15,139,141,0.08)] transition-all duration-300 ease-in-out min-h-[220px] justify-between"
+                className="group flex flex-col items-center text-center p-8 bg-white border border-[#E5E7EB] rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.015)] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(45, 106, 79,0.08)] transition-all duration-300 ease-in-out min-h-[220px] justify-between"
               >
                 {/* Large Premium Icon Container */}
-                <div className="w-[115px] h-[115px] rounded-full bg-[#0F8B8D]/10 flex items-center justify-center text-[#0F8B8D] mb-6 shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:bg-[#0F8B8D]/15">
+                <div className="w-[115px] h-[115px] rounded-full bg-[#2D6A4F]/10 flex items-center justify-center text-[#2D6A4F] mb-6 shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:bg-[#2D6A4F]/15">
                   <Icon className="w-16 h-16" strokeWidth={1.5} />
                 </div>
 
                 {/* Animated Number */}
                 <div className="flex items-baseline mb-3">
-                  <span className="font-display font-extrabold text-5xl sm:text-[52px] text-[#0F8B8D] tracking-tight">
+                  <span className="font-display font-extrabold text-5xl sm:text-[52px] text-[#2D6A4F] tracking-tight">
                     <AnimateNumber value={stat.value} decimals={stat.decimals} />
                   </span>
-                  <span className="font-display font-bold text-3xl text-[#F4B400] ml-1">
+                  <span className="font-display font-bold text-3xl text-[#D4AF37] ml-1">
                     {stat.suffix}
                   </span>
                 </div>

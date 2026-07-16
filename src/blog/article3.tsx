@@ -3,8 +3,8 @@ import React from 'react';
 export const article3Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Choosing where to live is one of the most critical decisions a university student makes. Should you choose a traditional on-campus college hostel or an off-campus premium Paying Guest (PG) co-living facility? This comprehensive guide compares the two across privacy, meal standards, academic study infrastructure, curfews, and daily chores to help you make an informed decision in Dehradun.
       </p>
@@ -76,7 +76,7 @@ export const article3Content = (
       </div>
 
       <p className="mb-4">
-        Our premium kitchen at Unitas Home serves four freshly prepared, highly nutritious, home-style vegetarian meals every single day (Breakfast, Lunch, Evening Snacks with Tea, and Dinner). We focus on high-protein menu components like fresh paneer, curd, fresh lentils, and organic vegetables cooked with healthy oils to ensure you stay energized for studies.
+        Our premium kitchen at Unitas Home serves three freshly prepared, highly nutritious, home-style vegetarian meals every single day (Breakfast, Lunch, and Dinner). We focus on high-protein menu components like fresh paneer, curd, fresh lentils, and organic vegetables cooked with healthy oils to ensure you stay energized for studies.
       </p>
     </div>
 
@@ -113,7 +113,7 @@ export const article3Content = (
             <tr className="bg-neutral-50 border-b border-border-light font-display">
               <th className="p-4 font-bold text-charcoal">Category</th>
               <th className="p-4 font-bold text-slate-gray">Standard College Hostel</th>
-              <th className="p-4 font-bold text-[#0F8B8D]">Unitas Home Co-Living</th>
+              <th className="p-4 font-bold text-[#2D6A4F]">Unitas Home Co-Living</th>
             </tr>
           </thead>
           <tbody>

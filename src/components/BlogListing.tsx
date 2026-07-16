@@ -87,7 +87,7 @@ export default function BlogListing({
     <section className="pt-28 pb-24 bg-[#FAF9F6] relative min-h-screen overflow-hidden">
       {/* Background Visual Accents */}
       <div className="absolute top-1/3 left-0 w-96 h-96 rounded-full bg-primary/2 opacity-20 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-80 h-80 rounded-full bg-[#0F8B8D]/2 opacity-20 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-80 h-80 rounded-full bg-[#2D6A4F]/2 opacity-20 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -95,7 +95,7 @@ export default function BlogListing({
         <div className="mb-8">
           <button
             onClick={onNavigateToHome}
-            className="inline-flex items-center space-x-1.5 text-xs font-extrabold text-slate-gray hover:text-[#0F8B8D] mb-4 cursor-pointer group transition-colors focus:outline-hidden"
+            className="inline-flex items-center space-x-1.5 text-xs font-extrabold text-slate-gray hover:text-[#2D6A4F] mb-4 cursor-pointer group transition-colors focus:outline-hidden"
           >
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
             <span>Back to Homepage</span>
@@ -104,7 +104,7 @@ export default function BlogListing({
           {/* Hero Content Section */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <span className="inline-block text-[10px] uppercase tracking-widest text-[#0F8B8D] font-extrabold bg-[#0F8B8D]/5 px-3.5 py-1.5 rounded-full border border-[#0F8B8D]/15 mb-3 font-sans">
+              <span className="inline-block text-[10px] uppercase tracking-widest text-[#2D6A4F] font-extrabold bg-[#2D6A4F]/5 px-3.5 py-1.5 rounded-full border border-[#2D6A4F]/15 mb-3 font-sans">
                 Student Living Blog
               </span>
               <h1 className="font-display font-extrabold text-3xl sm:text-5xl text-charcoal tracking-tight">
@@ -122,7 +122,7 @@ export default function BlogListing({
                 placeholder="Search articles..."
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="w-full pl-10 pr-4 py-3.5 rounded-[16px] border border-border-light bg-white focus:outline-hidden focus:border-[#0F8B8D] text-xs sm:text-sm font-semibold text-charcoal shadow-3xs transition-colors duration-200"
+                className="w-full pl-10 pr-4 py-3.5 rounded-[16px] border border-border-light bg-white focus:outline-hidden focus:border-[#2D6A4F] text-xs sm:text-sm font-semibold text-charcoal shadow-3xs transition-colors duration-200"
               />
               <Search className="absolute left-3.5 top-3.5 w-4 h-4 text-slate-gray" />
             </div>
@@ -139,7 +139,7 @@ export default function BlogListing({
                 onClick={() => handleCategoryChange(cat)}
                 className={`px-4.5 py-2.5 rounded-full text-[10px] font-extrabold tracking-wide uppercase transition-all duration-300 transform cursor-pointer ${
                   isActive
-                    ? 'bg-[#0F8B8D] text-white shadow-md ring-2 ring-[#0F8B8D]/20 scale-102 border border-[#0F8B8D]'
+                    ? 'bg-[#2D6A4F] text-white shadow-md ring-2 ring-[#2D6A4F]/20 scale-102 border border-[#2D6A4F]'
                     : 'bg-white text-slate-gray border border-border-light hover:border-slate-gray/30 hover:text-charcoal hover:shadow-2xs shadow-3xs'
                 }`}
               >
@@ -201,7 +201,7 @@ export default function BlogListing({
                       </div>
 
                       {/* Precise clumping and heights prevent grid misalignment */}
-                      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2.5 leading-snug group-hover:text-[#0F8B8D] transition-colors duration-250 tracking-tight line-clamp-2 min-h-[2.75rem] sm:min-h-[3.25rem]">
+                      <h3 className="font-display font-bold text-base sm:text-lg text-charcoal mb-2.5 leading-snug group-hover:text-[#2D6A4F] transition-colors duration-250 tracking-tight line-clamp-2 min-h-[2.75rem] sm:min-h-[3.25rem]">
                         {post.title}
                       </h3>
 
@@ -215,10 +215,10 @@ export default function BlogListing({
                   <div className="flex flex-col">
                     {/* Button and Arrow strip */}
                     <div className="mx-6 pb-6 pt-5 border-t border-gray-50 flex items-center justify-between">
-                      <span className="font-sans font-extrabold text-[10px] tracking-wider text-[#0F8B8D] uppercase group-hover:translate-x-0.5 transition-transform">
+                      <span className="font-sans font-extrabold text-[10px] tracking-wider text-[#2D6A4F] uppercase group-hover:translate-x-0.5 transition-transform">
                         Read Article
                       </span>
-                      <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-charcoal group-hover:bg-[#0F8B8D] group-hover:text-white transition-colors duration-300">
+                      <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-charcoal group-hover:bg-[#2D6A4F] group-hover:text-white transition-colors duration-300">
                         <ArrowUpRight className="w-4 h-4" />
                       </div>
                     </div>
@@ -234,7 +234,7 @@ export default function BlogListing({
             <p className="font-sans text-xs text-slate-gray mt-1 max-w-sm mx-auto font-semibold">Try searching for other terms or selecting a different category filter.</p>
             <button
               onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
-              className="mt-4 text-xs font-bold text-[#0F8B8D] underline cursor-pointer"
+              className="mt-4 text-xs font-bold text-[#2D6A4F] underline cursor-pointer"
             >
               Reset Filters & Search
             </button>

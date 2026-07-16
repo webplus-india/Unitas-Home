@@ -30,7 +30,7 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs uppercase tracking-widest text-[#F4B400] font-bold bg-[#F4B400]/5 px-4 py-2 rounded-full border border-[#F4B400]/15">
+          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold bg-[#D4AF37]/5 px-4 py-2 rounded-full border border-[#D4AF37]/15">
             16 Premium Amenities Included
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-6 mb-4">
@@ -38,7 +38,7 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
           </h2>
           <div 
             style={{ width: '48px' }}
-            className="h-[2px] bg-[#F4B400] mx-auto rounded-full mb-5" 
+            className="h-[2px] bg-[#D4AF37] mx-auto rounded-full mb-5" 
           />
           <p className="font-sans text-base text-slate-gray leading-relaxed">
             Every amenity is thoughtfully chosen to create a comfortable, secure, and hassle-free environment where students can focus on learning, living, and feeling at home.
@@ -54,7 +54,7 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
               className={`px-6 py-2.5 rounded-full font-sans text-xs tracking-wide transition-all duration-300 border cursor-pointer ${
                 activeCategory === cat
                   ? 'bg-primary text-white border-primary shadow-md shadow-primary/10 font-medium'
-                  : 'bg-surface-white text-charcoal border-primary/20 hover:border-primary hover:bg-[#ECF9F8] shadow-sm font-medium'
+                  : 'bg-surface-white text-charcoal border-primary/20 hover:border-primary hover:bg-primary/8 shadow-sm font-medium'
               }`}
             >
               {cat}
@@ -73,10 +73,10 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
             return (
               <div
                 key={amenity.id}
-                className="bg-surface-white p-8 rounded-[24px] border border-border-light/70 shadow-2xs luxury-card-shadow flex flex-col items-center text-center min-h-[250px] group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 md:hover:translate-y-[-5px] hover:shadow-[0_16px_32px_rgba(15,139,141,0.08)] hover:border-primary/30 cursor-pointer"
+                className="bg-surface-white p-8 rounded-[24px] border border-border-light/70 shadow-2xs luxury-card-shadow flex flex-col items-center text-center min-h-[250px] group transition-[border-color,box-shadow] md:transition-[border-color,box-shadow,transform] duration-300 md:hover:translate-y-[-5px] hover:shadow-[0_16px_32px_rgba(45, 106, 79,0.08)] hover:border-primary/30 cursor-pointer"
               >
                 {/* Icon Container with Subtle inner highlight and hover effects */}
-                <div className="w-14 h-14 rounded-[22px] bg-[#ECF9F8] border border-[rgba(0,145,140,0.15)] shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.8),_inset_0_-1px_1px_rgba(0,0,0,0.02)] flex items-center justify-center text-primary mb-6 transition-[background-color,border-color] duration-[250ms] ease-in-out group-hover:bg-[#D5F2F0] group-hover:border-primary/20 flex-shrink-0 animate-none">
+                <div className="w-14 h-14 rounded-[22px] bg-primary/8 border border-primary/15 shadow-[inset_0_1.5px_2px_rgba(255,255,255,0.8),_inset_0_-1px_1px_rgba(0,0,0,0.02)] flex items-center justify-center text-primary mb-6 transition-[background-color,border-color] duration-[250ms] ease-in-out group-hover:bg-primary/15 group-hover:border-primary/30 flex-shrink-0 animate-none">
                   {amenity.id === 'wardrobe' ? (
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 text-primary transition-colors duration-[250ms] ease-in-out">
                       <rect x="4" y="2" width="16" height="20" rx="2" />
@@ -94,7 +94,7 @@ export default function Amenities({ onNavigate, onBookVisit }: AmenitiesProps) {
                   {/* Amenity Heading with transition matching */}
                   <h3 className="font-display font-bold text-[15px] text-[#0B1E36] transition-colors duration-300 group-hover:text-primary w-full relative pb-1">
                     {amenity.name}
-                    <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#F4B400] transition-all duration-300 group-hover:w-8 -translate-x-1/2" />
+                    <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D4AF37] transition-all duration-300 group-hover:w-8 -translate-x-1/2" />
                   </h3>
 
                   {/* Amenity Description with custom width limit for balanced text lines */}

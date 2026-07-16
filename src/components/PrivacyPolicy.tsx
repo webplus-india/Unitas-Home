@@ -102,37 +102,37 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
       icon: Lock,
       title: 'Your Data is Protected',
       description: 'We take reasonable measures and follow standard industry protocols to protect your information.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: MessageSquare,
       title: 'WhatsApp Communication',
       description: 'We only contact you regarding your inquiry, scheduled walkthrough, or booking.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     },
     {
       icon: Mail,
       title: 'No Spam Guarantee',
       description: 'We never send unnecessary promotional messages, newsletters, or sell your inbox details.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: Shield,
       title: 'Secure Booking Forms',
       description: 'Your submitted information is handled securely and stored with restricted credential access.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     },
     {
       icon: UserCheck,
       title: 'Your Privacy Matters',
       description: 'You remain in full control of your personal information, visit schedules, and data deletions.',
-      color: 'text-[#0F8B8D] bg-[#ECF9F8]'
+      color: 'text-[#2D6A4F] bg-[#F0F5F2]'
     },
     {
       icon: Calendar,
       title: 'Updated Regularly',
       description: 'Our privacy practices are actively reviewed and updated whenever regulations or workflows change.',
-      color: 'text-[#F4B400] bg-[#FFFBEB]'
+      color: 'text-[#D4AF37] bg-[#FFFBEB]'
     }
   ];
 
@@ -140,7 +140,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
     <div className="w-full bg-[#FCFCF8] py-2 pt-[80px] pb-10">
       {/* 0. READING PROGRESS BAR */}
       <div 
-        className="fixed top-0 left-0 h-1 bg-[#0F8B8D] z-50 transition-all duration-100 ease-out" 
+        className="fixed top-0 left-0 h-1 bg-[#2D6A4F] z-50 transition-all duration-100 ease-out" 
         style={{ width: `${scrollProgress}%` }}
         aria-hidden="true"
       />
@@ -165,7 +165,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           {/* Breadcrumb Navigation */}
-          <nav className="flex items-center justify-center space-x-2 text-xs md:text-sm font-sans font-semibold tracking-wide text-[#F4B400] mb-8 select-none uppercase">
+          <nav className="flex items-center justify-center space-x-2 text-xs md:text-sm font-sans font-semibold tracking-wide text-[#D4AF37] mb-8 select-none uppercase">
             <button 
               onClick={onNavigateToHome}
               className="hover:text-white transition-colors duration-200 cursor-pointer"
@@ -176,7 +176,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             <span className="text-white/90">Privacy Policy</span>
           </nav>
 
-          <span className="font-sans text-xs font-bold text-[#F4B400] tracking-widest uppercase mb-3 block">
+          <span className="font-sans text-xs font-bold text-[#D4AF37] tracking-widest uppercase mb-3 block">
             LEGAL INFORMATION
           </span>
 
@@ -201,7 +201,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
 
       {/* 2. QUICK PRIVACY SNAPSHOT */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
-        <span className="font-sans text-xs font-bold text-[#0F8B8D] tracking-wider uppercase mb-2 block">
+        <span className="font-sans text-xs font-bold text-[#2D6A4F] tracking-wider uppercase mb-2 block">
           Overview
         </span>
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-3">
@@ -217,7 +217,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             return (
               <div 
                 key={idx}
-                className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left hover:border-[#0F8B8D]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
+                className="bg-white rounded-[20px] p-6 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left hover:border-[#2D6A4F]/20 transition-all duration-[250ms] ease-out md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] group h-full"
               >
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${card.color} transition-transform duration-300 group-hover:scale-105`}>
                   <IconComponent className="w-5 h-5 shrink-0" />
@@ -238,7 +238,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
       <section className="bg-[#FCFCF8] border-t border-[#E5E7EB]/30 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto mb-16">
-            <span className="font-sans text-xs font-bold text-[#0F8B8D] tracking-wider uppercase mb-2 block">
+            <span className="font-sans text-xs font-bold text-[#2D6A4F] tracking-wider uppercase mb-2 block">
               Core Values
             </span>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-[#1F2937] mb-4 tracking-tight">
@@ -253,10 +253,10 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             {/* Card 1: Shield Lock */}
             <div className="bg-white rounded-[20px] p-8 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-[250ms] ease-out h-full group">
               <div className="flex items-center justify-between w-full mb-6">
-                <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   <ShieldCheck className="w-6 h-6 shrink-0" />
                 </div>
-                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-emerald-50 text-emerald-700">
+                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#F0F5F2] text-[#2D6A4F]">
                   Protected
                 </span>
               </div>
@@ -271,10 +271,10 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             {/* Card 2: Shield with Slash / Secure Privacy */}
             <div className="bg-white rounded-[20px] p-8 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-[250ms] ease-out h-full group">
               <div className="flex items-center justify-between w-full mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   <ShieldOff className="w-6 h-6 shrink-0" />
                 </div>
-                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#ECF9F8] text-[#0F8B8D]">
+                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#F0F5F2] text-[#2D6A4F]">
                   Never Shared
                 </span>
               </div>
@@ -289,7 +289,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             {/* Card 3: Chat Bubble */}
             <div className="bg-white rounded-[20px] p-8 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-[250ms] ease-out h-full group">
               <div className="flex items-center justify-between w-full mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#FFFBEB] text-[#F4B400] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-[#FFFBEB] text-[#D4AF37] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   <MessageSquare className="w-6 h-6 shrink-0" />
                 </div>
                 <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#FFFBEB] text-amber-700">
@@ -307,10 +307,10 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             {/* Card 4: User Shield */}
             <div className="bg-white rounded-[20px] p-8 border border-[#E5E7EB]/60 luxury-card-shadow flex flex-col items-start text-left md:hover:-translate-y-[5px] md:hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-[250ms] ease-out h-full group">
               <div className="flex items-center justify-between w-full mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   <UserCheck className="w-6 h-6 shrink-0" />
                 </div>
-                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#ECF9F8] text-[#0F8B8D]">
+                <span className="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-[#F0F5F2] text-[#2D6A4F]">
                   Your Choice
                 </span>
               </div>
@@ -326,15 +326,15 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
       </section>
 
       {/* 3. PAGE INTRODUCTION */}
-      <section className="bg-[#ECF9F8]/30 border-y border-[#E5E7EB]/30 py-16 text-center">
+      <section className="bg-[#F0F5F2]/30 border-y border-[#E5E7EB]/30 py-16 text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="w-12 h-12 rounded-2xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center mx-auto mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center mx-auto mb-6">
             <Heart className="w-6 h-6" />
           </div>
           <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-4">
             Our Commitment to Your Privacy
           </h2>
-          <div className="w-12 h-1 bg-[#F4B400] mx-auto mb-6 rounded-full"></div>
+          <div className="w-12 h-1 bg-[#D4AF37] mx-auto mb-6 rounded-full"></div>
           <p className="font-sans text-sm sm:text-base md:text-lg text-[#6B7280] leading-relaxed max-w-2xl mx-auto font-medium">
             At Unitas Home, we value your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains what information we collect, why we collect it, how we use it, and how we keep it secure.
           </p>
@@ -358,7 +358,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <FileCheck className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -372,19 +372,19 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Personal Identification Details:</strong> Name, phone number, email address, and parent or guardian emergency contact details.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Resident Booking Details:</strong> Scheduled visit dates, preferred sharing category (single, double, or triple occupancy), and potential moving dates.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Academic or Professional Background:</strong> College/university name or corporate workplace information to ensure a compatible living community.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Technical Access Logs:</strong> IP address, device specifications, browser type, and navigation patterns recorded automatically during your visit.</span>
                   </li>
                 </ul>
@@ -401,7 +401,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Eye className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -415,15 +415,15 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Reservation Management:</strong> Confirming your digital room holds, generating your visual visit pass, and managing on-site schedules.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Direct Support:</strong> Contacting you directly through phone, SMS, or WhatsApp regarding your scheduled walkthrough times and room queries.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Continuous Improvement:</strong> Analyzing website load metrics and interface interactions to polish and speed up our booking experience.</span>
                   </li>
                 </ul>
@@ -440,7 +440,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Cookie className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -471,7 +471,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Share2 className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -485,11 +485,11 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Communication APIs:</strong> Secure WhatsApp integrations to process immediate support requests and send booking updates.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Hosting Infrastructure:</strong> Secure cloud environments carrying restricted credential databases and modern firewalls.</span>
                   </li>
                 </ul>
@@ -509,7 +509,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Lock className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -537,7 +537,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <UserCheck className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -551,15 +551,15 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                 </p>
                 <ul className="space-y-3 pl-4 list-none">
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Review & Access:</strong> Request a summary of the exact personal details we have recorded regarding your name or phone number.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Modify & Update:</strong> Correct typos or outdated contact details listed inside your registered walkthrough passes.</span>
                   </li>
                   <li className="flex items-start space-x-2.5">
-                    <span className="text-[#0F8B8D] font-bold text-base leading-none mt-1">•</span>
+                    <span className="text-[#2D6A4F] font-bold text-base leading-none mt-1">•</span>
                     <span><strong>Full Deletion:</strong> Request our team to erase your booking histories and inquiry forms from our databases completely.</span>
                   </li>
                 </ul>
@@ -579,7 +579,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
               className="scroll-mt-24"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <h2 className="font-display font-extrabold text-2xl text-[#1F2937]">
@@ -594,31 +594,31 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                   <div className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white flex items-start space-x-3.5 luxury-card-shadow">
-                    <div className="w-9 h-9 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Email Our Desk</h4>
-                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#0F8B8D] hover:underline transition-colors break-all">
+                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
                         unitashomeuk@gmail.com
                       </a>
                     </div>
                   </div>
 
                   <div className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white flex items-start space-x-3.5 luxury-card-shadow">
-                    <div className="w-9 h-9 rounded-xl bg-[#FFFBEB] text-[#F4B400] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#FFFBEB] text-[#D4AF37] flex items-center justify-center shrink-0">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Call Our Coordinator</h4>
-                      <a href="tel:+919675591951" className="text-xs sm:text-sm text-[#F4B400] hover:underline transition-colors">
+                      <a href="tel:+919675591951" className="text-xs sm:text-sm text-[#D4AF37] hover:underline transition-colors">
                         +91 96755 91951
                       </a>
                     </div>
                   </div>
 
                   <div className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white flex items-start space-x-3.5 luxury-card-shadow sm:col-span-2">
-                    <div className="w-9 h-9 rounded-xl bg-[#ECF9F8] text-[#0F8B8D] flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-xl bg-[#F0F5F2] text-[#2D6A4F] flex items-center justify-center shrink-0">
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
@@ -636,7 +636,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
 
           {/* Sticky Navigation Sidebar (Desktop Only) */}
           <div className="hidden lg:block lg:col-span-1 sticky top-32 self-start pl-4 border-l border-[#E5E7EB]">
-            <h3 className="font-display font-extrabold text-xs text-[#0B6E70] uppercase tracking-wider mb-6 select-none">
+            <h3 className="font-display font-extrabold text-xs text-[#1B4332] uppercase tracking-wider mb-6 select-none">
               On This Page
             </h3>
             <ul className="space-y-4 font-sans text-sm font-semibold select-none">
@@ -646,13 +646,13 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                     onClick={() => scrollToSection(sec.id)}
                     className={`flex items-center space-x-2.5 text-left w-full group transition-all duration-200 cursor-pointer ${
                       activeSection === sec.id 
-                        ? 'text-[#0F8B8D] translate-x-1.5' 
+                        ? 'text-[#2D6A4F] translate-x-1.5' 
                         : 'text-[#6B7280] hover:text-[#1F2937] hover:translate-x-1'
                     }`}
                   >
                     <span className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
                       activeSection === sec.id 
-                        ? 'bg-[#0F8B8D] scale-125' 
+                        ? 'bg-[#2D6A4F] scale-125' 
                         : 'bg-transparent group-hover:bg-[#6B7280]/30'
                     }`} />
                     <span>{sec.label}</span>
@@ -667,8 +667,8 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
 
       {/* 8. IMPORTANT NOTICE BOX */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-        <div className="bg-[#FFFDF0] border-l-[5px] border-[#F4B400] rounded-r-[20px] p-8 sm:p-10 text-left luxury-card-shadow flex items-start space-x-4">
-          <AlertTriangle className="w-7 h-7 sm:w-8 sm:h-8 text-[#F4B400] shrink-0 mt-0.5" />
+        <div className="bg-[#FFFDF0] border-l-[5px] border-[#D4AF37] rounded-r-[20px] p-8 sm:p-10 text-left luxury-card-shadow flex items-start space-x-4">
+          <AlertTriangle className="w-7 h-7 sm:w-8 sm:h-8 text-[#D4AF37] shrink-0 mt-0.5" />
           <div className="flex-1">
             <h4 className="font-display font-extrabold text-sm sm:text-base text-[#1F2937] mb-2 leading-tight">
               Privacy Notice
@@ -685,7 +685,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
         <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1F2937] mb-4">
           Need Assistance?
         </h2>
-        <h3 className="font-display font-black text-xs text-[#0F8B8D] uppercase tracking-[1.5px] mb-4">
+        <h3 className="font-display font-black text-xs text-[#2D6A4F] uppercase tracking-[1.5px] mb-4">
           Questions About Your Privacy?
         </h3>
         <p className="font-sans text-sm sm:text-base text-[#6B7280] max-w-xl mx-auto mb-8 font-medium">
@@ -696,7 +696,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
           {/* Book Visit Button */}
           <button
             onClick={onBookVisit}
-            className="w-full sm:w-auto bg-[#F4B400] hover:bg-[#E0A300] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(244,180,0,0.25)] hover:shadow-[0_8px_20px_rgba(244,180,0,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_20px_rgba(212,175,55,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <Calendar className="w-5 h-5 text-[#1F2937]" />
             <span>Book a Visit</span>
@@ -707,7 +707,7 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
             href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20questions%20regarding%20the%20privacy%20policy."
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
+            className="w-full sm:w-auto bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-sm sm:text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(45, 106, 79,0.25)] hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[55px] shrink-0"
           >
             <svg 
               className="w-5 h-5 text-white fill-current shrink-0" 

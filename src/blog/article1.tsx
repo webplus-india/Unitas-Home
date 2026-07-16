@@ -3,8 +3,8 @@ import React from 'react';
 export const article1Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Intro Summary Box */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary & Introduction</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary & Introduction</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Relocating to Dehradun for higher education is an exciting life milestone. However, choosing the wrong Paying Guest (PG) accommodation can severely disrupt your academic progress, physical health, and mental peace. This comprehensive guide outlines the absolute essential criteria—proximity, nutritional hygiene, study-focused infrastructure, security, and transparent finances—to help you identify a premium, supportive co-living space near SGRR University, Graphic Era, and Mahant Indresh Hospital.
       </p>
@@ -20,7 +20,7 @@ export const article1Content = (
       </p>
       
       <p className="mb-4">
-        For medical students, nursing interns, and healthcare professionals doing rotations at <a href="#location" className="text-[#0F8B8D] font-bold hover:underline">Mahant Indresh Hospital</a>, demanding shifts make living nearby even more critical. GRR Institute of Medical Sciences and SGRR University students require an environment where they can walk to their rooms within 2-5 minutes, allowing immediate rest after strenuous overnight schedules.
+        For medical students, nursing interns, and healthcare professionals doing rotations at <a href="#location" className="text-[#2D6A4F] font-bold hover:underline">Mahant Indresh Hospital</a>, demanding shifts make living nearby even more critical. GRR Institute of Medical Sciences and SGRR University students require an environment where they can walk to their rooms within 2-5 minutes, allowing immediate rest after strenuous overnight schedules.
       </p>
 
       {/* Supporting Image 1 */}
@@ -44,11 +44,11 @@ export const article1Content = (
       {/* Stat Card Component */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
         <div className="bg-white border border-border-light p-5 rounded-2xl shadow-3xs text-center">
-          <span className="block text-3xl font-display font-extrabold text-[#0F8B8D] mb-1">10 Hrs+</span>
+          <span className="block text-3xl font-display font-extrabold text-[#2D6A4F] mb-1">10 Hrs+</span>
           <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Saved Weekly on Commutes</span>
         </div>
         <div className="bg-white border border-border-light p-5 rounded-2xl shadow-3xs text-center">
-          <span className="block text-3xl font-display font-extrabold text-[#F4B400] mb-1">2.5x</span>
+          <span className="block text-3xl font-display font-extrabold text-[#D4AF37] mb-1">2.5x</span>
           <span className="text-xs text-slate-gray font-bold uppercase tracking-wider">Increase in Cognitive Focus</span>
         </div>
       </div>
@@ -75,7 +75,7 @@ export const article1Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, nutrition is treated as an intellectual fuel. Our state-of-the-art on-site kitchen serves four wholesome, home-style vegetarian meals daily (Breakfast, Lunch, Evening Snacks with High Tea, and Dinner). We partner with premium local distributors to secure organic ingredients, heart-healthy oils, and a rich, rotating menu full of balanced proteins (paneer, curd, fresh lentils, green vegetables).
+        At Unitas Home, nutrition is treated as an intellectual fuel. Our state-of-the-art on-site kitchen serves three wholesome, home-style vegetarian meals daily (Breakfast, Lunch, and Dinner). We partner with premium local distributors to secure organic ingredients, heart-healthy oils, and a rich, rotating menu full of balanced proteins (paneer, curd, fresh lentils, green vegetables).
       </p>
 
       {/* Supporting Image 2 */}
@@ -103,19 +103,19 @@ export const article1Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Does the PG run an in-house kitchen, or is the meal outsourced via tiffins?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are there clean, multi-stage RO water filtration systems installed?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the food menu rotated weekly with healthy proteins (paneer, milk, curd, dal)?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Can parents inspect the kitchen cleanliness without any advance booking?</span>
           </li>
         </ul>
@@ -142,7 +142,7 @@ export const article1Content = (
             <tr className="bg-neutral-50 border-b border-border-light font-display">
               <th className="p-4 font-bold text-charcoal">Amenity / Feature</th>
               <th className="p-4 font-bold text-slate-gray">Standard PG in Patel Nagar</th>
-              <th className="p-4 font-bold text-[#0F8B8D]">Unitas Home Co-Living</th>
+              <th className="p-4 font-bold text-[#2D6A4F]">Unitas Home Co-Living</th>
             </tr>
           </thead>
           <tbody>
@@ -191,7 +191,7 @@ export const article1Content = (
 
     {/* Section 4 */}
     <div>
-      <h2 id="conclusion" className="font-display font-bold text-xl sm:text-2xl text-[#0F8B8D] mb-4 tracking-tight">
+      <h2 id="conclusion" className="font-display font-bold text-xl sm:text-2xl text-[#2D6A4F] mb-4 tracking-tight">
         4. Conclusion & Final Recommendation
       </h2>
       <p className="mb-4">
@@ -203,7 +203,7 @@ export const article1Content = (
       </p>
 
       <div className="bg-[#FAF9F6] border border-border-light rounded-2xl p-6 my-6">
-        <h4 className="font-display font-extrabold text-[#0F8B8D] text-xs uppercase tracking-wider mb-2">💡 Real-World Student Example</h4>
+        <h4 className="font-display font-extrabold text-[#2D6A4F] text-xs uppercase tracking-wider mb-2">💡 Real-World Student Example</h4>
         <p className="font-sans text-xs sm:text-sm text-slate-gray font-semibold leading-relaxed">
           "Aditya, a medical intern, saved over 12 hours a week of commute time and skipped the hassle of managing tiffins by moving to Unitas Home. The immediate access to delicious meals, fast Wi-Fi, and a quiet study desk let him focus fully on his clinical practicals."
         </p>

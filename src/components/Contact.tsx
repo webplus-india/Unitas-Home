@@ -197,20 +197,20 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
       case 'Schedule Visit':
         return {
           text: 'Schedule My Visit',
-          bgClass: 'bg-primary hover:bg-[#0B6E70] text-white hover:shadow-[0_8px_20px_rgba(15,139,141,0.35)]',
+          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
           icon: <Calendar className="w-3.5 h-3.5 text-white" />
         };
       case 'Reserve Room':
         return {
           text: 'Reserve My Room',
-          bgClass: 'bg-[#F4B400] hover:bg-[#D99A00] text-[#1F2937] hover:shadow-[0_8px_20px_rgba(244,180,0,0.4)]',
-          icon: <Send className="w-3.5 h-3.5 text-[#1F2937]" />
+          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
+          icon: <Send className="w-3.5 h-3.5 text-white" />
         };
       case 'Inquiry':
       default:
         return {
           text: 'Send Inquiry',
-          bgClass: 'bg-primary hover:bg-[#0B6E70] text-white hover:shadow-[0_8px_20px_rgba(15,139,141,0.35)]',
+          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
           icon: <Send className="w-3.5 h-3.5 text-white" />
         };
     }
@@ -224,8 +224,8 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
         
         {/* Simplified Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center space-x-2 bg-[#F4B400]/[0.06] border border-[#F4B400]/15 px-4 py-1.5 rounded-full shadow-xs mb-4">
-            <span className="text-[11px] sm:text-[12px] tracking-wide text-[#F4B400] font-extrabold uppercase">
+          <div className="inline-flex items-center space-x-2 bg-[#D4AF37]/[0.06] border border-[#D4AF37]/15 px-4 py-1.5 rounded-full shadow-xs mb-4">
+            <span className="text-[11px] sm:text-[12px] tracking-wide text-[#D4AF37] font-extrabold uppercase">
               Get In Touch
             </span>
           </div>

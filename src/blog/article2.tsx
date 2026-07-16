@@ -3,8 +3,8 @@ import React from 'react';
 export const article2Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary Callout */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Renting a Paying Guest (PG) accommodation is a massive step toward student independence. However, without a methodical inspection, students often find themselves trapped in bad contracts, paying unexpected bills, eating substandard food, or facing stressful rules. This educational guide breaks down the 10 absolute features you must inspect, verify, and confirm before putting down any booking deposit in Dehradun.
       </p>
@@ -31,7 +31,7 @@ export const article2Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, we eliminate financial anxiety through an all-inclusive pricing system. Our flat monthly fee covers your luxury room, high-speed fiber-optic Wi-Fi, laundry, professional daily cleaning, electricity, and four delicious on-site vegetarian meals. There are absolutely no hidden surprises on your bill.
+        At Unitas Home, we eliminate financial anxiety through an all-inclusive pricing system. Our flat monthly fee covers your luxury room, high-speed fiber-optic Wi-Fi, laundry, professional daily cleaning, electricity, and three delicious on-site vegetarian meals. There are absolutely no hidden surprises on your bill.
       </p>
 
       {/* Supporting Image 1 */}

@@ -42,11 +42,11 @@ export default function SchedulerDashboard({ inquiries, onCancelInquiry }: Sched
       const text = userMsg.toLowerCase();
 
       if (text.includes('food') || text.includes('meal') || text.includes('eat') || text.includes('lunch') || text.includes('cook') || text.includes('dinner') || text.includes('diet') || text.includes('breakfast')) {
-        botResponse = "We serve 4 highly nutritious, home-style buffet meals daily: Breakfast, Lunch, Evening Snacks with Tea, and Dinner. We have a weekly menu containing fresh vegetables, paneer, eggs, and non-veg options on weekends. Everything is prepared in our modern, immaculate commercial kitchen.";
+        botResponse = "We serve 3 highly nutritious, home-style buffet meals daily: Breakfast, Lunch, and Dinner. We have a weekly menu containing fresh vegetables, paneer, eggs, and non-veg options on weekends. Everything is prepared in our modern, immaculate commercial kitchen.";
       } else if (text.includes('wifi') || text.includes('internet') || text.includes('speed') || text.includes('wifi') || text.includes('net')) {
         botResponse = "Wi-Fi is 100% free and fully included in your rent! It runs on up to 150 Mbps symmetric commercial fiber lines. We have installed multiple high-frequency routers on every single floor to prevent coverage dead-zones.";
       } else if (text.includes('rent') || text.includes('price') || text.includes('cost') || text.includes('deposit') || text.includes('advance') || text.includes('payment') || text.includes('fee')) {
-        botResponse = "Single sharing is ₹15,500/month, twin sharing is ₹10,500/month, and triple sharing is ₹8,000/month. We collect a security deposit equivalent to one month's rent at the time of check-in, which is fully refundable upon checkout (subject to a standard 30-day prior notice).";
+        botResponse = "Single sharing is ₹11,000/month, twin sharing is ₹5,500/month, and triple sharing is ₹4,500/month. We collect a security deposit equivalent to one month's rent at the time of check-in, which is fully refundable upon checkout (subject to a standard 30-day prior notice).";
       } else if (text.includes('security') || text.includes('safe') || text.includes('girls') || text.includes('camera') || text.includes('cctv') || text.includes('warden')) {
         botResponse = "Safety is our core foundation. Unitas Home has 24x7 gated watchmen, dynamic CCTV surveillance of all walkways and exits, a biometric fingerprint door access system, and strict visitor regulations. We maintain an extremely secure, quiet, and friendly campus.";
       } else if (text.includes('visit') || text.includes('schedule') || text.includes('locate') || text.includes('address') || text.includes('map') || text.includes('where')) {

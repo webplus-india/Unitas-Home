@@ -3,8 +3,8 @@ import React from 'react';
 export const article9Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">💼 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">💼 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Working professionals and medical residents require a peaceful, highly productive environment to succeed. Balancing corporate goals or clinical shifts with domestic chores like cooking, cleaning, and laundry can cause stress. This comprehensive guide outlines the critical features—including location, high-speed internet, and fully managed services—that define a premium co-living home in Dehradun.
       </p>
@@ -103,7 +103,7 @@ export const article9Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, we provide a fully serviced co-living package. Our staff sweeps and sanitizes rooms daily, manages professional laundry and steam ironing, and serves four nutritious, home-style vegetarian meals daily. All standard room electricity and water utilities are included in a flat-rate monthly package, ensuring absolute transparency.
+        At Unitas Home, we provide a fully serviced co-living package. Our staff sweeps and sanitizes rooms daily, manages professional laundry and steam ironing, and serves three nutritious, home-style vegetarian meals daily. All standard room electricity and water utilities are included in a flat-rate monthly package, ensuring absolute transparency.
       </p>
 
       {/* Local Insights */}
@@ -119,27 +119,27 @@ export const article9Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the co-living space quiet and professional during business hours?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Does the property operate high-speed commercial fiber-optic Wi-Fi?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are laundry, steam ironing, and daily cleaning fully included in the rent?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is there an automatic generator backup to keep Wi-Fi and workspace lights active?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are meals prepared on-site using hygienic, high-quality ingredients?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are single occupancy options available for professional privacy?</span>
           </li>
         </ul>

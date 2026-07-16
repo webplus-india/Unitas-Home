@@ -179,8 +179,8 @@ export default function Testimonials() {
         
         {/* SECTION HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center space-x-2 bg-[#F4B400]/[0.06] border border-[#F4B400]/15 px-4 py-1.5 rounded-full shadow-xs">
-            <span className="text-[12px] tracking-wide text-[#F4B400] font-extrabold uppercase">
+          <div className="inline-flex items-center space-x-2 bg-[#D4AF37]/[0.06] border border-[#D4AF37]/15 px-4 py-1.5 rounded-full shadow-xs">
+            <span className="text-[12px] tracking-wide text-[#D4AF37] font-extrabold uppercase">
               ⭐ VERIFIED GOOGLE REVIEWS
             </span>
           </div>
@@ -220,15 +220,15 @@ export default function Testimonials() {
                     4.6
                   </span>
                   <div className="flex flex-col text-left">
-                    <div className="flex items-center space-x-0.5 text-[#F4B400]">
+                    <div className="flex items-center space-x-0.5 text-[#D4AF37]">
                       {[...Array(4)].map((_, i) => (
                         <Star key={i} className={`w-5 h-5 fill-current stroke-current star-shimmer-${i + 1}`} />
                       ))}
                       {/* Custom styled 4.6 fraction Star */}
-                      <div className="relative w-5 h-5 text-[#F4B400] star-shimmer-5">
+                      <div className="relative w-5 h-5 text-[#D4AF37] star-shimmer-5">
                         <Star className="w-5 h-5 text-neutral-200 stroke-neutral-200 fill-neutral-200" />
                         <div className="absolute top-0 left-0 overflow-hidden w-[60%] h-full">
-                          <Star className="w-5 h-5 text-[#F4B400] stroke-[#F4B400] fill-current" />
+                          <Star className="w-5 h-5 text-[#D4AF37] stroke-[#D4AF37] fill-current" />
                         </div>
                       </div>
                     </div>
@@ -269,7 +269,7 @@ export default function Testimonials() {
                     {/* Stars designation */}
                     <div className="w-8 flex items-center justify-end font-bold text-charcoal gap-0.5">
                       <span>{stat.stars}</span>
-                      <Star className="w-3.5 h-3.5 text-[#F4B400] fill-current" />
+                      <Star className="w-3.5 h-3.5 text-[#D4AF37] fill-current" />
                     </div>
                     
                     {/* Progress Bar Track */}
@@ -279,7 +279,7 @@ export default function Testimonials() {
                         whileInView={{ width: `${stat.percentage}%` }}
                         viewport={{ once: true }}
                         transition={{ duration: 1.2, ease: "easeOut", delay: idx * 0.1 }}
-                        className="h-full bg-[#F4B400] rounded-full"
+                        className="h-full bg-[#D4AF37] rounded-full"
                       />
                     </div>
                     
@@ -339,7 +339,7 @@ export default function Testimonials() {
                         <div className="flex items-start justify-between">
                           <div className="space-y-1">
                             {/* Rating Stars */}
-                            <div className="flex items-center space-x-0.5 text-[#F4B400]">
+                            <div className="flex items-center space-x-0.5 text-[#D4AF37]">
                               {[...Array(5)].map((_, i) => (
                                 <Star key={i} className={`w-4 h-4 fill-current stroke-current star-shimmer-${(i % 5) + 1}`} />
                               ))}

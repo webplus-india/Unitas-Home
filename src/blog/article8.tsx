@@ -3,8 +3,8 @@ import React from 'react';
 export const article8Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary for Female Residents</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary for Female Residents</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         Finding the right accommodation is a key priority for female students, medical interns, and working professionals in Dehradun. Safety, privacy, hygiene, and a supportive community are crucial for peace of mind. This educational guide breaks down the essential features—including neighborhood safety, professional female wardens, and secure visitor protocols—to help you identify a secure co-living space.
       </p>
@@ -69,8 +69,8 @@ export const article8Content = (
       </p>
 
       {/* Warden Support Callout */}
-      <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-5 rounded-r-2xl my-6">
-        <h4 className="font-display font-bold text-[#0F8B8D] text-sm mb-1">On-Site Warden Care</h4>
+      <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-5 rounded-r-2xl my-6">
+        <h4 className="font-display font-bold text-[#2D6A4F] text-sm mb-1">On-Site Warden Care</h4>
         <p className="text-slate-gray text-xs font-semibold leading-relaxed">
           Our wardens are available 24/7 to assist with any personal or medical needs. If a resident falls ill, our warden coordinates care, contacts parents, and ensures immediate assistance, providing a supportive home away from home.
         </p>
@@ -116,27 +116,27 @@ export const article8Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Does the girls' wing have secure, biometric-controlled entry gates?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is there an experienced, supportive female warden residing on-site 24/7?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are male visitors strictly limited to the ground-floor reception lobby?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is housekeeping in the girls' wings managed strictly by female staff?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Is the property located directly on a safe, well-lit main road with nearby transport?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Are security guards actively logging all gate visitors 24/7?</span>
           </li>
         </ul>

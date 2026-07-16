@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0F8B8D;
-  --color-primary-dark: #0B6E70;
-  --color-accent: #F4B400;
-  --color-accent-hover: #D99A00;
-  --color-bg-warm: #FCFCF8;
+  --color-primary: #2D6A4F;
+  --color-primary-dark: #1B4332;
+  --color-accent: #D4AF37;
+  --color-accent-hover: #C59B27;
+  --color-bg-warm: #F8FAF8;
   --color-surface-white: #FFFFFF;
   --color-charcoal: #1F2937;
-  --color-slate-gray: #6B7280;
-  --color-border-light: #E5E7EB;
+  --color-slate-gray: #4B5563;
+  --color-border-light: #EEF2EF;
   --color-success: #22C55E;
   
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -32,11 +32,11 @@
 
 /* Custom styles for luxury look */
 .luxury-shadow {
-  box-shadow: 0 4px 30px rgba(15, 139, 141, 0.03);
+  box-shadow: 0 4px 30px rgba(45, 106, 79, 0.03);
 }
 
 .luxury-card-shadow {
-  box-shadow: 0 10px 40px -10px rgba(15, 139, 141, 0.08);
+  box-shadow: 0 10px 40px -10px rgba(45, 106, 79, 0.08);
 }
 
 .luxury-card-hover {
@@ -45,7 +45,7 @@
 
 .luxury-card-hover:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px -5px rgba(15, 139, 141, 0.12);
+  box-shadow: 0 20px 40px -5px rgba(45, 106, 79, 0.12);
 }
 
 /* Custom scrollbar */
@@ -54,16 +54,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #FCFCF8;
+  background: #F8FAF8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0F8B8D;
+  background: #2D6A4F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0B6E70;
+  background: #1B4332;
 }
 
 /* For glassmorphism effects */

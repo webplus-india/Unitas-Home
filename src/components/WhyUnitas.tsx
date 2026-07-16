@@ -88,7 +88,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                   referrerPolicy="no-referrer"
                 />
                 {/* Soft warm/golden overlay (6% opacity) to match the brand palette */}
-                <div className="absolute inset-0 bg-[#F4B400]/6 pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-[#D4AF37]/6 pointer-events-none z-10" />
               </div>
 
               {/* Overlapping Card 1: Premium Furnished Room */}
@@ -103,7 +103,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                   referrerPolicy="no-referrer"
                 />
                 {/* Soft warm/golden overlay (6% opacity) */}
-                <div className="absolute inset-0 bg-[#F4B400]/6 pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-[#D4AF37]/6 pointer-events-none z-10" />
               </div>
 
               {/* Overlapping Card 2: Dining & Healthy Meals */}
@@ -118,17 +118,17 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                   referrerPolicy="no-referrer"
                 />
                 {/* Soft warm/golden overlay (6% opacity) */}
-                <div className="absolute inset-0 bg-[#F4B400]/6 pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-[#D4AF37]/6 pointer-events-none z-10" />
               </div>
 
               {/* Floating Trust Badge - Premium Golden Yellow & Teal Accents - Optimized with plain solid white background to avoid rendering bugs under CSS float translation */}
               <div className="absolute top-[4%] right-[2%] bg-white border border-neutral-100/80 px-4 py-2.5 rounded-[24px] shadow-[0_6px_20px_rgba(0,0,0,0.06)] flex items-center gap-2.5 z-20 animate-soft-float select-none">
-                <span className="text-[#F4B400] text-sm font-bold">★</span>
+                <span className="text-[#D4AF37] text-sm font-bold">★</span>
                 <div className="text-left">
                   <p className="font-sans font-bold text-[13px] text-charcoal leading-none tracking-tight">
-                    <span className="text-[#F4B400]">4.6</span> Google Rating
+                    <span className="text-[#D4AF37]">4.6</span> Google Rating
                   </p>
-                  <p className="font-sans text-[10px] text-[#0F8B8D] font-bold leading-none mt-1.5">
+                  <p className="font-sans text-[10px] text-[#2D6A4F] font-bold leading-none mt-1.5">
                     Trusted by 120+ Residents
                   </p>
                 </div>
@@ -146,8 +146,8 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
               <div className="text-left mb-6">
-                <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-[#F4B400] font-bold bg-[#F4B400]/5 px-3.5 py-1.5 rounded-full border border-[#F4B400]/15">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F4B400] shrink-0" />
+                <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-[#D4AF37] font-bold bg-[#D4AF37]/5 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/15">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] shrink-0" />
                   Why Choose Unitas Home
                 </span>
                 <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-3 mb-6 tracking-tight leading-tight max-w-[650px]">
@@ -165,12 +165,12 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
                   return (
                     <div key={idx} className="flex items-start space-x-3.5 group md:hover:-translate-y-0.5 transition-[transform,color] duration-300">
                       <div className="flex-shrink-0 mt-0.5">
-                        <div className="w-11 h-11 rounded-[22px] bg-[#0F8B8D]/5 flex items-center justify-center text-[#0F8B8D] border border-[#0F8B8D]/10 transition-[background-color,color,border-color,box-shadow] duration-300 group-hover:bg-[#0F8B8D] group-hover:text-white group-hover:border-[#F4B400] group-hover:shadow-[0_0_12px_rgba(244,180,0,0.15)] shadow-xs">
+                        <div className="w-11 h-11 rounded-[22px] bg-[#2D6A4F]/5 flex items-center justify-center text-[#2D6A4F] border border-[#2D6A4F]/10 transition-[background-color,color,border-color,box-shadow] duration-300 group-hover:bg-[#2D6A4F] group-hover:text-white group-hover:border-[#D4AF37] group-hover:shadow-[0_0_12px_rgba(244,180,0,0.15)] shadow-xs">
                           <Icon className="w-[22px] h-[22px] stroke-[1.8] transition-colors duration-300 group-hover:text-white" />
                         </div>
                       </div>
                       <div className="text-left flex-1">
-                        <h3 className="font-display font-bold text-[15px] sm:text-[16px] text-charcoal mb-1 tracking-tight leading-[1.3] group-hover:text-[#0F8B8D] transition-colors duration-200">
+                        <h3 className="font-display font-bold text-[15px] sm:text-[16px] text-charcoal mb-1 tracking-tight leading-[1.3] group-hover:text-[#2D6A4F] transition-colors duration-200">
                           {benefit.title}
                         </h3>
                         <p className="font-sans text-[15px] sm:text-[16px] text-[#64748B] leading-[1.7]">
@@ -186,14 +186,14 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               <div className="mt-10 flex flex-wrap items-center gap-6">
                 <button
                   onClick={() => onBookVisit?.()}
-                  className="group bg-[#0F8B8D] hover:bg-[#0B6E70] text-white px-11 py-3.5 rounded-[24px] font-sans font-bold text-sm tracking-wide transition-all shadow-[0_4px_12px_rgba(15,139,141,0.15)] hover:shadow-[0_6px_18px_rgba(15,139,141,0.25)] hover:-translate-y-0.5 inline-flex items-center justify-center gap-2.5 cursor-pointer h-[48px]"
+                  className="group bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] px-11 py-3.5 rounded-[24px] font-sans font-bold text-sm tracking-wide transition-all shadow-[0_4px_12px_rgba(212, 175, 55,0.15)] hover:shadow-[0_6px_18px_rgba(212, 175, 55,0.25)] hover:-translate-y-0.5 inline-flex items-center justify-center gap-2.5 cursor-pointer h-[48px]"
                 >
-                  <CalendarDays className="w-[19px] h-[19px] text-white transition-transform duration-300 group-hover:translate-x-[2px]" />
+                  <CalendarDays className="w-[19px] h-[19px] text-[#1F2937] transition-transform duration-300 group-hover:translate-x-[2px]" />
                   <span>Book a Visit</span>
                 </button>
                 <button
                   onClick={() => onNavigate?.('rooms')}
-                  className="group border-[1.5px] border-[#0F8B8D] text-[#0F8B8D] hover:bg-[#0F8B8D]/5 px-8 py-3.5 rounded-[24px] font-sans font-bold text-sm tracking-wide transition-all duration-[250ms] ease-out hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 cursor-pointer h-[48px]"
+                  className="group border-[1.5px] border-[#2D6A4F] text-[#2D6A4F] hover:bg-[#2D6A4F]/5 px-8 py-3.5 rounded-[24px] font-sans font-bold text-sm tracking-wide transition-all duration-[250ms] ease-out hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 cursor-pointer h-[48px]"
                 >
                   Explore Rooms 
                   <ArrowRight className="w-4 h-4 transition-transform duration-[250ms] ease-out group-hover:translate-x-1.5" />

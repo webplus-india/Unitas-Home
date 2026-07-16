@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Calendar, MessageSquare, Shield, Wifi, Utensils, Sparkles, Zap, Key, User, Users, Bed, BedDouble, ChefHat, Cctv, WashingMachine, BatteryCharging } from 'lucide-react';
+import { Calendar, MessageSquare, Shield, Wifi, Utensils, BrushCleaning, Zap, Key, User, Users, Bed, BedDouble, ChefHat, Cctv, WashingMachine, BatteryCharging } from 'lucide-react';
 
 interface HeroProps {
   onBookVisit: () => void;
@@ -31,8 +31,8 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
       label: '24×7 CCTV'
     },
     { 
-      icon: WashingMachine, 
-      label: 'Laundry'
+      icon: BrushCleaning, 
+      label: 'Daily Housekeeping'
     },
     { 
       icon: BatteryCharging, 
@@ -55,18 +55,18 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05 }}
-              className="flex items-center space-x-2 md:space-x-2.5 bg-white border border-[#E5E7EB] px-2.5 py-1 md:px-3.5 md:py-1.5 rounded-full self-start mb-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)] md:shadow-sm hover:border-[#0F8B8D]/30 transition-all duration-300"
+              className="flex items-center space-x-2 md:space-x-2.5 bg-white border border-[#E5E7EB] px-2.5 py-1 md:px-3.5 md:py-1.5 rounded-full self-start mb-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)] md:shadow-sm hover:border-[#2D6A4F]/30 transition-all duration-300"
             >
               <div className="flex items-center space-x-0.5">
                 {[1, 2, 3, 4].map((s) => (
-                  <svg key={s} className="w-3 h-3 md:w-3.5 md:h-3.5 text-[#F4B400]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={s} className="w-3 h-3 md:w-3.5 md:h-3.5 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
                 <svg className="w-3 h-3 md:w-3.5 md:h-3.5" viewBox="0 0 20 20">
                   <defs>
                     <linearGradient id="star-grad-46" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="60%" stopColor="#F4B400" />
+                      <stop offset="60%" stopColor="#D4AF37" />
                       <stop offset="60%" stopColor="#D1D5DB" />
                     </linearGradient>
                   </defs>
@@ -109,7 +109,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
             >
               Premium PG for <br />
               Students & <br />
-              <span className="text-[#F4B400]">Working Professionals</span>
+              <span className="text-[#D4AF37]">Working Professionals</span>
             </motion.h1>
  
             {/* Subheading */}
@@ -131,7 +131,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
             >
               <button
                 onClick={onBookVisit}
-                className="bg-[#F4B400] hover:bg-[#E0A300] text-[#1F2937] font-sans font-bold text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(244,180,0,0.25)] hover:shadow-[0_8px_20px_rgba(244,180,0,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[54px] shrink-0 hover-shine-btn"
+                className="bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_8px_20px_rgba(212,175,55,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[54px] shrink-0"
               >
                 <Calendar className="w-5 h-5 text-[#1F2937]" />
                 <span>Book a Visit</span>
@@ -141,7 +141,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
                 href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20am%20interested%20in%20inquiring%20about%20a%20room."
                 target="_blank"
                 rel="noreferrer"
-                className="bg-[#0F8B8D] hover:bg-[#0B6E70] text-white font-sans font-bold text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(15,139,141,0.25)] hover:shadow-[0_8px_20px_rgba(15,139,141,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[54px] shrink-0"
+                className="bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-base tracking-wide px-8 rounded-full shadow-[0_4px_14px_rgba(45,106,79,0.25)] hover:shadow-[0_8px_20px_rgba(45,106,79,0.4)] transition-all duration-250 ease-out flex items-center justify-center space-x-2.5 cursor-pointer hover:-translate-y-[2px] active:translate-y-0 h-[54px] shrink-0"
               >
                 <svg className="w-5 h-5 fill-white text-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
@@ -190,7 +190,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
                   className="flex items-center gap-3 py-1"
                 >
                   <Icon 
-                    className="w-[18px] h-[18px] text-[#0F8B8D] shrink-0" 
+                    className="w-[18px] h-[18px] text-[#2D6A4F] shrink-0" 
                     strokeWidth={2} 
                   />
                   <span className="font-sans font-medium text-[14px] text-[#1F2937] tracking-tight whitespace-nowrap">
@@ -213,7 +213,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
                     >
                       {/* Premium Outline Icon - 18px, turns golden yellow on hover */}
                       <Icon 
-                        className="w-[18px] h-[18px] text-[#0F8B8D] group-hover:text-[#F4B400] transition-colors duration-[250ms] shrink-0" 
+                        className="w-[18px] h-[18px] text-[#2D6A4F] group-hover:text-[#D4AF37] transition-colors duration-[250ms] shrink-0" 
                         strokeWidth={1.8} 
                       />
                       {/* Feature Title Only - 14px SemiBold, darkens on hover */}
@@ -234,7 +234,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
         {/* Explore Rooms scroll indicator repositioned below amenities strip */}
         <div className="flex justify-center mt-[35px] relative z-20">
           <div
-            className="flex flex-col items-center space-y-1.5 text-[#6B7280]/70 hover:text-[#0F8B8D] transition-colors cursor-pointer"
+            className="flex flex-col items-center space-y-1.5 text-[#6B7280]/70 hover:text-[#2D6A4F] transition-colors cursor-pointer"
             onClick={() => onNavigate('rooms')}
           >
             <span className="text-[10px] uppercase tracking-widest font-bold text-[#6B7280]">Explore Rooms</span>
@@ -249,7 +249,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
               }}
               className="w-5 h-8 rounded-full border border-[#6B7280]/30 flex justify-center p-1"
             >
-              <div className="w-1.5 h-1.5 bg-[#0F8B8D] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#2D6A4F] rounded-full" />
             </motion.div>
           </div>
         </div>

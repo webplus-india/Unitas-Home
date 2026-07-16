@@ -117,9 +117,9 @@ export default function Header({
               {/* Phone number chip - hidden on mobile, visible from md up */}
               <a
                 href="tel:+919675591951"
-                className="hidden md:flex text-[#0F8B8D] bg-[#0F8B8D]/5 border border-[#0F8B8D]/10 hover:bg-[#0F8B8D]/10 rounded-full font-sans font-semibold text-xs lg:text-[13px] tracking-wide px-3 py-1.5 transition-all duration-300 items-center space-x-1.5 lg:space-x-2 cursor-pointer relative shrink-0"
+                className="hidden md:flex text-[#2D6A4F] bg-[#2D6A4F]/5 border border-[#2D6A4F]/10 hover:bg-[#2D6A4F]/10 rounded-full font-sans font-semibold text-xs lg:text-[13px] tracking-wide px-3 py-1.5 transition-all duration-300 items-center space-x-1.5 lg:space-x-2 cursor-pointer relative shrink-0"
               >
-                <Phone className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] stroke-[2.5px] text-[#0F8B8D]" />
+                <Phone className="w-[14px] h-[14px] lg:w-[16px] lg:h-[16px] stroke-[2.5px] text-[#2D6A4F]" />
                 <span>+91 96755 91951</span>
               </a>
 
@@ -127,7 +127,7 @@ export default function Header({
               <div className="hidden lg:flex items-center">
                 <button
                   onClick={onOpenBooking}
-                  className="bg-primary text-white hover:bg-primary-dark font-sans font-semibold text-xs tracking-wide px-5 py-2.5 rounded-full transition-all duration-300 flex items-center space-x-1.5 shadow-sm border border-primary-dark/20 cursor-pointer hover:scale-[1.03]"
+                  className="bg-[#D4AF37] text-[#1F2937] hover:bg-[#C79A17] font-sans font-semibold text-xs tracking-wide px-5 py-2.5 rounded-full transition-all duration-300 flex items-center space-x-1.5 shadow-sm border border-[#C79A17]/20 cursor-pointer hover:scale-[1.03]"
                 >
                   <CalendarCheck className="w-4 h-4" />
                   <span>Book a Visit</span>
@@ -200,7 +200,7 @@ export default function Header({
                   setIsMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="flex items-center justify-center space-x-2 w-full py-3 bg-primary text-white rounded-[18px] text-sm font-semibold shadow-xs border border-primary-dark/20 hover:bg-primary-dark transition-all duration-200 min-h-[44px] cursor-pointer"
+                className="flex items-center justify-center space-x-2 w-full py-3 bg-[#D4AF37] text-[#1F2937] rounded-[18px] text-sm font-semibold shadow-xs border border-[#C79A17]/20 hover:bg-[#C79A17] transition-all duration-200 min-h-[44px] cursor-pointer"
               >
                 <CalendarCheck className="w-4 h-4" />
                 <span>Book a Visit</span>

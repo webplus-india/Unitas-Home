@@ -3,8 +3,8 @@ import React from 'react';
 export const article5Content = (
   <div className="space-y-8 font-sans text-charcoal/90 leading-relaxed text-sm sm:text-base">
     {/* Executive Summary */}
-    <div className="bg-[#0F8B8D]/5 border-l-4 border-[#0F8B8D] p-6 rounded-r-2xl shadow-3xs mb-8">
-      <h3 className="font-display font-extrabold text-[#0F8B8D] text-base mb-2">🎓 Executive Summary</h3>
+    <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
+      <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
         University life is a balancing act. Between grueling lecture hours, semester examinations, active social calendars, and personal wellness, students often struggle to find time for self-study. This comprehensive guide outlines tactical methods like time-blocking, optimizing your personal workspace, and reclaiming hours by eliminating daily household chores in Dehradun.
       </p>
@@ -103,7 +103,7 @@ export const article5Content = (
       </div>
 
       <p className="mb-4">
-        Unitas Home is fully serviced to eliminate domestic chores. Our staff sweeps and sanitizes room floors daily, manages comprehensive laundry services, and prepares four nutritious, home-style vegetarian meals every day. This support frees you to focus entirely on your college curriculum.
+        Unitas Home is fully serviced to eliminate domestic chores. Our staff sweeps and sanitizes room floors daily, manages comprehensive laundry services, and prepares three nutritious, home-style vegetarian meals every day. This support frees you to focus entirely on your college curriculum.
       </p>
 
       {/* Local Insights */}
@@ -119,19 +119,19 @@ export const article5Content = (
         </h4>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Set up your 2-3 hour daily study blocks at your dedicated in-room desk.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Rely on our managed laundry and daily room cleaning to save hours of effort.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Eat highly nutritious, freshly prepared vegetarian meals instead of fast food.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
-            <span className="text-[#0F8B8D]">✔</span>
+            <span className="text-[#2D6A4F]">✔</span>
             <span>Charge all your devices at our workstation power hubs before your study block begins.</span>
           </li>
         </ul>

@@ -25,7 +25,7 @@ const groupedAmenitiesData: {
       'Dedicated AC & Room Heater Option'
     ],
     services: [
-      'Delicious Homestyle Food (4 Meals/Day)',
+      'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
       'Professional Laundry & Ironing Service',
@@ -34,8 +34,7 @@ const groupedAmenitiesData: {
     security: [
       'Spacious Wardrobe with Safe Locker',
       '24/7 CCTV & Gated Security Guards',
-      'Biometric Main Entrance Access Control',
-      'Full Automatic Power Backup (Diesel Gen)'
+      'Full Automatic Power Backup (Inverter)'
     ]
   },
   'twin-sharing': {
@@ -47,7 +46,7 @@ const groupedAmenitiesData: {
       'Side Table & Individual USB Charging Ports'
     ],
     services: [
-      'Delicious Homestyle Food (4 Meals/Day)',
+      'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
       'Professional Laundry & Ironing Service',
@@ -56,8 +55,7 @@ const groupedAmenitiesData: {
     security: [
       'Two Separate Wardrobes with Personal Lockers',
       '24/7 CCTV & Gated Security Guards',
-      'Biometric Main Entrance Access Control',
-      'Full Automatic Power Backup (Diesel Gen)'
+      'Full Automatic Power Backup (Inverter)'
     ]
   },
   'triple-sharing': {
@@ -69,7 +67,7 @@ const groupedAmenitiesData: {
       'Side Tables with Charging Sockets'
     ],
     services: [
-      'Delicious Homestyle Food (4 Meals/Day)',
+      'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
       'Professional Laundry & Ironing Service',
@@ -78,8 +76,7 @@ const groupedAmenitiesData: {
     security: [
       'Three Separate Wardrobes with Personal Lockers',
       '24/7 CCTV & Gated Security Guards',
-      'Biometric Main Entrance Access Control',
-      'Full Automatic Power Backup (Diesel Gen)'
+      'Full Automatic Power Backup (Inverter)'
     ]
   }
 };
@@ -119,7 +116,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs uppercase tracking-widest text-[#F4B400] font-bold bg-[#F4B400]/5 px-3.5 py-1.5 rounded-full border border-[#F4B400]/15">
+          <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold bg-[#D4AF37]/5 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/15">
             PG ROOM OPTIONS
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-charcoal mt-4 mb-6 max-w-lg mx-auto leading-tight">
@@ -127,7 +124,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
           </h2>
           <div 
             style={{ width: '64px' }}
-            className="h-[2.5px] bg-[#F4B400] mx-auto rounded-full mb-6" 
+            className="h-[2.5px] bg-[#D4AF37] mx-auto rounded-full mb-6" 
           />
           <p className="font-sans text-base text-slate-gray leading-relaxed max-w-[760px] mx-auto">
             Choose from Single, Twin, or Triple Sharing rooms designed for students and working professionals. Every room is fully furnished with a comfortable bed, study desk, attached bathroom, high-speed Wi-Fi, secure storage, and daily housekeeping.
@@ -174,14 +171,14 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
             const groups = groupedAmenitiesData[r.id] || {
               features: r.features,
               services: [
-                'Delicious Homestyle Food (4 Meals/Day)',
+                'Delicious Homestyle Food (3 Meals/Day)',
                 'Daily Dedicated Housekeeping & Cleaning',
                 'High-Speed Fiber Wi-Fi',
               ],
               security: [
                 'Personal Locker & Secure Storage',
                 '24/7 CCTV Security Surveillance',
-                'Biometric Main Entrance Access'
+                'Full Automatic Power Backup (Inverter)'
               ]
             };
 
@@ -193,12 +190,12 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                 <div className="px-6 pt-6 pb-4 border-b border-slate-100 flex items-center justify-between">
                   <div>
                     <div className="flex items-center space-x-2.5">
-                      <span className="text-[10px] uppercase font-extrabold text-[#0F8B8D] bg-[#0F8B8D]/10 px-2.5 py-1 rounded-md">
+                      <span className="text-[10px] uppercase font-extrabold text-[#2D6A4F] bg-[#2D6A4F]/10 px-2.5 py-1 rounded-md">
                         {r.occupancy}
                       </span>
                       <span className={`text-[10px] uppercase font-black px-2.5 py-1 rounded-md border select-none ${
                         r.badge.toLowerCase().includes('preferred') || r.badge.toLowerCase().includes('popular')
-                          ? 'bg-[#F4B400] text-charcoal border-transparent'
+                          ? 'bg-[#D4AF37] text-charcoal border-transparent'
                           : r.badge.toLowerCase().includes('privacy')
                           ? 'bg-[#0B1E36] text-white border-transparent'
                           : 'bg-emerald-600 text-white border-transparent'
@@ -228,14 +225,14 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
 
                   {/* Section 1: Room Features */}
                   <div>
-                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                      <BedDouble className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#2D6A4F] uppercase tracking-wider mb-3">
+                      <BedDouble className="w-5 h-5 text-[#2D6A4F] stroke-[2.2]" />
                       <span>Room Essentials</span>
                     </h4>
                     <div className="space-y-2">
                       {groups.features.map((feature, idx) => (
                         <div key={`modal-feature-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <CheckCircle className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 mt-0.5 stroke-[2.5]" />
                           <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
                             {feature}
                           </span>
@@ -246,14 +243,14 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
 
                   {/* Section 2: Services Included */}
                   <div>
-                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                      <ConciergeBell className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#2D6A4F] uppercase tracking-wider mb-3">
+                      <ConciergeBell className="w-5 h-5 text-[#2D6A4F] stroke-[2.2]" />
                       <span>Services Included</span>
                     </h4>
                     <div className="space-y-2">
                       {groups.services.map((service, idx) => (
                         <div key={`modal-service-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <CheckCircle className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 mt-0.5 stroke-[2.5]" />
                           <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
                             {service}
                           </span>
@@ -264,14 +261,14 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
 
                   {/* Section 3: Safety & Security */}
                   <div>
-                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#0F8B8D] uppercase tracking-wider mb-3">
-                      <ShieldCheck className="w-5 h-5 text-[#0F8B8D] stroke-[2.2]" />
+                    <h4 className="flex items-center gap-2 font-display font-extrabold text-xs text-[#2D6A4F] uppercase tracking-wider mb-3">
+                      <ShieldCheck className="w-5 h-5 text-[#2D6A4F] stroke-[2.2]" />
                       <span>Safety & Security</span>
                     </h4>
                     <div className="space-y-2">
                       {groups.security.map((sec, idx) => (
                         <div key={`modal-security-${idx}`} className="flex items-start gap-2.5 p-3 bg-slate-50/50 rounded-xl border border-slate-100/60">
-                          <CheckCircle className="w-4.5 h-4.5 text-[#0F8B8D] shrink-0 mt-0.5 stroke-[2.5]" />
+                          <CheckCircle className="w-4.5 h-4.5 text-[#2D6A4F] shrink-0 mt-0.5 stroke-[2.5]" />
                           <span className="font-sans text-[12.5px] text-charcoal/85 font-semibold leading-normal">
                             {sec}
                           </span>
@@ -285,7 +282,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                 <div className="p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
                     <span className="block text-[10px] uppercase text-slate-gray/70 font-bold tracking-wider">Monthly Rate</span>
-                    <span className="font-display font-black text-xl text-[#0F8B8D]">₹{r.price.toLocaleString('en-IN')}<span className="text-xs font-semibold text-slate-500">/month</span></span>
+                    <span className="font-display font-black text-xl text-[#2D6A4F]">₹{r.price.toLocaleString('en-IN')}<span className="text-xs font-semibold text-slate-500">/month</span></span>
                   </div>
                   <div className="flex flex-wrap gap-2.5">
                     <button
@@ -294,7 +291,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                         setSelectedComparison(null);
                       }}
                       type="button"
-                      className="bg-[#0F8B8D] md:hover:bg-[#0c7274] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                      className="bg-[#D4AF37] md:hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
                     >
                       Book a Visit
                     </button>
@@ -305,7 +302,7 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                           setSelectedComparison(null);
                         }}
                         type="button"
-                        className="bg-[#F4B400] md:hover:bg-[#D99A00] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                        className="bg-[#2D6A4F] md:hover:bg-[#1B4332] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
                       >
                         Reserve Room
                       </button>

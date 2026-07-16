@@ -14,6 +14,7 @@ interface Landmark {
   distance: string;
   time: string;
   description: string;
+  mapUrl?: string;
 }
 
 const VERIFIED_LANDMARKS: Landmark[] = [
@@ -27,11 +28,12 @@ const VERIFIED_LANDMARKS: Landmark[] = [
   },
   {
     id: 'l-2',
-    name: 'Institute of Technology & Management (ITM)',
+    name: 'Government Doon Medical College (GDMC)',
     category: 'Colleges',
-    distance: '500 meters',
-    time: '3 min walk',
-    description: 'Ideal for IT, BCA, BBA, and Management Students.'
+    distance: '600 meters',
+    time: '5 min walk',
+    description: 'Preferred by medical students, interns, and healthcare professionals due to its close walking distance.',
+    mapUrl: 'https://maps.google.com/?q=Government+Doon+Medical+College,+Dehradun'
   },
   {
     id: 'l-3',
@@ -59,11 +61,12 @@ const VERIFIED_LANDMARKS: Landmark[] = [
   },
   {
     id: 'l-6',
-    name: 'Centrio Mall',
+    name: 'Reliance Smart Bazaar',
     category: 'Shopping',
-    distance: '2.7 km',
-    time: '8 min drive',
-    description: 'Movies, shopping, restaurants, and weekend entertainment.'
+    distance: '1.8 km',
+    time: '5 min drive',
+    description: 'Patel Nagar commercial hub, offering groceries, electronics, restaurants, clothing, and daily essentials.',
+    mapUrl: 'https://maps.google.com/?q=Reliance+Smart+Bazaar,+Patel+Nagar,+Dehradun'
   },
   {
     id: 'l-7',
@@ -137,7 +140,7 @@ export default function Location() {
           </h2>
           <div 
             style={{ width: '64px' }}
-            className="h-[2.5px] bg-[#F4B400] mx-auto rounded-full mt-4 mb-2" 
+            className="h-[2.5px] bg-[#D4AF37] mx-auto rounded-full mt-4 mb-2" 
           />
           
           {/* Spacing: Heading -> Subtitle: 16-20px */}
@@ -147,7 +150,7 @@ export default function Location() {
           
           {/* Spacing: Subtitle -> Information Badges: 24-28px */}
           <div className="flex flex-wrap items-center justify-center gap-2.5 mt-6 sm:mt-[26px]">
-            <span className="text-[10px] font-bold text-[#F4B400] bg-[#F4B400]/5 px-3.5 py-1.5 rounded-full border border-[#F4B400]/15 tracking-widest uppercase">
+            <span className="text-[10px] font-bold text-[#D4AF37] bg-[#D4AF37]/5 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/15 tracking-widest uppercase">
               EVERYTHING WITHIN MINUTES
             </span>
             <span className="inline-flex items-center space-x-1.5 text-[10px] text-slate-gray font-semibold bg-white px-3.5 py-1.5 rounded-full border border-border-light/60 shadow-xs">
@@ -219,7 +222,7 @@ export default function Location() {
             {/* DESKTOP & TABLET: Grid Layout (3-column desktop, 2-column tablet) */}
             <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredPlaces.map((place) => {
-                const mapQuery = `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
+                const mapQuery = place.mapUrl || `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
                 
                 return (
                   <div
@@ -229,11 +232,11 @@ export default function Location() {
                     <div className="space-y-4">
                       {/* Header with Icon and Name */}
                       <div className="flex items-start space-x-3.5">
-                        <div className="w-14 h-14 rounded-[22px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center md:group-hover/card:bg-primary/10 transition-[background-color,border-color] duration-200 flex-shrink-0 mt-0.5">
-                          {place.category === 'Colleges' && <GraduationCap size={22} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Hospitals' && <HeartPulse size={22} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Shopping' && <ShoppingBag size={22} strokeWidth={2} className="text-primary" />}
-                          {place.category === 'Transport' && <Bus size={22} strokeWidth={2} className="text-amber-500" />}
+                        <div className="w-14 h-14 rounded-[22px] bg-[#F8FAF8] border border-[#DDE7E1] shadow-[0_2px_8px_rgba(0,0,0,0.02)] flex items-center justify-center md:group-hover/card:bg-primary/10 transition-[background-color,border-color] duration-200 flex-shrink-0 mt-0.5">
+                          {place.category === 'Colleges' && <GraduationCap size={22} strokeWidth={2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Hospitals' && <HeartPulse size={22} strokeWidth={2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Shopping' && <ShoppingBag size={22} strokeWidth={2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Transport' && <Bus size={22} strokeWidth={2} className="text-[#D4AF37]" />}
                         </div>
                         <h4 className="font-display font-extrabold text-base text-charcoal leading-snug group-hover/card:text-primary transition-colors duration-200 pt-1">
                           {place.name}
@@ -289,7 +292,7 @@ export default function Location() {
             {/* MOBILE ONLY: Vertical grid layout instead of horizontal swipeable slider */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">
               {filteredPlaces.map((place) => {
-                const mapQuery = `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
+                const mapQuery = place.mapUrl || `https://maps.google.com/?q=${encodeURIComponent(place.name + ' Dehradun')}`;
                 
                 return (
                   <div
@@ -299,11 +302,11 @@ export default function Location() {
                     <div className="space-y-3">
                       {/* Header with Icon and Name */}
                       <div className="flex items-start space-x-3">
-                        <div className="w-10 h-10 rounded-[14px] bg-[#F2FBFA] border border-[#E2F2F0] shadow-[0_1px_4px_rgba(0,0,0,0.01)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                          {place.category === 'Colleges' && <GraduationCap size={18} strokeWidth={2.2} className="text-primary" />}
-                          {place.category === 'Hospitals' && <HeartPulse size={18} strokeWidth={2.2} className="text-primary" />}
-                          {place.category === 'Shopping' && <ShoppingBag size={18} strokeWidth={2.2} className="text-primary" />}
-                          {place.category === 'Transport' && <Bus size={18} strokeWidth={2.2} className="text-amber-500" />}
+                        <div className="w-10 h-10 rounded-[14px] bg-[#F8FAF8] border border-[#DDE7E1] shadow-[0_1px_4px_rgba(0,0,0,0.01)] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          {place.category === 'Colleges' && <GraduationCap size={18} strokeWidth={2.2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Hospitals' && <HeartPulse size={18} strokeWidth={2.2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Shopping' && <ShoppingBag size={18} strokeWidth={2.2} className="text-[#2D6A4F]" />}
+                          {place.category === 'Transport' && <Bus size={18} strokeWidth={2.2} className="text-[#D4AF37]" />}
                         </div>
                         <h4 className="font-display font-extrabold text-[14.5px] text-charcoal leading-snug pt-0.5">
                           {place.name}

@@ -4,8 +4,8 @@ import React from 'react';
  * UNITAS HOME BRAND IDENTITY & LOGO GUIDELINES
  * 
  * 1. BRAND COLORS
- *    - Primary Deep Premium Teal: #0F8B8D (Deep, trustworthy, calming, sophisticated)
- *    - Accent Warm Gold: #F4B400 (Premium, hospitality-focused, warmth, excellence)
+ *    - Primary Deep Premium Teal: #2D6A4F (Deep, trustworthy, calming, sophisticated)
+ *    - Accent Warm Gold: #D4AF37 (Premium, hospitality-focused, warmth, excellence)
  *    - Neutral Charcoal: #1F2937 (Elegant, high-contrast, modern)
  *    - Neutral White: #FFFFFF (Clean, spacious, luxury)
  * 
@@ -52,19 +52,19 @@ export default function Logo({
   const selectedSizeClass = sizeClasses[iconSize];
 
   // Colors for the flat-vector geometric icon
-  let houseColor = '#0F8B8D';   // Brand Teal
-  let windowColor = '#F4B400';  // Warm Gold
+  let houseColor = '#2D6A4F';   // Brand Teal
+  let windowColor = '#D4AF37';  // Warm Gold
 
   // Colors for typography
   let brandUnitasColor = 'text-[#1F2937]'; // Charcoal
-  let brandHomeColor = 'text-[#0F8B8D]';    // Brand Teal
+  let brandHomeColor = 'text-[#2D6A4F]';    // Brand Teal
   let brandSubtitleColor = 'text-[#6B7280]'; // Slate Gray
 
   if (theme === 'dark') {
     houseColor = '#FFFFFF';
-    windowColor = '#F4B400';
+    windowColor = '#D4AF37';
     brandUnitasColor = 'text-white';
-    brandHomeColor = 'text-[#F4B400]';
+    brandHomeColor = 'text-[#D4AF37]';
     brandSubtitleColor = 'text-white/80';
   } else if (theme === 'white') {
     houseColor = '#FFFFFF';
@@ -73,11 +73,11 @@ export default function Logo({
     brandHomeColor = 'text-white';
     brandSubtitleColor = 'text-white/80';
   } else if (theme === 'gold') {
-    houseColor = '#F4B400';
-    windowColor = '#F4B400';
-    brandUnitasColor = 'text-[#F4B400]';
-    brandHomeColor = 'text-[#F4B400]';
-    brandSubtitleColor = 'text-[#F4B400]/80';
+    houseColor = '#D4AF37';
+    windowColor = '#D4AF37';
+    brandUnitasColor = 'text-[#D4AF37]';
+    brandHomeColor = 'text-[#D4AF37]';
+    brandSubtitleColor = 'text-[#D4AF37]/80';
   } else if (theme === 'monochrome') {
     houseColor = '#1F2937';
     windowColor = '#1F2937';

@@ -11,8 +11,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'single-sharing',
     name: 'Single Sharing',
     occupancy: 'Single Occupancy',
-    price: 15500,
-    originalPrice: 18000,
+    price: 11000,
+    originalPrice: 13000,
     description: 'Perfect for students and professionals seeking privacy, comfort, and a peaceful living environment.',
     features: [
       'Private Premium Box Bed & Mattress',
@@ -35,8 +35,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'twin-sharing',
     name: 'Twin Sharing',
     occupancy: '2-Sharing',
-    price: 10500,
-    originalPrice: 12500,
+    price: 5500,
+    originalPrice: 6500,
     description: 'Designed for friends and roommates who want the ideal balance of comfort, affordability, and convenience.',
     features: [
       'Individual Box Beds & Premium Mattresses',
@@ -59,8 +59,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'triple-sharing',
     name: 'Triple Sharing',
     occupancy: '3-Sharing',
-    price: 8000,
-    originalPrice: 9500,
+    price: 4500,
+    originalPrice: 5500,
     description: 'A budget-friendly shared room offering comfort, community, and all essential premium amenities.',
     features: [
       'Individually Partitioned Sleep Spaces',
@@ -156,11 +156,11 @@ export const AMENITIES_DATA: Amenity[] = [
     description: '24×7 RO purified hot & cold drinking water available on every floor.'
   },
   {
-    id: 'laundry',
-    name: 'Laundry & Ironing',
-    iconName: 'WashingMachine',
+    id: 'attached-balcony',
+    name: 'Attached Balcony',
+    iconName: 'DoorOpen',
     category: 'Essentials',
-    description: 'Professional washing, drying, and ironing services to keep your clothes fresh, clean, and ready to wear.'
+    description: 'Private attached balcony with fresh air and natural light for a comfortable everyday living experience.'
   },
   {
     id: 'housekeeping',
@@ -268,7 +268,7 @@ export const FAQS_DATA: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'What meals are included, and what are the food timings?',
-    answer: 'We provide four highly nutritious, freshly-prepared meals every single day: Breakfast, Lunch, Evening Snacks with Tea, and Dinner. TIMINGS: Breakfast: 7:30 AM - 9:30 AM, Lunch: 1:00 PM - 3:00 PM, Snacks: 5:30 PM - 6:30 PM, Dinner: 8:00 PM - 10:00 PM. We have weekly menus that offer a perfect balance of North Indian, South Indian, and local cuisines, with special desserts on weekends!',
+    answer: 'We provide three highly nutritious, freshly-prepared meals every single day: Breakfast, Lunch, and Dinner. TIMINGS: Breakfast: 7:30 AM - 9:30 AM, Lunch: 1:00 PM - 3:00 PM, Dinner: 8:00 PM - 10:00 PM. We have weekly menus that offer a perfect balance of North Indian, South Indian, and local cuisines, with special desserts on weekends!',
     category: 'Meals'
   },
   {

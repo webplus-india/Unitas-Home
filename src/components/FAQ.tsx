@@ -44,18 +44,17 @@ export default function FAQ() {
       answerElement: (
         <div className="space-y-3 font-medium text-slate-gray">
           <p>
-            We provide four highly nutritious, freshly prepared <strong>vegetarian meals</strong> every single day: Breakfast, Lunch, Evening Snacks with Tea, and Dinner. We offer a balanced weekly menu featuring North Indian, South Indian, and local cuisines with special desserts on weekends.
+            We provide three highly nutritious, freshly prepared <strong>vegetarian meals</strong> every single day: Breakfast, Lunch, and Dinner. We offer a balanced weekly menu featuring North Indian, South Indian, and local cuisines with special desserts on weekends.
           </p>
           <p className="font-bold text-charcoal/90 mt-2">Daily Meal Timings:</p>
           <ul className="space-y-1.5 list-disc list-inside text-slate-gray pl-1">
             <li><strong>Breakfast:</strong> 7:30 AM – 9:30 AM</li>
             <li><strong>Lunch:</strong> 1:00 PM – 3:00 PM</li>
-            <li><strong>Evening Snacks:</strong> 5:30 PM – 6:30 PM</li>
             <li><strong>Dinner:</strong> 8:00 PM – 10:00 PM</li>
           </ul>
         </div>
       ),
-      schemaAnswer: "We provide four highly nutritious, freshly prepared vegetarian meals every single day: Breakfast (7:30 AM – 9:30 AM), Lunch (1:00 PM – 3:00 PM), Evening Snacks with Tea (5:30 PM – 6:30 PM), and Dinner (8:00 PM – 10:00 PM). We offer a balanced weekly menu featuring North Indian, South Indian, and local cuisines."
+      schemaAnswer: "We provide three highly nutritious, freshly prepared vegetarian meals every single day: Breakfast (7:30 AM – 9:30 AM), Lunch (1:00 PM – 3:00 PM), and Dinner (8:00 PM – 10:00 PM). We offer a balanced weekly menu featuring North Indian, South Indian, and local cuisines."
     },
     {
       id: 'faq-security',
@@ -252,8 +251,8 @@ export default function FAQ() {
         
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center space-x-2 bg-[#F4B400]/[0.06] border border-[#F4B400]/15 px-4 py-1.5 rounded-full shadow-xs">
-            <span className="text-[12px] tracking-wide text-[#F4B400] font-extrabold uppercase">
+          <div className="inline-flex items-center space-x-2 bg-[#D4AF37]/[0.06] border border-[#D4AF37]/15 px-4 py-1.5 rounded-full shadow-xs">
+            <span className="text-[12px] tracking-wide text-[#D4AF37] font-extrabold uppercase">
               Frequently Asked Questions
             </span>
           </div>
@@ -276,7 +275,7 @@ export default function FAQ() {
                 key={faq.id}
                 className={`border rounded-[24px] overflow-hidden transition-all duration-300 ${
                   isOpen 
-                    ? 'bg-[#0F8B8D]/[0.02] border-[#0F8B8D]/30 border-l-4 border-l-[#F4B400] shadow-sm' 
+                    ? 'bg-[#2D6A4F]/[0.02] border-[#2D6A4F]/30 border-l-4 border-l-[#D4AF37] shadow-sm' 
                     : 'border-border-light bg-bg-warm/40 hover:bg-bg-warm/85'
                 }`}
               >
@@ -294,8 +293,8 @@ export default function FAQ() {
                     </span>
                   </div>
 
-                  <div className={`flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-border-light flex items-center justify-center text-charcoal group-hover:text-[#F4B400] group-hover:border-[#F4B400]/20 transition-all ${
-                    isOpen ? 'bg-[#F4B400] text-[#1F2937] border-[#F4B400] shadow-2xs' : ''
+                  <div className={`flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-border-light flex items-center justify-center text-charcoal group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/20 transition-all ${
+                    isOpen ? 'bg-[#D4AF37] text-[#1F2937] border-[#D4AF37] shadow-2xs' : ''
                   }`}>
                     <ChevronDown className={`w-5 h-5 transform transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#1F2937]' : ''}`} />
                   </div>
@@ -310,7 +309,7 @@ export default function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25, ease: 'easeInOut' }}
                     >
-                      <div className="p-5 sm:p-6 pt-0 border-t-2 border-[#F4B400]/40 font-sans text-xs sm:text-sm text-slate-gray leading-relaxed bg-white/70">
+                      <div className="p-5 sm:p-6 pt-0 border-t-2 border-[#D4AF37]/40 font-sans text-xs sm:text-sm text-slate-gray leading-relaxed bg-white/70">
                         <div className="pt-4">
                           {faq.answerElement}
                         </div>
