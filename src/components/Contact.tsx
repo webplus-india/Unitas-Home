@@ -13,7 +13,12 @@ import {
   Calendar, 
   Check, 
   Send, 
-  Navigation 
+  Navigation,
+  User,
+  Bed,
+  Clock,
+  CalendarDays,
+  Users
 } from 'lucide-react';
 import { ROOMS_DATA } from '../data';
 import { Inquiry } from '../types';
@@ -434,48 +439,50 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   
-                  {/* Row 1: Full Name & Phone Number */}
+                  {/* Row 1: Full Name & Mobile Number */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     
                     {/* Name */}
                     <div>
-                      <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                         Full Name *
                       </label>
                       <div className="relative">
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                         <input
                           type="text"
                           placeholder="e.g. Ayush Dobhal"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                            errors.name ? 'border-red-500' : 'border-[#E8E8E8]'
+                          className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                            errors.name ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                           }`}
                         />
                         {isNameValid && (
-                          <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                          <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                         )}
                       </div>
                       {errors.name && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.name}</span>}
                     </div>
 
-                    {/* Phone */}
+                    {/* Mobile Number */}
                     <div>
-                      <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
-                        Phone Number *
+                      <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
+                        Mobile Number *
                       </label>
                       <div className="relative">
+                        <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                         <input
                           type="text"
                           placeholder="e.g. +91 96755 91951"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                            errors.phone ? 'border-red-500' : 'border-[#E8E8E8]'
+                          className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                            errors.phone ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                           }`}
                         />
                         {isPhoneValid && (
-                          <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                          <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                         )}
                       </div>
                       {errors.phone && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.phone}</span>}
@@ -489,21 +496,22 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                       
                       {/* Email Address (Optional) */}
                       <div>
-                        <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                           Email Address (Optional)
                         </label>
                         <div className="relative">
+                          <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                           <input
                             type="email"
                             placeholder="e.g. student@gmail.com"
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                              errors.email ? 'border-red-500' : 'border-[#E8E8E8]'
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.email ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                             }`}
                           />
                           {formData.email.trim().length > 0 && isEmailValid && (
-                            <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                            <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                           )}
                         </div>
                         {errors.email && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.email}</span>}
@@ -511,14 +519,15 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                       {/* Preferred Room Type */}
                       <div>
-                        <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                           Preferred Room Type *
                         </label>
                         <div className="relative">
+                          <Bed className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                           <select
                             value={formData.roomType}
                             onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
-                            className="w-full h-12 font-sans text-sm px-4 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer"
+                            className="w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer"
                           >
                             {ROOMS_DATA.map((r) => (
                               <option key={r.id} value={r.id}>
@@ -526,7 +535,7 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                               </option>
                             ))}
                           </select>
-                          <div className="absolute right-4 top-[22px] pointer-events-none border-solid border-charcoal border-t-4 border-x-transparent border-x-4 border-b-0" />
+                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
                         </div>
                       </div>
 
@@ -539,21 +548,22 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {/* Email Address (Optional) */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
-                            Email (Optional)
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
+                            Email Address (Optional)
                           </label>
                           <div className="relative">
+                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <input
                               type="email"
                               placeholder="e.g. student@gmail.com"
                               value={formData.email}
                               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                              className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                                errors.email ? 'border-red-500' : 'border-[#E8E8E8]'
+                              className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                                errors.email ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                               }`}
                             />
                             {formData.email.trim().length > 0 && isEmailValid && (
-                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                             )}
                           </div>
                           {errors.email && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.email}</span>}
@@ -561,20 +571,21 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                         {/* Preferred Visit Date */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Preferred Visit Date *
                           </label>
                           <div className="relative">
+                            <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <input
                               type="date"
                               value={formData.moveInDate}
                               onChange={(e) => setFormData({ ...formData, moveInDate: e.target.value })}
-                              className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                                errors.moveInDate ? 'border-red-500' : 'border-[#E8E8E8]'
+                              className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                                errors.moveInDate ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                               }`}
                             />
                             {formData.moveInDate && (
-                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                             )}
                           </div>
                           {errors.moveInDate && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.moveInDate}</span>}
@@ -584,38 +595,42 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {/* Preferred Time Slot */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Preferred Time Slot
                           </label>
                           <div className="relative">
+                            <Clock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <select
                               value={formData.timeSlot}
                               onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
-                              className="w-full h-12 font-sans text-sm px-4 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer"
+                              className="w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer"
                             >
                               <option value="">Select a time slot</option>
                               <option value="Morning (9:30 AM - 12:00 PM)">Morning (9:30 AM - 12:00 PM)</option>
                               <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
                               <option value="Evening (4:00 PM - 7:00 PM)">Evening (4:00 PM - 7:00 PM)</option>
                             </select>
-                            <div className="absolute right-4 top-[22px] pointer-events-none border-solid border-charcoal border-t-4 border-x-transparent border-x-4 border-b-0" />
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
                           </div>
                         </div>
 
                         {/* Number of Visitors (Optional) */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Number of Visitors (Optional)
                           </label>
-                          <input
-                            type="number"
-                            min={1}
-                            max={10}
-                            placeholder="e.g. 2"
-                            value={formData.visitorsCount}
-                            onChange={(e) => setFormData({ ...formData, visitorsCount: e.target.value })}
-                            className="w-full h-12 font-sans text-sm px-4 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all"
-                          />
+                          <div className="relative">
+                            <Users className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                            <input
+                              type="number"
+                              min={1}
+                              max={10}
+                              placeholder="e.g. 2"
+                              value={formData.visitorsCount}
+                              onChange={(e) => setFormData({ ...formData, visitorsCount: e.target.value })}
+                              className="w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all"
+                            />
+                          </div>
                         </div>
                       </div>
 
@@ -628,21 +643,22 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {/* Email Address * */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
-                            Email *
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
+                            Email Address *
                           </label>
                           <div className="relative">
+                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <input
                               type="email"
                               placeholder="e.g. student@gmail.com"
                               value={formData.email}
                               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                              className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                                errors.email ? 'border-red-500' : 'border-[#E8E8E8]'
+                              className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                                errors.email ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                               }`}
                             />
                             {formData.email.trim().length > 0 && isEmailValid && (
-                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                             )}
                           </div>
                           {errors.email && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.email}</span>}
@@ -650,14 +666,15 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                         {/* Preferred Room Type */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Preferred Room Type *
                           </label>
                           <div className="relative">
+                            <Bed className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <select
                               value={formData.roomType}
                               onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
-                              className="w-full h-12 font-sans text-sm px-4 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer"
+                              className="w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer"
                             >
                               {ROOMS_DATA.map((r) => (
                                 <option key={r.id} value={r.id}>
@@ -665,7 +682,7 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                                 </option>
                               ))}
                             </select>
-                            <div className="absolute right-4 top-[22px] pointer-events-none border-solid border-charcoal border-t-4 border-x-transparent border-x-4 border-b-0" />
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
                           </div>
                         </div>
                       </div>
@@ -673,20 +690,21 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {/* Expected Move-in Date * */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Expected Move-in Date *
                           </label>
                           <div className="relative">
+                            <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                             <input
                               type="date"
                               value={formData.moveInDate}
                               onChange={(e) => setFormData({ ...formData, moveInDate: e.target.value })}
-                              className={`w-full h-12 font-sans text-sm px-4 rounded-[16px] border bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all ${
-                                errors.moveInDate ? 'border-red-500' : 'border-[#E8E8E8]'
+                              className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                                errors.moveInDate ? 'border-red-500 ring-2 ring-red-100' : 'border-[#E9ECEF]'
                               }`}
                             />
                             {formData.moveInDate && (
-                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-[16px]" />
+                              <Check className="w-4 h-4 text-emerald-500 absolute right-3.5 top-1/2 -translate-y-1/2" />
                             )}
                           </div>
                           {errors.moveInDate && <span className="block text-[10px] text-red-500 mt-1 font-semibold">{errors.moveInDate}</span>}
@@ -694,16 +712,19 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                         {/* Duration of Stay */}
                         <div>
-                          <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                          <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                             Duration of Stay
                           </label>
-                          <input
-                            type="text"
-                            placeholder="e.g. 6 months"
-                            value={formData.durationOfStay}
-                            onChange={(e) => setFormData({ ...formData, durationOfStay: e.target.value })}
-                            className="w-full h-12 font-sans text-sm px-4 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all"
-                          />
+                          <div className="relative">
+                            <CalendarDays className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                            <input
+                              type="text"
+                              placeholder="e.g. 6 months"
+                              value={formData.durationOfStay}
+                              onChange={(e) => setFormData({ ...formData, durationOfStay: e.target.value })}
+                              className="w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all"
+                            />
+                          </div>
                         </div>
                       </div>
 
@@ -712,16 +733,19 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
 
                   {/* Message (Optional) */}
                   <div>
-                    <label className="block text-[11px] font-extrabold text-charcoal mb-1.5 uppercase tracking-wide">
+                    <label className="block text-[11px] font-semibold text-[#1F2937] mb-1.5 uppercase tracking-wider">
                       {formData.type === 'Inquiry' ? 'Message (Optional)' : 'Message'}
                     </label>
-                    <textarea
-                      placeholder="Ask about pricing, room availability, amenities, food, or anything else..."
-                      rows={4}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full font-sans text-sm px-4 py-3 rounded-[16px] border border-[#E8E8E8] bg-[#FAF9F6]/40 focus:bg-white focus:outline-none focus:border-primary transition-all resize-none"
-                    />
+                    <div className="relative">
+                      <MessageSquare className="absolute left-4 top-[18px] w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                      <textarea
+                        placeholder="Ask about pricing, room availability, amenities, food, or anything else..."
+                        rows={4}
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        className="w-full font-sans text-sm pl-[48px] pr-4 py-3.5 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all resize-none"
+                      />
+                    </div>
                   </div>
 
                   {/* Submit Block */}

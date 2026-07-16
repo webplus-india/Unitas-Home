@@ -15,7 +15,12 @@ import {
   Sparkles,
   Home,
   MapPin,
-  Phone
+  Phone,
+  User,
+  Mail,
+  Bed,
+  CalendarDays,
+  MessageSquare
 } from 'lucide-react';
 import { ROOMS_DATA } from '../data';
 import { Inquiry } from '../types';
@@ -76,9 +81,9 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
     const newErrors: { [key: string]: string } = {};
     if (!formData.name.trim()) newErrors.name = 'Full Name is required';
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone Number is required';
+      newErrors.phone = 'Mobile Number is required';
     } else if (!/^\+?[\d\s-]{10,15}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid 10-digit phone number';
+      newErrors.phone = 'Please enter a valid 10-digit mobile number';
     }
     if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
@@ -205,60 +210,69 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                   <div className="space-y-4">
                     {/* Full Name */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Full Name *
                       </label>
-                      <input
-                        type="text"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                          errors.name 
-                            ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                            : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                        }`}
-                        placeholder="e.g. Ayush Dobhal"
-                      />
+                      <div className="relative">
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <input
+                          type="text"
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                            errors.name 
+                              ? 'border-red-500 ring-2 ring-red-100' 
+                              : 'border-[#E9ECEF]'
+                          }`}
+                          placeholder="e.g. Ayush Dobhal"
+                        />
+                      </div>
                       {errors.name && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.name}</span>}
                     </div>
 
-                    {/* Row: Phone & Email */}
+                    {/* Row: Mobile Number & Email */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {/* Phone */}
+                      {/* Mobile Number */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
-                          Phone Number *
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
+                          Mobile Number *
                         </label>
-                        <input
-                          type="tel"
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                            errors.phone 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                          placeholder="e.g. +91 98765 43210"
-                        />
+                        <div className="relative">
+                          <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <input
+                            type="tel"
+                            value={formData.phone}
+                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.phone 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                            placeholder="e.g. +91 98765 43210"
+                          />
+                        </div>
                         {errors.phone && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.phone}</span>}
                       </div>
 
                       {/* Email */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Email Address (Optional)
                         </label>
-                        <input
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                            errors.email 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                          placeholder="e.g. ayush@gmail.com"
-                        />
+                        <div className="relative">
+                          <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <input
+                            type="email"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.email 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                            placeholder="e.g. ayush@gmail.com"
+                          />
+                        </div>
                         {errors.email && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.email}</span>}
                       </div>
                     </div>
@@ -267,19 +281,20 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Preferred Visit Date */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Preferred Visit Date *
                         </label>
                         <div className="relative">
+                          <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
                           <input
                             type="date"
                             min={new Date().toISOString().split('T')[0]}
                             value={formData.visitDate}
                             onChange={(e) => setFormData({ ...formData, visitDate: e.target.value })}
-                            className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
                               errors.visitDate 
-                                ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                                : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
                             }`}
                             placeholder="Select your visit date"
                           />
@@ -289,56 +304,67 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
 
                       {/* Preferred Time Slot */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Preferred Time Slot *
                         </label>
-                        <select
-                          value={formData.timeSlot}
-                          onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
-                            errors.timeSlot 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                        >
-                          <option value="">Choose a preferred time</option>
-                          <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
-                          <option value="12:00 PM - 02:00 PM">12:00 PM - 02:00 PM</option>
-                          <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
-                          <option value="04:00 PM - 06:00 PM">04:00 PM - 06:00 PM</option>
-                        </select>
+                        <div className="relative">
+                          <Clock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <select
+                            value={formData.timeSlot}
+                            onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer ${
+                              errors.timeSlot 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                          >
+                            <option value="">Choose a preferred time</option>
+                            <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                            <option value="12:00 PM - 02:00 PM">12:00 PM - 02:00 PM</option>
+                            <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                            <option value="04:00 PM - 06:00 PM">04:00 PM - 06:00 PM</option>
+                          </select>
+                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
+                        </div>
                         {errors.timeSlot && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.timeSlot}</span>}
                       </div>
                     </div>
 
                     {/* Visitors Count */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Number of Visitors (Optional)
                       </label>
-                      <select
-                        value={formData.visitorsCount}
-                        onChange={(e) => setFormData({ ...formData, visitorsCount: e.target.value })}
-                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10"
-                      >
-                        <option value="1">1 Person</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4+">4+ People</option>
-                      </select>
+                      <div className="relative">
+                        <Users className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <select
+                          value={formData.visitorsCount}
+                          onChange={(e) => setFormData({ ...formData, visitorsCount: e.target.value })}
+                          className="w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer"
+                        >
+                          <option value="1">1 Person</option>
+                          <option value="2">2 People</option>
+                          <option value="3">3 People</option>
+                          <option value="4+">4+ People</option>
+                        </select>
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
+                      </div>
                     </div>
 
                     {/* Message */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Message (Optional)
                       </label>
-                      <textarea
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10 resize-none"
-                        placeholder="Tell us if you have any room preference, college, budget or special requirements..."
-                      />
+                      <div className="relative">
+                        <MessageSquare className="absolute left-4 top-[18px] w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <textarea
+                          value={formData.message}
+                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                          className="w-full h-20 pl-[48px] pr-4 py-3 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all resize-none animate-none"
+                          placeholder="Tell us if you have any room preference, college, budget or special requirements..."
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -467,9 +493,9 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
     const newErrors: { [key: string]: string } = {};
     if (!formData.name.trim()) newErrors.name = 'Full Name is required';
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone Number is required';
+      newErrors.phone = 'Mobile Number is required';
     } else if (!/^\+?[\d\s-]{10,15}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid 10-digit phone number';
+      newErrors.phone = 'Please enter a valid 10-digit mobile number';
     }
     if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
@@ -635,60 +661,69 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                   <div className="space-y-4">
                     {/* Full Name */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Full Name *
                       </label>
-                      <input
-                        type="text"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                          errors.name 
-                            ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                            : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                        }`}
-                        placeholder="e.g. Ayush Dobhal"
-                      />
+                      <div className="relative">
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <input
+                          type="text"
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                            errors.name 
+                              ? 'border-red-500 ring-2 ring-red-100' 
+                              : 'border-[#E9ECEF]'
+                          }`}
+                          placeholder="e.g. Ayush Dobhal"
+                        />
+                      </div>
                       {errors.name && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.name}</span>}
                     </div>
 
-                    {/* Row: Phone & Email */}
+                    {/* Row: Mobile Number & Email */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {/* Phone */}
+                      {/* Mobile Number */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
-                          Phone Number *
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
+                          Mobile Number *
                         </label>
-                        <input
-                          type="tel"
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                            errors.phone 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                          placeholder="e.g. +91 98765 43210"
-                        />
+                        <div className="relative">
+                          <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <input
+                            type="tel"
+                            value={formData.phone}
+                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.phone 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                            placeholder="e.g. +91 98765 43210"
+                          />
+                        </div>
                         {errors.phone && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.phone}</span>}
                       </div>
 
                       {/* Email */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Email (Optional)
                         </label>
-                        <input
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white ${
-                            errors.email 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                          placeholder="e.g. ayush@gmail.com"
-                        />
+                        <div className="relative">
+                          <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <input
+                            type="email"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.email 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                            placeholder="e.g. ayush@gmail.com"
+                          />
+                        </div>
                         {errors.email && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.email}</span>}
                       </div>
                     </div>
@@ -697,80 +732,94 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Preferred Room Type */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Preferred Room Type *
                         </label>
-                        <select
-                          value={formData.roomType}
-                          onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
-                            errors.roomType 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                        >
-                          <option value="" disabled hidden>Select your preferred room</option>
-                          {ROOMS_DATA.map((room) => (
-                            <option key={room.id} value={room.id}>
-                              {room.name}
-                            </option>
-                          ))}
-                        </select>
+                        <div className="relative">
+                          <Bed className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <select
+                            value={formData.roomType}
+                            onChange={(e) => setFormData({ ...formData, roomType: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer ${
+                              errors.roomType 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                          >
+                            <option value="" disabled hidden>Select your preferred room</option>
+                            {ROOMS_DATA.map((room) => (
+                              <option key={room.id} value={room.id}>
+                                {room.name}
+                              </option>
+                            ))}
+                          </select>
+                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
+                        </div>
                         {errors.roomType && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.roomType}</span>}
                       </div>
 
                       {/* Expected Move-in Date */}
                       <div>
-                        <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                        <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                           Expected Move-in Date *
                         </label>
-                        <input
-                          type={isDateFocused || formData.moveInDate ? "date" : "text"}
-                          onFocus={() => setIsDateFocused(true)}
-                          onBlur={() => setIsDateFocused(false)}
-                          placeholder="Select your expected move-in date"
-                          min={new Date().toISOString().split('T')[0]}
-                          value={formData.moveInDate}
-                          onChange={(e) => setFormData({ ...formData, moveInDate: e.target.value })}
-                          className={`w-full h-11 px-4 rounded-xl border bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white ${
-                            errors.moveInDate 
-                              ? 'border-red-500 focus:ring-2 focus:ring-red-100' 
-                              : 'border-slate-200 focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10'
-                          }`}
-                        />
+                        <div className="relative">
+                          <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                          <input
+                            type={isDateFocused || formData.moveInDate ? "date" : "text"}
+                            onFocus={() => setIsDateFocused(true)}
+                            onBlur={() => setIsDateFocused(false)}
+                            placeholder="Select expected move-in date"
+                            min={new Date().toISOString().split('T')[0]}
+                            value={formData.moveInDate}
+                            onChange={(e) => setFormData({ ...formData, moveInDate: e.target.value })}
+                            className={`w-full h-[56px] font-sans text-sm pl-[48px] pr-4 rounded-[16px] border bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all ${
+                              errors.moveInDate 
+                                ? 'border-red-500 ring-2 ring-red-100' 
+                                : 'border-[#E9ECEF]'
+                            }`}
+                          />
+                        </div>
                         {errors.moveInDate && <span className="text-[10px] text-red-500 font-bold mt-1 block">{errors.moveInDate}</span>}
                       </div>
                     </div>
 
                     {/* Duration of Stay */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Duration of Stay (Optional)
                       </label>
-                      <select
-                        value={formData.duration}
-                        onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
-                        className="w-full h-11 px-4 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10"
-                      >
-                        <option value="" disabled hidden>Select duration of stay</option>
-                        <option value="1">1 Month</option>
-                        <option value="3">3 Months</option>
-                        <option value="6">6 Months</option>
-                        <option value="12">12 Months (Full Academic Year)</option>
-                      </select>
+                      <div className="relative">
+                        <CalendarDays className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <select
+                          value={formData.duration}
+                          onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
+                          className="w-full h-[56px] font-sans text-sm pl-[48px] pr-10 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all appearance-none cursor-pointer"
+                        >
+                          <option value="" disabled hidden>Select duration of stay</option>
+                          <option value="1">1 Month</option>
+                          <option value="3">3 Months</option>
+                          <option value="6">6 Months</option>
+                          <option value="12">12 Months (Full Academic Year)</option>
+                        </select>
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none border-solid border-[#1F2937] border-t-4 border-x-transparent border-x-4 border-b-0" />
+                      </div>
                     </div>
 
                     {/* Message */}
                     <div>
-                      <label className="block text-[11px] font-bold text-charcoal uppercase tracking-wider mb-1.5">
+                      <label className="block text-[11px] font-semibold text-[#1F2937] uppercase tracking-wider mb-1.5">
                         Message (Optional)
                       </label>
-                      <textarea
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full h-20 p-3 rounded-xl border border-slate-200 bg-slate-50/50 font-sans text-xs font-semibold text-charcoal transition-all placeholder:text-slate-400 focus:outline-hidden focus:bg-white focus:border-[#2D6A4F] focus:ring-4 focus:ring-[#2D6A4F]/10 resize-none"
-                        placeholder="Tell us your preferred move-in date, college/company, or any special requirements..."
-                      />
+                      <div className="relative">
+                        <MessageSquare className="absolute left-4 top-[18px] w-5 h-5 text-[#2D6A4F]" strokeWidth={2} />
+                        <textarea
+                          value={formData.message}
+                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                          className="w-full h-20 pl-[48px] pr-4 py-3 rounded-[16px] border border-[#E9ECEF] bg-white text-[#1F2937] font-medium placeholder-[#9CA3AF] focus:border-[#2D6A4F] focus:ring-2 focus:ring-[#2D6A4F]/20 focus:outline-none focus:bg-white transition-all resize-none animate-none"
+                          placeholder="Tell us your preferred move-in date, college/company, or any special requirements..."
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
