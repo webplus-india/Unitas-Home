@@ -23,20 +23,20 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
       label: 'High-Speed Wi-Fi'
     },
     { 
-      icon: Utensils, 
-      label: 'Home-style Meals'
-    },
-    { 
       icon: Cctv, 
       label: '24×7 CCTV'
     },
     { 
-      icon: BrushCleaning, 
-      label: 'Daily Housekeeping'
+      icon: Utensils, 
+      label: 'Home-style Meals'
     },
     { 
       icon: BatteryCharging, 
       label: 'Power Backup'
+    },
+    { 
+      icon: BrushCleaning, 
+      label: 'Daily Housekeeping'
     }
   ];
 

@@ -82,7 +82,34 @@ export const ROOMS_DATA: Room[] = [
 ];
 
 export const AMENITIES_DATA: Amenity[] = [
-  // Comfort
+  {
+    id: 'wifi',
+    name: 'High-Speed Wi-Fi',
+    iconName: 'Wifi',
+    category: 'Essentials',
+    description: 'Unlimited high-speed fiber internet for studying, streaming, and remote work.'
+  },
+  {
+    id: 'meals',
+    name: 'Nutritious Meals',
+    iconName: 'Utensils',
+    category: 'Essentials',
+    description: 'Fresh home-style vegetarian breakfast, lunch, and dinner with a new menu every day.'
+  },
+  {
+    id: 'ro-water',
+    name: 'RO Water Cooler',
+    iconName: 'GlassWater',
+    category: 'Essentials',
+    description: '24×7 RO purified hot & cold drinking water available on every floor.'
+  },
+  {
+    id: 'housekeeping',
+    name: 'Daily Housekeeping',
+    iconName: 'BrushCleaning',
+    category: 'Essentials',
+    description: 'Daily housekeeping keeps rooms and common spaces clean and hygienic.'
+  },
   {
     id: 'attached-washroom',
     name: 'Attached Washroom',
@@ -119,6 +146,13 @@ export const AMENITIES_DATA: Amenity[] = [
     description: 'Bright, airy rooms with large windows for natural light and fresh ventilation.'
   },
   {
+    id: 'attached-balcony',
+    name: 'Attached Balcony',
+    iconName: 'DoorOpen',
+    category: 'Comfort',
+    description: 'Private attached balcony with fresh air and natural light for a comfortable everyday living experience.'
+  },
+  {
     id: 'common-lounge',
     name: 'Common Lounge',
     iconName: 'Tv',
@@ -133,45 +167,6 @@ export const AMENITIES_DATA: Amenity[] = [
     description: 'Fully equipped self-service kitchen for tea, coffee, snacks, and light meals.'
   },
   {
-    id: 'meals',
-    name: 'Nutritious Meals',
-    iconName: 'Utensils',
-    category: 'Essentials',
-    description: 'Fresh home-style vegetarian breakfast, lunch, and dinner with a new menu every day.'
-  },
-
-  // Essentials
-  {
-    id: 'wifi',
-    name: 'High-Speed Wi-Fi',
-    iconName: 'Wifi',
-    category: 'Essentials',
-    description: 'Unlimited high-speed fiber internet for studying, streaming, and remote work.'
-  },
-  {
-    id: 'ro-water',
-    name: 'RO Water Cooler',
-    iconName: 'GlassWater',
-    category: 'Essentials',
-    description: '24×7 RO purified hot & cold drinking water available on every floor.'
-  },
-  {
-    id: 'attached-balcony',
-    name: 'Attached Balcony',
-    iconName: 'DoorOpen',
-    category: 'Essentials',
-    description: 'Private attached balcony with fresh air and natural light for a comfortable everyday living experience.'
-  },
-  {
-    id: 'housekeeping',
-    name: 'Daily Housekeeping',
-    iconName: 'BrushCleaning',
-    category: 'Essentials',
-    description: 'Daily housekeeping keeps rooms and common spaces clean and hygienic.'
-  },
-
-  // Security
-  {
     id: 'security',
     name: '24×7 CCTV Security',
     iconName: 'Cctv',
@@ -182,15 +177,8 @@ export const AMENITIES_DATA: Amenity[] = [
     id: 'power-backup',
     name: 'Power Backup',
     iconName: 'BatteryCharging',
-    category: 'Comfort',
-    description: 'Automatic power backup ensures uninterrupted comfort during power outages.'
-  },
-  {
-    id: 'parking',
-    name: 'Secure Parking',
-    iconName: 'Car',
     category: 'Safety',
-    description: 'Safe parking space available for two-wheelers and selected visitor vehicles.'
+    description: 'Automatic power backup ensures uninterrupted comfort during power outages.'
   },
   {
     id: 'fire-safety',
@@ -198,6 +186,13 @@ export const AMENITIES_DATA: Amenity[] = [
     iconName: 'FireExtinguisher',
     category: 'Safety',
     description: 'Fire extinguishers, smoke detectors, and emergency safety systems installed throughout the property.'
+  },
+  {
+    id: 'parking',
+    name: 'Secure Parking',
+    iconName: 'Car',
+    category: 'Safety',
+    description: 'Safe parking space available for two-wheelers and selected visitor vehicles.'
   }
 ];
 
