@@ -341,7 +341,7 @@ export default function FAQ() {
             href="https://wa.me/919675591951?text=Hi%20Unitas%20Home%2C%20I%20have%20some%20questions%20regarding%20the%20co-living%20rules..."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2.5 bg-[#25D366] hover:bg-[#20C45A] text-white px-8 py-3.5 rounded-full font-bold text-sm shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+            className="inline-flex items-center space-x-2.5 bg-[#2D6A4F] hover:bg-[#1B4332] text-white px-8 py-3.5 rounded-full font-bold text-sm shadow-2xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
             aria-label="Chat with us on WhatsApp"
           >
             <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white text-white" fill="currentColor">

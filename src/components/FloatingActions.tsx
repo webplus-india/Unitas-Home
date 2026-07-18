@@ -91,17 +91,17 @@ export default function FloatingActions() {
             animate="animate"
             exit="exit"
             style={{ willChange: 'transform, opacity', transform: 'translateZ(0)' }}
-            className="w-[60px] h-[60px] md:w-[64px] md:h-[64px] rounded-full bg-[#25D366] hover:bg-[#20C45A] text-white flex items-center justify-center cursor-pointer shadow-[0_10px_25px_-5px_rgba(37,211,102,0.25)] transition-colors duration-200"
+            className="w-[60px] h-[60px] md:w-[64px] md:h-[64px] rounded-full bg-[#2D6A4F] hover:bg-[#1B4332] text-white flex items-center justify-center cursor-pointer shadow-[0_10px_25px_-5px_rgba(45,106,79,0.25)] transition-colors duration-200"
             title="Chat on WhatsApp"
             aria-label="Chat with us on WhatsApp"
             whileHover={{
               scale: 1.05,
-              boxShadow: '0 16px 40px -5px rgba(37, 211, 102, 0.45), 0 12px 18px -6px rgba(37, 211, 102, 0.3), 0 0 20px rgba(37, 211, 102, 0.25)',
+              boxShadow: '0 16px 40px -5px rgba(45, 106, 79, 0.45), 0 12px 18px -6px rgba(45, 106, 79, 0.3), 0 0 20px rgba(45, 106, 79, 0.25)',
               transition: { duration: 0.2, ease: 'easeOut' }
             }}
             whileTap={{
               scale: 0.96,
-              boxShadow: '0 6px 15px -5px rgba(37, 211, 102, 0.2), 0 4px 6px -6px rgba(37, 211, 102, 0.1)',
+              boxShadow: '0 6px 15px -5px rgba(45, 106, 79, 0.2), 0 4px 6px -6px rgba(45, 106, 79, 0.1)',
               transition: { duration: 0.1, ease: 'easeOut' }
             }}
           >
