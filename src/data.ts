@@ -292,9 +292,9 @@ export const FAQS_DATA: FAQItem[] = [
   },
   {
     id: 'faq-6',
-    question: 'Is laundry included in the monthly rent?',
-    answer: 'Yes! We have a premium, dedicated laundry service. Every resident gets up to 12 pieces of clothing washed, steam-ironed, and folded nicely every week completely free of charge. We also have automatic washing machines in the common washing area if you prefer self-help washing.',
-    category: 'Meals'
+    question: 'Is power backup available in the property?',
+    answer: 'Yes. The property is equipped with an inverter-based power backup system that ensures uninterrupted electricity during power outages, keeping essential services running for a comfortable stay.',
+    category: 'General'
   },
   {
     id: 'faq-7',

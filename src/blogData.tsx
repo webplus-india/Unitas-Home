@@ -81,8 +81,8 @@ export const BLOG_POSTS: BlogPost[] = [
         answer: 'Look for physical security controls like 24/7 security guards, biometric entrance locks, and full HD hallway CCTV surveillance instead of manual logbooks.'
       },
       {
-        question: 'Is laundry service included in your standard monthly rent?',
-        answer: 'Yes. At Unitas Home, professional laundry and steam ironing are fully included in the transparent monthly co-living package.'
+        question: 'Is power backup available in the property?',
+        answer: 'Yes. The property is equipped with an inverter-based power backup system that ensures uninterrupted electricity during power outages, keeping essential services running for a comfortable stay.'
       },
       {
         question: 'How clean is the drinking water provided on the property?',
@@ -170,7 +170,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: 'Which option is more cost-effective in the long run?',
-        answer: 'While hostels may look cheaper upfront, they exclude high-speed Wi-Fi, professional laundry, and delicious food. Reclaiming hours of daily effort makes premium co-living highly cost-effective.'
+        answer: 'While hostels may look cheaper upfront, they exclude high-speed Wi-Fi, power backup, and delicious food. Reclaiming hours of daily effort makes premium co-living highly cost-effective.'
       },
       {
         question: 'What are the curfew differences between hostels and Unitas Home?',
@@ -181,8 +181,8 @@ export const BLOG_POSTS: BlogPost[] = [
         answer: 'We are situated a 2-minute walk from Mahant Indresh Hospital, and our on-site warden is available 24/7 to provide medical care.'
       },
       {
-        question: 'Is laundry fully managed at Unitas Home?',
-        answer: 'Yes, our weekly laundry service includes professional washing, drying, and neat steam-ironing of formal and casual wear.'
+        question: 'Is power backup available in the property?',
+        answer: 'Yes. The property is equipped with an inverter-based power backup system that ensures uninterrupted electricity during power outages, keeping essential services running for a comfortable stay.'
       }
     ]
   },
@@ -462,11 +462,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: 'Are utility bills like water and electricity included in the rent?',
-        answer: 'Yes, laundry, housekeeping, high-speed Wi-Fi, water, and standard electricity are fully covered in our flat-rate rental packages.'
+        answer: 'Yes, power backup, housekeeping, high-speed Wi-Fi, water, and standard electricity are fully covered in our flat-rate rental packages.'
       },
       {
-        question: 'Is professional laundry service provided for formal wear?',
-        answer: 'Yes, our weekly services include professional washing, air drying, and neat steam-ironing of formal office wear and casuals.'
+        question: 'Is power backup available in the property?',
+        answer: 'Yes. The property is equipped with an inverter-based power backup system that ensures uninterrupted electricity during power outages, keeping essential services running for a comfortable stay.'
       },
       {
         question: 'Is the co-living environment quiet during work hours?',

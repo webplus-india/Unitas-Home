@@ -128,9 +128,9 @@ export const article3Content = (
               <td className="p-4 text-charcoal font-semibold">Private, attached modern washroom with dedicated geyser</td>
             </tr>
             <tr className="border-b border-neutral-50">
-              <td className="p-4 font-bold text-charcoal">Laundry & Ironing</td>
-              <td className="p-4 text-slate-gray">Self-wash or paid dhobi</td>
-              <td className="p-4 text-charcoal font-semibold">Full-service washing, drying & steam ironing included</td>
+              <td className="p-4 font-bold text-charcoal">Power Backup</td>
+              <td className="p-4 text-slate-gray">Usually none, frequent outages</td>
+              <td className="p-4 text-charcoal font-semibold">Inverter-based backup for lights and Wi-Fi included</td>
             </tr>
             <tr>
               <td className="p-4 font-bold text-charcoal">Internet Speed</td>

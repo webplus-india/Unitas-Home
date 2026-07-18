@@ -28,7 +28,6 @@ const groupedAmenitiesData: {
       'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
-      'Professional Laundry & Ironing Service',
       'RO Purified Drinking Water Supply'
     ],
     security: [
@@ -49,7 +48,6 @@ const groupedAmenitiesData: {
       'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
-      'Professional Laundry & Ironing Service',
       'RO Purified Drinking Water Supply'
     ],
     security: [
@@ -70,7 +68,6 @@ const groupedAmenitiesData: {
       'Delicious Homestyle Food (3 Meals/Day)',
       'Daily Dedicated Housekeeping & Cleaning',
       'High-Speed Fiber Wi-Fi (Continuous coverage)',
-      'Professional Laundry & Ironing Service',
       'RO Purified Drinking Water Supply'
     ],
     security: [

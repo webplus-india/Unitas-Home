@@ -31,7 +31,7 @@ export const article2Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, we eliminate financial anxiety through an all-inclusive pricing system. Our flat monthly fee covers your luxury room, high-speed fiber-optic Wi-Fi, laundry, professional daily cleaning, electricity, and three delicious on-site vegetarian meals. There are absolutely no hidden surprises on your bill.
+        At Unitas Home, we eliminate financial anxiety through an all-inclusive pricing system. Our flat monthly fee covers your luxury room, high-speed fiber-optic Wi-Fi, power backup, professional daily cleaning, electricity, and three delicious on-site vegetarian meals. There are absolutely no hidden surprises on your bill.
       </p>
 
       {/* Supporting Image 1 */}
@@ -128,7 +128,7 @@ export const article2Content = (
         <li><strong>Attached Restrooms:</strong> Verify the presence of dedicated instant geysers and proper ventilation.</li>
         <li><strong>CCTV Operations:</strong> Confirm active cameras monitor corridors, exits, and lobbies 24/7.</li>
         <li><strong>Generator Power Backup:</strong> Check if Wi-Fi and study lights are on the backup generator circuit.</li>
-        <li><strong>Full-Service Laundry:</strong> Ensure professional wet-washing and steam ironing are fully managed.</li>
+        <li><strong>Wi-Fi Capabilities:</strong> Ensure commercial-grade dual-band internet with dedicated routers are fully operational.</li>
         <li><strong>Warden Presence:</strong> Make sure an experienced resident warden resides on the property.</li>
         <li><strong>Daily Housekeeping:</strong> Floors must be sanitized daily by professional staff, not once a week.</li>
         <li><strong>Workplace Setup:</strong> Verify you have an in-room study desk separate from your bed.</li>

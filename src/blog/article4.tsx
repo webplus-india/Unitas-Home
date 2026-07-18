@@ -6,7 +6,7 @@ export const article4Content = (
     <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
       <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        Relocating to college for your freshman year is an incredible milestone, but adjusting to a shared room, managing your laundry, adapting to mess meals, and structuring study blocks can be overwhelming. This guide compiles expert, practical tips to help you adapt seamlessly, establish roommate harmony, organize your study desk, and conquer homesickness in Dehradun.
+        Relocating to college for your freshman year is an incredible milestone, but adjusting to a shared room, managing your schedule, adapting to mess meals, and structuring study blocks can be overwhelming. This guide compiles expert, practical tips to help you adapt seamlessly, establish roommate harmony, organize your study desk, and conquer homesickness in Dehradun.
       </p>
     </div>
 
@@ -123,7 +123,7 @@ export const article4Content = (
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>
-            <span>Room Hygiene: Quick-dry microfiber towels, multi-compartment laundry hamper bag.</span>
+            <span>Room Hygiene: Quick-dry microfiber towels, multi-compartment storage organizer.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>
@@ -137,7 +137,7 @@ export const article4Content = (
     <div className="pt-6 border-t border-gray-100">
       <h3 className="font-display font-bold text-lg text-charcoal mb-2">Summary & Final Recommendation</h3>
       <p className="text-slate-gray font-semibold text-xs sm:text-sm">
-        Freshman year passes quickly. By establishing transparent boundaries with roommates, maintaining an organized workstation, and adopting helpful routines, you set yourself up for academic success. Unitas Home is built to be your reliable home away from home—taking care of laundry, meals, and maintenance so you can focus entirely on your future.
+        Freshman year passes quickly. By establishing transparent boundaries with roommates, maintaining an organized workstation, and adopting helpful routines, you set yourself up for academic success. Unitas Home is built to be your reliable home away from home—taking care of meals, housekeeping, and maintenance so you can focus entirely on your future.
       </p>
     </div>
   </div>

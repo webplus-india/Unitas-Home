@@ -51,8 +51,8 @@ export default function SchedulerDashboard({ inquiries, onCancelInquiry }: Sched
         botResponse = "Safety is our core foundation. Unitas Home has 24x7 gated watchmen, dynamic CCTV surveillance of all walkways and exits, a biometric fingerprint door access system, and strict visitor regulations. We maintain an extremely secure, quiet, and friendly campus.";
       } else if (text.includes('visit') || text.includes('schedule') || text.includes('locate') || text.includes('address') || text.includes('map') || text.includes('where')) {
         botResponse = "Our address is 1191K, Malviya Colony, Dehradkhas, Dehradun (Uttarakhand) – 248001. We are right next to Mahant Indresh Hospital. Visits and walkthroughs are open from 9:30 AM to 7:00 PM every day. You can schedule a visit via the form on our site!";
-      } else if (text.includes('laundry') || text.includes('wash') || text.includes('iron') || text.includes('cloth')) {
-        botResponse = "Yes, laundry is fully included! Every resident gets up to 12 pieces of clothing washed, steam-ironed, and folded nicely every single week completely free. We also have self-use automated washing machines for any quick personal washes.";
+      } else if (text.includes('power') || text.includes('backup') || text.includes('electricity') || text.includes('inverter') || text.includes('generator')) {
+        botResponse = "Yes! The property is equipped with an inverter-based power backup system that ensures uninterrupted electricity during power outages, keeping essential services running for a comfortable stay.";
       } else if (text.includes('visitor') || text.includes('friend') || text.includes('parent') || text.includes('overnight')) {
         botResponse = "Parents are always welcome to visit your rooms during daytime hours. To maintain absolute safety and study environments, unrelated outside guests are limited to the lobby lounge. Parents can stay overnight with pre-approval.";
       }

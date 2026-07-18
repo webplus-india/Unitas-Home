@@ -6,7 +6,7 @@ export const article9Content = (
     <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
       <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">💼 Executive Summary</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        Working professionals and medical residents require a peaceful, highly productive environment to succeed. Balancing corporate goals or clinical shifts with domestic chores like cooking, cleaning, and laundry can cause stress. This comprehensive guide outlines the critical features—including location, high-speed internet, and fully managed services—that define a premium co-living home in Dehradun.
+        Working professionals and medical residents require a peaceful, highly productive environment to succeed. Balancing corporate goals or clinical shifts with domestic chores like cooking, cleaning, and maintaining rooms can cause stress. This comprehensive guide outlines the critical features—including location, high-speed internet, and fully managed services—that define a premium co-living home in Dehradun.
       </p>
     </div>
 
@@ -86,7 +86,7 @@ export const article9Content = (
         3. Fully Serviced Amenities: Stress-Free, All-Inclusive Living
       </h2>
       <p className="mb-4">
-        After a demanding 10-hour shift, managing daily housekeeping, laundry, and meals is exhausting. Reclaiming these hours is a massive advantage, allowing you to invest that time back into your rest, health, or career growth.
+        After a demanding 10-hour shift, managing daily housekeeping, daily maintenance, and meals is exhausting. Reclaiming these hours is a massive advantage, allowing you to invest that time back into your rest, health, or career growth.
       </p>
 
       {/* Supporting Image 3 */}
@@ -103,7 +103,7 @@ export const article9Content = (
       </div>
 
       <p className="mb-4">
-        At Unitas Home, we provide a fully serviced co-living package. Our staff sweeps and sanitizes rooms daily, manages professional laundry and steam ironing, and serves three nutritious, home-style vegetarian meals daily. All standard room electricity and water utilities are included in a flat-rate monthly package, ensuring absolute transparency.
+        At Unitas Home, we provide a fully serviced co-living package. Our staff sweeps and sanitizes rooms daily, maintains high-speed Wi-Fi, ensures reliable power backup, and serves three nutritious, home-style vegetarian meals daily. All standard room electricity and water utilities are included in a flat-rate monthly package, ensuring absolute transparency.
       </p>
 
       {/* Local Insights */}
@@ -128,7 +128,7 @@ export const article9Content = (
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>
-            <span>Are laundry, steam ironing, and daily cleaning fully included in the rent?</span>
+            <span>Are power backup, high-speed Wi-Fi, and daily cleaning fully included in the rent?</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>

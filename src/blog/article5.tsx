@@ -86,7 +86,7 @@ export const article5Content = (
         3. Reclaiming Time: The Chore-Free Co-Living Advantage
       </h2>
       <p className="mb-4">
-        Managing housekeeping, laundry, grocery shopping, and food preparation can consume over 15 to 20 hours of a student's week. Reclaiming these hours is a massive advantage, allowing you to invest that time back into your GPA, fitness, or career-building projects.
+        Managing housekeeping, room maintenance, grocery shopping, and food preparation can consume over 15 to 20 hours of a student's week. Reclaiming these hours is a massive advantage, allowing you to invest that time back into your GPA, fitness, or career-building projects.
       </p>
 
       {/* Supporting Image 3 */}
@@ -98,12 +98,12 @@ export const article5Content = (
           referrerPolicy="no-referrer"
         />
         <span className="block text-center text-xs text-slate-gray font-medium mt-2">
-          Outsourcing housekeeping and laundry unlocks valuable hours for your academic journey.
+          Outsourcing housekeeping and daily maintenance unlocks valuable hours for your academic journey.
         </span>
       </div>
 
       <p className="mb-4">
-        Unitas Home is fully serviced to eliminate domestic chores. Our staff sweeps and sanitizes room floors daily, manages comprehensive laundry services, and prepares three nutritious, home-style vegetarian meals every day. This support frees you to focus entirely on your college curriculum.
+        Unitas Home is fully serviced to eliminate domestic chores. Our staff sweeps and sanitizes room floors daily, ensures robust power backup, and prepares three nutritious, home-style vegetarian meals every day. This support frees you to focus entirely on your college curriculum.
       </p>
 
       {/* Local Insights */}
@@ -124,7 +124,7 @@ export const article5Content = (
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>
-            <span>Rely on our managed laundry and daily room cleaning to save hours of effort.</span>
+            <span>Rely on our reliable power backup and daily room cleaning to save hours of effort.</span>
           </li>
           <li className="flex items-center space-x-2.5 text-xs sm:text-sm text-slate-gray font-semibold">
             <span className="text-[#2D6A4F]">✔</span>

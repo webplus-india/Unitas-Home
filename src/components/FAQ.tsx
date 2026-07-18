@@ -13,8 +13,8 @@ import {
   FileText, 
   Users, 
   Wifi, 
-  WashingMachine, 
-  Wallet, 
+  BatteryCharging, 
+  Wallet,  
   Clock, 
   ShieldCheck, 
   ChevronDown, 
@@ -68,7 +68,6 @@ export default function FAQ() {
           <ul className="space-y-1.5 list-disc list-inside text-slate-gray pl-1">
             <li><strong>24/7 Gate Security:</strong> Trained guards are stationed at the entrance at all hours.</li>
             <li><strong>CCTV Surveillance:</strong> Continuous monitoring of all corridors, entry/exit points, and common areas.</li>
-            <li><strong>Biometric Fingerprint Access:</strong> Secure entry systems for resident doors to prevent any unauthorized entry.</li>
             <li><strong>Warden Supervision:</strong> Dedicated on-site warden and management team present 24/7.</li>
           </ul>
         </div>
@@ -100,17 +99,17 @@ export default function FAQ() {
       answerElement: (
         <div className="space-y-3 font-medium text-slate-gray">
           <p>
-            To complete your hostel registration and comply with local housing regulations, please provide the following documents prior to or on your move-in day:
+            To complete your admission and move-in process, please keep the following documents ready:
           </p>
           <ul className="space-y-1.5 list-disc list-inside text-slate-gray pl-1">
-            <li><strong>Government ID Proof:</strong> Aadhaar Card, Passport, or Voter ID (original and photocopy).</li>
-            <li><strong>Resident Status:</strong> Student ID/Admission Letter (for students) or Work ID/Appointment Letter (for working professionals).</li>
-            <li><strong>Photographs:</strong> 2 passport-sized color photographs.</li>
-            <li><strong>Guardian Details:</strong> Contact information and ID proof of parents or local guardian.</li>
+            <li><strong>Admission Process:</strong> Complete the admission formalities as guided by the management team.</li>
+            <li><strong>Aadhaar Card Copy:</strong> One photocopy of your Aadhaar Card for identity verification.</li>
+            <li><strong>Passport-Size Photographs:</strong> Three recent passport-size photographs.</li>
+            <li><strong>Police Verification / Character Certificate:</strong> A valid police verification or character certificate is required during the admission process.</li>
           </ul>
         </div>
       ),
-      schemaAnswer: "To comply with local housing regulations and ensure community safety, we require a government-issued ID proof (Aadhaar, Passport, etc.), college admission letter or student ID (for students), work ID or appointment letter (for working professionals), 2 passport-sized photographs, and contact/ID details of parents or guardians."
+      schemaAnswer: "To complete your admission and move-in process, please keep the following documents ready: 1. Admission Process: Complete the admission formalities as guided by the management team. 2. Aadhaar Card Copy: One photocopy of your Aadhaar Card for identity verification. 3. Passport-Size Photographs: Three recent passport-size photographs. 4. Police Verification / Character Certificate: A valid police verification or character certificate is required during the admission process."
     },
     {
       id: 'faq-visitors',
@@ -150,21 +149,21 @@ export default function FAQ() {
       schemaAnswer: "We provide high-speed, commercial-grade fiber-optic Wi-Fi with speeds up to 150 Mbps. There are no extra costs; it is fully included in your monthly rent with unlimited data. Dedicated routers on every floor ensure seamless connectivity."
     },
     {
-      id: 'faq-laundry',
-      question: 'Is laundry service included in the rent?',
-      icon: WashingMachine,
+      id: 'faq-power-backup',
+      question: 'Is power backup available in the property?',
+      icon: BatteryCharging,
       answerElement: (
         <div className="space-y-3 font-medium text-slate-gray">
           <p>
-            Yes, professional laundry and ironing services are completely included in your monthly rent.
+            Yes. The property is equipped with an inverter-based power backup system to ensure uninterrupted comfort during electricity outages.
           </p>
           <ul className="space-y-1.5 list-disc list-inside text-slate-gray pl-1">
-            <li><strong>Weekly Schedule:</strong> We handle up to 12 pieces of clothing per week, which are professionally washed, steam-ironed, and folded nicely.</li>
-            <li><strong>Self-Service Option:</strong> Residents also have access to high-end automatic washing machines and drying areas in the common wash zone.</li>
+            <li><strong>Inverter Backup:</strong> Essential power remains available during outages for a smooth and comfortable stay.</li>
+            <li><strong>24×7 Reliability:</strong> Keeps important electrical services running without interruption.</li>
           </ul>
         </div>
       ),
-      schemaAnswer: "Yes, a premium professional laundry and ironing service is included in your monthly rent. Every resident gets up to 12 pieces of clothing washed, steam-ironed, and folded nicely each week. Automated self-service washing machines are also available in the common area."
+      schemaAnswer: "Yes. The property is equipped with an inverter-based power backup system to ensure uninterrupted comfort during electricity outages. Essential power remains available during outages, keeping important electrical services running without interruption."
     },
     {
       id: 'faq-deposit',

@@ -199,7 +199,7 @@ export const article1Content = (
       </p>
       
       <p className="mb-4">
-        At Unitas Home, we eliminate all household stress through professional housekeeping, full-stack laundry, premium nutrition, and biometric security. This ensures that you can channel your complete energy into achieving academic milestones. Plan a physical visit today to experience premium student co-living firsthand.
+        At Unitas Home, we eliminate all household stress through professional housekeeping, uninterrupted power backup, premium nutrition, and biometric security. This ensures that you can channel your complete energy into achieving academic milestones. Plan a physical visit today to experience premium student co-living firsthand.
       </p>
 
       <div className="bg-[#FAF9F6] border border-border-light rounded-2xl p-6 my-6">

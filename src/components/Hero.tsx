@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Calendar, MessageSquare, Shield, Wifi, Utensils, BrushCleaning, Zap, Key, User, Users, Bed, BedDouble, ChefHat, Cctv, WashingMachine, BatteryCharging } from 'lucide-react';
+import { Calendar, MessageSquare, Shield, Wifi, Utensils, BrushCleaning, Zap, Key, User, Users, Bed, BedDouble, ChefHat, Cctv, BatteryCharging } from 'lucide-react';
 
 interface HeroProps {
   onBookVisit: () => void;
