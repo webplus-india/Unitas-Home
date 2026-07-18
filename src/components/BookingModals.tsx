@@ -830,7 +830,7 @@ export function ReserveRoomModal({ isOpen, onClose, onSubmit, initialRoomId, onB
                     type="submit"
                     className="w-full h-12 bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-sans font-bold text-xs uppercase tracking-wider rounded-full shadow-[0_4px_14px_rgba(45,106,79,0.25)] hover:shadow-[0_8px_20px_rgba(45,106,79,0.35)] transition-all duration-250 ease-out flex items-center justify-center space-x-2 cursor-pointer hover:-translate-y-[2px] active:translate-y-0"
                   >
-                    <Check className="w-4 h-4 text-white stroke-[3]" />
+                    <Bed className="w-4 h-4 text-white" />
                     <span>Reserve My Room</span>
                   </button>
                 </div>
