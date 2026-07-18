@@ -202,20 +202,20 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
       case 'Schedule Visit':
         return {
           text: 'Schedule My Visit',
-          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
+          bgClass: 'bg-[#2D6A4F] hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45,106,79,0.35)]',
           icon: <Calendar className="w-3.5 h-3.5 text-white" />
         };
       case 'Reserve Room':
         return {
           text: 'Reserve My Room',
-          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
-          icon: <Send className="w-3.5 h-3.5 text-white" />
+          bgClass: 'bg-[#D4AF37] hover:bg-[#C79A17] text-[#1F2937] hover:shadow-[0_8px_20px_rgba(212,175,55,0.35)]',
+          icon: <Bed className="w-3.5 h-3.5 text-[#1F2937]" />
         };
       case 'Inquiry':
       default:
         return {
           text: 'Send Inquiry',
-          bgClass: 'bg-primary hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.35)]',
+          bgClass: 'bg-[#2D6A4F] hover:bg-[#1B4332] text-white hover:shadow-[0_8px_20px_rgba(45,106,79,0.35)]',
           icon: <Send className="w-3.5 h-3.5 text-white" />
         };
     }

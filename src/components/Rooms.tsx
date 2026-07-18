@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { BedDouble, CheckCircle, ShieldCheck, ConciergeBell } from 'lucide-react';
+import { BedDouble, CheckCircle, ShieldCheck, ConciergeBell, Calendar, Bed } from 'lucide-react';
 import { ROOMS_DATA } from '../data';
 import { Room } from '../types';
 import RoomCard from './RoomCard';
@@ -288,9 +288,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                         setSelectedComparison(null);
                       }}
                       type="button"
-                      className="bg-[#D4AF37] md:hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                      className="bg-[#2D6A4F] md:hover:bg-[#1B4332] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer flex items-center gap-2"
                     >
-                      Book a Visit
+                      <Calendar className="w-4 h-4 text-white" />
+                      <span>Book a Visit</span>
                     </button>
                     {onReserveRoom && (
                       <button
@@ -299,9 +300,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                           setSelectedComparison(null);
                         }}
                         type="button"
-                        className="bg-[#2D6A4F] md:hover:bg-[#1B4332] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer"
+                        className="bg-[#D4AF37] md:hover:bg-[#C79A17] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-200 shadow-md cursor-pointer flex items-center gap-2"
                       >
-                        Reserve Room
+                        <Bed className="w-4 h-4 text-[#1F2937]" />
+                        <span>Reserve Room</span>
                       </button>
                     )}
                   </div>

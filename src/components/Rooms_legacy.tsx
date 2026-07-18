@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { BedDouble, CheckCircle, ShieldCheck, ConciergeBell } from 'lucide-react';
+import { BedDouble, CheckCircle, ShieldCheck, ConciergeBell, Calendar, Bed } from 'lucide-react';
 import { ROOMS_DATA } from '../data';
 import { Room } from '../types';
 import RoomCard from './RoomCard';
@@ -283,9 +283,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                         onSelectRoom(r);
                         setSelectedComparison(null);
                       }}
-                      className="bg-[#2D6A4F] hover:bg-[#1b4332] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                      className="bg-[#2D6A4F] hover:bg-[#1b4332] text-white font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(45, 106, 79,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center gap-2"
                     >
-                      Book a Visit
+                      <Calendar className="w-4 h-4 text-white" />
+                      <span>Book a Visit</span>
                     </button>
                     {onReserveRoom && (
                       <button
@@ -293,9 +294,10 @@ export default function Rooms({ onSelectRoom, onReserveRoom }: RoomsProps) {
                           onReserveRoom(r);
                           setSelectedComparison(null);
                         }}
-                        className="bg-[#D4AF37] hover:bg-[#C59B27] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(244,180,0,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                        className="bg-[#D4AF37] hover:bg-[#C59B27] text-[#1F2937] font-sans font-bold text-xs tracking-wider px-5 py-3 rounded-[18px] transition-all duration-300 shadow-md hover:shadow-[0_8px_20px_rgba(244,180,0,0.25)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center gap-2"
                       >
-                        Reserve Room
+                        <Bed className="w-4 h-4 text-[#1F2937]" />
+                        <span>Reserve Room</span>
                       </button>
                     )}
                   </div>
