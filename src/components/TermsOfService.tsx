@@ -368,7 +368,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
               </div>
               <div className="w-full h-[1px] bg-[#E5E7EB] my-5" />
               <p className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed font-medium">
-                By entering, browsing, or submitting details on our digital portal (https://unitashome.in), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms & Conditions, along with our active Privacy Policy and the Resident House Rules. If you disagree with any portion of these provisions, you should immediately halt your browsing session and avoid submitting any form inputs.
+                By entering, browsing, or submitting details on our digital portal (https://unitashome.com), you acknowledge that you have read, understood, and agreed to be legally bound by these Terms & Conditions, along with our active Privacy Policy and the Resident House Rules. If you disagree with any portion of these provisions, you should immediately halt your browsing session and avoid submitting any form inputs.
               </p>
             </motion.div>
 

@@ -79,7 +79,7 @@ async function startServer() {
         const appUrl = process.env.APP_URL || '';
         const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
         const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
-        content = content.replace(/https:\/\/unitashome\.in/g, origin);
+        content = content.replace(/https:\/\/(unitashome\.in|unitashome\.com)/g, origin);
         return res.type('text/plain').send(content);
       }
     } catch (e) {
@@ -100,7 +100,7 @@ async function startServer() {
         const appUrl = process.env.APP_URL || '';
         const protocol = req.secure || req.headers['x-forwarded-proto'] === 'https' ? 'https' : 'http';
         const origin = appUrl ? appUrl.replace(/\/$/, '') : `${protocol}://${req.get('host')}`;
-        content = content.replace(/https:\/\/unitashome\.in/g, origin);
+        content = content.replace(/https:\/\/(unitashome\.in|unitashome\.com)/g, origin);
         return res.type('application/xml').send(content);
       }
     } catch (e) {
@@ -125,34 +125,46 @@ async function startServer() {
   // Helper to determine SEO metadata for current path
   const getMetaForPath = (pathname: string, origin: string) => {
     // Default Home Page Metadata
-    let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
-    let description = 'Experience premium PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
-    let image = `${origin}/og-image.jpg?v=3`;
-    let imageAlt = 'Unitas Home – Premium PG for Students & Working Professionals in Dehradun';
+    let title = 'Unitas Home | Premium Student PG in Dehradun';
+    let description = 'Unitas Home offers premium student accommodation in Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, 24×7 CCTV security, housekeeping, power backup, and a comfortable living environment near major colleges and universities.';
+    let ogDescription = 'Premium student accommodation in Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, CCTV security, housekeeping, and modern amenities.';
+    let twitterDescription = 'Premium student accommodation in Dehradun with modern amenities.';
+    let image = `${origin}/og-image.jpg`;
+    let imageAlt = 'Unitas Home - Premium Student PG in Dehradun';
     const canonical = `${origin}${pathname === '/' ? '' : pathname}`;
 
     if (pathname === '/blog') {
       title = 'Student Living Blog | Unitas Home Dehradun';
       description = 'Explore original, high-quality living guides, security checklists, food reviews, and budget advice for students and professionals in Dehradun.';
+      ogDescription = description;
+      twitterDescription = description;
     } else if (pathname === '/privacy-policy') {
       title = 'Privacy Policy | Unitas Home';
       description = 'Learn how Unitas Home collects, stores, protects, and uses your personal information when you browse our website, book a visit, reserve a room, or contact our team.';
+      ogDescription = description;
+      twitterDescription = description;
     } else if (pathname === '/terms-of-service') {
       title = 'Terms of Service | Unitas Home';
       description = 'Read the official Terms of Service governing the use of the Unitas Home website, booking requests, and related services.';
+      ogDescription = description;
+      twitterDescription = description;
     } else if (pathname === '/rules-regulations') {
       title = 'Rules & Regulations | Resident Handbook - Unitas Home';
       description = 'Read our Resident Handbook containing co-living guidelines, house rules, and community guidelines for Unitas Home residents in Dehradun.';
+      ogDescription = description;
+      twitterDescription = description;
     } else if (pathname.startsWith('/blog/')) {
       const slug = pathname.substring('/blog/'.length).split('?')[0];
       const post = BLOG_POSTS_METADATA.find(p => p.slug === slug);
       if (post) {
         title = `${post.title} | Unitas Home Blog`;
         description = post.description;
+        ogDescription = description;
+        twitterDescription = description;
       }
     }
 
-    return { title, description, image, imageAlt, url: canonical, origin };
+    return { title, description, ogDescription, twitterDescription, image, imageAlt, url: canonical, origin };
   };
 
   // Helper to perform meta tags replacement inside the HTML
@@ -169,7 +181,7 @@ async function startServer() {
     replaced = replaced.replace(/<meta property="og:title" content=".*?"\s*\/?>/gi, `<meta property="og:title" content="${meta.title}" />`);
 
     // Replace og:description
-    replaced = replaced.replace(/<meta property="og:description" content=".*?"\s*\/?>/gi, `<meta property="og:description" content="${meta.description}" />`);
+    replaced = replaced.replace(/<meta property="og:description" content=".*?"\s*\/?>/gi, `<meta property="og:description" content="${meta.ogDescription}" />`);
 
     // Replace og:url
     replaced = replaced.replace(/<meta property="og:url" content=".*?"\s*\/?>/gi, `<meta property="og:url" content="${meta.url}" />`);
@@ -187,7 +199,7 @@ async function startServer() {
     replaced = replaced.replace(/<meta name="twitter:title" content=".*?"\s*\/?>/gi, `<meta name="twitter:title" content="${meta.title}" />`);
 
     // Replace twitter:description
-    replaced = replaced.replace(/<meta name="twitter:description" content=".*?"\s*\/?>/gi, `<meta name="twitter:description" content="${meta.description}" />`);
+    replaced = replaced.replace(/<meta name="twitter:description" content=".*?"\s*\/?>/gi, `<meta name="twitter:description" content="${meta.twitterDescription}" />`);
 
     // Replace twitter:image
     replaced = replaced.replace(/<meta name="twitter:image" content=".*?"\s*\/?>/gi, `<meta name="twitter:image" content="${meta.image}" />`);
@@ -197,7 +209,7 @@ async function startServer() {
 
     // Rewrite base domain occurrences inside json-ld structures as well
     replaced = replaced.replace(/__APP_URL__/g, meta.origin);
-    replaced = replaced.replace(/https:\/\/unitashome\.in/g, meta.origin);
+    replaced = replaced.replace(/https:\/\/unitashome\.in/g, 'https://unitashome.com');
 
     return replaced;
   };

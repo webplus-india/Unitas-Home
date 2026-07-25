@@ -1,6 +1,6 @@
 {
   "name": "Unitas Home",
-  "description": "Premium co-living PG & Hostel in Dehradun designed for students and working professionals, offering fully-furnished single, twin, and triple sharing rooms, nutritious meals, high-speed Wi-Fi, and 24x7 security.",
+  "description": "Unitas Home offers premium student accommodation in Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, 24×7 CCTV security, housekeeping, power backup, and a comfortable living environment near major colleges and universities.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
