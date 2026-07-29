@@ -272,10 +272,10 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
                 <li className="flex items-start space-x-3 group">
                   <Mail className="w-4 h-4 text-[#D4AF37] flex-shrink-0 mt-[4px] transition-all duration-250 group-hover:scale-110" />
                   <a 
-                    href="mailto:unitashomeuk@gmail.com" 
+                    href="mailto:contact@unitashome.com" 
                     className="text-white/85 hover:text-[#D4AF37] transition-all duration-250 text-sm sm:text-base font-medium break-all leading-[1.65] block md:hover:translate-x-[2px]"
                   >
-                    unitashomeuk@gmail.com
+                    contact@unitashome.com
                   </a>
                 </li>
               </ul>
@@ -436,10 +436,10 @@ export default function Footer({ onNavigate, onToggleDashboard, showDashboard, o
               <li className="flex items-center space-x-3.5 group">
                 <Mail className="w-4 h-4 text-[#D4AF37] flex-shrink-0 transition-transform duration-250 group-hover:scale-110" />
                 <a 
-                  href="mailto:unitashomeuk@gmail.com" 
+                  href="mailto:contact@unitashome.com" 
                   className="text-white/85 hover:text-[#D4AF37] transition-all duration-250 font-medium break-all leading-none block md:hover:translate-x-[2px]"
                 >
-                  unitashomeuk@gmail.com
+                  contact@unitashome.com
                 </a>
               </li>
             </ul>

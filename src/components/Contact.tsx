@@ -320,13 +320,13 @@ export default function Contact({ initialRoomId, onSubmitInquiry, activeTab, onT
                   </div>
                   <div>
                     <span className="text-[11px] uppercase tracking-wider font-bold text-slate-gray/60 block">Email</span>
-                    <a href="mailto:unitashomeuk@gmail.com" className="block text-base font-medium text-charcoal hover:text-primary transition-colors mt-1 leading-tight">
-                      unitashomeuk@gmail.com
+                    <a href="mailto:contact@unitashome.com" className="block text-base font-medium text-charcoal hover:text-primary transition-colors mt-1 leading-tight">
+                      contact@unitashome.com
                     </a>
                   </div>
                 </div>
                 <div className="sm:text-right self-start sm:self-center">
-                  <a href="mailto:unitashomeuk@gmail.com" className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark hover:underline transition-colors">
+                  <a href="mailto:contact@unitashome.com" className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-dark hover:underline transition-colors">
                     Send Email
                   </a>
                 </div>

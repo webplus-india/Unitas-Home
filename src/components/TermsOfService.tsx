@@ -191,7 +191,7 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
     },
     {
       question: 'How can I contact Unitas Home regarding these terms?',
-      answer: 'For direct queries or formal legal clarifications, please connect with our administrative coordinator at unitashomeuk@gmail.com or via telephone on +91 96755 91951.'
+      answer: 'For direct queries or formal legal clarifications, please connect with our administrative coordinator at contact@unitashome.com or via telephone on +91 96755 91951.'
     }
   ];
 
@@ -665,8 +665,8 @@ export default function TermsOfService({ onBookVisit, onNavigateToHome }: TermsO
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Email Our Desk</h4>
-                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
-                        unitashomeuk@gmail.com
+                      <a href="mailto:contact@unitashome.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
+                        contact@unitashome.com
                       </a>
                     </div>
                   </div>

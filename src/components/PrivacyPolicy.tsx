@@ -599,8 +599,8 @@ export default function PrivacyPolicy({ onBookVisit, onNavigateToHome }: Privacy
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-sm text-[#1F2937] mb-1">Email Our Desk</h4>
-                      <a href="mailto:unitashomeuk@gmail.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
-                        unitashomeuk@gmail.com
+                      <a href="mailto:contact@unitashome.com" className="text-xs sm:text-sm text-[#2D6A4F] hover:underline transition-colors break-all">
+                        contact@unitashome.com
                       </a>
                     </div>
                   </div>
