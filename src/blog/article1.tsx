@@ -6,7 +6,7 @@ export const article1Content = (
     <div className="bg-[#2D6A4F]/5 border-l-4 border-[#2D6A4F] p-6 rounded-r-2xl shadow-3xs mb-8">
       <h3 className="font-display font-extrabold text-[#2D6A4F] text-base mb-2">🎓 Executive Summary & Introduction</h3>
       <p className="text-slate-gray font-medium text-xs sm:text-sm">
-        Relocating to Dehradun for higher education is an exciting life milestone. However, choosing the wrong Paying Guest (PG) accommodation can severely disrupt your academic progress, physical health, and mental peace. This comprehensive guide outlines the absolute essential criteria—proximity, nutritional hygiene, study-focused infrastructure, security, and transparent finances—to help you identify a premium, supportive co-living space near SGRR University, Graphic Era, and Mahant Indresh Hospital.
+        Relocating to Dehradun for higher education is an exciting life milestone. However, choosing the wrong Paying Guest (PG) accommodation can severely disrupt your academic progress, physical health, and mental peace. This comprehensive guide outlines the absolute essential criteria—proximity, nutritional hygiene, study-focused infrastructure, security, and transparent finances—to help you identify a premium, supportive co-living space near SGRR University, Mahant Indresh Hospital, and Government Doon Medical College (GDMC) in Patel Nagar.
       </p>
     </div>
 

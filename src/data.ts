@@ -307,7 +307,7 @@ export const FAQS_DATA: FAQItem[] = [
 export const NEARBY_PLACES_DATA: NearbyPlace[] = [
   {
     id: 'near-1',
-    name: 'Mahant Indresh Hospital & Medical College',
+    name: 'Shri Mahant Indresh Hospital & Medical College',
     type: 'Hospital',
     distance: '350 meters',
     timeByWalkOrDrive: '3 mins walk',
@@ -315,11 +315,11 @@ export const NEARBY_PLACES_DATA: NearbyPlace[] = [
   },
   {
     id: 'near-2',
-    name: 'Graphic Era Hill & Deemed University',
+    name: 'Shri Guru Ram Rai University (SGRR) & GDMC',
     type: 'College',
-    distance: '4.2 km',
-    timeByWalkOrDrive: '12 mins drive',
-    description: 'Highly accessible via directly available local transport and shuttle buses right from our main road crossing.'
+    distance: '600 meters',
+    timeByWalkOrDrive: '5 mins walk',
+    description: 'Premier medical and higher education institutions in Patel Nagar, ideal for undergraduate, postgraduate, and medical students.'
   },
   {
     id: 'near-3',
@@ -327,23 +327,23 @@ export const NEARBY_PLACES_DATA: NearbyPlace[] = [
     type: 'Transit',
     distance: '2.1 km',
     timeByWalkOrDrive: '7 mins drive',
-    description: 'Perfect for outbound students returning home during semester breaks, with rich auto-rickshaw availability.'
+    description: 'Perfect for outbound students returning home during semester breaks, with rich auto-rickshaw availability from Patel Nagar.'
   },
   {
     id: 'near-4',
-    name: 'Paltan Bazaar & shopping hubs',
+    name: 'Reliance Smart Bazaar & Suvidha Supermarket (Patel Nagar)',
     type: 'Shopping',
-    distance: '2.5 km',
-    timeByWalkOrDrive: '8 mins drive',
-    description: 'Famous local market full of grocery centers, book outlets, clothing options, and daily utility shopping.'
+    distance: '400 meters',
+    timeByWalkOrDrive: '4 mins walk',
+    description: 'Patel Nagar commercial hub full of grocery centers, pharmacies, food outlets, and daily utility shopping.'
   },
   {
     id: 'near-5',
-    name: 'ISBT Dehradun Bus Terminal',
+    name: 'ISBT Dehradun Bus Terminal & Kargi Chowk',
     type: 'Transit',
     distance: '4.8 km',
-    timeByWalkOrDrive: '15 mins drive',
-    description: 'Excellent interstate luxury bus networks connected to Delhi, Chandigarh, Mussoorie, and Haridwar.'
+    timeByWalkOrDrive: '13 mins drive',
+    description: 'Major interstate transit terminal connecting Dehradun directly to Delhi, Chandigarh, Mussoorie, and Haridwar.'
   }
 ];
 

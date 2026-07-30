@@ -119,7 +119,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed mb-6 max-w-lg"
             >
-              Experience premium co-living with fully furnished boutique rooms, nutritious home-style meals, high-speed Wi-Fi, and 24×7 security. Designed for a comfortable, hassle-free life in Dehradun.
+              Experience premium co-living with fully furnished boutique rooms, nutritious home-style meals, high-speed Wi-Fi, and 24×7 security. Designed for a comfortable, hassle-free life in Patel Nagar, Dehradun near SGRR University and Mahant Indresh Hospital.
             </motion.p>
  
             {/* Action Buttons */}
@@ -162,8 +162,8 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
             >
               <img
                 src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQDDQB5ATVtyb79hfXIw6rxQ3goPe-c-PkkC4IISw4Hfc6ZUY4jgJsXu6X9CrDoM8tbdiz6oWRYTZtRerDCkc6XIM7AyUZIVEjK5_g6COy67r-jeua13KILpi4axL4hs4gNjhC=s1360-w1360-h1020-rw"
-                alt="Premium PG Boutique Room"
-                title="Premium PG Boutique Room"
+                alt="Unitas Home - Premium Student PG in Patel Nagar Dehradun"
+                title="Unitas Home - Premium Student PG in Patel Nagar Dehradun"
                 className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-[1.03] brightness-105"
                 loading="eager"
                 decoding="async"

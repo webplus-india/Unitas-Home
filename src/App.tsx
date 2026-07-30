@@ -65,9 +65,9 @@ export default function App() {
   // Dynamic SEO Page Title, Meta Description, Canonical, OG and Twitter Tag Updates
   useEffect(() => {
     const baseUrl = window.location.origin;
-    let title = 'Unitas Home | Premium PG for Students & Working Professionals in Dehradun';
-    let description = 'Experience premium PG in Dehradun with fully furnished rooms, homestyle meals, high-speed Wi-Fi, 24×7 security, zero brokerage, and flexible room options.';
-    let imageUrl = `${baseUrl}/og-image.jpg?v=3`;
+    let title = 'Unitas Home | Premium Student PG in Patel Nagar, Dehradun';
+    let description = 'Unitas Home offers premium student accommodation in Patel Nagar, Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, 24×7 CCTV security, housekeeping, power backup near SGRR University, Mahant Indresh Hospital, GDMC, and Dehradun Railway Station.';
+    let imageUrl = `${baseUrl}/og-image.jpg`;
     let urlPath = currentPath;
 
     if (showDashboard) {

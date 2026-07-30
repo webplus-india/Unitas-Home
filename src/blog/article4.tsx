@@ -38,7 +38,7 @@ export const article4Content = (
       </p>
 
       <p className="mb-4">
-        At Unitas Home, we host a diverse, warm community of students from major institutions such as SGRR University and Graphic Era. Our experienced resident warden acts as a helpful mediator, ensuring that room assignments are compatible and guiding residents to coordinate boundaries constructively.
+        At Unitas Home, we host a diverse, warm community of students from major institutions such as SGRR University, Mahant Indresh Medical College, and Government Doon Medical College (GDMC). Our experienced resident warden acts as a helpful mediator, ensuring that room assignments are compatible and guiding residents to coordinate boundaries constructively.
       </p>
     </div>
 
