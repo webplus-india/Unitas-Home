@@ -46,7 +46,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'choose-right-pg-near-college-dehradun',
     title: 'How to Choose the Right PG Near Your College in Dehradun',
     category: 'Student Guide',
-    excerpt: 'Relocating to Dehradun for college? Learn how to select the perfect PG near SGRR University and Mahant Indresh Hospital in Patel Nagar that balances proximity, budget, safety, and healthy dining.',
+    excerpt: 'Relocating to Dehradun for college? Learn how to select the perfect PG near SGRR and Graphic Era that balances proximity, budget, safety, and healthy dining.',
     metaDescription: 'Find the ultimate guide to selecting the best paying guest (PG) accommodation near major colleges in Dehradun. Discover key tips on security, meal plans, and student amenities.',
     date: 'July 5, 2026',
     readTime: '12 min read',

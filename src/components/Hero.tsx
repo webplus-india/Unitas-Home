@@ -13,6 +13,19 @@ interface HeroProps {
 }
 
 export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
+  const providedImage = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmpJ66i7tfOUqVzEScYxfbZxazXkMSJc5OmRSj2DfMwPyFItbRh4qigJEE4-n-gDC7b6CqeYRy_YeWdVtz6eChAv277PNNmvjRENppVCEsLAHJrBjfg7lxfOvFcVMBxjw2a8T9i=s1360-w1360-h1020-rw";
+  const fallbackImage = "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80";
+  const [heroImgSrc, setHeroImgSrc] = React.useState(providedImage);
+
+  const handleImgError = () => {
+    if (heroImgSrc.includes('=s1360-w1360-h1020-rw')) {
+      setHeroImgSrc(heroImgSrc.replace('=s1360-w1360-h1020-rw', '=s1200'));
+    } else if (heroImgSrc.includes('=s1200')) {
+      setHeroImgSrc(heroImgSrc.replace('=s1200', '=s0'));
+    } else if (heroImgSrc !== fallbackImage) {
+      setHeroImgSrc(fallbackImage);
+    }
+  };
   const trustBadges = [
     { 
       icon: BedDouble, 
@@ -119,7 +132,7 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="font-sans text-sm sm:text-base text-[#6B7280] leading-relaxed mb-6 max-w-lg"
             >
-              Experience premium co-living with fully furnished boutique rooms, nutritious home-style meals, high-speed Wi-Fi, and 24×7 security. Designed for a comfortable, hassle-free life in Patel Nagar, Dehradun near SGRR University and Mahant Indresh Hospital.
+              Experience premium co-living with fully furnished boutique rooms, nutritious home-style meals, high-speed Wi-Fi, and 24×7 security. Designed for a comfortable, hassle-free life in Dehradun.
             </motion.p>
  
             {/* Action Buttons */}
@@ -161,13 +174,14 @@ export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
               className="w-full relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] xl:aspect-[1.35] overflow-hidden rounded-[28px] lg:rounded-[32px] shadow-[0_24px_50px_-12px_rgba(0,0,0,0.12)] border border-[#E5E7EB]"
             >
               <img
-                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQDDQB5ATVtyb79hfXIw6rxQ3goPe-c-PkkC4IISw4Hfc6ZUY4jgJsXu6X9CrDoM8tbdiz6oWRYTZtRerDCkc6XIM7AyUZIVEjK5_g6COy67r-jeua13KILpi4axL4hs4gNjhC=s1360-w1360-h1020-rw"
-                alt="Unitas Home - Premium Student PG in Patel Nagar Dehradun"
-                title="Unitas Home - Premium Student PG in Patel Nagar Dehradun"
+                src={heroImgSrc}
+                alt="Premium PG Boutique Room"
+                title="Premium PG Boutique Room"
                 className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-[1.03] brightness-105"
                 loading="eager"
                 decoding="async"
                 referrerPolicy="no-referrer"
+                onError={handleImgError}
               />
             </motion.div>
           </div>

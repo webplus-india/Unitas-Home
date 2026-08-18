@@ -125,12 +125,12 @@ async function startServer() {
   // Helper to determine SEO metadata for current path
   const getMetaForPath = (pathname: string, origin: string) => {
     // Default Home Page Metadata
-    let title = 'Unitas Home | Premium Student PG in Patel Nagar, Dehradun';
-    let description = 'Unitas Home offers premium student accommodation in Patel Nagar, Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, 24×7 CCTV security, housekeeping, power backup near Shri Guru Ram Rai University (SGRR), Mahant Indresh Hospital, GDMC, and Dehradun Railway Station.';
-    let ogDescription = 'Premium student PG in Patel Nagar, Dehradun near SGRR University, Mahant Indresh Hospital, and ISBT. Fully furnished rooms, meals, Wi-Fi, and 24×7 CCTV security.';
-    let twitterDescription = 'Premium student PG in Patel Nagar, Dehradun near SGRR University & Mahant Indresh Hospital with fully furnished rooms, meals, and Wi-Fi.';
+    let title = 'Unitas Home | Premium Student PG in Dehradun';
+    let description = 'Unitas Home offers premium student accommodation in Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, 24×7 CCTV security, housekeeping, power backup, and a comfortable living environment near major colleges and universities.';
+    let ogDescription = 'Premium student accommodation in Dehradun with fully furnished rooms, home-style meals, high-speed Wi-Fi, CCTV security, housekeeping, and modern amenities.';
+    let twitterDescription = 'Premium student accommodation in Dehradun with modern amenities.';
     let image = `${origin}/og-image.jpg`;
-    let imageAlt = 'Unitas Home - Premium Student PG in Patel Nagar Dehradun';
+    let imageAlt = 'Unitas Home - Premium Student PG in Dehradun';
     const canonical = `${origin}${pathname === '/' ? '' : pathname}`;
 
     if (pathname === '/blog') {

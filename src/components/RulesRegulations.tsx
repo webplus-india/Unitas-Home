@@ -206,8 +206,8 @@ export default function RulesRegulations({ onBookVisit, onNavigateToHome }: Rule
         <div className="absolute inset-0 z-0">
           <img
             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQDDQB5ATVtyb79hfXIw6rxQ3goPe-c-PkkC4IISw4Hfc6ZUY4jgJsXu6X9CrDoM8tbdiz6oWRYTZtRerDCkc6XIM7AyUZIVEjK5_g6COy67r-jeua13KILpi4axL4hs4gNjhC=s1360-w1360-h1020-rw"
-            alt="Unitas Home Student Accommodation in Patel Nagar Dehradun"
-            title="Unitas Home Student Accommodation in Patel Nagar Dehradun"
+            alt="Unitas Home Property"
+            title="Unitas Home Property"
             loading="lazy"
             decoding="async"
             className="w-full h-full object-cover object-center scale-[1.02] brightness-[0.75]"

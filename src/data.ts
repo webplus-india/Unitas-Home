@@ -22,11 +22,11 @@ export const ROOMS_DATA: Room[] = [
       'Dedicated AC & Room Heater Option',
       'Private Balcony with Dehradun Valley Views'
     ],
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG4qIOB2Bd_3QSjIkNr6jzv_Z0Hn7t36PNqybbqlc26B2P-7jgz2jsc1LrUXSYtlJK_SKZnrLgCLmDY1DyiJRScC5H42KwumH8PL3THk1URZJWpRuEcHK_p4HyjAIOQ1VcJbfkmmQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnBq_Dl-aB1W8BQB1zHNzvq4p5YJe9XDwJ9ErnMDufgF1GSeVRxLKaO2rJd3GBHP-rm4pNuWc2O7YKbrbcneeyzEGJGFH6G7ngnl6UrvmXFm14_mvTugoek1F-88mr9uMtxmB8JMA=s1360-w1360-h1020-rw',
     images: [
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG4qIOB2Bd_3QSjIkNr6jzv_Z0Hn7t36PNqybbqlc26B2P-7jgz2jsc1LrUXSYtlJK_SKZnrLgCLmDY1DyiJRScC5H42KwumH8PL3THk1URZJWpRuEcHK_p4HyjAIOQ1VcJbfkmmQ=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHLJz2YenINiIYW-tjSuOuJDPVHxNaGScfkgaCNyGsegpQPqzrFebIrXon1VZG4QAWG-gkk70OhiBdvOVRaHxBtPgR4iCX0RQDPwf4Wyh3SlDeX9-aoZMI6540ek1ZHej1f3QB8=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQDDQB5ATVtyb79hfXIw6rxQ3goPe-c-PkkC4IISw4Hfc6ZUY4jgJsXu6X9CrDoM8tbdiz6oWRYTZtRerDCkc6XIM7AyUZIVEjK5_g6COy67r-jeua13KILpi4axL4hs4gNjhC=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnBq_Dl-aB1W8BQB1zHNzvq4p5YJe9XDwJ9ErnMDufgF1GSeVRxLKaO2rJd3GBHP-rm4pNuWc2O7YKbrbcneeyzEGJGFH6G7ngnl6UrvmXFm14_mvTugoek1F-88mr9uMtxmB8JMA=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn-9SJXueEG86jEFMwMVInmhGEIFMgpj3fPV9iYBSBbbDbpBghjPFypvNcLKPxQ89MWUOwrcDdEs8dccDSOoVQbm7yt4aYvHhd-3dFO6KkBqpOe2rXDXf2RrbAdETwk1bZFUlk7yA=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj7yROsQxtiWfu3gilvuVm5cTb5ufHlexlAbDRcrNhRto013KEb3WlejtOmER4KCnO6DnoGxG21SJ1MxYxHsQo4i8ZBCcClYvmqx5r3X5Io0wvZwo7Sy7Lu-FhdtbDNo4L9Xw3=s1360-w1360-h1020-rw'
     ],
     availability: 'Few Beds Left',
     badge: 'Private Living'
@@ -46,11 +46,11 @@ export const ROOMS_DATA: Room[] = [
       'Side Table & Individual USB Charging Ports',
       'Large Ventilated Window with Curtains'
     ],
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVGQOGdK9df0LYJmxQoTgAg0BOgQerqyiCuU6REhd_xoBvfPw10-0xHhSMyZF5TngsWwQrUfNYcIDdOkoTxlmHWM2eTcWcf4pKyUdU0F_LNDbYsLIx-Mkl9aF1MbiUnInhrtsggg=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmAA7KDPZeqfMTUR6mc-ul4wsX2-1LiC5gR9rQ7ky5r3b4ivCzBlktIL_wLLMIWi7wVJ_JS3V05fahZgAOqvkmtJFRClmmT9Dc25bMXeZ1pzeR0KKWQtJTm_j2ELnngldu-BOeJ=s1360-w1360-h1020-rw',
     images: [
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVGQOGdK9df0LYJmxQoTgAg0BOgQerqyiCuU6REhd_xoBvfPw10-0xHhSMyZF5TngsWwQrUfNYcIDdOkoTxlmHWM2eTcWcf4pKyUdU0F_LNDbYsLIx-Mkl9aF1MbiUnInhrtsggg=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGqykJGUmrhC1LpLQNcw9xMOty2GDGtwvbvb11M1pnLbVPNDtK5_KcXNWYtFOJZTv7Sfx21yW3FTnGju2xhB3FesTZQ8C1sxGxeBGKSwmxS5rO49gFYO8f34prCh1n88TsGXSwXpw=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsE62xyNtIn-2olLupm6Y7jQ5SGKniZ6Q0bcC-ziS1RbEm8r4I-o6MEv3u0zetXN_1lBgk5XjoGl5xHwqK_qvL4biQm6bKORLbLlmSIZ1GiQV348O9rBkV0EaOFO0JLVt32KaHww=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmAA7KDPZeqfMTUR6mc-ul4wsX2-1LiC5gR9rQ7ky5r3b4ivCzBlktIL_wLLMIWi7wVJ_JS3V05fahZgAOqvkmtJFRClmmT9Dc25bMXeZ1pzeR0KKWQtJTm_j2ELnngldu-BOeJ=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlEc5jVGXIURWce_gAL6J0yU71UCmvPEr1T7okOuCrsbSdRE7lFZ_mYSAPbGAaG7AnnJiMp1vPQAmMZFmboYF5vPj4fEP1ZmdkKLwyd75ubQEP2sOovFmFChmBl1hbnwCnao6M=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlM2Kp4ai2QC7q07ha2Iba7Pt3GVV35RyEGWfdmmBx0z1cs5S8sGS-x7bf8wT9fro4C4etbrSepOCg2tb_3lmsrq6xqOQKUQ_V4DQCXYY9ZwBD1AwFaE3Ys7RKnk7e-dcgESLh44Q=s1360-w1360-h1020-rw'
     ],
     availability: 'Filling Fast',
     badge: 'Most Preferred'
@@ -73,8 +73,8 @@ export const ROOMS_DATA: Room[] = [
     image: tripleSharingImg,
     images: [
       tripleSharingImg,
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGqykJGUmrhC1LpLQNcw9xMOty2GDGtwvbvb11M1pnLbVPNDtK5_KcXNWYtFOJZTv7Sfx21yW3FTnGju2xhB3FesTZQ8C1sxGxeBGKSwmxS5rO49gFYO8f34prCh1n88TsGXSwXpw=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRamEreFbEd4tC7Q6dxyy6ut0QoRe4aVxc0CFKte66UAwQGIEeYpeXuIN9laRsj0PBQySHtn0Vi0ToYSaQC9x4z55KkswtTQmYbXPWmNFBulATx5_t3-BVwr24rLeEir3OHfkNcg=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmFV17D8isEGNbhDulPuNEkuEvYaXuQlAliXmohjsYHIK7fPeOr7AhvvxtYpupTAQ2Y4apn3YDa8oc4U9JSMjRWIxrv94cptDpEVmLY6MnNEkwqrRnxFZU9jXN-kQCVB_Ja-fBXEQ=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlhYD_rdOGKKuF1sKi_t9kIOfZSqUqWji75uiNTGz3WDVkiPb21U23MQhjf6lWPTcqgn7Ibm8ryx0OeYi2mEPuzl3ykWXCOqSFJx6eaqskrIuq_BqoItntfmE3fC4pvFHiXep1wwg=s1360-w1360-h1020-rw'
     ],
     availability: 'Available',
     badge: 'Best Budget Choice'
@@ -307,7 +307,7 @@ export const FAQS_DATA: FAQItem[] = [
 export const NEARBY_PLACES_DATA: NearbyPlace[] = [
   {
     id: 'near-1',
-    name: 'Shri Mahant Indresh Hospital & Medical College',
+    name: 'Mahant Indresh Hospital & Medical College',
     type: 'Hospital',
     distance: '350 meters',
     timeByWalkOrDrive: '3 mins walk',
@@ -315,11 +315,11 @@ export const NEARBY_PLACES_DATA: NearbyPlace[] = [
   },
   {
     id: 'near-2',
-    name: 'Shri Guru Ram Rai University (SGRR) & GDMC',
+    name: 'Graphic Era Hill & Deemed University',
     type: 'College',
-    distance: '600 meters',
-    timeByWalkOrDrive: '5 mins walk',
-    description: 'Premier medical and higher education institutions in Patel Nagar, ideal for undergraduate, postgraduate, and medical students.'
+    distance: '4.2 km',
+    timeByWalkOrDrive: '12 mins drive',
+    description: 'Highly accessible via directly available local transport and shuttle buses right from our main road crossing.'
   },
   {
     id: 'near-3',
@@ -327,23 +327,23 @@ export const NEARBY_PLACES_DATA: NearbyPlace[] = [
     type: 'Transit',
     distance: '2.1 km',
     timeByWalkOrDrive: '7 mins drive',
-    description: 'Perfect for outbound students returning home during semester breaks, with rich auto-rickshaw availability from Patel Nagar.'
+    description: 'Perfect for outbound students returning home during semester breaks, with rich auto-rickshaw availability.'
   },
   {
     id: 'near-4',
-    name: 'Reliance Smart Bazaar & Suvidha Supermarket (Patel Nagar)',
+    name: 'Paltan Bazaar & shopping hubs',
     type: 'Shopping',
-    distance: '400 meters',
-    timeByWalkOrDrive: '4 mins walk',
-    description: 'Patel Nagar commercial hub full of grocery centers, pharmacies, food outlets, and daily utility shopping.'
+    distance: '2.5 km',
+    timeByWalkOrDrive: '8 mins drive',
+    description: 'Famous local market full of grocery centers, book outlets, clothing options, and daily utility shopping.'
   },
   {
     id: 'near-5',
-    name: 'ISBT Dehradun Bus Terminal & Kargi Chowk',
+    name: 'ISBT Dehradun Bus Terminal',
     type: 'Transit',
     distance: '4.8 km',
-    timeByWalkOrDrive: '13 mins drive',
-    description: 'Major interstate transit terminal connecting Dehradun directly to Delhi, Chandigarh, Mussoorie, and Haridwar.'
+    timeByWalkOrDrive: '15 mins drive',
+    description: 'Excellent interstate luxury bus networks connected to Delhi, Chandigarh, Mussoorie, and Haridwar.'
   }
 ];
 
@@ -355,28 +355,28 @@ export const GALLERY_DATA = [
     id: 'gal-ext-1',
     title: 'Building Front',
     category: 'Exterior',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtpJwQlD2ziZjiiFkW51xMtTRXbj8Gn259CH1cY_UqFO_Vu1_MyVYPe-SpBd973nuAkv6z47Q_h9ryBqRlC02yopTwUL-8Ey7AT_y_zruHt3Y9GKgEMqeqqoMYlvDTz1wZ0_OX=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmzzN-DwVwAK8obuaW1mRQrsef8G9x-HDNjJ_XNNGfpi1b0mLdaj4WhXgO9nofCLpYbqBt3aagBAGmLC4q8JbXr41l7Ghrn-wCqR7OvzCyO76yy8qh8lqUH-MYVA3DPkhx8ZXjb=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
   {
     id: 'gal-ext-2',
     title: 'Building Exterior',
     category: 'Exterior',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFI-SJB20Wd2TyQjVqkexMcGJIj_0STCjDrt41IyfUkXxWKwdnpHSQ_jxBAtDQwhn0id2gV7bbQLqARAJXdPd5maWbgg7bwvb-p4FiMP5Gt8fZoJ4WHtO07espLgIwF0bs5gyUEnQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWllSnVQiYG54WSVONH6Qy0bmQGoqZHPri8lIiWMhJoEc0fN5-8YyE5GlGvFWnWy4t2ItZzveKMnTqKltf60hwsNRKiHDXZZHPdW5ArI1vZMzJWRk7EvzkGo4rutSFoeoQyy9qL5GQ=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
   {
     id: 'gal-ext-3',
     title: 'Evening View',
     category: 'Exterior',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHxUY2Lbp9XgqBBgiTsNvXh0g3DwvyJ2CY4GLdyRI_fkUtdFTYJlin5DE_aliFl0gcUS4FNfpDIE4MYe0GOnKF8HsYSHgIRIG_bOlp1Ybz8O1Jo2HvovAQAM4eiqzh6NDmVFJrnDQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnulLrd235VRjqfT8Ie0kcOnQCPibvHSHGEOnh855LeKnEDgqlPQDqjLaTq-wY-wWzOfh7d1zNRkldaIIwWrBARsKYOMbRa5J1OyEPccYj07Rcj_UKExM_3zK4ocgTXpfyOnl4uYg=s1360-w1360-h1020-rw',
     aspect: 'aspect-[3/4]'
   },
   {
     id: 'gal-ext-4',
     title: 'Night View',
     category: 'Exterior',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAExBnLPdRDf0jCy7M1rsm_hHeykGF_BBbBKmHIy0KbsLNO-i3F-SbXyNfrswmmonbw_RWe0Sa8VdHB5nz9WRuh4yxfjcJPcDbfDkBsxl_c5OD18nQLpMD_Ll0SYeRG5nZTBHZkHjQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm8cqNhJj-7zl7XIfxvXQ7CEGgrBptVbrRkx9O5HzpG8BR_lB0xP8g8Q5sd9qdLOuTZ0iQg3KonPflQSaeLjRyG6lv82w2kLoH6KBbzehDnMHXzQ5YzFSZKcQWiqiLH3UpK3mKrDg=s1360-w1360-h1020-rw',
     aspect: 'aspect-[16/9]'
   },
 
@@ -387,14 +387,14 @@ export const GALLERY_DATA = [
     id: 'gal-rec-1',
     title: 'Reception Desk',
     category: 'Reception',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEpPJpwzath1IDvHHlCj9-2YSPbFFyWNat-SipbhgjBdgDIdpvm4YYSAgy-o8lgdLVTOG9k78CDZUCB6WpufSiBt_Cay66_VqytKEKHKI_Dv6lMgg9cc1fnuOw6W1uXgOCBQqo=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkwdMHzqTHDhlDwfApcZz6wvq_h6zb3yr_a7qlo8i-GZRt3wa3HkXL9Rg2gukRgzie6HMaOduCp5N8hW-n7AozPBQS_YteqdoDkcJkQVHbjOslsl9RK1x68SiB3m5zlQ2gSLJuZ2g=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
   {
     id: 'gal-rec-2',
     title: 'Reception Area',
     category: 'Reception',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH7cFGNAnfl08T9tODWkqOth5DK_dnTmBDsjEkrjEfiHQAdaECAaMMv7e5mCLLeD30H4NUhFg6lV12EW9Cyanuzt9AnaapMSrql2PdhdD8oAlxP4NvRs3UMkm0_zw7hIEmEUD-YLA=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmz6v9-1Q8okcJJ2Cc5kj_CUfW8AEhl-eZ6inriaXQS7j1BkxeETf1GvA6lYBVGz4rtTC_VKgWPGxSvwLto2Q8o8wbdhpF-XWoWq60-UEiSQzSP2eChtH9pGDZVx617xRMhW_4=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
 
@@ -405,7 +405,7 @@ export const GALLERY_DATA = [
     id: 'gal-cor-1',
     title: 'Corridor',
     category: 'Amenities',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEaPRGlhGxI7Sj5KAnAa863V8dxyprPzX-KX7jzwhYAlKaIBCSxp_Q6q22xHsTV5etVGwEQkUbUZe__5xbtu2IHNoz8Ihp3I-p7Iq_oIvFeaOjlWN3AUhdgAosED3DC7fJ3Hb92=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWndrzNnmQ75wbIjPHPNoHHnlTHpKGBD6KDhQv6k137T2xp4OxWlIjsIYeNszDRNGyX7O2lcextc7cD_otayL6MuWFEd2t28vVmQZeU69vAysL-FOoEY-efeeJLKETZs6tjZi-n3=s1360-w1360-h1020-rw',
     aspect: 'aspect-[16/9]'
   },
 
@@ -416,21 +416,21 @@ export const GALLERY_DATA = [
     id: 'gal-room-single-1',
     title: 'Single Sharing Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHhexW_RBZTm4V2bNbAnqTG8KfDnKs97ly2Ra9VjwPGAXrbqCXZjjKiJ-kEk90zNOMZ2CSe658zSzgoS6Rx95uNBXAYUeWK8P68_XoSXttxLZziZzMbR20_jVSgBM0_K9gU7as=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnXfq-RMSRoSfeoxjuKuPGgRp1HzYrh-MTrITFN2GonvGc5n_--tdnk6O3f2xAkrFsW0fSo6WbxsIrxbwyC6LU6ghcRFXs9HKO5q466K3bFdMtqFInWxCqjGm6g0GALthupUxg=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
   {
     id: 'gal-room-single-2',
     title: 'Single Sharing Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGixNkSAdIBYtAYi4loVk1QAgK5NsHpaHLFpe7zy3b3nDJpMbuee7GgEG3fYR3vczDUoYygPjh3KpGZLwbgsAc_8Vssm68g4CBk-A4Qqa_BcWwl-6oDoEoRi5O6eu8ZL3zcJl7J=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlF1HVv583ylJ5ofZmONRaVAag9AWvn4tgBMpGpmaaRPByaF7bYW0jF6RUtulklPZsPMPEZ0GJJXgObBjiQ1Ley9D_pyhOZIiQwzc9JwrHDDKy4u5LvtcBGf8kQ8eZPjnRk6_Qk=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
   {
     id: 'gal-room-twin-1',
     title: 'Twin Sharing Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYr-jO4oypVN2EoU7QIqcqkly5cFtvGYw9F6vkK_8hMMeBkiHCO3QzFmvzVhYYeTfen77ftxhqDBUEpb-woIYXB5QQraWXwBUqsX1qysAk6jCXbmDuwp6IhEHI8obVsfo2xovoeQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmAA7KDPZeqfMTUR6mc-ul4wsX2-1LiC5gR9rQ7ky5r3b4ivCzBlktIL_wLLMIWi7wVJ_JS3V05fahZgAOqvkmtJFRClmmT9Dc25bMXeZ1pzeR0KKWQtJTm_j2ELnngldu-BOeJ=s1360-w1360-h1020-rw',
     aspect: 'aspect-[3/4]'
   },
   {
@@ -444,63 +444,63 @@ export const GALLERY_DATA = [
     id: 'gal-room-add-1',
     title: 'Premium Furnished Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG2IinWeDzYRuIcBPgEIm18UK08H01277xkSOQGFqEsEjU1vgCITtMReKHGmmFC8-pz9d1N8O3o_OqUmf42cxwo-dAOMPnMTreHUg3G3q3SPEJ7bzGD7Wl2siHbU4-t6WKGPp4w=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj7yROsQxtiWfu3gilvuVm5cTb5ufHlexlAbDRcrNhRto013KEb3WlejtOmER4KCnO6DnoGxG21SJ1MxYxHsQo4i8ZBCcClYvmqx5r3X5Io0wvZwo7Sy7Lu-FhdtbDNo4L9Xw3=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
   {
     id: 'gal-room-add-2',
     title: 'Student Bedroom',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEg-wYViKMdVFwck1bgPuhiI-KZxzHl4ELCcCF0Z17To_9UGBrg-X_B3y3Fyp6POUhDK7ZscM35Iz7yLlWGn5evR2CpsZh9CYIGngu3bcpdS7sGV1Edv4GpzZ5-qpZsgHMHE9Mg=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmrtgXJIktbCzKQIwdHmntUf3YCmow_ndMYA4aS84EFVzs8gsBKiJ42swUAQosqft1r3qetinWGQuwl9XYxurbNz0hWLjeXYVJmQHzwthX1zHJmmYOaMTxfjbMW8X0E71JVBNLk=s1360-w1360-h1020-rw',
     aspect: 'aspect-[16/9]'
   },
   {
     id: 'gal-room-add-3',
     title: 'Premium Furnished Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpcnVT4HJL6xCPPyqwoFnOAUbzOqKrY37iKIWT9eMmvckgszhDt64Wd73I6aUbtAJPs1__zv6AaYG40ECQT6H5_LKZY93PA7bkI5__mRrmQXQf2UzBKENLNwuLriK9yrwEDLNW=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmpJ66i7tfOUqVzEScYxfbZxazXkMSJc5OmRSj2DfMwPyFItbRh4qigJEE4-n-gDC7b6CqeYRy_YeWdVtz6eChAv277PNNmvjRENppVCEsLAHJrBjfg7lxfOvFcVMBxjw2a8T9i=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
   {
     id: 'gal-room-add-4',
     title: 'Student Bedroom',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdkyje5nKi_Etn7nrYNLpKfNg3IGr_KSQkn6zZ2mwF0WtfosByB9YMt_BT9MTSeonQ_VDjKNavTVCIVeUzeVxFqOPNIA5xIlERV1skJv292-nStPIgcy070O-uDunqkz7Zt2o4pw=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlM2Kp4ai2QC7q07ha2Iba7Pt3GVV35RyEGWfdmmBx0z1cs5S8sGS-x7bf8wT9fro4C4etbrSepOCg2tb_3lmsrq6xqOQKUQ_V4DQCXYY9ZwBD1AwFaE3Ys7RKnk7e-dcgESLh44Q=s1360-w1360-h1020-rw',
     aspect: 'aspect-[3/4]'
   },
   {
     id: 'gal-room-add-5',
     title: 'Premium Furnished Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHr9QiRD5vuzm9RaeyTGRf8sRk4q88mNXpz8MjsW1bgy4OiGGJ-k60l2RcUK6Wixmlf9vFnh2LZi6qW7_Wm6n4SYAkiuFHLwvfISnPWqZ6WgozjtqOkF3qb29fwpNG4bdyGzep0=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmbxKUr9zTvORzrqrb8p4mMLIJuA6g5o9VA5rGJNaKv9wJYzaB6JAYBc6ecjsVkYAzwP7JZ8IlrHzSos4UJUvD0dcXedH9DJI8L7sLz4r-_tCom3QumzOr7omi51ppujlmM6rdK4Q=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
   {
     id: 'gal-room-add-6',
     title: 'Student Bedroom',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGT3tR1ac13Dg9wxMVm6WD-S9D-80BFmk9hGWZgMOQcsX5_P-egHLleASXMkImkPMYmVBwbIk9qrkGNEhwArkdsngvC94I1CeWJ4_xtnQS0nJ5nt4MedmX8NKtqHOI1sk0bbf7r=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn-9SJXueEG86jEFMwMVInmhGEIFMgpj3fPV9iYBSBbbDbpBghjPFypvNcLKPxQ89MWUOwrcDdEs8dccDSOoVQbm7yt4aYvHhd-3dFO6KkBqpOe2rXDXf2RrbAdETwk1bZFUlk7yA=s1360-w1360-h1020-rw',
     aspect: 'aspect-[16/9]'
   },
   {
     id: 'gal-room-add-7',
     title: 'Premium Furnished Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEgyLjRZZLJOO2q_n0HaTF3gsPFL2i_VMQL93oARBA14E4ilZRMrhhShfzGa4N4vakeZiNkhs0IyiHZ19P8nEjLqeYFFtSszVk1lbN6ib1w7m09rW5ce7dLaG73maNHCxlLqnSFFQ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlgukEsBS87xo10skyH0k0QToruxZK1-lGUq_GQgtvuFr5-_aOJQzlKmrZ_29A8S-rPkGMYlEzxCpzF9L9cZ-AnTLuTzZyYWJpBD3sVg40XkpskqDAgueRFWpggTOrVqpE9lCHN=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
   {
     id: 'gal-room-add-8',
     title: 'Student Bedroom',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsE62xyNtIn-2olLupm6Y7jQ5SGKniZ6Q0bcC-ziS1RbEm8r4I-o6MEv3u0zetXN_1lBgk5XjoGl5xHwqK_qvL4biQm6bKORLbLlmSIZ1GiQV348O9rBkV0EaOFO0JLVt32KaHww=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn80foMFfgxioELz5QhIDx7G2Ll20uAdZG5-0I6GsfnrwrsO_b1ADhFCNPwv4X-t9k4hsPWKp_DYILJH7GVTPVkzgFWLiXr6EE1nHZzODCYEbM_57tE7zwVSgFKu6bRB0ALwVs=s1360-w1360-h1020-rw',
     aspect: 'aspect-[3/4]'
   },
   {
     id: 'gal-room-add-9',
     title: 'Premium Furnished Room',
     category: 'Rooms',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGc2brhKOerXpThp73SREpbWmV5SFzvnkF3LnbSJ6_7hzfs7FqoXPLr1nPjqeIlrQw475RpAdeLQxNa1pt3hdqmBjrvx8BGgTvIjNksRU92mAYjI_sYfg9ClqB1OR8zE6wzOLtL=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmbxKUr9zTvORzrqrb8p4mMLIJuA6g5o9VA5rGJNaKv9wJYzaB6JAYBc6ecjsVkYAzwP7JZ8IlrHzSos4UJUvD0dcXedH9DJI8L7sLz4r-_tCom3QumzOr7omi51ppujlmM6rdK4Q=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   },
 
@@ -511,7 +511,7 @@ export const GALLERY_DATA = [
     id: 'gal-study-1',
     title: 'Study Space',
     category: 'Study Space',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRamEreFbEd4tC7Q6dxyy6ut0QoRe4aVxc0CFKte66UAwQGIEeYpeXuIN9laRsj0PBQySHtn0Vi0ToYSaQC9x4z55KkswtTQmYbXPWmNFBulATx5_t3-BVwr24rLeEir3OHfkNcg=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmGm5SsW6CvF590WDlG8drCjHAUqh9dRZ362ppfFCuQBGs4f4zSDVg9h4LLBt9SDxxq9XBm4S9AEqriNjeWmtG0J2qnRN7vgRSpjyKMnTi_HJuBBmMIABhmhH9XVeGfDegv2INrkg=s1360-w1360-h1020-rw',
     aspect: 'aspect-[16/9]'
   },
 
@@ -522,7 +522,7 @@ export const GALLERY_DATA = [
     id: 'gal-lounge-1',
     title: 'Common Lounge',
     category: 'Common Lounge',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHXEeMN9MhqvtNOV8GjvPo7vIL8gi_Bcv2PLUpww24SK0eXgIwdJALHPFTdLF66erzDd4w-BjR8PjOfL2C0plJq9etvB5k-J6mmWgEYdEVzetKYjxt3j1DtuecnUNgZLBL0BfL6=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkwzRuQZkXzhV3axhyUSSUJtSsQev7wTo644hteQPIc2NxWRlcKK9J9v_FIXL0giH0ZW8pvtDjaNuKWy--0cCfqHeoqJSJg7HHT3zHoou7hwt_PvZlFYABrJwshlyP0YS1GpWHz=s1360-w1360-h1020-rw',
     aspect: 'aspect-[4/3]'
   },
 
@@ -533,14 +533,14 @@ export const GALLERY_DATA = [
     id: 'gal-wash-1',
     title: 'Attached Washroom',
     category: 'Amenities',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFNYEZ7xvThTSFCnp2u0nUNDviq4VcnaY-KMzqtbBd7Gx4y9En1Gxk676ehHCX0nrkZ7sMVq-V0W6qMulACYaeErpYjxt_ss3-I8Xb7Q6t2L9DqLlK2D8LlFiroBJbW2CmbrK3s=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWki9YBOTfULsmbq_qdG1rRIdXBr8sboKprzdpC1HZAvvnH37sOngOlnhGzYQmV2_sSgeYKvqRmihW3J4leMUXmNLc-YOCkV0Rj2g9h6VR7wqIIC8SVxQ7gngNn9UWN2aGkMDyzW=s1360-w1360-h1020-rw',
     aspect: 'aspect-[3/4]'
   },
   {
     id: 'gal-water-1',
     title: 'Water Cooler',
     category: 'Amenities',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAH7fwHzIZF1VKqp8D7OyNhKJIEjtwM3FvwexCNi3Navt_-IPVRbOSYl9XKn7RZeJWBuKUcECf8t4O_YFvnFJJc-TU8IWuheu2aRDeLCgCmmVLkXpIw-mOJxNmRvppoJS1F5rxJy=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnbPwGjGMMqfy6bERnlcq8NScfnwn8B29B0yPJ3H7IWnSaiNO2AS_zCo2KC226beSRFEFM91jHg-tNkbHEEzYiftRDasrM5Wu5e3fFlumidquf91zQqwfDxOOUPuHE0etJSs9dd=s1360-w1360-h1020-rw',
     aspect: 'aspect-[1/1]'
   }
 ];

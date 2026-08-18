@@ -172,8 +172,8 @@ export function BookVisitModal({ isOpen, onClose, onSubmit, onExploreRooms }: Bo
           {/* Background Image with subtle enhancements */}
           <img 
             src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAExBnLPdRDf0jCy7M1rsm_hHeykGF_BBbBKmHIy0KbsLNO-i3F-SbXyNfrswmmonbw_RWe0Sa8VdHB5nz9WRuh4yxfjcJPcDbfDkBsxl_c5OD18nQLpMD_Ll0SYeRG5nZTBHZkHjQ=s1360-w1360-h1020-rw"
-            alt="Unitas Home Building Night View in Patel Nagar Dehradun"
-            title="Unitas Home Building Night View in Patel Nagar Dehradun"
+            alt="Unitas Home Building Night View"
+            title="Unitas Home Building Night View"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: 'brightness(1.05) contrast(1.08) saturate(1.05)' }}
             loading="lazy"
