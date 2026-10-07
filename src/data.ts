@@ -11,8 +11,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'single-sharing',
     name: 'Single Sharing',
     occupancy: 'Single Occupancy',
-    price: 11000,
-    originalPrice: 13000,
+    price: 12000,
+    originalPrice: 14000,
     description: 'Perfect for students and professionals seeking privacy, comfort, and a peaceful living environment.',
     features: [
       'Private Premium Box Bed & Mattress',
@@ -35,8 +35,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'twin-sharing',
     name: 'Twin Sharing',
     occupancy: '2-Sharing',
-    price: 5500,
-    originalPrice: 6500,
+    price: 6500,
+    originalPrice: 7500,
     description: 'Designed for friends and roommates who want the ideal balance of comfort, affordability, and convenience.',
     features: [
       'Individual Box Beds & Premium Mattresses',
@@ -59,8 +59,8 @@ export const ROOMS_DATA: Room[] = [
     id: 'triple-sharing',
     name: 'Triple Sharing',
     occupancy: '3-Sharing',
-    price: 4500,
-    originalPrice: 5500,
+    price: 5000,
+    originalPrice: 6000,
     description: 'A budget-friendly shared room offering comfort, community, and all essential premium amenities.',
     features: [
       'Individually Partitioned Sleep Spaces',
