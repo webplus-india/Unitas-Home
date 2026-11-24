@@ -79,7 +79,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               {/* Primary Image: Building Exterior */}
               <div className="absolute top-0 left-0 w-[96%] h-[74%] rounded-[24px] overflow-hidden shadow-[0_6px_16px_rgba(0,0,0,0.02)] border border-white/60 transition-transform duration-500 hover:scale-[1.01] z-10">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlhAV4QHC6vZBbUjaWSBSlIDAYe3uHoksfu5lYvoWKVqpiTeXZUOK2lyE-VTN3ywQ4K4bJNv_TDNLCp9uEwWgxMF0p_WNCXoyO457RW8kqUfRoZkTDx4S8cW7yYdYYqXn0VhKEqBA=s1360-w1360-h1020-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RqI0sfhpcIMwQHUQa1nzaOfNcH2MUSAZTtKhQ30eEaxEdU1FqWSwdp6QyaysSBaT2BBx-_MZGnc3Xr9Jk3VwqKtiYqJg0_grANSpGvevvliyvDKY_xW7-r-FcyHQXRb3a1NZ8Uqw=s1360-w1360-h1020-rw" 
                   alt="Unitas Home Night View" 
                   title="Unitas Home Night View" 
                   className="w-full h-full object-cover"
@@ -100,7 +100,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               {/* Overlapping Card 1: Premium Furnished Room */}
               <div className="absolute bottom-[8%] right-0 w-[50%] h-[38%] rounded-[24px] overflow-hidden shadow-[0_8px_18px_rgba(0,0,0,0.03)] border-[4px] border-white transition-transform duration-500 hover:scale-[1.02] hover:z-30 z-25">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkEDpBc1ajSSWj7n9TM6t5546T-fneqTTT-8m9fBi4253rYs8LlJMHg-MIl_L7DrY18vTTJEDMxI_CRDfrGPjQfqIdaBLv5jx7V_1znirDGhSsOmRRjn4hM44_U6lmw2j5eq4cCBQ=s1360-w1360-h1020-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOno_K15QB5G8ppxV3U7HVSno1F8DeuUP2zzmZMGhsaSKTWR44gyvGsoqMMyrIx_Y-dzxWbT7XJucpWqM95mvwfuJ0IbJBS_wqaI9AMrzAIbY7YcirwhUdOxwynLIYJfrgtx6Ccg=s1360-w1360-h1020-rw" 
                   alt="Unitas Reception" 
                   title="Unitas Reception" 
                   className="w-full h-full object-cover"
@@ -121,7 +121,7 @@ export default function WhyUnitas({ onNavigate, onBookVisit }: WhyUnitasProps) {
               {/* Overlapping Card 2: Dining & Healthy Meals */}
               <div className="absolute bottom-0 left-[4%] w-[38%] h-[28%] rounded-[24px] overflow-hidden shadow-[0_5px_12px_rgba(0,0,0,0.02)] border-[4px] border-white transition-transform duration-500 hover:scale-[1.02] hover:z-30 z-20">
                 <img 
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWstc9w0WYrvWuQaOupdTbe7AH6mXwgi2bsVavwlYmR4sNJpC_ekaQzCkcMCIPiWftBQAd44yUeGqpHt6mzjsRKms6HcM2fuZu1P9u-bmeQ1QWbInC5iURUIjyJjA4uU6zXoXh=s1360-w1360-h1020-rw" 
+                  src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0iPLpTsnt3ytjCp01D-lp8OtjQu1xj2SrU2xpAvToKb3k91dbNzBWWs0BxUo0Vv5cpQ8nmJNEYVs4Ln6A76HLQcMPO08_EmdzF0ichz-KK9g95ZFTXakQEsMFoRJT7zx4zL71=s1360-w1360-h1020-rw" 
                   alt="Unitas Boutique Furnished Room" 
                   title="Unitas Boutique Furnished Room" 
                   className="w-full h-full object-cover"

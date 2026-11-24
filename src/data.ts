@@ -22,11 +22,11 @@ export const ROOMS_DATA: Room[] = [
       'Dedicated AC & Room Heater Option',
       'Private Balcony with Dehradun Valley Views'
     ],
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnBq_Dl-aB1W8BQB1zHNzvq4p5YJe9XDwJ9ErnMDufgF1GSeVRxLKaO2rJd3GBHP-rm4pNuWc2O7YKbrbcneeyzEGJGFH6G7ngnl6UrvmXFm14_mvTugoek1F-88mr9uMtxmB8JMA=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0iPLpTsnt3ytjCp01D-lp8OtjQu1xj2SrU2xpAvToKb3k91dbNzBWWs0BxUo0Vv5cpQ8nmJNEYVs4Ln6A76HLQcMPO08_EmdzF0ichz-KK9g95ZFTXakQEsMFoRJT7zx4zL71=s1360-w1360-h1020-rw',
     images: [
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnBq_Dl-aB1W8BQB1zHNzvq4p5YJe9XDwJ9ErnMDufgF1GSeVRxLKaO2rJd3GBHP-rm4pNuWc2O7YKbrbcneeyzEGJGFH6G7ngnl6UrvmXFm14_mvTugoek1F-88mr9uMtxmB8JMA=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn-9SJXueEG86jEFMwMVInmhGEIFMgpj3fPV9iYBSBbbDbpBghjPFypvNcLKPxQ89MWUOwrcDdEs8dccDSOoVQbm7yt4aYvHhd-3dFO6KkBqpOe2rXDXf2RrbAdETwk1bZFUlk7yA=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmj7yROsQxtiWfu3gilvuVm5cTb5ufHlexlAbDRcrNhRto013KEb3WlejtOmER4KCnO6DnoGxG21SJ1MxYxHsQo4i8ZBCcClYvmqx5r3X5Io0wvZwo7Sy7Lu-FhdtbDNo4L9Xw3=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0iPLpTsnt3ytjCp01D-lp8OtjQu1xj2SrU2xpAvToKb3k91dbNzBWWs0BxUo0Vv5cpQ8nmJNEYVs4Ln6A76HLQcMPO08_EmdzF0ichz-KK9g95ZFTXakQEsMFoRJT7zx4zL71=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QuJcjaD4CpZqcYKn5xZ4IXjmgIyISn4IcLl9ytwQFzautageW9V5tmvG2xGsEn-Qc_qg1T5CFtwyAxWDd1pLXIma1LnUc-OBzrZJNRCFiJLSPh8Cf8lUOW70IFPNaMfqLep8wI=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QTDaAgPLZu1JhQJCn-5ItM1VvYOOrYY21VRD3Gky1V0dfw83k7wD7_j9K_5KZNuHi-Hk0qFy6bvHXI8uoT6HTIEQLlwB5wAUt5Zqu-0PDYjLtxZ2dqwoP4d1vdVG-_hwdIKlFj=s1360-w1360-h1020-rw'
     ],
     availability: 'Few Beds Left',
     badge: 'Private Living'
@@ -46,11 +46,11 @@ export const ROOMS_DATA: Room[] = [
       'Side Table & Individual USB Charging Ports',
       'Large Ventilated Window with Curtains'
     ],
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmAA7KDPZeqfMTUR6mc-ul4wsX2-1LiC5gR9rQ7ky5r3b4ivCzBlktIL_wLLMIWi7wVJ_JS3V05fahZgAOqvkmtJFRClmmT9Dc25bMXeZ1pzeR0KKWQtJTm_j2ELnngldu-BOeJ=s1360-w1360-h1020-rw',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGSH3aJXaCkZZsePfxSWsB8tpSFNvRRDKupitps5DCALaqSuwDCvkFCaZAzGLNAhM2PNDyNHWrzTOdG5X38HJN_LN9Eh6uTAYqaUFOIS-UllS9IYG6oy2OyAn3RJnZPFn7aDER=s1360-w1360-h1020-rw',
     images: [
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmAA7KDPZeqfMTUR6mc-ul4wsX2-1LiC5gR9rQ7ky5r3b4ivCzBlktIL_wLLMIWi7wVJ_JS3V05fahZgAOqvkmtJFRClmmT9Dc25bMXeZ1pzeR0KKWQtJTm_j2ELnngldu-BOeJ=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlEc5jVGXIURWce_gAL6J0yU71UCmvPEr1T7okOuCrsbSdRE7lFZ_mYSAPbGAaG7AnnJiMp1vPQAmMZFmboYF5vPj4fEP1ZmdkKLwyd75ubQEP2sOovFmFChmBl1hbnwCnao6M=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlM2Kp4ai2QC7q07ha2Iba7Pt3GVV35RyEGWfdmmBx0z1cs5S8sGS-x7bf8wT9fro4C4etbrSepOCg2tb_3lmsrq6xqOQKUQ_V4DQCXYY9ZwBD1AwFaE3Ys7RKnk7e-dcgESLh44Q=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGSH3aJXaCkZZsePfxSWsB8tpSFNvRRDKupitps5DCALaqSuwDCvkFCaZAzGLNAhM2PNDyNHWrzTOdG5X38HJN_LN9Eh6uTAYqaUFOIS-UllS9IYG6oy2OyAn3RJnZPFn7aDER=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGhlH1vtk2Rho1r7WubYfH74EEwAZOl6TKjNlsQKtGe0mYRfCQBEgZif2e34TQghheHZaQTkU7gPdsGrO4ozohqMr6OqlXrkWM_dgsQOATOgMHeCOHykVh-ZHIJashZ4GwZVs=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSbrevIA9JCOEk__WVw6z83yctkX20fYFAPJM89DJWSLJDqPtTQ64lIocdkrGx0eGjSMY9sgAQkMBrEAQcVruolqtXILJNfIgG3GJiNgtKtnDkXK3F1lsKLEQDNlAj2krhNYVjSQ=s1360-w1360-h1020-rw'
     ],
     availability: 'Filling Fast',
     badge: 'Most Preferred'
@@ -73,8 +73,8 @@ export const ROOMS_DATA: Room[] = [
     image: tripleSharingImg,
     images: [
       tripleSharingImg,
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmFV17D8isEGNbhDulPuNEkuEvYaXuQlAliXmohjsYHIK7fPeOr7AhvvxtYpupTAQ2Y4apn3YDa8oc4U9JSMjRWIxrv94cptDpEVmLY6MnNEkwqrRnxFZU9jXN-kQCVB_Ja-fBXEQ=s1360-w1360-h1020-rw',
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlhYD_rdOGKKuF1sKi_t9kIOfZSqUqWji75uiNTGz3WDVkiPb21U23MQhjf6lWPTcqgn7Ibm8ryx0OeYi2mEPuzl3ykWXCOqSFJx6eaqskrIuq_BqoItntfmE3fC4pvFHiXep1wwg=s1360-w1360-h1020-rw'
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SnBG92K07CCWtI5c-Ptvo_wyBFeVzZ6q28bm8QGeAtseGbSiR2fWz36F1W1ZE83tCW8gAob9Ph2Pd0zbzmHZL9C9h6AdKdRvXbcbw8wDaP9jyVEjnJxsn84taIGekYSio97TOx2Q=s1360-w1360-h1020-rw',
+      'https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIXXhMF27GuRaojfWGPAKm93dycjnyKDDy0PvezSoXUy4v8hyFVJlJC-EKT-_pCD0Kjw9hEBXj3u4B-F_2BbS0sSa9OH3a7PRY_D7vmSFrprtcg48_rD727kbVx4feIP3NN451tw=s1360-w1360-h1020-rw'
     ],
     availability: 'Available',
     badge: 'Best Budget Choice'

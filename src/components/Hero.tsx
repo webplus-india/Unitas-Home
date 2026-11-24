@@ -13,7 +13,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onBookVisit, onNavigate }: HeroProps) {
-  const providedImage = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmpJ66i7tfOUqVzEScYxfbZxazXkMSJc5OmRSj2DfMwPyFItbRh4qigJEE4-n-gDC7b6CqeYRy_YeWdVtz6eChAv277PNNmvjRENppVCEsLAHJrBjfg7lxfOvFcVMBxjw2a8T9i=s1360-w1360-h1020-rw";
+  const providedImage = "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ9F0u4wK0no1Fa7nyCMam-HzNqwH9WhUJ72m3WdYo8QLDICrGdZ3RtaK0BQAiNaoSF_PxSOPG75qlV8LMmCx61CfND6-VT_CtLD0wco4KUSW_9-cbiW67LoaerVmXS-IsXN2s=s1360-w1360-h1020-rw";
   const fallbackImage = "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80";
   const [heroImgSrc, setHeroImgSrc] = React.useState(providedImage);
 
